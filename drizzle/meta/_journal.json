@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1779119395307,
+      "tag": "0000_overrated_loki",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1779184396678,
+      "tag": "0001_chubby_red_ghost",
+      "breakpoints": true
+    }
+  ]
+}

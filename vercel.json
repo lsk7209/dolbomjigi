@@ -1,0 +1,22 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "functions": {
+    "src/app/api/**/*.ts": { "maxDuration": 30 }
+  },
+  "crons": [
+    { "path": "/api/cron/etl-daily", "schedule": "0 18 * * *" },
+    { "path": "/api/cron/etl-weekly", "schedule": "0 21 * * 0" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}

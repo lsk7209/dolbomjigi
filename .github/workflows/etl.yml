@@ -1,0 +1,192 @@
+name: ETL Scheduled Jobs
+
+on:
+  schedule:
+    # ─── Daily: bizinfo + 보건복지부 RSS (UTC 18:00 = KST 03:00)
+    - cron: '0 18 * * *'
+    # ─── Daily: NTIS + KIPRIS (UTC 19:00 = KST 04:00)
+    - cron: '0 19 * * *'
+    # ─── Weekly: 지자체 크롤링 (UTC 21:00 Mon = KST 06:00 Mon)
+    - cron: '0 21 * * 0'
+    # ─── Monthly: KOSIS 통계 동기화 (UTC 00:00 1st of month)
+    - cron: '0 0 1 * *'
+
+  # 수동 트리거 (GitHub Actions UI에서 실행 가능)
+  workflow_dispatch:
+    inputs:
+      job:
+        description: '실행할 작업 선택'
+        required: false
+        default: 'daily-bizinfo'
+        type: choice
+        options:
+          - daily-bizinfo
+          - daily-ntis-kipris
+          - weekly-local-gov
+          - monthly-kosis
+
+jobs:
+  # ─────────────────────────────────────────
+  # Daily: bizinfo + 보건복지부 RSS
+  # ─────────────────────────────────────────
+  daily-bizinfo:
+    name: Daily ETL - bizinfo + MOHW RSS
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # UTC 18:00 크론 또는 수동 트리거
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 18 * * *') ||
+      (github.event_name == 'workflow_dispatch' && (github.event.inputs.job == 'daily-bizinfo' || github.event.inputs.job == ''))
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run daily ETL (bizinfo + MOHW RSS)
+        run: pnpm tsx src/etl/run-daily.ts
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NODE_ENV: production
+
+      - name: Notify failure
+        if: failure()
+        run: |
+          if [ -n "$SLACK_WEBHOOK_URL" ]; then
+            curl -X POST "$SLACK_WEBHOOK_URL" \
+              -H 'Content-Type: application/json' \
+              -d "{\"text\":\"❌ [돌봄지기 ETL] daily-bizinfo 실패 - $(date '+%Y-%m-%d %H:%M KST')\"}"
+          fi
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  # ─────────────────────────────────────────
+  # Daily: NTIS + KIPRIS
+  # ─────────────────────────────────────────
+  daily-ntis-kipris:
+    name: Daily ETL - NTIS + KIPRIS
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 19 * * *') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'daily-ntis-kipris')
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run NTIS + KIPRIS ETL
+        # TODO: src/etl/run-ntis-kipris.ts 구현 후 활성화
+        run: echo "NTIS + KIPRIS ETL - 구현 예정"
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NODE_ENV: production
+
+  # ─────────────────────────────────────────
+  # Weekly: 지자체 크롤링
+  # ─────────────────────────────────────────
+  weekly-local-gov:
+    name: Weekly ETL - 지자체 크롤링
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 21 * * 0') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'weekly-local-gov')
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run local government crawling
+        # TODO: src/etl/run-local-gov.ts 구현 후 활성화
+        run: echo "지자체 크롤링 ETL - 구현 예정"
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NODE_ENV: production
+
+  # ─────────────────────────────────────────
+  # Monthly: KOSIS 통계 동기화
+  # ─────────────────────────────────────────
+  monthly-kosis:
+    name: Monthly ETL - KOSIS 통계
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 0 1 * *') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'monthly-kosis')
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run KOSIS statistics sync
+        # TODO: src/etl/run-kosis.ts 구현 후 활성화
+        run: echo "KOSIS 통계 동기화 - 구현 예정"
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NODE_ENV: production
