@@ -12,6 +12,7 @@ import Sources from '@/components/common/Sources'
 import AuthorBlock from '@/components/common/AuthorBlock'
 
 import { buildArticleJsonLd, buildFAQJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { markdownToHtml } from '@/lib/markdown'
 
 // ─────────────────────────────────────────
 // 타입
@@ -303,6 +304,12 @@ export default async function GuideDetailPage({
         <AnswerBlock>
           {guide.body_md.slice(0, 250)}
         </AnswerBlock>
+
+        {/* 2-1. 가이드 전체 본문 */}
+        <article
+          className="prose-custom"
+          dangerouslySetInnerHTML={{ __html: markdownToHtml(guide.body_md) }}
+        />
 
         {/* 3. 필요 기능 분석 */}
         <section aria-label="필요 기능 분석">

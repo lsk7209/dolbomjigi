@@ -73,7 +73,6 @@ export const supportPrograms = sqliteTable('support_programs', {
   id: integer('id').primaryKey({ autoIncrement: true }),
   slug: text('slug').notNull().unique(),
   region_id: integer('region_id')
-    .notNull()
     .references(() => regions.id),
   name_ko: text('name_ko').notNull(),
   program_type: text('program_type', {
