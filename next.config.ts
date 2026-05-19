@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  serverExternalPackages: ['@libsql/client'],
+
   // ─── HTTP 헤더 ────────────────────────────────────────────────────────────
   async headers() {
     return [
