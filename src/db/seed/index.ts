@@ -6,6 +6,7 @@ import { robotsSeedData } from './robots';
 import { regionsSeedData } from './regions';
 import { authorsSeedData } from './authors';
 import { supportProgramsSeedData } from './support_programs';
+import { sigunguRegionsSeedData, sigunguProgramsSeedData } from './sigungu_data';
 import { guidesSeedData } from './guides';
 import { comparisonsSeedData } from './comparisons';
 import { researchStudiesSeedData } from './research_studies';
@@ -39,12 +40,16 @@ async function seed() {
   // Regions 먼저 삽입 (support_programs에서 FK 참조)
   console.log('📍 Inserting regions...');
   for (const region of regionsSeedData) {
-    await db
-      .insert(regions)
-      .values(region)
-      .onConflictDoNothing();
+    await db.insert(regions).values(region).onConflictDoNothing();
   }
   console.log(`  ✓ ${regionsSeedData.length} regions inserted`);
+
+  // 시군구 지역 삽입
+  console.log('📍 Inserting sigungu regions...');
+  for (const region of sigunguRegionsSeedData) {
+    await db.insert(regions).values(region).onConflictDoNothing();
+  }
+  console.log(`  ✓ ${sigunguRegionsSeedData.length} sigungu regions inserted`);
 
   // Robots 삽입
   console.log('🤖 Inserting robots...');
@@ -112,6 +117,38 @@ async function seed() {
     await db.insert(infoArticles).values(article).onConflictDoNothing();
   }
   console.log(`  ✓ ${infoArticlesSeedData.length} info articles inserted`);
+
+  // 시군구 지원사업 삽입 (slug로 region_id 조회)
+  console.log('🏘️ Inserting sigungu support programs...');
+  const allRegions = await db.select({ id: regions.id, slug: regions.slug }).from(regions);
+  const regionSlugMap = new Map(allRegions.map((r) => [r.slug, r.id]));
+  let sigunguInserted = 0;
+  for (const prog of sigunguProgramsSeedData) {
+    const regionId = regionSlugMap.get(prog.regionSlug);
+    if (!regionId) {
+      console.warn(`  ⚠ Region not found for slug: ${prog.regionSlug}`);
+      continue;
+    }
+    await db
+      .insert(supportPrograms)
+      .values({
+        slug: prog.slug,
+        region_id: regionId,
+        name_ko: prog.name_ko,
+        program_type: prog.program_type,
+        eligibility_json: prog.eligibility_json,
+        application_method: prog.application_method,
+        application_url: prog.application_url,
+        distribution_count: prog.distribution_count,
+        source_url: prog.source_url,
+        source_license: prog.source_license,
+        status: prog.status,
+        human_reviewed: true,
+      })
+      .onConflictDoNothing();
+    sigunguInserted++;
+  }
+  console.log(`  ✓ ${sigunguInserted} sigungu programs inserted`);
 
   console.log('✅ Seeding complete!');
   client.close();
