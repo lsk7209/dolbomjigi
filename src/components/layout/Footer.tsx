@@ -10,6 +10,7 @@ interface FooterLink {
 }
 
 const QUICK_LINKS: FooterLink[] = [
+  { label: '블로그', href: '/blog' },
   { label: '로봇 제품 목록', href: '/robot' },
   { label: '제품 비교', href: '/compare' },
   { label: '구매·렌탈 가이드', href: '/guide' },

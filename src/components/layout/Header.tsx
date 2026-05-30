@@ -18,6 +18,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: '가이드', href: '/guide' },
   { label: '지원사업', href: '/support' },
   { label: '정보', href: '/info' },
+  { label: '블로그', href: '/blog' },
 ];
 
 // ─────────────────────────────────────────

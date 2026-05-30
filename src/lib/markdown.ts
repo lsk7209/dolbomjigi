@@ -1,4 +1,38 @@
-/** Simple markdown-to-HTML converter for guide body content */
+/** Simple markdown-to-HTML converter for guide/blog body content */
+
+// ─────────────────────────────────────────
+// TOC 지원
+// ─────────────────────────────────────────
+
+export interface TocItem {
+  level: 2 | 3
+  text: string
+  id: string
+}
+
+function slugifyId(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s가-힣]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '') || 'section'
+}
+
+/**
+ * 마크다운에서 # / ## 헤딩을 추출해 TOC 목록을 반환한다.
+ */
+export function extractToc(md: string): TocItem[] {
+  const toc: TocItem[] = []
+  for (const line of md.split('\n')) {
+    if (line.startsWith('# ')) {
+      toc.push({ level: 2, text: line.slice(2).trim(), id: slugifyId(line.slice(2).trim()) })
+    } else if (line.startsWith('## ')) {
+      toc.push({ level: 3, text: line.slice(3).trim(), id: slugifyId(line.slice(3).trim()) })
+    }
+  }
+  return toc
+}
 
 function inlineMd(text: string): string {
   return text
@@ -75,12 +109,16 @@ export function markdownToHtml(md: string): string {
       continue
     }
     if (line.startsWith('## ')) {
-      out.push(`<h3 class="text-lg font-bold text-gray-900 mt-8 mb-3 pb-1 border-b border-gray-100">${inlineMd(line.slice(3))}</h3>`)
+      const text = line.slice(3).trim()
+      const id = slugifyId(text)
+      out.push(`<h3 id="${id}" class="text-lg font-bold text-gray-900 mt-8 mb-3 pb-1 border-b border-gray-100">${inlineMd(text)}</h3>`)
       i++
       continue
     }
     if (line.startsWith('# ')) {
-      out.push(`<h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">${inlineMd(line.slice(2))}</h2>`)
+      const text = line.slice(2).trim()
+      const id = slugifyId(text)
+      out.push(`<h2 id="${id}" class="text-xl font-bold text-gray-900 mt-8 mb-3">${inlineMd(text)}</h2>`)
       i++
       continue
     }

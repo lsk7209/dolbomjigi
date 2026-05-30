@@ -30,9 +30,9 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // 정적 페이지 캐시 (로봇 상세, 가이드 등)
+      // 정적 페이지 캐시 (로봇 상세, 가이드, 블로그 등)
       {
-        source: '/(robot|compare|guide|info|research)/:slug*',
+        source: '/(robot|compare|guide|info|research|blog)/:slug*',
         headers: [
           {
             key: 'Cache-Control',

@@ -1,7 +1,7 @@
 import { createClient } from '@libsql/client';
 import { drizzle } from 'drizzle-orm/libsql';
 import * as schema from '../schema';
-import { robots, regions, authors, supportPrograms, guides, comparisons, researchStudies, infoArticles } from '../schema';
+import { robots, regions, authors, supportPrograms, guides, comparisons, researchStudies, infoArticles, blogPosts } from '../schema';
 import { robotsSeedData } from './robots';
 import { regionsSeedData } from './regions';
 import { authorsSeedData } from './authors';
@@ -11,6 +11,7 @@ import { guidesSeedData } from './guides';
 import { comparisonsSeedData } from './comparisons';
 import { researchStudiesSeedData } from './research_studies';
 import { infoArticlesSeedData } from './info_articles';
+import { blogPostsSeedData } from './blog_posts';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -149,6 +150,13 @@ async function seed() {
     sigunguInserted++;
   }
   console.log(`  ✓ ${sigunguInserted} sigungu programs inserted`);
+
+  // Blog Posts 삽입
+  console.log('📝 Inserting blog posts...');
+  for (const post of blogPostsSeedData) {
+    await db.insert(blogPosts).values(post).onConflictDoNothing();
+  }
+  console.log(`  ✓ ${blogPostsSeedData.length} blog posts inserted`);
 
   console.log('✅ Seeding complete!');
   client.close();

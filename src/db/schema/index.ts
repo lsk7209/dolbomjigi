@@ -332,6 +332,38 @@ export const programRobotsRelations = relations(programRobots, ({ one }) => ({
 }));
 
 // ─────────────────────────────────────────
+// blog_posts
+// ─────────────────────────────────────────
+export const blogPosts = sqliteTable('blog_posts', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  slug: text('slug').notNull().unique(),
+  title_ko: text('title_ko').notNull(),
+  summary: text('summary'),              // 250자 이내, AnswerBlock용
+  cover_image_url: text('cover_image_url'),
+  body_md: text('body_md').notNull(),
+  category: text('category', {
+    enum: ['care_info', 'product_review', 'support_program', 'guide', 'news'],
+  }).notNull().default('care_info'),
+  target_persona: text('target_persona', {
+    enum: ['family_caregiver', 'social_worker', 'public_servant', 'institution', 'all'],
+  }).notNull().default('all'),
+  tags_json: text('tags_json'),          // JSON string []
+  reading_time_minutes: integer('reading_time_minutes'),
+  author_id: integer('author_id').references(() => authors.id),
+  published_at: integer('published_at', { mode: 'timestamp' }),
+  updated_at: integer('updated_at', { mode: 'timestamp' })
+    .notNull()
+    .default(sql`(unixepoch())`),
+});
+
+export const blogPostsRelations = relations(blogPosts, ({ one }) => ({
+  author: one(authors, {
+    fields: [blogPosts.author_id],
+    references: [authors.id],
+  }),
+}));
+
+// ─────────────────────────────────────────
 // Export types
 // ─────────────────────────────────────────
 export type Robot = typeof robots.$inferSelect;
@@ -356,3 +388,5 @@ export type ProgramRobot = typeof programRobots.$inferSelect;
 export type NewProgramRobot = typeof programRobots.$inferInsert;
 export type InfoArticle = typeof infoArticles.$inferSelect;
 export type NewInfoArticle = typeof infoArticles.$inferInsert;
+export type BlogPost = typeof blogPosts.$inferSelect;
+export type NewBlogPost = typeof blogPosts.$inferInsert;

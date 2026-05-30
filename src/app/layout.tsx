@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { SITE_URL, SITE_NAME } from '@/lib/config';
 import './globals.css';
 
 // ─────────────────────────────────────────
@@ -23,9 +24,7 @@ const geistMono = Geist_Mono({
 // 사이트 전체 메타태그 기본값
 // ─────────────────────────────────────────
 
-const SITE_URL = 'https://dolbomjigi.com';
-const SITE_NAME = '돌봄지기';
-const DEFAULT_TITLE = '돌봄지기 - 돌봄로봇 종합 정보 포털';
+const DEFAULT_TITLE = `${SITE_NAME} - 돌봄로봇 종합 정보 포털`;
 const DEFAULT_DESCRIPTION =
   '노인·장애인 돌봄로봇, 재활로봇, 지원사업 정보를 한눈에. 효돌, 다솜, 보미 등 국내 돌봄로봇 비교 가이드와 전국 지원사업 안내.';
 
@@ -135,6 +134,16 @@ export default function RootLayout({
 
         {/* 푸터 */}
         <Footer />
+
+        {/* AdSense 자동 광고 */}
+        {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
 
         {/* Google Analytics 4 */}
         {GA_ID && (

@@ -8,15 +8,16 @@ import {
   regions,
   researchStudies,
   infoArticles,
+  blogPosts,
 } from '@/db/schema';
 import { eq, isNotNull, isNull } from 'drizzle-orm';
-
-const SITE_URL = 'https://dolbomjigi.com';
+import { SITE_URL } from '@/lib/config';
 
 export const revalidate = 86400;
 
 const STATIC_ROUTES: MetadataRoute.Sitemap = [
   { url: SITE_URL, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
+  { url: `${SITE_URL}/blog`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
   { url: `${SITE_URL}/robot`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
   { url: `${SITE_URL}/compare`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
   { url: `${SITE_URL}/guide`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
@@ -47,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     sigunguRows,
     researchRows,
     infoRows,
+    blogRows,
   ] = await Promise.all([
     db.select({ slug: robots.slug, updated_at: robots.updated_at }).from(robots)
       .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
@@ -76,6 +78,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     db.select({ slug: infoArticles.slug, updated_at: infoArticles.updated_at })
       .from(infoArticles)
+      .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
+
+    db.select({ slug: blogPosts.slug, updated_at: blogPosts.updated_at })
+      .from(blogPosts)
+      .where(isNotNull(blogPosts.published_at))
       .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
   ]);
 
@@ -154,8 +161,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  const blogUrls: MetadataRoute.Sitemap = blogRows.map((r) => ({
+    url: `${SITE_URL}/blog/${r.slug}`,
+    lastModified: r.updated_at ?? new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }));
+
   return [
     ...STATIC_ROUTES,
+    ...blogUrls,
     ...robotUrls,
     ...compareUrls,
     ...guideUrls,
