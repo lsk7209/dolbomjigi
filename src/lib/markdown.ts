@@ -58,7 +58,7 @@ function buildTable(tableLines: string[]): string {
     .filter((c) => c.trim())
     .map(
       (c) =>
-        `<th class="px-3 py-2 text-left text-xs font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">${inlineMd(c.trim())}</th>`
+        `<th class="px-3 py-2 text-left text-xs font-semibold text-indigo-900 bg-indigo-50 whitespace-nowrap">${inlineMd(c.trim())}</th>`
     )
     .join('')
 
@@ -111,14 +111,42 @@ export function markdownToHtml(md: string): string {
     if (line.startsWith('## ')) {
       const text = line.slice(3).trim()
       const id = slugifyId(text)
-      out.push(`<h3 id="${id}" class="text-lg font-bold text-gray-900 mt-8 mb-3 pb-1 border-b border-gray-100">${inlineMd(text)}</h3>`)
+      out.push(`<h3 id="${id}" class="text-lg font-bold text-gray-900 mt-8 mb-3 pb-1 border-b border-indigo-100">${inlineMd(text)}</h3>`)
       i++
       continue
     }
     if (line.startsWith('# ')) {
       const text = line.slice(2).trim()
       const id = slugifyId(text)
-      out.push(`<h2 id="${id}" class="text-xl font-bold text-gray-900 mt-8 mb-3">${inlineMd(text)}</h2>`)
+      out.push(`<h2 id="${id}" class="text-xl font-bold text-gray-900 mt-8 mb-4 pl-3 border-l-4 border-indigo-500">${inlineMd(text)}</h2>`)
+      i++
+      continue
+    }
+
+    // Callout 박스 (:::key / :::tip / :::warn ... :::)
+    const calloutMatch = trimmed.match(/^:::(key|tip|warn)\s*$/)
+    if (calloutMatch) {
+      const kind = calloutMatch[1]
+      const bodyParts: string[] = []
+      i++
+      while (i < lines.length && lines[i].trim() !== ':::') {
+        bodyParts.push(lines[i])
+        i++
+      }
+      // i는 종료 ':::' 줄 (없으면 끝)
+      const inner = bodyParts
+        .filter((l) => l.trim() !== '')
+        .map((l) => `<p class="my-1">${inlineMd(l.trim())}</p>`)
+        .join('')
+      const styles: Record<string, { box: string; icon: string; label: string }> = {
+        key: { box: 'border-l-4 border-indigo-500 bg-indigo-50 text-gray-800', icon: '📌', label: '핵심' },
+        tip: { box: 'border-l-4 border-amber-400 bg-amber-50 text-gray-800', icon: '💡', label: '도움말' },
+        warn: { box: 'border border-amber-300 bg-amber-50 text-gray-800', icon: '⚠️', label: '주의' },
+      }
+      const s = styles[kind]
+      out.push(
+        `<div class="${s.box} rounded-lg px-4 py-3 my-5 text-sm leading-relaxed"><p class="font-semibold mb-1 ${kind === 'key' ? 'text-indigo-700' : 'text-amber-700'}">${s.icon} ${s.label}</p>${inner}</div>`
+      )
       i++
       continue
     }
@@ -131,7 +159,7 @@ export function markdownToHtml(md: string): string {
         contentParts.push(lines[i].slice(2))
       }
       out.push(
-        `<blockquote class="border-l-4 border-blue-300 bg-blue-50 pl-4 pr-3 py-2 my-4 rounded-r-lg text-sm text-gray-700">${inlineMd(contentParts.join(' '))}</blockquote>`
+        `<blockquote class="border-l-4 border-indigo-300 bg-indigo-50 pl-4 pr-3 py-2 my-4 rounded-r-lg text-sm text-gray-700">${inlineMd(contentParts.join(' '))}</blockquote>`
       )
       i++
       continue
@@ -149,14 +177,36 @@ export function markdownToHtml(md: string): string {
       continue
     }
 
-    // Unordered list
-    if (/^[-*] /.test(line)) {
+    // Checklist (- [ ] / - [x]) — 체크리스트가 일반 리스트보다 먼저 매칭
+    if (/^[-*] \[[ xX]\] /.test(line)) {
       const items = [line.replace(/^[-*] /, '')]
-      while (i + 1 < lines.length && /^[-*] /.test(lines[i + 1])) {
+      while (i + 1 < lines.length && /^[-*] \[[ xX]\] /.test(lines[i + 1])) {
         i++
         items.push(lines[i].replace(/^[-*] /, ''))
       }
-      const lis = items.map((it) => `<li class="text-sm text-gray-700">${inlineMd(it)}</li>`).join('')
+      const lis = items
+        .map((it) => {
+          const checked = /^\[[xX]\]/.test(it)
+          const text = it.replace(/^\[[ xX]\]\s*/, '')
+          const icon = checked
+            ? '<span class="text-amber-500 mr-2">✓</span>'
+            : '<span class="text-gray-300 mr-2">○</span>'
+          return `<li class="flex items-start text-sm text-gray-700"><span class="shrink-0">${icon}</span><span>${inlineMd(text)}</span></li>`
+        })
+        .join('')
+      out.push(`<ul class="my-3 space-y-1.5">${lis}</ul>`)
+      i++
+      continue
+    }
+
+    // Unordered list
+    if (/^[-*] /.test(line)) {
+      const items = [line.replace(/^[-*] /, '')]
+      while (i + 1 < lines.length && /^[-*] /.test(lines[i + 1]) && !/^[-*] \[[ xX]\] /.test(lines[i + 1])) {
+        i++
+        items.push(lines[i].replace(/^[-*] /, ''))
+      }
+      const lis = items.map((it) => `<li class="text-sm text-gray-700 marker:text-indigo-400">${inlineMd(it)}</li>`).join('')
       out.push(`<ul class="list-disc pl-5 my-3 space-y-1">${lis}</ul>`)
       i++
       continue

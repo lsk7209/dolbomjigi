@@ -86,6 +86,7 @@ async function main() {
   let baseEpoch = lastFuture > now ? lastFuture + FIVE_HOURS_MS : now;
 
   let inserted = 0;
+  let updated = 0;
   let skipped = 0;
   let lintFailed = 0;
   let scheduleIdx = 0;
@@ -106,15 +107,30 @@ async function main() {
       continue;
     }
 
-    // slug 중복 확인
+    // slug 존재 시 UPDATE (published_at 보존 — 예약 스케줄 유지), 신규면 INSERT
     const dup = await db
       .select({ id: blogPosts.id })
       .from(blogPosts)
       .where(eq(blogPosts.slug, post.slug))
       .limit(1);
+
     if (dup.length > 0) {
-      console.log(`  ⏭️  중복 slug 제외: ${post.slug}`);
-      skipped++;
+      await db
+        .update(blogPosts)
+        .set({
+          title_ko: post.title,
+          subtitle: post.subtitle ?? null,
+          summary: post.summary ?? null,
+          body_md: post.body_md,
+          category: post.category,
+          target_persona: post.target_persona,
+          tags_json: post.tags ? JSON.stringify(post.tags) : null,
+          reading_time_minutes: post.reading_time_minutes ?? null,
+          updated_at: new Date(),
+        })
+        .where(eq(blogPosts.slug, post.slug));
+      console.log(`  ♻️  본문 갱신 (예약일 보존): ${post.slug}`);
+      updated++;
       continue;
     }
 
@@ -139,7 +155,7 @@ async function main() {
     scheduleIdx++;
   }
 
-  console.log(`\n✅ 완료: ${inserted}개 적재, ${skipped}개 스킵, ${lintFailed}개 의료표현 위반 제외`);
+  console.log(`\n✅ 완료: ${inserted}개 신규, ${updated}개 갱신, ${skipped}개 스킵, ${lintFailed}개 의료표현 위반 제외`);
   if (inserted > 0) {
     const first = new Date(baseEpoch);
     const last = new Date(baseEpoch + (scheduleIdx - 1) * FIVE_HOURS_MS);
