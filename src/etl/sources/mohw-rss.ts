@@ -3,6 +3,9 @@
  * https://www.mohw.go.kr 의 공지사항 RSS를 수집하여 돌봄로봇 관련 항목을 필터링한다.
  */
 
+import { db } from '@/db/client';
+import { bizinfoPrograms } from '@/db/schema';
+import { eq } from 'drizzle-orm';
 import { TARGET_KEYWORDS } from './bizinfo';
 
 // ─────────────────────────────────────────
@@ -155,4 +158,66 @@ export async function fetchMohwRss(): Promise<MohwRssItem[]> {
   }
 
   return filtered;
+}
+
+// ─────────────────────────────────────────
+// DB 저장
+// ─────────────────────────────────────────
+
+/**
+ * 수집된 MohwRssItem을 bizinfo_programs 테이블에 upsert한다.
+ * pblanc_id = "mohw:{link}" 형식으로 고유 식별한다.
+ *
+ * @returns 신규 저장 건수
+ */
+export async function saveMohwRssItems(items: MohwRssItem[]): Promise<number> {
+  if (items.length === 0) return 0;
+
+  const now = new Date();
+  let saved = 0;
+
+  for (const item of items) {
+    const pblancId = `mohw:${item.link}`;
+
+    const payload = {
+      pblanc_id: pblancId,
+      title: item.title,
+      dept: '보건복지부',
+      region: null as string | null,
+      field: '복지',
+      start_date: null as Date | null,
+      end_date: null as Date | null,
+      detail_url: item.link,
+      matched_keywords: JSON.stringify(item.matched_keywords),
+      raw_json: JSON.stringify({
+        title: item.title,
+        link: item.link,
+        pubDate: item.pubDate,
+        description: item.description,
+      }),
+      fetched_at: now,
+    };
+
+    try {
+      const existing = await db
+        .select({ id: bizinfoPrograms.id })
+        .from(bizinfoPrograms)
+        .where(eq(bizinfoPrograms.pblanc_id, pblancId))
+        .limit(1);
+
+      if (existing.length > 0) {
+        await db
+          .update(bizinfoPrograms)
+          .set({ title: payload.title, matched_keywords: payload.matched_keywords, fetched_at: now })
+          .where(eq(bizinfoPrograms.pblanc_id, pblancId));
+      } else {
+        await db.insert(bizinfoPrograms).values(payload);
+        saved++;
+      }
+    } catch (err) {
+      console.error(`[mohw-rss] DB 저장 오류 (${pblancId}):`, err);
+    }
+  }
+
+  return saved;
 }

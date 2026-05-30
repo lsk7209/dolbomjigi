@@ -12,7 +12,7 @@
  */
 
 import { fetchBizinfo, upsertBizinfoItems, TARGET_KEYWORDS } from './sources/bizinfo';
-import { fetchMohwRss } from './sources/mohw-rss';
+import { fetchMohwRss, saveMohwRssItems } from './sources/mohw-rss';
 import { notifyBatchResult } from './review-queue';
 
 // ─────────────────────────────────────────
@@ -132,16 +132,19 @@ async function runMohwRssEtl(): Promise<{
     const items = await fetchMohwRss();
     log(`보건복지부 RSS: ${items.length}건 매칭됨`);
 
-    // 보건복지부 RSS는 DB 저장 구조가 별도이므로 콘솔 출력으로 확인
-    // (support_programs 테이블 저장은 검토 후 수동 승인 플로우)
-    for (const item of items) {
-      log(`  - [${item.pubDate ?? 'N/A'}] ${item.title}`);
-      log(`    URL: ${item.link}`);
-      log(`    키워드: ${item.matched_keywords.join(', ')}`);
+    let enqueued = 0;
+    if (items.length > 0) {
+      enqueued = await saveMohwRssItems(items);
+      log(`보건복지부 RSS: ${enqueued}건 신규 저장`);
+      for (const item of items) {
+        log(`  - [${item.pubDate ?? 'N/A'}] ${item.title}`);
+        log(`    URL: ${item.link}`);
+        log(`    키워드: ${item.matched_keywords.join(', ')}`);
+      }
     }
 
     log('=== 보건복지부 RSS ETL 완료 ===');
-    return { total: items.length, matched: items.length, enqueued: 0, errors };
+    return { total: items.length, matched: items.length, enqueued, errors };
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     log(`보건복지부 RSS 오류: ${msg}`, 'error');

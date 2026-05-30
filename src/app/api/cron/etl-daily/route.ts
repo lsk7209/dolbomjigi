@@ -9,7 +9,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { fetchBizinfo, upsertBizinfoItems, TARGET_KEYWORDS } from '@/etl/sources/bizinfo';
-import { fetchMohwRss } from '@/etl/sources/mohw-rss';
+import { fetchMohwRss, saveMohwRssItems } from '@/etl/sources/mohw-rss';
 import { notifyBatchResult } from '@/etl/review-queue';
 
 export const dynamic = 'force-dynamic';
@@ -98,8 +98,13 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     mohwResult.total = items.length;
     mohwResult.matched = items.length;
 
-    for (const item of items) {
-      log.push(`  RSS: [${item.pubDate ?? 'N/A'}] ${item.title}`);
+    if (items.length > 0) {
+      const saved = await saveMohwRssItems(items);
+      mohwResult.enqueued = saved;
+      log.push(`보건복지부 RSS: ${items.length}건 매칭, ${saved}건 신규 저장`);
+      for (const item of items) {
+        log.push(`  RSS: [${item.pubDate ?? 'N/A'}] ${item.title}`);
+      }
     }
 
     log.push(`보건복지부 RSS 완료: ${items.length}건 매칭`);
