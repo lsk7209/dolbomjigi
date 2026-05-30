@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# 블로그 생성 원본 결과 (DB 적재 후 불필요)
+scripts/blog-generated-*.json

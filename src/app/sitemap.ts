@@ -10,7 +10,7 @@ import {
   infoArticles,
   blogPosts,
 } from '@/db/schema';
-import { eq, isNotNull, isNull } from 'drizzle-orm';
+import { eq, isNotNull, isNull, and, lte } from 'drizzle-orm';
 import { SITE_URL } from '@/lib/config';
 
 export const revalidate = 86400;
@@ -82,7 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     db.select({ slug: blogPosts.slug, updated_at: blogPosts.updated_at })
       .from(blogPosts)
-      .where(isNotNull(blogPosts.published_at))
+      .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
       .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
   ]);
 

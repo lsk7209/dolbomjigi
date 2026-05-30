@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@/db/client'
 import { blogPosts, authors } from '@/db/schema'
-import { desc, eq, isNotNull } from 'drizzle-orm'
+import { desc, eq, isNotNull, and, lte } from 'drizzle-orm'
 import { SITE_URL, SITE_NAME } from '@/lib/config'
 import Link from 'next/link'
 
@@ -56,6 +56,7 @@ export default async function BlogListPage() {
       id: blogPosts.id,
       slug: blogPosts.slug,
       title_ko: blogPosts.title_ko,
+      subtitle: blogPosts.subtitle,
       summary: blogPosts.summary,
       cover_image_url: blogPosts.cover_image_url,
       category: blogPosts.category,
@@ -65,7 +66,7 @@ export default async function BlogListPage() {
     })
     .from(blogPosts)
     .leftJoin(authors, eq(blogPosts.author_id, authors.id))
-    .where(isNotNull(blogPosts.published_at))
+    .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
     .orderBy(desc(blogPosts.published_at))
     .catch(() => [])
 
@@ -148,6 +149,13 @@ export default async function BlogListPage() {
                   <h2 className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2">
                     {post.title_ko}
                   </h2>
+
+                  {/* 부제목 */}
+                  {post.subtitle && (
+                    <p className="text-xs text-gray-600 leading-snug line-clamp-1">
+                      {post.subtitle}
+                    </p>
+                  )}
 
                   {/* 요약 */}
                   {post.summary && (

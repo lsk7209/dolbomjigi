@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { robots, supportPrograms, regions, blogPosts } from '@/db/schema'
-import { eq, desc, isNotNull } from 'drizzle-orm'
+import { eq, desc, isNotNull, and, lte } from 'drizzle-orm'
 
 export const metadata: Metadata = {
   title: '돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드',
@@ -102,7 +102,7 @@ export default async function HomePage() {
       published_at: blogPosts.published_at,
     })
     .from(blogPosts)
-    .where(isNotNull(blogPosts.published_at))
+    .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
     .orderBy(desc(blogPosts.published_at))
     .limit(3)
     .catch(() => [])

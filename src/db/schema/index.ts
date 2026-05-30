@@ -338,6 +338,7 @@ export const blogPosts = sqliteTable('blog_posts', {
   id: integer('id').primaryKey({ autoIncrement: true }),
   slug: text('slug').notNull().unique(),
   title_ko: text('title_ko').notNull(),
+  subtitle: text('subtitle'),            // 부제목: 메인+연관 키워드
   summary: text('summary'),              // 250자 이내, AnswerBlock용
   cover_image_url: text('cover_image_url'),
   body_md: text('body_md').notNull(),

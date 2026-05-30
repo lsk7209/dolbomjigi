@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { db } from '@/db/client'
 import { blogPosts, authors } from '@/db/schema'
-import { eq, isNotNull, desc, ne } from 'drizzle-orm'
+import { eq, isNotNull, desc, and, lte } from 'drizzle-orm'
 import AnswerBlock from '@/components/common/AnswerBlock'
 import AuthorBlock from '@/components/common/AuthorBlock'
 import JsonLdScript from '@/components/seo/JsonLdScript'
@@ -13,6 +13,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/config'
 import Link from 'next/link'
 
 export const revalidate = 3600
+export const dynamicParams = true
 
 // ─────────────────────────────────────────
 // 정적 경로
@@ -39,7 +40,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const post = await db
-    .select({ title_ko: blogPosts.title_ko, summary: blogPosts.summary, cover_image_url: blogPosts.cover_image_url })
+    .select({ title_ko: blogPosts.title_ko, subtitle: blogPosts.subtitle, summary: blogPosts.summary, cover_image_url: blogPosts.cover_image_url })
     .from(blogPosts)
     .where(eq(blogPosts.slug, slug))
     .get()
@@ -47,7 +48,7 @@ export async function generateMetadata({
   if (!post) return { title: '글을 찾을 수 없습니다' }
 
   const title = `${post.title_ko} | ${SITE_NAME}`
-  const description = post.summary ?? post.title_ko
+  const description = post.summary ?? post.subtitle ?? post.title_ko
 
   return {
     title,
@@ -104,7 +105,9 @@ export default async function BlogPostPage({
     .where(eq(blogPosts.slug, slug))
     .get()
 
+  // 미발행(null) 또는 예약 공개 전(미래)이면 404
   if (!post || !post.published_at) notFound()
+  if (new Date(post.published_at).getTime() > Date.now()) notFound()
 
   const author = post.author_id
     ? await db.select().from(authors).where(eq(authors.id, post.author_id)).get()
@@ -121,7 +124,7 @@ export default async function BlogPostPage({
       published_at: blogPosts.published_at,
     })
     .from(blogPosts)
-    .where(isNotNull(blogPosts.published_at))
+    .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
     .orderBy(desc(blogPosts.published_at))
     .limit(6)
     .catch(() => [])
@@ -177,9 +180,12 @@ export default async function BlogPostPage({
           >
             {CATEGORY_LABEL[post.category] ?? post.category}
           </span>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight mb-3">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight mb-2">
             {post.title_ko}
           </h1>
+          {post.subtitle && (
+            <p className="text-base text-gray-500 leading-snug mb-3">{post.subtitle}</p>
+          )}
           <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400">
             {author && <span>by {author.name}</span>}
             {post.published_at && <span>{formatDate(post.published_at)}</span>}
