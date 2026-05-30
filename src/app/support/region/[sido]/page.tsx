@@ -11,6 +11,7 @@ import {
   buildGovernmentServiceJsonLd,
   buildBreadcrumbJsonLd,
 } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -53,11 +54,11 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://dolbomjigi.com/support/region/${sido}`,
+      url: `${SITE_URL}/support/region/${sido}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://dolbomjigi.com/support/region/${sido}`,
+      canonical: `${SITE_URL}/support/region/${sido}`,
     },
   }
 }
@@ -163,15 +164,15 @@ export default async function SidoSupportPage({
     buildGovernmentServiceJsonLd({
       name: `${region.sido_name} 돌봄로봇 보급사업`,
       description: `${region.sido_name} 지역 어르신 돌봄로봇 지원사업 안내`,
-      url: `https://dolbomjigi.com/support/region/${sido}`,
+      url: `${SITE_URL}/support/region/${sido}`,
       areaServed: region.sido_name,
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '지원사업', url: 'https://dolbomjigi.com/support' },
+      { name: '홈', url: SITE_URL },
+      { name: '지원사업', url: `${SITE_URL}/support` },
       {
         name: region.sido_name,
-        url: `https://dolbomjigi.com/support/region/${sido}`,
+        url: `${SITE_URL}/support/region/${sido}`,
       },
     ]),
   ]

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { db } from '@/db/client'
 import { robots } from '@/db/schema'
 import JsonLdScript from '@/components/seo/JsonLdScript'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 카테고리 설정
@@ -163,7 +164,7 @@ export default async function RankingCategoryPage({
       '@type': 'ListItem',
       position: index + 1,
       name: robot.name_ko,
-      url: `https://dolbomjigi.com/robot/${robot.slug}/`,
+      url: `${SITE_URL}/robot/${robot.slug}/`,
     })),
   }
 

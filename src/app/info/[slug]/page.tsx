@@ -8,6 +8,7 @@ import AuthorBlock from '@/components/common/AuthorBlock'
 import Sources from '@/components/common/Sources'
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 export async function generateStaticParams() {
   try {
@@ -43,7 +44,7 @@ export async function generateMetadata({
       type: 'article',
     },
     alternates: {
-      canonical: `https://dolbomjigi.com/info/${slug}`,
+      canonical: `${SITE_URL}/info/${slug}`,
     },
   }
 }
@@ -103,12 +104,12 @@ export default async function InfoPage({
       datePublished: publishedAt,
       dateModified: today,
       authorName: author?.name ?? '돌봄지기 편집팀',
-      url: `https://dolbomjigi.com/info/${slug}`,
+      url: `${SITE_URL}/info/${slug}`,
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '정보', url: 'https://dolbomjigi.com/info' },
-      { name: article.title_ko, url: `https://dolbomjigi.com/info/${slug}` },
+      { name: '홈', url: SITE_URL },
+      { name: '정보', url: `${SITE_URL}/info` },
+      { name: article.title_ko, url: `${SITE_URL}/info/${slug}` },
     ]),
   ]
 
@@ -166,7 +167,7 @@ export default async function InfoPage({
         <Sources
           sources={[
             { type: 'government', label: '보건복지부', url: 'https://www.mohw.go.kr' },
-            { type: 'official', label: '돌봄지기 편집팀', url: 'https://dolbomjigi.com' },
+            { type: 'official', label: '돌봄지기 편집팀', url: SITE_URL },
           ]}
         />
 

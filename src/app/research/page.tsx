@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { researchStudies } from '@/db/schema'
 import { desc } from 'drizzle-orm'
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '돌봄로봇 연구 논문 목록 | 돌봄지기',
     description: '국내외 돌봄로봇 학술 연구 논문 모음',
-    url: 'https://dolbomjigi.com/research',
+    url: `${SITE_URL}/research`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/research' },
+  alternates: { canonical: `${SITE_URL}/research` },
 }
 
 export default async function ResearchListPage() {

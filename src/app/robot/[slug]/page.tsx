@@ -25,6 +25,7 @@ import {
   buildFAQJsonLd,
   buildBreadcrumbJsonLd,
 } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 import type { Robot } from '@/types'
 
@@ -207,9 +208,9 @@ export default async function RobotDetailPage({
   const productJsonLd = buildProductJsonLd(robotForJsonLd)
   const faqJsonLd = buildFAQJsonLd(faqs.map((f) => ({ q: f.question, a: f.answer })))
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-    { name: '홈', url: 'https://dolbomjigi.com/' },
-    { name: '돌봄 로봇', url: 'https://dolbomjigi.com/robot/' },
-    { name: robot.name_ko, url: `https://dolbomjigi.com/robot/${robot.slug}/` },
+    { name: '홈', url: `${SITE_URL}/` },
+    { name: '돌봄 로봇', url: `${SITE_URL}/robot/` },
+    { name: robot.name_ko, url: `${SITE_URL}/robot/${robot.slug}/` },
   ])
 
   const today = new Date().toISOString().split('T')[0]

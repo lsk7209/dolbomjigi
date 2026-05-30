@@ -11,6 +11,7 @@ import {
   buildGovernmentServiceJsonLd,
   buildBreadcrumbJsonLd,
 } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -52,7 +53,7 @@ export async function generateMetadata({
     description,
     openGraph: { title, description, type: 'website' },
     alternates: {
-      canonical: `https://dolbomjigi.com/support/national/${slug}`,
+      canonical: `${SITE_URL}/support/national/${slug}`,
     },
   }
 }
@@ -131,16 +132,16 @@ export default async function NationalSupportPage({
     buildGovernmentServiceJsonLd({
       name: program.name_ko,
       description: `국가 단위 돌봄로봇 지원사업: ${program.name_ko}`,
-      url: `https://dolbomjigi.com/support/national/${slug}`,
+      url: `${SITE_URL}/support/national/${slug}`,
       areaServed: '대한민국',
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '지원사업', url: 'https://dolbomjigi.com/support' },
-      { name: '국가사업', url: 'https://dolbomjigi.com/support/national' },
+      { name: '홈', url: SITE_URL },
+      { name: '지원사업', url: `${SITE_URL}/support` },
+      { name: '국가사업', url: `${SITE_URL}/support/national` },
       {
         name: program.name_ko,
-        url: `https://dolbomjigi.com/support/national/${slug}`,
+        url: `${SITE_URL}/support/national/${slug}`,
       },
     ]),
   ]

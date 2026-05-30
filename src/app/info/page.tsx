@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { infoArticles } from '@/db/schema'
 import { desc } from 'drizzle-orm'
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '돌봄 로봇 정보 — 돌봄지기',
     description: '돌봄로봇 기술·통계·정책 정보 자료 모음.',
-    url: 'https://dolbomjigi.com/info',
+    url: `${SITE_URL}/info`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/info' },
+  alternates: { canonical: `${SITE_URL}/info` },
 }
 
 const TOPIC_LABEL: Record<string, string> = {

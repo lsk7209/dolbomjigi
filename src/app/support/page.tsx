@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { supportPrograms, regions } from '@/db/schema'
 import { isNull, and, eq } from 'drizzle-orm'
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '돌봄 로봇 지원사업 — 돌봄지기',
     description: '국가·지역별 돌봄로봇 지원사업 신청 안내. 무상 보급·렌탈·보조금 포함.',
-    url: 'https://dolbomjigi.com/support',
+    url: `${SITE_URL}/support`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/support' },
+  alternates: { canonical: `${SITE_URL}/support` },
 }
 
 const PROGRAM_TYPE_LABEL: Record<string, string> = {

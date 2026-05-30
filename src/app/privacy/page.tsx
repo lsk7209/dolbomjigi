@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
   title: '개인정보처리방침 | 돌봄지기',
   description: '돌봄지기 개인정보처리방침 — 수집 항목, 이용 목적, 보유 기간, 제3자 제공 여부 등을 안내합니다.',
   alternates: {
-    canonical: 'https://dolbomjigi.com/privacy',
+    canonical: `${SITE_URL}/privacy`,
   },
 }
 

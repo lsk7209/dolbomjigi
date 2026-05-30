@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
   title: '돌봄지기 소개 | 어르신 돌봄로봇 정보 플랫폼',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://dolbomjigi.com/about',
+    canonical: `${SITE_URL}/about`,
   },
 }
 

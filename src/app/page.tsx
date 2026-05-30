@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
-import { robots, supportPrograms, regions } from '@/db/schema'
-import { eq, desc, and } from 'drizzle-orm'
+import { robots, supportPrograms, regions, blogPosts } from '@/db/schema'
+import { eq, desc, isNotNull } from 'drizzle-orm'
 
 export const metadata: Metadata = {
   title: '돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드',
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
     title: '돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드',
     description:
       '어르신 돌봄로봇 제품 정보, 지자체 지원사업 신청 안내, 기관 도입 가이드를 한곳에서 확인하세요.',
-    url: 'https://dolbomjigi.com',
+    url: SITE_URL,
     type: 'website',
     siteName: '돌봄지기',
   },
   alternates: {
-    canonical: 'https://dolbomjigi.com',
+    canonical: SITE_URL,
   },
 }
 
@@ -88,6 +89,23 @@ export default async function HomePage() {
       region_id: number | null
       period_end: Date | null
     }>)
+
+  // 최신 블로그 포스트 3개
+  const latestBlogPosts = await db
+    .select({
+      id: blogPosts.id,
+      slug: blogPosts.slug,
+      title_ko: blogPosts.title_ko,
+      summary: blogPosts.summary,
+      category: blogPosts.category,
+      reading_time_minutes: blogPosts.reading_time_minutes,
+      published_at: blogPosts.published_at,
+    })
+    .from(blogPosts)
+    .where(isNotNull(blogPosts.published_at))
+    .orderBy(desc(blogPosts.published_at))
+    .limit(3)
+    .catch(() => [])
 
   // 지역 정보 (프로그램용)
   const regionIds = latestPrograms
@@ -287,6 +305,43 @@ export default async function HomePage() {
             </ul>
           )}
         </section>
+
+        {/* ── 최신 블로그 ── */}
+        {latestBlogPosts.length > 0 && (
+          <section aria-label="최신 블로그">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-gray-900">최신 블로그</h2>
+              <a href="/blog" className="text-sm text-blue-600 hover:underline">
+                전체 보기 &rarr;
+              </a>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {latestBlogPosts.map((post) => (
+                <a
+                  key={post.id}
+                  href={`/blog/${post.slug}`}
+                  className="flex flex-col gap-2 border border-gray-200 rounded-xl bg-white hover:shadow-md hover:border-indigo-200 transition-all px-4 py-4"
+                >
+                  <span className="inline-flex self-start items-center rounded-full px-2 py-0.5 text-xs font-medium bg-indigo-100 text-indigo-800">
+                    {post.category === 'product_review' ? '제품 리뷰' :
+                     post.category === 'support_program' ? '지원사업' :
+                     post.category === 'guide' ? '가이드' :
+                     post.category === 'news' ? '뉴스' : '돌봄 정보'}
+                  </span>
+                  <p className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2">
+                    {post.title_ko}
+                  </p>
+                  {post.summary && (
+                    <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">
+                      {post.summary}
+                    </p>
+                  )}
+                  <span className="text-xs text-indigo-600 mt-auto">읽기 &rarr;</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── B2B 기관 도입 배너 ── */}
         <section

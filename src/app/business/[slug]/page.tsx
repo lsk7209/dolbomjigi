@@ -7,6 +7,7 @@ import AnswerBlock from '@/components/common/AnswerBlock'
 import Sources from '@/components/common/Sources'
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildHowToJsonLd, buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 기관 유형 정의 (정적 데이터)
@@ -104,7 +105,7 @@ export async function generateMetadata({
     description,
     openGraph: { title, description, type: 'article' },
     alternates: {
-      canonical: `https://dolbomjigi.com/business/${slug}`,
+      canonical: `${SITE_URL}/business/${slug}`,
     },
   }
 }
@@ -189,14 +190,14 @@ export default async function BusinessPage({
       datePublished: today,
       dateModified: today,
       authorName: '돌봄지기 편집팀',
-      url: `https://dolbomjigi.com/business/${slug}`,
+      url: `${SITE_URL}/business/${slug}`,
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: 'B2B 도입 가이드', url: 'https://dolbomjigi.com/business' },
+      { name: '홈', url: SITE_URL },
+      { name: 'B2B 도입 가이드', url: `${SITE_URL}/business` },
       {
         name: bizType.name,
-        url: `https://dolbomjigi.com/business/${slug}`,
+        url: `${SITE_URL}/business/${slug}`,
       },
     ]),
   ]
@@ -393,7 +394,7 @@ export default async function BusinessPage({
             {
               type: 'official',
               label: '돌봄지기 편집팀 분석',
-              url: 'https://dolbomjigi.com',
+              url: SITE_URL,
             },
           ]}
         />

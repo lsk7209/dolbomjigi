@@ -6,6 +6,7 @@ import { eq, or } from 'drizzle-orm'
 import Sources from '@/components/common/Sources'
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -50,7 +51,7 @@ export async function generateMetadata({
       type: 'profile',
     },
     alternates: {
-      canonical: `https://dolbomjigi.com/authors/${slug}`,
+      canonical: `${SITE_URL}/authors/${slug}`,
     },
   }
 }
@@ -140,13 +141,13 @@ export default async function AuthorProfilePage({
       datePublished: today,
       dateModified: today,
       authorName: author.name,
-      url: `https://dolbomjigi.com/authors/${slug}`,
+      url: `${SITE_URL}/authors/${slug}`,
       imageUrl: author.avatar_url ?? undefined,
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '저자', url: 'https://dolbomjigi.com/authors' },
-      { name: author.name, url: `https://dolbomjigi.com/authors/${slug}` },
+      { name: '홈', url: SITE_URL },
+      { name: '저자', url: `${SITE_URL}/authors` },
+      { name: author.name, url: `${SITE_URL}/authors/${slug}` },
     ]),
   ]
 
@@ -294,7 +295,7 @@ export default async function AuthorProfilePage({
             {
               type: 'official',
               label: '돌봄지기 편집팀',
-              url: 'https://dolbomjigi.com',
+              url: SITE_URL,
             },
           ]}
         />

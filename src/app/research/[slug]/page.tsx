@@ -7,6 +7,7 @@ import AnswerBlock from '@/components/common/AnswerBlock'
 import Sources from '@/components/common/Sources'
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -51,7 +52,7 @@ export async function generateMetadata({
       type: 'article',
     },
     alternates: {
-      canonical: `https://dolbomjigi.com/research/${slug}`,
+      canonical: `${SITE_URL}/research/${slug}`,
     },
   }
 }
@@ -125,9 +126,9 @@ export default async function ResearchPage({
   const jsonLdData = [
     buildScholarlyArticleJsonLd(study),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '연구', url: 'https://dolbomjigi.com/research' },
-      { name: study.title, url: `https://dolbomjigi.com/research/${slug}` },
+      { name: '홈', url: SITE_URL },
+      { name: '연구', url: `${SITE_URL}/research` },
+      { name: study.title, url: `${SITE_URL}/research/${slug}` },
     ]),
   ]
 

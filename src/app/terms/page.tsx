@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
   title: '이용약관 | 돌봄지기',
   description: '돌봄지기 이용약관 — 서비스 이용 목적, 금지 행위, 면책 조항 등을 안내합니다.',
   alternates: {
-    canonical: 'https://dolbomjigi.com/terms',
+    canonical: `${SITE_URL}/terms`,
   },
 }
 

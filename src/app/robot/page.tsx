@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { robots } from '@/db/schema'
 import { desc } from 'drizzle-orm'
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '돌봄 로봇 제품 목록 — 돌봄지기',
     description: '카테고리별 돌봄로봇 전체 제품 목록. 가격·제조사·기능 한눈에 비교.',
-    url: 'https://dolbomjigi.com/robot',
+    url: `${SITE_URL}/robot`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/robot' },
+  alternates: { canonical: `${SITE_URL}/robot` },
 }
 
 const CATEGORY_LABEL: Record<string, string> = {

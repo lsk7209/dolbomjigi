@@ -13,6 +13,7 @@ import AuthorBlock from '@/components/common/AuthorBlock'
 
 import { buildArticleJsonLd, buildFAQJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { markdownToHtml } from '@/lib/markdown'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 타입
@@ -241,15 +242,15 @@ export default async function GuideDetailPage({
     datePublished: publishedAt,
     dateModified: today,
     authorName: authorData?.name ?? '돌봄지기 편집팀',
-    url: `https://dolbomjigi.com/guide/${guide.slug}/`,
+    url: `${SITE_URL}/guide/${guide.slug}/`,
   })
 
   const faqJsonLd = buildFAQJsonLd(faqs.map((f) => ({ q: f.question, a: f.answer })))
 
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-    { name: '홈', url: 'https://dolbomjigi.com/' },
-    { name: '가이드', url: 'https://dolbomjigi.com/guide/' },
-    { name: guide.title_ko, url: `https://dolbomjigi.com/guide/${guide.slug}/` },
+    { name: '홈', url: `${SITE_URL}/` },
+    { name: '가이드', url: `${SITE_URL}/guide/` },
+    { name: guide.title_ko, url: `${SITE_URL}/guide/${guide.slug}/` },
   ])
 
   const nextUpdate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)

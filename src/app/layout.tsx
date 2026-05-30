@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SITE_URL, SITE_NAME } from '@/lib/config';
@@ -134,6 +136,10 @@ export default function RootLayout({
 
         {/* 푸터 */}
         <Footer />
+
+        {/* Vercel Analytics & Speed Insights */}
+        <Analytics />
+        <SpeedInsights />
 
         {/* AdSense 자동 광고 */}
         {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID && (

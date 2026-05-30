@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { comparisons } from '@/db/schema'
 import { desc } from 'drizzle-orm'
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '돌봄 로봇 비교 — 돌봄지기',
     description: '돌봄로봇 제품별 기능·가격·추천 대상 상세 비교.',
-    url: 'https://dolbomjigi.com/compare',
+    url: `${SITE_URL}/compare`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/compare' },
+  alternates: { canonical: `${SITE_URL}/compare` },
 }
 
 export default async function CompareListPage() {

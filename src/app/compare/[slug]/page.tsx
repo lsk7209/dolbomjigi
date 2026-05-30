@@ -4,6 +4,7 @@ import { eq, or } from 'drizzle-orm'
 
 import { db } from '@/db/client'
 import { robots, comparisons, authors } from '@/db/schema'
+import { SITE_URL } from '@/lib/config'
 
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import AnswerBlock from '@/components/common/AnswerBlock'
@@ -258,13 +259,13 @@ export default async function CompareDetailPage({
         '@type': 'ListItem',
         position: 1,
         name: robotA.name_ko,
-        url: `https://dolbomjigi.com/robot/${robotA.slug}/`,
+        url: `${SITE_URL}/robot/${robotA.slug}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: robotB.name_ko,
-        url: `https://dolbomjigi.com/robot/${robotB.slug}/`,
+        url: `${SITE_URL}/robot/${robotB.slug}/`,
       },
     ],
   }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SITE_URL } from '@/lib/config';
 
 // ─────────────────────────────────────────
 // 빠른 링크
@@ -106,7 +107,7 @@ export default function Footer() {
         {/* 하단 카피라이트 */}
         <div className="mt-6 flex flex-col items-center justify-between gap-2 border-t border-gray-200 pt-6 sm:flex-row">
           <p className="text-xs text-gray-400">
-            &copy; {currentYear} 돌봄지기(dolbomjigi.com). All rights reserved.
+            &copy; {currentYear} 돌봄지기({SITE_URL.replace('https://', '')}). All rights reserved.
           </p>
           <p className="text-xs text-gray-400">
             공공 데이터 출처:{' '}

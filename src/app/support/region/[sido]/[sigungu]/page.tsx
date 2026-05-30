@@ -11,6 +11,7 @@ import {
   buildGovernmentServiceJsonLd,
   buildBreadcrumbJsonLd,
 } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -83,7 +84,7 @@ export async function generateMetadata({
       type: 'website',
     },
     alternates: {
-      canonical: `https://dolbomjigi.com/support/region/${(await params).sido}/${sigungu}`,
+      canonical: `${SITE_URL}/support/region/${(await params).sido}/${sigungu}`,
     },
   }
 }
@@ -203,19 +204,19 @@ export default async function SigunguSupportPage({
     buildGovernmentServiceJsonLd({
       name: program.name_ko,
       description: `${region.sigungu_name ?? region.sido_name} 돌봄로봇 지원사업`,
-      url: `https://dolbomjigi.com/support/region/${sido}/${sigungu}`,
+      url: `${SITE_URL}/support/region/${sido}/${sigungu}`,
       areaServed: region.sigungu_name ?? region.sido_name,
     }),
     buildBreadcrumbJsonLd([
-      { name: '홈', url: 'https://dolbomjigi.com' },
-      { name: '지원사업', url: 'https://dolbomjigi.com/support' },
+      { name: '홈', url: SITE_URL },
+      { name: '지원사업', url: `${SITE_URL}/support` },
       {
         name: region.sido_name,
-        url: `https://dolbomjigi.com/support/region/${sido}`,
+        url: `${SITE_URL}/support/region/${sido}`,
       },
       {
         name: region.sigungu_name ?? '',
-        url: `https://dolbomjigi.com/support/region/${sido}/${sigungu}`,
+        url: `${SITE_URL}/support/region/${sido}/${sigungu}`,
       },
     ]),
   ]

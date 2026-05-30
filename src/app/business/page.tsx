@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
   title: '기관·시설 돌봄로봇 도입 가이드 | 돌봄지기',
@@ -8,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '기관·시설 돌봄로봇 도입 가이드 | 돌봄지기',
     description: '요양원·복지관 등 기관용 돌봄로봇 도입 가이드',
-    url: 'https://dolbomjigi.com/business',
+    url: `${SITE_URL}/business`,
     type: 'website',
     siteName: '돌봄지기',
   },
-  alternates: { canonical: 'https://dolbomjigi.com/business' },
+  alternates: { canonical: `${SITE_URL}/business` },
 }
 
 const BUSINESS_TYPES = [
