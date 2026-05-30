@@ -5,68 +5,18 @@
  * 인증:   Authorization: Bearer {CRON_SECRET}
  *
  * 주간 작업:
- *  - 지자체 복지 포털 크롤링 큐 등록 (17개 광역시도)
- *  - KOSIS 고령자 통계 수집
+ *  - bizinfo 전국 검색 (지역 필터 없이 10페이지) — 일일 지역별 검색 보완
+ *  - 일일 ETL에서 지역 태그 없이 등록된 전국 공고를 포착
  *
  * GET /api/cron/etl-weekly
  */
 
 import { NextRequest, NextResponse } from 'next/server';
+import { fetchBizinfo, upsertBizinfoItems, TARGET_KEYWORDS } from '@/etl/sources/bizinfo';
 import { notifyBatchResult } from '@/etl/review-queue';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 30;
-
-/** 주간 크롤링 대상 지자체 복지 포털 */
-const LOCAL_GOV_TARGETS = [
-  { sido: '서울특별시', portalUrl: 'https://welfare.seoul.go.kr' },
-  { sido: '부산광역시', portalUrl: 'https://www.busan.go.kr/welfare' },
-  { sido: '대구광역시', portalUrl: 'https://www.daegu.go.kr/welfare' },
-  { sido: '인천광역시', portalUrl: 'https://www.incheon.go.kr/welfare' },
-  { sido: '광주광역시', portalUrl: 'https://www.gwangju.go.kr/welfare' },
-  { sido: '대전광역시', portalUrl: 'https://www.daejeon.go.kr/welfare' },
-  { sido: '울산광역시', portalUrl: 'https://www.ulsan.go.kr/welfare' },
-  { sido: '세종특별자치시', portalUrl: 'https://www.sejong.go.kr/welfare' },
-  { sido: '경기도', portalUrl: 'https://www.gg.go.kr/welfare' },
-  { sido: '강원특별자치도', portalUrl: 'https://www.gwd.go.kr/welfare' },
-  { sido: '충청북도', portalUrl: 'https://www.chungbuk.go.kr/welfare' },
-  { sido: '충청남도', portalUrl: 'https://www.chungnam.go.kr/welfare' },
-  { sido: '전라북도', portalUrl: 'https://www.jeonbuk.go.kr/welfare' },
-  { sido: '전라남도', portalUrl: 'https://www.jeonnam.go.kr/welfare' },
-  { sido: '경상북도', portalUrl: 'https://www.gb.go.kr/welfare' },
-  { sido: '경상남도', portalUrl: 'https://www.gyeongnam.go.kr/welfare' },
-  { sido: '제주특별자치도', portalUrl: 'https://www.jeju.go.kr/welfare' },
-] as const;
-
-export interface CrawlQueueEntry {
-  sido: string;
-  portalUrl: string;
-  enqueuedAt: string;
-  status: 'queued';
-}
-
-/**
- * 지자체 크롤링 큐에 항목을 등록한다.
- * 실제 크롤링은 별도 워커(Worker Queue)에서 비동기로 처리된다.
- * 현재는 큐 등록 로그만 기록하고 향후 DB/Queue 서비스로 확장한다.
- */
-async function enqueueLocalGovCrawl(
-  target: (typeof LOCAL_GOV_TARGETS)[number]
-): Promise<CrawlQueueEntry> {
-  // TODO: 실제 큐(Upstash QStash, Vercel KV 등) 연동 시 여기서 등록
-  const entry: CrawlQueueEntry = {
-    sido: target.sido,
-    portalUrl: target.portalUrl,
-    enqueuedAt: new Date().toISOString(),
-    status: 'queued',
-  };
-
-  console.log(
-    `[WeeklyETL] 크롤링 큐 등록: ${entry.sido} → ${entry.portalUrl} (${entry.enqueuedAt})`
-  );
-
-  return entry;
-}
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   // Authorization: Bearer {CRON_SECRET} 검증
@@ -81,45 +31,52 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const startedAt = new Date().toISOString();
   const log: string[] = [];
-  const queued: CrawlQueueEntry[] = [];
-  const errors: string[] = [];
+  const result = { total: 0, matched: 0, enqueued: 0, errors: [] as string[] };
 
-  log.push(`주간 ETL 시작: 지자체 ${LOCAL_GOV_TARGETS.length}개 크롤링 큐 등록`);
+  const apiKey = process.env.BIZINFO_API_KEY;
 
-  // ── 지자체 크롤링 큐 등록 ──────────────────────────────────────────────
-  for (const target of LOCAL_GOV_TARGETS) {
+  if (!apiKey) {
+    result.errors.push('BIZINFO_API_KEY 미설정');
+    log.push('BIZINFO_API_KEY 미설정: 수집 건너뜀');
+  } else {
+    log.push(`주간 ETL 시작: 전국 검색 10페이지, 키워드 ${TARGET_KEYWORDS.length}개`);
+
+    // 지역 필터 없이 전국 검색 — 일일 ETL(지역별 5페이지)에서 누락된 항목 보완
+    // maxPages=10: 페이지당 100건 × 10 = 최대 1,000건
     try {
-      const entry = await enqueueLocalGovCrawl(target);
-      queued.push(entry);
-      log.push(`  큐 등록 완료: ${target.sido}`);
+      const items = await fetchBizinfo(apiKey, undefined, 10);
+      result.total = items.length;
+      result.matched = items.length;
+
+      if (items.length > 0) {
+        await upsertBizinfoItems(items);
+        result.enqueued = items.length;
+        log.push(`전국 검색 완료: ${items.length}건 적재`);
+      } else {
+        log.push('전국 검색 완료: 매칭된 항목 없음');
+      }
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      errors.push(`[local_gov/${target.sido}] ${msg}`);
-      log.push(`  큐 등록 오류: ${target.sido} — ${msg}`);
+      result.errors.push(`[bizinfo/national] ${msg}`);
+      log.push(`전국 검색 오류: ${msg}`);
     }
   }
 
-  log.push(`주간 ETL 완료: 등록 ${queued.length}건, 오류 ${errors.length}건`);
+  log.push(`주간 ETL 완료: 적재 ${result.enqueued}건, 오류 ${result.errors.length}건`);
 
-  // ── Slack 알림 발송 ───────────────────────────────────────────────────
   await notifyBatchResult({
-    source: '지자체 복지포털 (weekly)',
-    total: LOCAL_GOV_TARGETS.length,
-    matched: queued.length,
-    enqueued: queued.length,
-    errors,
+    source: 'bizinfo.go.kr 전국 (weekly)',
+    ...result,
   });
 
-  const ok = errors.length === 0;
+  const ok = result.errors.length === 0;
 
   return NextResponse.json(
     {
       ok,
       startedAt,
       finishedAt: new Date().toISOString(),
-      queued: queued.length,
-      targets: LOCAL_GOV_TARGETS.length,
-      errors,
+      ...result,
       log,
     },
     { status: ok ? 200 : 207 }

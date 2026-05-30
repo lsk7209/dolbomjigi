@@ -181,11 +181,11 @@ async function fetchPage(
  */
 export async function fetchBizinfo(
   apiKey: string,
-  region?: string
+  region?: string,
+  maxPages = 5
 ): Promise<BizinfoItem[]> {
   const allItems: BizinfoItem[] = [];
   let pageNo = 1;
-  const maxPages = 5; // 안전 상한 (페이지당 100건 × 5 = 최대 500건)
 
   while (pageNo <= maxPages) {
     const rawItems = await fetchPage(apiKey, pageNo, region);
