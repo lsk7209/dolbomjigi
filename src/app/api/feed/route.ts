@@ -9,11 +9,11 @@ import { NextResponse } from 'next/server';
 import { db } from '@/db/client';
 import { robots, supportPrograms } from '@/db/schema';
 import { desc, isNotNull } from 'drizzle-orm';
+import { SITE_URL } from '@/lib/config';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600; // 1시간 캐시
 
-const SITE_URL = 'https://dolbomjigi.com';
 const SITE_TITLE = '돌봄지기 - 돌봄로봇 종합 정보';
 const SITE_DESCRIPTION =
   '노인·장애인 돌봄로봇, 재활로봇, 지원사업 정보를 한눈에. 효돌, 다솜, 보미 등 국내 돌봄로봇 비교 가이드.';
@@ -83,7 +83,7 @@ export async function GET(): Promise<NextResponse> {
 
   const programItems = latestPrograms
     .map((prog) => {
-      const url = `${SITE_URL}/support/${prog.slug}`;
+      const url = `${SITE_URL}/support/national/${prog.slug}`;
       const title = escapeXml(prog.name_ko);
       const desc = escapeXml(
         `${prog.name_ko} 지원사업 안내. 신청 자격, 방법, 일정을 확인하세요.`
