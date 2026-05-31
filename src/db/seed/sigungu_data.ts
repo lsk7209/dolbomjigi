@@ -227,7 +227,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'seoul-jongno-gu',
     slug: 'jongno-2024-senior-robot',
-    name_ko: '종로구 2024년 어르신 돌봄로봇 보급사업',
+    name_ko: '종로구 어르신 돌봄로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -315,7 +315,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'gyeonggi-suwon',
     slug: 'suwon-2024-care-robot',
-    name_ko: '수원시 2024년 어르신 돌봄로봇 보급사업',
+    name_ko: '수원시 어르신 돌봄로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -351,7 +351,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'incheon-namdong-gu',
     slug: 'namdong-2024-care-robot',
-    name_ko: '남동구 2024 어르신 AI 돌봄로봇 무상 배포',
+    name_ko: '남동구 어르신 AI 돌봄로봇 무상 배포',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상 독거 어르신' },
@@ -368,7 +368,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'daegu-dalseo-gu',
     slug: 'dalseo-2024-senior-robot',
-    name_ko: '달서구 2024년 독거노인 돌봄로봇 보급',
+    name_ko: '달서구 독거노인 돌봄로봇 보급',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -386,7 +386,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'gwangju-buk-gu',
     slug: 'bukgu-gwangju-2024-care-robot',
-    name_ko: '광주 북구 2024 어르신 돌봄로봇 배포사업',
+    name_ko: '광주 북구 어르신 돌봄로봇 배포사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -406,7 +406,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'seoul-nowon-gu',
     slug: 'nowon-2024-care-robot',
-    name_ko: '노원구 2024 독거어르신 AI 돌봄로봇 지원',
+    name_ko: '노원구 독거어르신 AI 돌봄로봇 지원',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -441,7 +441,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'seoul-gangseo-gu',
     slug: 'gangseo-2024-care-robot',
-    name_ko: '강서구 2024 어르신 돌봄로봇 배포사업',
+    name_ko: '강서구 어르신 돌봄로봇 배포사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -496,7 +496,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'gyeonggi-yongin',
     slug: 'yongin-2024-senior-robot',
-    name_ko: '용인시 2024 독거어르신 돌봄로봇 지원사업',
+    name_ko: '용인시 독거어르신 돌봄로봇 지원사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -568,7 +568,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'daejeon-yuseong-gu',
     slug: 'yuseong-2024-robot-support',
-    name_ko: '유성구 2024 AI 어르신 돌봄로봇 보급',
+    name_ko: '유성구 AI 어르신 돌봄로봇 보급',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상 독거 어르신' },
@@ -587,7 +587,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'daegu-suseong-gu',
     slug: 'suseong-2024-care-robot',
-    name_ko: '수성구 2024 독거노인 AI 돌봄로봇 보급',
+    name_ko: '수성구 독거노인 AI 돌봄로봇 보급',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -626,7 +626,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'gyeongnam-changwon',
     slug: 'changwon-2024-care-robot',
-    name_ko: '창원시 2024 어르신 AI 돌봄로봇 보급사업',
+    name_ko: '창원시 어르신 AI 돌봄로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -666,7 +666,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'jeonbuk-jeonju',
     slug: 'jeonju-2024-care-robot',
-    name_ko: '전주시 2024 어르신 AI 돌봄로봇 무상 배포',
+    name_ko: '전주시 어르신 AI 돌봄로봇 무상 배포',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -705,7 +705,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'chungbuk-cheongju',
     slug: 'cheongju-2024-care-robot',
-    name_ko: '청주시 2024 어르신 AI 돌봄로봇 지원',
+    name_ko: '청주시 어르신 AI 돌봄로봇 지원',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -725,7 +725,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'jeonnam-suncheon',
     slug: 'suncheon-2024-robot',
-    name_ko: '순천시 2024 어르신 돌봄로봇 보급사업',
+    name_ko: '순천시 어르신 돌봄로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상' },
@@ -745,7 +745,7 @@ export const sigunguProgramsSeedData: SigunguProgramSeed[] = [
   {
     regionSlug: 'jeju-jeju-si',
     slug: 'jeju-si-2024-care-robot',
-    name_ko: '제주시 2024 어르신 AI 돌봄로봇 배포사업',
+    name_ko: '제주시 어르신 AI 돌봄로봇 배포사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상 독거 어르신' },

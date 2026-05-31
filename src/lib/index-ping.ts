@@ -6,7 +6,8 @@
 
 import { SITE_URL } from './config'
 
-const INDEXNOW_KEY = process.env.INDEXNOW_KEY ?? ''
+const DEFAULT_INDEXNOW_KEY = '69109da07286e7121d74badfbb2dd62efad1389fe3b357e5'
+const INDEXNOW_KEY = process.env.INDEXNOW_KEY ?? DEFAULT_INDEXNOW_KEY
 const GSC_SERVICE_ACCOUNT_KEY = process.env.GSC_SERVICE_ACCOUNT_KEY ?? ''
 
 // ─────────────────────────────────────────
@@ -21,14 +22,17 @@ export async function pingIndexNow(urls: string[]): Promise<{ ok: boolean; error
   if (urls.length === 0) return { ok: true }
 
   const host = new URL(SITE_URL).hostname
+  const keyLocation = `${SITE_URL}/${INDEXNOW_KEY}.txt`
 
   try {
     const res = await fetch('https://api.indexnow.org/IndexNow', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({ key: INDEXNOW_KEY, host, urlList: urls }),
+      body: JSON.stringify({ key: INDEXNOW_KEY, keyLocation, host, urlList: urls }),
     })
-    return { ok: res.ok || res.status === 202 }
+    if (res.ok || res.status === 202) return { ok: true }
+    const body = await res.text().catch(() => '')
+    return { ok: false, error: `IndexNow ${res.status}: ${body}` }
   } catch (err) {
     return { ok: false, error: err instanceof Error ? err.message : String(err) }
   }
@@ -46,9 +50,9 @@ export async function pingGscSitemap(): Promise<{ ok: boolean; error?: string }>
   if (!GSC_SERVICE_ACCOUNT_KEY) return { ok: false, error: 'GSC_SERVICE_ACCOUNT_KEY 미설정' }
 
   try {
-    const serviceAccount = JSON.parse(GSC_SERVICE_ACCOUNT_KEY) as {
-      client_email: string
-      private_key: string
+    const serviceAccount = parseServiceAccount(GSC_SERVICE_ACCOUNT_KEY)
+    if (!serviceAccount?.client_email || !serviceAccount.private_key) {
+      return { ok: false, error: 'GSC_SERVICE_ACCOUNT_KEY 형식 오류' }
     }
 
     // JWT 생성 (Google OAuth2 서비스 계정)
@@ -67,7 +71,9 @@ export async function pingGscSitemap(): Promise<{ ok: boolean; error?: string }>
       }
     )
 
-    return { ok: res.ok || res.status === 204 }
+    if (res.ok || res.status === 204) return { ok: true }
+    const body = await res.text().catch(() => '')
+    return { ok: false, error: `GSC ${res.status}: ${body}` }
   } catch (err) {
     return { ok: false, error: err instanceof Error ? err.message : String(err) }
   }
@@ -76,6 +82,19 @@ export async function pingGscSitemap(): Promise<{ ok: boolean; error?: string }>
 // ─────────────────────────────────────────
 // JWT 헬퍼
 // ─────────────────────────────────────────
+
+function parseServiceAccount(value: string): { client_email: string; private_key: string } | null {
+  try {
+    return JSON.parse(value) as { client_email: string; private_key: string }
+  } catch {
+    try {
+      const decoded = atob(value)
+      return JSON.parse(decoded) as { client_email: string; private_key: string }
+    } catch {
+      return null
+    }
+  }
+}
 
 async function getGoogleAccessToken(sa: {
   client_email: string

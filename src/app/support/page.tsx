@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { SITE_URL } from '@/lib/config'
 import { db } from '@/db/client'
 import { supportPrograms, regions } from '@/db/schema'
@@ -127,6 +128,11 @@ export default async function SupportListPage() {
                             마감
                           </span>
                         )}
+                        {prog.status === 'unknown' && (
+                          <span className="inline-flex items-center rounded px-2 py-0.5 text-xs bg-slate-100 text-slate-600">
+                            확인 필요
+                          </span>
+                        )}
                       </div>
                       {prog.period_end && (
                         <span className="text-xs text-gray-400">
@@ -182,19 +188,19 @@ export default async function SupportListPage() {
               요양원·복지관 전용 도입 가이드와 기관 지원사업 연계 정보를 확인하세요.
             </p>
           </div>
-          <a
+          <Link
             href="/business/nursing-home"
             className="inline-flex items-center rounded-full bg-teal-600 text-white px-4 py-2 text-sm font-medium hover:bg-teal-700 shrink-0"
           >
             기관 도입 가이드
-          </a>
+          </Link>
         </div>
 
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <a href="/" className="hover:text-gray-800">홈</a>
-          <a href="/robot" className="hover:text-gray-800">제품 목록</a>
-          <a href="/guide" className="hover:text-gray-800">이용 가이드</a>
-          <a href="/info" className="hover:text-gray-800">정보</a>
+          <Link href="/" className="hover:text-gray-800">홈</Link>
+          <Link href="/robot" className="hover:text-gray-800">제품 목록</Link>
+          <Link href="/guide" className="hover:text-gray-800">이용 가이드</Link>
+          <Link href="/info" className="hover:text-gray-800">정보</Link>
         </footer>
       </div>
     </div>

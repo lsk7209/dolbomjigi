@@ -83,7 +83,7 @@ async function main() {
     .map((r) => (r.published_at ? new Date(r.published_at).getTime() : 0))
     .reduce((max, t) => Math.max(max, t), now);
   // 이미 예약된 미래글이 있으면 그 다음부터, 없으면 지금부터
-  let baseEpoch = lastFuture > now ? lastFuture + FIVE_HOURS_MS : now;
+  const baseEpoch = lastFuture > now ? lastFuture + FIVE_HOURS_MS : now;
 
   let inserted = 0;
   let updated = 0;

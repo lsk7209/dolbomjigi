@@ -5,7 +5,6 @@ import { eq } from 'drizzle-orm'
 import { db } from '@/db/client'
 import {
   robots,
-  authors,
   robotRegionAvailability,
   regions,
 } from '@/db/schema'
@@ -102,6 +101,9 @@ export async function generateMetadata({
       title,
       description,
       images: robot.hero_image_url ? [{ url: robot.hero_image_url }] : [],
+    },
+    alternates: {
+      canonical: `${SITE_URL}/robot/${slug}`,
     },
   }
 }
@@ -213,8 +215,9 @@ export default async function RobotDetailPage({
     { name: robot.name_ko, url: `${SITE_URL}/robot/${robot.slug}/` },
   ])
 
-  const today = new Date().toISOString().split('T')[0]
-  const nextUpdate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
+  const todayDate = new Date()
+  const today = todayDate.toISOString().split('T')[0]
+  const nextUpdate = new Date(todayDate.getTime() + 90 * 24 * 60 * 60 * 1000)
     .toISOString()
     .split('T')[0]
 

@@ -56,7 +56,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   // ── Step 1: bizinfo 수집 ──────────────────────────────────────────────────
   const apiKey = process.env.BIZINFO_API_KEY;
-  let bizinfoResult = { total: 0, matched: 0, enqueued: 0, errors: [] as string[] };
+  const bizinfoResult = { total: 0, matched: 0, enqueued: 0, errors: [] as string[] };
 
   if (!apiKey) {
     log.push('BIZINFO_API_KEY 미설정: bizinfo 수집 건너뜀');
@@ -90,7 +90,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 
   // ── Step 2: 보건복지부 RSS 수집 ──────────────────────────────────────────
-  let mohwResult = { total: 0, matched: 0, enqueued: 0, errors: [] as string[] };
+  const mohwResult = { total: 0, matched: 0, enqueued: 0, errors: [] as string[] };
 
   try {
     log.push('보건복지부 RSS ETL 시작');

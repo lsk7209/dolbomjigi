@@ -9,7 +9,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
   {
     slug: 'seoul-2024-care-robot-distribution',
     region_id: 1,
-    name_ko: '서울시 2024년 반려로봇 보급사업',
+    name_ko: '서울시 반려로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify({
       age: '만 65세 이상',
@@ -49,7 +49,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
   {
     slug: 'busan-2024-iot-care-robot',
     region_id: 2,
-    name_ko: '부산시 2024 ICT 융합 돌봄로봇 보급사업',
+    name_ko: '부산시 ICT 융합 돌봄로봇 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify({
       age: '만 65세 이상',
@@ -91,7 +91,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
   {
     slug: 'incheon-2024-care-robot-pilot',
     region_id: 4,
-    name_ko: '인천시 2024 어르신 돌봄로봇 시범보급사업',
+    name_ko: '인천시 어르신 돌봄로봇 시범보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify({
       age: '만 65세 이상',
@@ -196,7 +196,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
   {
     slug: 'gyeonggi-2024-care-robot-large',
     region_id: 9,
-    name_ko: '경기도 2024 어르신 돌봄로봇 대규모 보급사업',
+    name_ko: '경기도 어르신 돌봄로봇 대규모 보급사업',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify({
       age: '만 65세 이상',
@@ -422,7 +422,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
   {
     slug: 'mohw-2024-national-care-robot',
     region_id: null,
-    name_ko: '보건복지부 2024년 취약노인 AI 돌봄로봇 전국 보급사업',
+    name_ko: '보건복지부 취약노인 AI 돌봄로봇 보급사업 공고 확인',
     program_type: 'free_distribution',
     eligibility_json: JSON.stringify([
       { category: '연령', requirement: '만 65세 이상 노인' },
@@ -437,13 +437,13 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
     source_url: 'https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027',
     source_license: '공공누리 제1유형',
     source_publication_date: new Date('2024-01-15'),
-    status: 'active',
+    status: 'unknown',
     human_reviewed: true,
   },
   {
     slug: 'mohw-2024-welfare-facility-robot',
     region_id: null,
-    name_ko: '보건복지부 2024년 노인복지시설 돌봄로봇 도입 지원사업',
+    name_ko: '보건복지부 노인복지시설 돌봄로봇 도입 지원 공고 확인',
     program_type: 'subsidy',
     eligibility_json: JSON.stringify([
       { category: '대상 시설', requirement: '노인요양시설, 주·야간보호시설, 노인복지관' },
@@ -458,13 +458,13 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
     source_url: 'https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027',
     source_license: '공공누리 제1유형',
     source_publication_date: new Date('2024-02-01'),
-    status: 'active',
+    status: 'unknown',
     human_reviewed: true,
   },
   {
     slug: 'korearobot-2024-rd-care-robot',
     region_id: null,
-    name_ko: '한국로봇산업진흥원 2024년 돌봄로봇 R&D 실증 지원사업',
+    name_ko: '한국로봇산업진흥원 돌봄로봇 R&D 실증 지원 공고 확인',
     program_type: 'rd_grant',
     eligibility_json: JSON.stringify([
       { category: '대상', requirement: '돌봄로봇 개발 중소기업, 스타트업, 연구기관' },
@@ -478,7 +478,7 @@ export const supportProgramsSeedData: Omit<NewSupportProgram, 'id'>[] = [
     source_url: 'https://www.korearobot.or.kr/biz',
     source_license: '공공누리 제1유형',
     source_publication_date: new Date('2024-03-01'),
-    status: 'active',
+    status: 'unknown',
     human_reviewed: true,
   },
 ];

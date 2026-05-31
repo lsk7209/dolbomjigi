@@ -7,6 +7,36 @@ interface Props {
   items: TocItem[]
 }
 
+interface TocListProps {
+  activeId: string
+  items: TocItem[]
+  onItemClick: () => void
+}
+
+function TocList({ activeId, items, onItemClick }: TocListProps) {
+  return (
+    <nav aria-label="목차">
+      <ul className="space-y-1">
+        {items.map((item) => (
+          <li key={item.id} style={{ paddingLeft: item.level === 3 ? '0.75rem' : '0' }}>
+            <a
+              href={`#${item.id}`}
+              onClick={onItemClick}
+              className={`block text-xs py-0.5 leading-relaxed transition-colors hover:text-indigo-600 ${
+                activeId === item.id
+                  ? 'text-indigo-600 font-semibold'
+                  : 'text-gray-500'
+              }`}
+            >
+              {item.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
+
 export default function TableOfContents({ items }: Props) {
   const [activeId, setActiveId] = useState<string>('')
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -39,28 +69,6 @@ export default function TableOfContents({ items }: Props) {
 
   if (items.length === 0) return null
 
-  const TocList = () => (
-    <nav aria-label="목차">
-      <ul className="space-y-1">
-        {items.map((item) => (
-          <li key={item.id} style={{ paddingLeft: item.level === 3 ? '0.75rem' : '0' }}>
-            <a
-              href={`#${item.id}`}
-              onClick={() => setMobileOpen(false)}
-              className={`block text-xs py-0.5 leading-relaxed transition-colors hover:text-indigo-600 ${
-                activeId === item.id
-                  ? 'text-indigo-600 font-semibold'
-                  : 'text-gray-500'
-              }`}
-            >
-              {item.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  )
-
   return (
     <>
       {/* 모바일: accordion */}
@@ -81,7 +89,7 @@ export default function TableOfContents({ items }: Props) {
         </button>
         {mobileOpen && (
           <div className="px-4 pb-4 border-t border-gray-100">
-            <TocList />
+            <TocList activeId={activeId} items={items} onItemClick={() => setMobileOpen(false)} />
           </div>
         )}
       </div>
@@ -93,7 +101,7 @@ export default function TableOfContents({ items }: Props) {
       >
         <div className="border border-gray-200 rounded-xl bg-white px-4 py-4">
           <p className="text-xs font-semibold text-gray-700 mb-3 uppercase tracking-wide">목차</p>
-          <TocList />
+          <TocList activeId={activeId} items={items} onItemClick={() => setMobileOpen(false)} />
         </div>
       </aside>
     </>

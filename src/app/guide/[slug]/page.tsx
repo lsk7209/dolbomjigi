@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { eq } from 'drizzle-orm'
 
 import { db } from '@/db/client'
@@ -18,7 +19,6 @@ import { SITE_URL } from '@/lib/config'
 // ─────────────────────────────────────────
 // 타입
 // ─────────────────────────────────────────
-type Guide = typeof guides.$inferSelect
 type Robot = typeof robots.$inferSelect
 type Author = typeof authors.$inferSelect
 
@@ -65,6 +65,21 @@ function formatPrice(amount: number): string {
   return `${man.toLocaleString()}만원`
 }
 
+function markdownExcerpt(md: string, maxLength = 220): string {
+  const text = md
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/^\|.*\|$/gm, ' ')
+    .replace(/^[-*]\s+/gm, '')
+    .replace(/^\d+\.\s+/gm, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[*_`>#-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  return text.length > maxLength ? `${text.slice(0, maxLength).trim()}...` : text
+}
+
 // ─────────────────────────────────────────
 // generateStaticParams
 // ─────────────────────────────────────────
@@ -104,6 +119,9 @@ export async function generateMetadata({
     title,
     description,
     openGraph: { title, description },
+    alternates: {
+      canonical: `${SITE_URL}/guide/${slug}`,
+    },
   }
 }
 
@@ -234,7 +252,8 @@ export default async function GuideDetailPage({
   const publishedAt = guide.published_at
     ? guide.published_at.toISOString().split('T')[0]
     : new Date().toISOString().split('T')[0]
-  const today = new Date().toISOString().split('T')[0]
+  const todayDate = new Date()
+  const today = todayDate.toISOString().split('T')[0]
 
   const articleJsonLd = buildArticleJsonLd({
     title: guide.title_ko,
@@ -253,7 +272,7 @@ export default async function GuideDetailPage({
     { name: guide.title_ko, url: `${SITE_URL}/guide/${guide.slug}/` },
   ])
 
-  const nextUpdate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
+  const nextUpdate = new Date(todayDate.getTime() + 90 * 24 * 60 * 60 * 1000)
     .toISOString()
     .split('T')[0]
 
@@ -265,9 +284,9 @@ export default async function GuideDetailPage({
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-400 mb-4">
-            <a href="/" className="hover:text-gray-700">홈</a>
+            <Link href="/" className="hover:text-gray-700">홈</Link>
             {' > '}
-            <a href="/guide/" className="hover:text-gray-700">가이드</a>
+            <Link href="/guide/" className="hover:text-gray-700">가이드</Link>
             {' > '}
             <span className="text-gray-600">{personaLabel}</span>
           </nav>
@@ -303,7 +322,7 @@ export default async function GuideDetailPage({
 
         {/* 2. 핵심 답변 */}
         <AnswerBlock>
-          {guide.body_md.slice(0, 250)}
+          {markdownExcerpt(guide.body_md)}
         </AnswerBlock>
 
         {/* 2-1. 가이드 전체 본문 */}
@@ -344,7 +363,7 @@ export default async function GuideDetailPage({
             <ol className="flex flex-col gap-4">
               {recommendedRobots.map((robot, index) => (
                 <li key={robot.id}>
-                  <a
+                  <Link
                     href={`/robot/${robot.slug}/`}
                     className="flex items-center gap-4 bg-white border border-gray-100 rounded-2xl px-5 py-4 shadow-sm hover:shadow-md hover:border-blue-100 transition-all"
                   >
@@ -385,7 +404,7 @@ export default async function GuideDetailPage({
                       ) : null}
                       <span className="text-xs text-blue-600">자세히 →</span>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ol>
@@ -409,13 +428,13 @@ export default async function GuideDetailPage({
                 {tier.robots.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
                     {tier.robots.map((r) => (
-                      <a
+                      <Link
                         key={r.slug}
                         href={`/robot/${r.slug}/`}
                         className="text-xs bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-3 py-1 hover:bg-blue-100 transition-colors"
                       >
                         {r.name_ko}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 ) : (
@@ -444,12 +463,12 @@ export default async function GuideDetailPage({
             {personaLabel === '요양기관·시설' &&
               ' 기관 단위 도입 지원제도가 별도로 있습니다. 지원사업 페이지를 확인하세요.'}
           </p>
-          <a
+          <Link
             href="/support/"
             className="inline-flex items-center gap-1.5 bg-amber-600 text-white rounded-lg px-5 py-2.5 text-sm font-semibold hover:bg-amber-700 transition-colors self-start"
           >
             지원사업 찾아보기 →
-          </a>
+          </Link>
         </section>
 
         {/* 7. FAQ */}

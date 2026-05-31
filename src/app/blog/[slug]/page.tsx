@@ -107,7 +107,7 @@ export default async function BlogPostPage({
 
   // 미발행(null) 또는 예약 공개 전(미래)이면 404
   if (!post || !post.published_at) notFound()
-  if (new Date(post.published_at).getTime() > Date.now()) notFound()
+  if (new Date(post.published_at).getTime() > new Date().getTime()) notFound()
 
   const author = post.author_id
     ? await db.select().from(authors).where(eq(authors.id, post.author_id)).get()

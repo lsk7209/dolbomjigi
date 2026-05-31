@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { eq, or } from 'drizzle-orm'
+import Link from 'next/link'
+import { eq } from 'drizzle-orm'
 
 import { db } from '@/db/client'
 import { robots, comparisons, authors } from '@/db/schema'
@@ -15,7 +16,6 @@ import AuthorBlock from '@/components/common/AuthorBlock'
 // 타입
 // ─────────────────────────────────────────
 type Robot = typeof robots.$inferSelect
-type Comparison = typeof comparisons.$inferSelect
 type Author = typeof authors.$inferSelect
 
 // ─────────────────────────────────────────
@@ -200,6 +200,9 @@ export async function generateMetadata({
     title,
     description,
     openGraph: { title, description },
+    alternates: {
+      canonical: `${SITE_URL}/compare/${slug}`,
+    },
   }
 }
 
@@ -270,8 +273,9 @@ export default async function CompareDetailPage({
     ],
   }
 
-  const today = new Date().toISOString().split('T')[0]
-  const nextUpdate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
+  const todayDate = new Date()
+  const today = todayDate.toISOString().split('T')[0]
+  const nextUpdate = new Date(todayDate.getTime() + 90 * 24 * 60 * 60 * 1000)
     .toISOString()
     .split('T')[0]
 
@@ -283,9 +287,9 @@ export default async function CompareDetailPage({
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-400 mb-4">
-            <a href="/" className="hover:text-gray-700">홈</a>
+            <Link href="/" className="hover:text-gray-700">홈</Link>
             {' > '}
-            <a href="/compare/" className="hover:text-gray-700">로봇 비교</a>
+            <Link href="/compare/" className="hover:text-gray-700">로봇 비교</Link>
             {' > '}
             <span className="text-gray-600">{robotA.name_ko} vs {robotB.name_ko}</span>
           </nav>
@@ -437,12 +441,12 @@ export default async function CompareDetailPage({
                 <p className="text-xs text-gray-400">
                   대여: {robot.rental_available ? '가능' : '불가'}
                 </p>
-                <a
+                <Link
                   href={`/robot/${robot.slug}/`}
                   className={`mt-2 text-xs text-${color}-600 hover:underline`}
                 >
                   {robot.name_ko} 상세 보기 →
-                </a>
+                </Link>
               </div>
             ))}
           </div>

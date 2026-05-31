@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { eq, asc, desc } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import Link from 'next/link'
 
 import { db } from '@/db/client'
@@ -118,6 +118,9 @@ export async function generateMetadata({
     title,
     description: config.description,
     openGraph: { title, description: config.description },
+    alternates: {
+      canonical: `${SITE_URL}/ranking/${category}`,
+    },
   }
 }
 
@@ -183,9 +186,9 @@ export default async function RankingCategoryPage({
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 py-10">
           <nav className="text-xs text-gray-400 mb-4">
-            <a href="/" className="hover:text-gray-700">홈</a>
+            <Link href="/" className="hover:text-gray-700">홈</Link>
             {' > '}
-            <a href="/ranking/" className="hover:text-gray-700">랭킹</a>
+            <Link href="/ranking/" className="hover:text-gray-700">랭킹</Link>
             {' > '}
             <span className="text-gray-600">{config.label}</span>
           </nav>
@@ -201,7 +204,7 @@ export default async function RankingCategoryPage({
           <div className="text-center py-20 text-gray-400">
             <p className="text-lg">해당 카테고리에 등록된 로봇이 없습니다.</p>
             <p className="text-sm mt-2">
-              <a href="/robot/" className="text-blue-600 hover:underline">전체 로봇 목록 보기</a>
+              <Link href="/robot/" className="text-blue-600 hover:underline">전체 로봇 목록 보기</Link>
             </p>
           </div>
         ) : (
