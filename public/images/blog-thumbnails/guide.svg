@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Care guide thumbnail">
+  <rect width="1200" height="630" fill="#fff7ed"/>
+  <rect x="160" y="104" width="350" height="422" rx="28" fill="#ffffff"/>
+  <rect x="512" y="104" width="350" height="422" rx="28" fill="#ffedd5"/>
+  <path d="M246 216h178M246 298h178M246 380h118" stroke="#9a3412" stroke-width="28" stroke-linecap="round"/>
+  <path d="M606 228l48 48 116-126M606 366l48 48 116-126" fill="none" stroke="#ea580c" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="946" cy="316" r="74" fill="#fed7aa"/>
+  <path d="M920 316h52M946 290v52" stroke="#9a3412" stroke-width="18" stroke-linecap="round"/>
+</svg>

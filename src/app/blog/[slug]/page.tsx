@@ -10,6 +10,7 @@ import TableOfContents from '@/components/blog/TableOfContents'
 import { markdownToHtml, extractToc } from '@/lib/markdown'
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { SITE_URL, SITE_NAME } from '@/lib/config'
+import { getBlogThumbnailPath, getBlogThumbnailUrl } from '@/lib/blog-thumbnails'
 import Link from 'next/link'
 
 export const revalidate = 3600
@@ -40,7 +41,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const post = await db
-    .select({ title_ko: blogPosts.title_ko, subtitle: blogPosts.subtitle, summary: blogPosts.summary, cover_image_url: blogPosts.cover_image_url })
+    .select({
+      title_ko: blogPosts.title_ko,
+      subtitle: blogPosts.subtitle,
+      summary: blogPosts.summary,
+      cover_image_url: blogPosts.cover_image_url,
+      category: blogPosts.category,
+    })
     .from(blogPosts)
     .where(eq(blogPosts.slug, slug))
     .get()
@@ -49,6 +56,12 @@ export async function generateMetadata({
 
   const title = `${post.title_ko} | ${SITE_NAME}`
   const description = post.summary ?? post.subtitle ?? post.title_ko
+  const imageUrl = getBlogThumbnailUrl({
+    coverImageUrl: post.cover_image_url,
+    category: post.category,
+    title: post.title_ko,
+    slug,
+  })
 
   return {
     title,
@@ -59,7 +72,13 @@ export async function generateMetadata({
       type: 'article',
       url: `${SITE_URL}/blog/${slug}`,
       siteName: SITE_NAME,
-      ...(post.cover_image_url ? { images: [{ url: post.cover_image_url }] } : {}),
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title_ko }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
     },
     alternates: { canonical: `${SITE_URL}/blog/${slug}` },
   }
@@ -132,6 +151,18 @@ export default async function BlogPostPage({
 
   const html = markdownToHtml(post.body_md)
   const toc = extractToc(post.body_md)
+  const thumbnailPath = getBlogThumbnailPath({
+    coverImageUrl: post.cover_image_url,
+    category: post.category,
+    title: post.title_ko,
+    slug: post.slug,
+  })
+  const thumbnailUrl = getBlogThumbnailUrl({
+    coverImageUrl: post.cover_image_url,
+    category: post.category,
+    title: post.title_ko,
+    slug: post.slug,
+  })
 
   const today = new Date(post.updated_at ?? post.published_at)
   const todayStr = today.toISOString().slice(0, 10)
@@ -144,7 +175,7 @@ export default async function BlogPostPage({
       dateModified: todayStr,
       authorName: author?.name ?? SITE_NAME,
       url: `${SITE_URL}/blog/${slug}`,
-      imageUrl: post.cover_image_url ?? undefined,
+      imageUrl: thumbnailUrl,
     }),
     buildBreadcrumbJsonLd([
       { name: '홈', url: SITE_URL },
@@ -194,14 +225,13 @@ export default async function BlogPostPage({
         </header>
 
         {/* 커버 이미지 */}
-        {post.cover_image_url && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={post.cover_image_url}
-            alt={post.title_ko}
-            className="w-full max-w-2xl h-48 sm:h-64 object-cover rounded-2xl mb-6"
-          />
-        )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={thumbnailPath}
+          alt=""
+          className="w-full max-w-2xl h-48 sm:h-64 object-cover rounded-2xl mb-6 bg-gray-50"
+          aria-hidden="true"
+        />
 
         {/* 2컬럼 레이아웃 (TOC + 본문) */}
         <div className="flex gap-10 items-start">

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Care robot information thumbnail">
+  <rect width="1200" height="630" fill="#eef6ff"/>
+  <rect x="86" y="78" width="1028" height="474" rx="34" fill="#ffffff"/>
+  <circle cx="302" cy="310" r="112" fill="#dbeafe"/>
+  <rect x="247" y="240" width="110" height="132" rx="34" fill="#2563eb"/>
+  <circle cx="284" cy="292" r="10" fill="#ffffff"/>
+  <circle cx="322" cy="292" r="10" fill="#ffffff"/>
+  <path d="M282 330c18 15 39 15 58 0" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M430 236h430M430 314h330M430 392h260" fill="none" stroke="#0f172a" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="920" cy="390" r="54" fill="#22c55e"/>
+  <path d="M895 391l18 18 34-42" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Care robot news thumbnail">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="134" y="116" width="932" height="398" rx="30" fill="#ffffff"/>
+  <rect x="214" y="190" width="286" height="210" rx="20" fill="#e2e8f0"/>
+  <path d="M556 210h330M556 292h260M556 374h304M214 452h672" stroke="#334155" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="356" cy="294" r="62" fill="#64748b"/>
+</svg>

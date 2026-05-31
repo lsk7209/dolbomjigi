@@ -3,6 +3,7 @@ import { db } from '@/db/client'
 import { blogPosts, authors } from '@/db/schema'
 import { desc, eq, isNotNull, and, lte } from 'drizzle-orm'
 import { SITE_URL, SITE_NAME } from '@/lib/config'
+import { getBlogThumbnailPath } from '@/lib/blog-thumbnails'
 import Link from 'next/link'
 
 export const revalidate = 3600
@@ -35,14 +36,6 @@ const CATEGORY_COLOR: Record<string, string> = {
   support_program: 'bg-green-100 text-green-800',
   guide: 'bg-orange-100 text-orange-800',
   news: 'bg-gray-100 text-gray-700',
-}
-
-const CATEGORY_BG: Record<string, string> = {
-  care_info: 'bg-blue-50',
-  product_review: 'bg-purple-50',
-  support_program: 'bg-green-50',
-  guide: 'bg-orange-50',
-  news: 'bg-gray-50',
 }
 
 function formatDate(d: Date | null): string {
@@ -115,27 +108,20 @@ export default async function BlogListPage() {
                 href={`/blog/${post.slug}`}
                 className="flex flex-col rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:border-indigo-100 transition-all overflow-hidden"
               >
-                {/* 커버 이미지 or 플레이스홀더 */}
-                {post.cover_image_url ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={post.cover_image_url}
-                    alt={post.title_ko}
-                    className="w-full h-40 object-cover"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div
-                    className={`w-full h-32 flex items-center justify-center ${CATEGORY_BG[post.category] ?? 'bg-gray-50'}`}
-                  >
-                    <span className="text-3xl opacity-40">
-                      {post.category === 'product_review' ? '🤖' :
-                       post.category === 'support_program' ? '🏛️' :
-                       post.category === 'guide' ? '📖' :
-                       post.category === 'news' ? '📰' : '💡'}
-                    </span>
-                  </div>
-                )}
+                {/* 커버 이미지 */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={getBlogThumbnailPath({
+                    coverImageUrl: post.cover_image_url,
+                    category: post.category,
+                    title: post.title_ko,
+                    slug: post.slug,
+                  })}
+                  alt=""
+                  className="w-full h-40 object-cover bg-gray-50"
+                  loading="lazy"
+                  aria-hidden="true"
+                />
 
                 <div className="flex flex-col gap-2 p-4 flex-1">
                   {/* 카테고리 배지 */}

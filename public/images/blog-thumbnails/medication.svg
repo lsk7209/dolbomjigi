@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Medication reminder thumbnail">
+  <rect width="1200" height="630" fill="#f0fdfa"/>
+  <rect x="144" y="116" width="912" height="398" rx="36" fill="#ffffff"/>
+  <rect x="264" y="230" width="260" height="144" rx="72" fill="#14b8a6"/>
+  <path d="M394 230v144" stroke="#ffffff" stroke-width="24"/>
+  <circle cx="744" cy="302" r="116" fill="#ccfbf1"/>
+  <path d="M744 226v82l58 44" fill="none" stroke="#0f766e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M642 458h250" stroke="#0f766e" stroke-width="26" stroke-linecap="round"/>
+</svg>
