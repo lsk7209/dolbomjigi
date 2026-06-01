@@ -117,10 +117,9 @@ export default async function BlogListPage() {
                     title: post.title_ko,
                     slug: post.slug,
                   })}
-                  alt=""
+                  alt={`${post.title_ko} 관련 실사형 돌봄로봇 이미지`}
                   className="w-full h-40 object-cover bg-gray-50"
                   loading="lazy"
-                  aria-hidden="true"
                 />
 
                 <div className="flex flex-col gap-2 p-4 flex-1">

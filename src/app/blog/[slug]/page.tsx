@@ -228,9 +228,8 @@ export default async function BlogPostPage({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={thumbnailPath}
-          alt=""
+          alt={`${post.title_ko} 관련 실사형 돌봄로봇 이미지`}
           className="w-full max-w-2xl h-48 sm:h-64 object-cover rounded-2xl mb-6 bg-gray-50"
-          aria-hidden="true"
         />
 
         {/* 2컬럼 레이아웃 (TOC + 본문) */}
