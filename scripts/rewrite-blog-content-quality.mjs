@@ -379,12 +379,28 @@ ${josa(main, '은/는')} 제품 하나로 끝나는 문제가 아닙니다. ${ke
 `
 
   return {
-    subtitle,
-    summary,
-    body_md: body,
+    subtitle: polishText(subtitle),
+    summary: polishText(summary),
+    body_md: polishText(body),
     tags_json: JSON.stringify([...new Set([main, ...keywords, row.category].filter(Boolean))]),
     reading_time_minutes: Math.max(8, Math.round(body.length / 650)),
   }
+}
+
+function polishText(text) {
+  return String(text)
+    .replaceAll('센서 대안가', '센서 대안이')
+    .replaceAll('사업 평가표을', '사업 평가표를')
+    .replaceAll('한국로봇산업진흥원와', '한국로봇산업진흥원과')
+    .replaceAll('LTE 통신는', 'LTE 통신은')
+    .replaceAll('와이파,', '와이파이,')
+    .replaceAll('와이파를', '와이파이를')
+    .replace(/([가-힣A-Za-z0-9]+)을을/g, '$1을')
+    .replace(/([가-힣A-Za-z0-9]+)를를/g, '$1를')
+    .replace(/([가-힣A-Za-z0-9]+)은은/g, '$1은')
+    .replace(/([가-힣A-Za-z0-9]+)는는/g, '$1는')
+    .replace(/([가-힣A-Za-z0-9]+)과와/g, '$1과')
+    .replace(/([가-힣A-Za-z0-9]+)와과/g, '$1과')
 }
 
 function audit(row) {
