@@ -3,7 +3,7 @@ import path from 'path'
 import { createClient } from '@libsql/client'
 
 const ROOT = process.cwd()
-const INPUT = path.join(ROOT, 'scripts', 'blog-generated-2026-quality-batch.json')
+const INPUT = path.resolve(ROOT, process.argv[2] ?? path.join('scripts', 'blog-generated-2026-quality-batch.json'))
 const FIVE_HOURS_MS = 5 * 60 * 60 * 1000
 
 function loadEnv() {
