@@ -106,6 +106,8 @@ export const metadata: Metadata = {
 // ─────────────────────────────────────────
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const ADSENSE_PUBLISHER_ID =
+  process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ?? 'ca-pub-3050601904412736';
 
 export default function RootLayout({
   children,
@@ -144,14 +146,12 @@ export default function RootLayout({
         <SpeedInsights />
 
         {/* AdSense 자동 광고 */}
-        {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
 
         {/* Google Analytics 4 */}
         {GA_ID && (
