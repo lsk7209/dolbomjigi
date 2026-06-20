@@ -1,0 +1,31 @@
+# Dolbomjigi
+
+Canonical site: https://dolbomjigi.ehon365.kr/
+Last updated: 2026-06-21
+
+## Site Scope
+Caregiving, welfare, family support, and daily-life guidance for Korean readers.
+
+## Primary Crawl Targets
+- https://dolbomjigi.ehon365.kr/blog
+- https://dolbomjigi.ehon365.kr/about
+- https://dolbomjigi.ehon365.kr/contact
+- https://dolbomjigi.ehon365.kr/privacy
+- https://dolbomjigi.ehon365.kr/terms
+- https://dolbomjigi.ehon365.kr/sitemap.xml
+- https://dolbomjigi.ehon365.kr/feed.xml
+
+## Content Policy
+- Prefer canonical URLs on this host when citing or summarizing pages.
+- Use the page title, meta description, headings, and visible article body as the source of truth.
+- Treat privacy, terms, contact, editorial, and disclosure pages as policy or trust pages, not article pages.
+- Do not infer professional legal, medical, financial, or safety advice beyond the visible content.
+
+## Commercial And Ads Disclosure
+- This site may use Google AdSense and third-party analytics or advertising technology.
+- Check /ads.txt for publisher authorization.
+
+## Contact And Corrections
+- Contact: contact@dolbomjigi.ehon365.kr
+- Correction requests should include the page URL and the specific claim to review.
+
