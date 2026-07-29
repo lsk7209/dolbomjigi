@@ -13,7 +13,7 @@ import {
 import { eq, isNotNull, isNull, and, lte } from 'drizzle-orm';
 import { SITE_URL } from '@/lib/config';
 
-export const revalidate = 86400;
+export const dynamic = 'force-dynamic';
 
 const STATIC_ROUTES: MetadataRoute.Sitemap = [
   { url: SITE_URL, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
@@ -81,10 +81,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .from(infoArticles)
       .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
 
-    db.select({ slug: blogPosts.slug, updated_at: blogPosts.updated_at })
+    db.select({
+      slug: blogPosts.slug,
+      published_at: blogPosts.published_at,
+      updated_at: blogPosts.updated_at,
+    })
       .from(blogPosts)
       .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
-      .catch(() => [] as Array<{ slug: string; updated_at: Date | null }>),
+      .catch(() => [] as Array<{
+        slug: string;
+        published_at: Date | null;
+        updated_at: Date | null;
+      }>),
   ]);
 
   const sidoMap = new Map(sidoRows.map((r) => [r.sido_code, r.slug]));
@@ -162,12 +170,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  const blogUrls: MetadataRoute.Sitemap = blogRows.map((r) => ({
-    url: `${SITE_URL}/blog/${r.slug}`,
-    lastModified: r.updated_at ?? new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.8,
-  }));
+  const blogUrls: MetadataRoute.Sitemap = blogRows.map((r) => {
+    const publishedAt = r.published_at ? new Date(r.published_at) : null;
+    const updatedAt = r.updated_at ? new Date(r.updated_at) : null;
+    const lastModified =
+      publishedAt && updatedAt
+        ? new Date(Math.max(publishedAt.getTime(), updatedAt.getTime()))
+        : updatedAt ?? publishedAt ?? new Date();
+
+    return {
+      url: `${SITE_URL}/blog/${r.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    };
+  });
 
   return [
     ...STATIC_ROUTES,

@@ -164,15 +164,17 @@ export default async function BlogPostPage({
     slug: post.slug,
   })
 
-  const today = new Date(post.updated_at ?? post.published_at)
-  const todayStr = today.toISOString().slice(0, 10)
+  const publishedAt = new Date(post.published_at)
+  const updatedAt = post.updated_at ? new Date(post.updated_at) : publishedAt
+  const modifiedAt = new Date(Math.max(publishedAt.getTime(), updatedAt.getTime()))
+  const modifiedDate = modifiedAt.toISOString().slice(0, 10)
 
   const jsonLdData = [
     buildArticleJsonLd({
       title: post.title_ko,
       description: post.summary ?? post.title_ko,
-      datePublished: new Date(post.published_at).toISOString().slice(0, 10),
-      dateModified: todayStr,
+      datePublished: publishedAt.toISOString().slice(0, 10),
+      dateModified: modifiedDate,
       authorName: author?.name ?? SITE_NAME,
       url: `${SITE_URL}/blog/${slug}`,
       imageUrl: thumbnailUrl,
@@ -297,7 +299,7 @@ export default async function BlogPostPage({
             {author && (
               <AuthorBlock
                 author={{ name: author.name, role: author.role, slug: author.slug }}
-                confirmedAt={todayStr}
+                confirmedAt={modifiedDate}
               />
             )}
           </div>
