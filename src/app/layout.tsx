@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import SiteScripts from '@/components/analytics/SiteScripts';
 import { SITE_URL, SITE_NAME } from '@/lib/config';
 import './globals.css';
 
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
 // 루트 레이아웃
 // ─────────────────────────────────────────
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? 'G-09901YJY2H';
 const ADSENSE_PUBLISHER_ID =
   process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ?? 'ca-pub-3050601904412736';
 
@@ -145,34 +145,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
 
-        {/* AdSense 자동 광고 */}
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-
-        {/* Google Analytics 4 */}
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}', {
-                  page_path: window.location.pathname,
-                  anonymize_ip: true,
-                });
-              `}
-            </Script>
-          </>
-        )}
+        <SiteScripts adsensePublisherId={ADSENSE_PUBLISHER_ID} gaId={GA_ID} />
       </body>
     </html>
   );
