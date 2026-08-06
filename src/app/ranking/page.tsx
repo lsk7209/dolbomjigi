@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: '돌봄 로봇 순위 — 카테고리별 랭킹 | 돌봄지기',
+  title: '돌봄 로봇 순위 — 카테고리별 랭킹',
   description:
     '가성비, 어르신 친화, 정부 지원, 반려·재활·모니터링 등 7개 카테고리별 돌봄 로봇 순위를 확인하세요.',
   openGraph: {

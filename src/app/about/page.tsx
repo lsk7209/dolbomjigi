@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "돌봄지기 소개 | 어르신 돌봄로봇 정보 플랫폼",
+  title: "서비스 소개 | 어르신 돌봄로봇 정보 플랫폼",
   description:
     "돌봄지기는 어르신 돌봄로봇 제품 정보, 지자체 지원사업, 기관 도입 가이드를 공공누리 데이터 기반으로 제공하는 정보 플랫폼입니다.",
   openGraph: {

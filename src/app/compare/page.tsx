@@ -6,7 +6,7 @@ import { comparisons } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 비교 — 돌봄지기",
+  title: "돌봄 로봇 비교",
   description:
     "돌봄로봇 제품 간 상세 비교표를 확인하세요. 기능·가격·추천 대상을 항목별로 비교해 어르신에게 맞는 제품을 선택할 수 있습니다.",
   openGraph: {

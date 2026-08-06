@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: '기관·시설 돌봄로봇 도입 가이드 | 돌봄지기',
+  title: '기관·시설 돌봄로봇 도입 가이드',
   description:
     '요양원, 복지관 등 기관·시설에서 돌봄로봇을 도입하는 절차, 비용 추정, 지원사업 정보를 안내합니다.',
   openGraph: {

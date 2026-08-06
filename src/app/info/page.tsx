@@ -6,7 +6,7 @@ import { infoArticles } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 정보 — 돌봄지기",
+  title: "돌봄 로봇 정보",
   description:
     "돌봄로봇 기술·통계·정책·비교·역사 관련 정보 자료를 확인하세요. 신뢰할 수 있는 공공 데이터 기반 콘텐츠.",
   openGraph: {

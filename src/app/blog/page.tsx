@@ -9,7 +9,7 @@ import Link from 'next/link'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: `돌봄로봇 블로그 — 최신 정보·가이드·뉴스 | ${SITE_NAME}`,
+  title: `돌봄로봇 블로그 — 최신 정보·가이드·뉴스`,
   description:
     '돌봄로봇 활용법, 지원사업 정보, 제품 비교, 재활로봇 등 어르신 돌봄에 관한 최신 정보를 전달합니다.',
   openGraph: {

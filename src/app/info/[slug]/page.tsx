@@ -39,7 +39,7 @@ export async function generateMetadata({
   const description = article.summary ?? article.title_ko;
 
   return {
-    title: `${article.title_ko} | 돌봄지기 정보`,
+    title: `${article.title_ko} | 정보`,
     description,
     openGraph: {
       title: article.title_ko,

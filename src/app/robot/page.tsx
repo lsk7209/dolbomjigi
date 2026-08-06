@@ -6,7 +6,7 @@ import { robots } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 제품 목록 — 돌봄지기",
+  title: "돌봄 로봇 제품 목록",
   description:
     "말벗·돌봄 보조·재활·모니터링 카테고리별 돌봄로봇 전체 제품을 비교하고 상세 정보를 확인하세요. 가격, 제조사, 구독료 정보 포함.",
   openGraph: {

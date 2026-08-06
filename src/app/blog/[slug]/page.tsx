@@ -54,7 +54,7 @@ export async function generateMetadata({
 
   if (!post) return { title: '글을 찾을 수 없습니다' }
 
-  const title = `${post.title_ko} | ${SITE_NAME}`
+  const title = post.title_ko
   const description = post.summary ?? post.subtitle ?? post.title_ko
   const imageUrl = getBlogThumbnailUrl({
     coverImageUrl: post.cover_image_url,

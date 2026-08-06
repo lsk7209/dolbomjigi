@@ -7,7 +7,7 @@ import { eq, or } from "drizzle-orm";
 import Sources from "@/components/common/Sources";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
-import { SITE_URL } from "@/lib/config";
+import { SITE_URL, SITE_NAME } from "@/lib/config";
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -38,7 +38,10 @@ export async function generateMetadata({
 
   if (!author) return { title: "저자를 찾을 수 없습니다" };
 
-  const title = `${author.name} | 돌봄지기 저자 프로필`;
+  const authorLabel = author.name.startsWith(SITE_NAME)
+    ? author.name.slice(SITE_NAME.length).trim() || "편집팀"
+    : author.name;
+  const title = `${authorLabel} | 저자 프로필`;
   const description =
     author.bio_short ??
     `${author.name}(${author.role})의 돌봄지기 저자 프로필 페이지입니다.`;

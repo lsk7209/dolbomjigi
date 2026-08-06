@@ -6,7 +6,7 @@ import { supportPrograms, regions } from "@/db/schema";
 import { isNull, and, eq } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 지원사업 — 돌봄지기",
+  title: "돌봄 로봇 지원사업",
   description:
     "국가·지자체 돌봄로봇 무상 보급, 렌탈, 보조금, R&D 지원사업 정보를 확인하세요. 지역별 신청 안내 포함.",
   openGraph: {

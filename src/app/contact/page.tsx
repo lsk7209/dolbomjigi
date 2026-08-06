@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "문의하기 | 돌봄지기",
+  title: "문의하기",
   description:
     "돌봄지기 정보 오류 제보, 공공데이터 정정 요청, 광고 및 제휴 문의, 개인정보 관련 요청을 안내합니다.",
   alternates: {

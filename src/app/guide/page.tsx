@@ -6,7 +6,7 @@ import { guides } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 선택 가이드 — 돌봄지기",
+  title: "돌봄 로봇 선택 가이드",
   description:
     "가족 돌봄자, 사회복지사, 복지 담당 공무원, 요양기관 등 대상별 돌봄로봇 선택·도입 가이드를 확인하세요.",
   openGraph: {

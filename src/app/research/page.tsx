@@ -6,7 +6,7 @@ import { researchStudies } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export const metadata: Metadata = {
-  title: "돌봄로봇 연구 논문 목록 | 돌봄지기",
+  title: "돌봄로봇 연구 논문 목록",
   description:
     "돌봄로봇의 효과, 기술, 정책에 관한 국내외 학술 연구 논문을 모았습니다. 연도·저널별로 정리된 최신 연구를 확인하세요.",
   openGraph: {
