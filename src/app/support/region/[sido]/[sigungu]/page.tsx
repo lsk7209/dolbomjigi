@@ -13,6 +13,7 @@ import {
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
 import { SITE_URL } from "@/lib/config";
+import { formatSupportDate, parseSupportDate } from "@/lib/support-date";
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -199,9 +200,7 @@ export default async function SigunguSupportPage({
   const applicationSteps = parseApplicationMethod(program.application_method);
   const today = new Date().toISOString().slice(0, 10);
 
-  const programYear = program.period_start
-    ? new Date(program.period_start).getFullYear()
-    : new Date().getFullYear();
+  const programYear = parseSupportDate(program.period_start)?.getFullYear();
 
   const jsonLdData = [
     buildGovernmentServiceJsonLd({
@@ -261,7 +260,9 @@ export default async function SigunguSupportPage({
           </nav>
           <h1 className="text-2xl font-bold text-gray-900">
             {region.sigungu_name ?? region.sido_name} {program.name_ko}{" "}
-            <span className="text-gray-500 text-xl">({programYear}년)</span>
+            {programYear !== undefined && (
+              <span className="text-gray-500 text-xl">({programYear}년)</span>
+            )}
           </h1>
           <p className="text-sm text-gray-600">
             사업 유형:{" "}
@@ -344,13 +345,9 @@ export default async function SigunguSupportPage({
                   신청 기간
                 </span>
                 <span className="text-gray-700">
-                  {program.period_start
-                    ? new Date(program.period_start).toLocaleDateString("ko-KR")
-                    : "미정"}{" "}
+                  {formatSupportDate(program.period_start)}{" "}
                   ~{" "}
-                  {program.period_end
-                    ? new Date(program.period_end).toLocaleDateString("ko-KR")
-                    : "미정"}
+                  {formatSupportDate(program.period_end)}
                 </span>
               </div>
             )}
@@ -458,11 +455,9 @@ export default async function SigunguSupportPage({
           license={program.source_license}
           confirmedAt={today}
           publicationDate={
-            program.source_publication_date
-              ? new Date(program.source_publication_date)
-                  .toISOString()
-                  .slice(0, 10)
-              : undefined
+            parseSupportDate(program.source_publication_date)
+              ?.toISOString()
+              .slice(0, 10)
           }
         />
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { db } from "@/db/client";
 import { regions, supportPrograms } from "@/db/schema";
-import { eq, and, isNull } from "drizzle-orm";
+import { eq, and } from "drizzle-orm";
 import AnswerBlock from "@/components/common/AnswerBlock";
 import UpdateNotice from "@/components/common/UpdateNotice";
 import Sources from "@/components/common/Sources";
@@ -13,6 +13,7 @@ import {
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
 import { SITE_URL } from "@/lib/config";
+import { formatSupportDate } from "@/lib/support-date";
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -221,10 +222,10 @@ export default async function SidoSupportPage({
 
         {/* 2. AnswerBlock */}
         <AnswerBlock>
-          {region.sido_name}은(는) 현재 <strong>{programs.length}개</strong>의
-          검증된 돌봄로봇 보급사업을 운영 중입니다. 사업 유형은 무상
-          보급·렌탈·보조금 등으로 구성되며, 대상자 자격 및 신청 방법은 각 사업
-          상세 페이지에서 확인하실 수 있습니다.
+          이 사이트에 등록된 {region.sido_name} 돌봄로봇 지원사업은{" "}
+          <strong>{programs.length}개</strong>입니다. 아래 목록에서 사업 유형과
+          신청기간을 살펴보고, 대상자 자격과 신청 방법은 각 사업의 등록된 출처와
+          해당 지자체의 최신 공고에서 확인하세요.
         </AnswerBlock>
 
         {/* 3. ProgramList */}
@@ -240,11 +241,8 @@ export default async function SidoSupportPage({
           ) : (
             <ul className="flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-lg overflow-hidden">
               {programs.map((prog) => (
-                <li key={prog.id} className="bg-white hover:bg-gray-50">
-                  <Link
-                    href={`/support/region/${sido}/${prog.slug}`}
-                    className="flex flex-col gap-1 px-5 py-4"
-                  >
+                <li key={prog.id} className="bg-white">
+                  <div className="flex flex-col gap-1 px-5 py-4">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-sm font-medium text-gray-900">
                         {prog.name_ko}
@@ -268,17 +266,9 @@ export default async function SidoSupportPage({
                     {(prog.period_start || prog.period_end) && (
                       <p className="text-xs text-gray-500">
                         신청기간:{" "}
-                        {prog.period_start
-                          ? new Date(prog.period_start).toLocaleDateString(
-                              "ko-KR",
-                            )
-                          : "미정"}{" "}
+                        {formatSupportDate(prog.period_start)}{" "}
                         ~{" "}
-                        {prog.period_end
-                          ? new Date(prog.period_end).toLocaleDateString(
-                              "ko-KR",
-                            )
-                          : "미정"}
+                        {formatSupportDate(prog.period_end)}
                       </p>
                     )}
                     {prog.distribution_count && (
@@ -286,7 +276,19 @@ export default async function SidoSupportPage({
                         보급 대수: {prog.distribution_count.toLocaleString()}대
                       </p>
                     )}
-                  </Link>
+                    {prog.source_url && /^https?:\/\//i.test(prog.source_url) ? (
+                      <a
+                        href={prog.source_url}
+                        className="self-start text-sm text-blue-700 underline underline-offset-2"
+                      >
+                        등록된 출처 보기
+                      </a>
+                    ) : (
+                      <p className="text-xs text-gray-500">
+                        신청 경로는 해당 지자체의 최신 공고에서 확인하세요.
+                      </p>
+                    )}
+                  </div>
                 </li>
               ))}
             </ul>

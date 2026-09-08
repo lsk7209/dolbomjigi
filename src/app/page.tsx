@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/config";
+import { getSupportProgramUrl, type SupportRegion } from "@/lib/support-program-url";
 import { db } from "@/db/client";
 import { robots, supportPrograms, regions, blogPosts } from "@/db/schema";
 import { eq, desc, isNotNull, and, lte } from "drizzle-orm";
@@ -123,7 +124,7 @@ export default async function HomePage() {
 
   const regionMap = new Map<
     number,
-    { slug: string; sido_name: string; sigungu_name: string | null }
+    SupportRegion & { sido_name: string; sigungu_name: string | null }
   >();
   if (regionIds.length > 0) {
     const allRegions = await db
@@ -320,9 +321,7 @@ export default async function HomePage() {
                 const regionName = region
                   ? `${region.sido_name}${region.sigungu_name ? ` ${region.sigungu_name}` : ""}`
                   : "국가";
-                const href = region
-                  ? `/support/region/${region.slug}/${prog.slug}`
-                  : `/support/national/${prog.slug}`;
+                const href = getSupportProgramUrl(prog, regionMap);
 
                 return (
                   <li key={prog.id} className="hover:bg-gray-50">
