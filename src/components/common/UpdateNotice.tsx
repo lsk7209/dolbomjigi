@@ -6,6 +6,7 @@ interface UpdateNoticeProps {
   license: string        // e.g. '공공누리 제1유형'
   confirmedAt: string    // YYYY-MM-DD
   publicationDate?: string
+  sourceCheckedAt?: string
 }
 
 /**
@@ -26,7 +27,7 @@ export default function UpdateNotice({
   sourceUrl,
   sourceName,
   license,
-  confirmedAt,
+  sourceCheckedAt,
   publicationDate,
 }: UpdateNoticeProps) {
   return (
@@ -62,9 +63,9 @@ export default function UpdateNotice({
             원문 게시일: <span className="text-gray-700">{publicationDate}</span>
           </time>
         )}
-        <time dateTime={confirmedAt}>
-          내용 확인일: <span className="text-gray-700">{confirmedAt}</span>
-        </time>
+        {sourceCheckedAt ? <time dateTime={sourceCheckedAt}>
+          원문 대조일: <span className="text-gray-700">{sourceCheckedAt}</span>
+        </time> : <span>원문 대조일: 확인 기록 없음</span>}
       </div>
 
       <p className="text-xs text-gray-500 mt-1">

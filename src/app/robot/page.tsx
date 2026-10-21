@@ -1,45 +1,42 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { SITE_URL } from "@/lib/config";
-import { db } from "@/db/client";
-import { robots } from "@/db/schema";
-import { desc } from "drizzle-orm";
+import Link from 'next/link'
+import { presentRobot } from '@/lib/product-evidence'
+export const dynamic = 'force-dynamic'
+import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
+import { db } from '@/db/client'
+import { robots } from '@/db/schema'
+import { desc } from 'drizzle-orm'
+import HubQualitySections from '@/components/seo/HubQualitySections'
 
 export const metadata: Metadata = {
-  title: "돌봄 로봇 제품 목록",
+  title: '돌봄 로봇 제품 목록',
   description:
-    "말벗·돌봄 보조·재활·모니터링 카테고리별 돌봄로봇 전체 제품을 비교하고 상세 정보를 확인하세요. 가격, 제조사, 구독료 정보 포함.",
+    '말벗·돌봄 보조·재활·모니터링 카테고리별 돌봄로봇 전체 제품을 비교하고 상세 정보를 확인하세요. 가격, 제조사, 구독료 정보 포함.',
   openGraph: {
-    title: "돌봄 로봇 제품 목록 — 돌봄지기",
-    description:
-      "카테고리별 돌봄로봇 전체 제품 목록. 가격·제조사·기능 한눈에 비교.",
+    title: '돌봄 로봇 제품 목록 — 돌봄지기',
+    description: '카테고리별 돌봄로봇 전체 제품 목록. 가격·제조사·기능 한눈에 비교.',
     url: `${SITE_URL}/robot`,
-    type: "website",
-    siteName: "돌봄지기",
+    type: 'website',
+    siteName: '돌봄지기',
   },
   alternates: { canonical: `${SITE_URL}/robot` },
-};
+}
 
 const CATEGORY_LABEL: Record<string, string> = {
-  companion: "말벗·반려 로봇",
-  senior_care: "돌봄 보조",
-  rehabilitation: "재활",
-  monitoring: "모니터링",
-};
+  companion: '말벗·반려 로봇',
+  senior_care: '돌봄 보조',
+  rehabilitation: '재활',
+  monitoring: '모니터링',
+}
 
 const CATEGORY_COLOR: Record<string, string> = {
-  companion: "bg-purple-100 text-purple-800",
-  senior_care: "bg-blue-100 text-blue-800",
-  rehabilitation: "bg-green-100 text-green-800",
-  monitoring: "bg-orange-100 text-orange-800",
-};
+  companion: 'bg-purple-100 text-purple-800',
+  senior_care: 'bg-blue-100 text-blue-800',
+  rehabilitation: 'bg-green-100 text-green-800',
+  monitoring: 'bg-orange-100 text-orange-800',
+}
 
-const CATEGORIES = [
-  "companion",
-  "senior_care",
-  "rehabilitation",
-  "monitoring",
-] as const;
+const CATEGORIES = ['companion', 'senior_care', 'rehabilitation', 'monitoring'] as const
 
 export default async function RobotListPage() {
   const allRobots = await db
@@ -57,28 +54,26 @@ export default async function RobotListPage() {
     })
     .from(robots)
     .orderBy(desc(robots.korea_market), robots.name_ko)
-    .catch(() => [] as (typeof robots.$inferSelect)[]);
+    .then(rows => rows.map(row => presentRobot(row)))
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       {/* ── 헤더 ── */}
       <section className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-4xl px-4 py-10">
-          <p className="text-sm text-blue-600 font-medium mb-1">
-            돌봄지기 &rsaquo; 제품 목록
-          </p>
+          <p className="text-sm text-blue-600 font-medium mb-1">돌봄지기 &rsaquo; 제품 목록</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
             돌봄 로봇 전체 목록
           </h1>
           <p className="text-gray-600 text-sm leading-relaxed max-w-2xl">
-            말벗·돌봄 보조·재활·모니터링 카테고리의 돌봄로봇 제품을 한곳에서
-            비교하세요. 가격, 제조사, 구독·렌탈 옵션을 확인하고 어르신에게 맞는
-            제품을 찾아보세요.
+            말벗·돌봄 보조·재활·모니터링 카테고리의 돌봄로봇 제품을 한곳에서 비교하세요.
+            가격, 제조사, 구독·렌탈 옵션을 확인하고 어르신에게 맞는 제품을 찾아보세요.
           </p>
         </div>
       </section>
 
       <div className="mx-auto max-w-4xl px-4 py-8 w-full flex flex-col gap-8">
+
         {/* ── 카테고리 탭 ── */}
         <nav aria-label="카테고리 필터" className="flex flex-wrap gap-2">
           <Link
@@ -105,9 +100,7 @@ export default async function RobotListPage() {
           </p>
         ) : (
           <section aria-label="로봇 제품 목록">
-            <p className="text-xs text-gray-500 mb-4">
-              총 {allRobots.length}개 제품
-            </p>
+            <p className="text-xs text-gray-500 mb-4">총 {allRobots.length}개 제품</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {allRobots.map((robot) => (
                 <Link
@@ -120,12 +113,10 @@ export default async function RobotListPage() {
                       <span className="text-sm font-semibold text-gray-900 leading-snug">
                         {robot.name_ko}
                       </span>
-                      <span className="text-xs text-gray-500">
-                        {robot.manufacturer}
-                      </span>
+                      <span className="text-xs text-gray-500">{robot.manufacturer}</span>
                     </div>
                     <span
-                      className={`inline-flex items-center shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_COLOR[robot.category] ?? "bg-gray-100 text-gray-700"}`}
+                      className={`inline-flex items-center shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_COLOR[robot.category] ?? 'bg-gray-100 text-gray-700'}`}
                     >
                       {CATEGORY_LABEL[robot.category] ?? robot.category}
                     </span>
@@ -144,10 +135,7 @@ export default async function RobotListPage() {
                       </span>
                     )}
                     {robot.subscription_monthly && (
-                      <span>
-                        월정액 {(robot.subscription_monthly / 10000).toFixed(0)}
-                        만원~
-                      </span>
+                      <span>월정액 {(robot.subscription_monthly / 10000).toFixed(0)}만원~</span>
                     )}
                     {robot.rental_available && (
                       <span className="inline-flex items-center rounded-full px-2 py-0.5 bg-green-100 text-green-800">
@@ -175,21 +163,15 @@ export default async function RobotListPage() {
           </p>
         </div>
 
+        <HubQualitySections topic="robot" />
+
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <Link href="/" className="hover:text-gray-800">
-            홈
-          </Link>
-          <Link href="/compare" className="hover:text-gray-800">
-            제품 비교
-          </Link>
-          <Link href="/support" className="hover:text-gray-800">
-            지원사업
-          </Link>
-          <Link href="/guide" className="hover:text-gray-800">
-            이용 가이드
-          </Link>
+          <Link href="/" className="hover:text-gray-800">홈</Link>
+          <Link href="/compare" className="hover:text-gray-800">제품 비교</Link>
+          <Link href="/support" className="hover:text-gray-800">지원사업</Link>
+          <Link href="/guide" className="hover:text-gray-800">이용 가이드</Link>
         </footer>
       </div>
     </div>
-  );
+  )
 }

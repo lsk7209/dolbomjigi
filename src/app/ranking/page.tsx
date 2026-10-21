@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE_URL } from '@/lib/config'
+import HubQualitySections from '@/components/seo/HubQualitySections'
 
 export const metadata: Metadata = {
   title: '돌봄 로봇 순위 — 카테고리별 랭킹',
@@ -106,6 +107,8 @@ export default function RankingPage() {
             실제 구매·도입 시에는 기관 또는 가정 환경에 맞게 전문가 상담을 권장합니다.
           </p>
         </div>
+
+        <HubQualitySections topic="ranking" />
 
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6">
           <Link href="/" className="hover:text-gray-800">홈</Link>

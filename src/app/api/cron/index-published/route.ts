@@ -8,12 +8,13 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server'
-import { and, desc, gte, lte } from 'drizzle-orm'
+import { and, desc, gte } from 'drizzle-orm'
 
 import { db } from '@/db/client'
 import { blogPosts } from '@/db/schema'
 import { SITE_URL } from '@/lib/config'
 import { pingGscSitemap, pingIndexNow } from '@/lib/index-ping'
+import { publicAtOrBefore } from '@/lib/publication'
 
 export const dynamic = 'force-dynamic'
 export const maxDuration = 30
@@ -25,7 +26,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const cronSecret = process.env.CRON_SECRET
   const authHeader = request.headers.get('authorization')
 
-  if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+  if (!cronSecret?.trim() || authHeader !== `Bearer ${cronSecret}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
@@ -44,7 +45,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       publishedAt: blogPosts.published_at,
     })
     .from(blogPosts)
-    .where(and(gte(blogPosts.published_at, since), lte(blogPosts.published_at, now)))
+    .where(and(gte(blogPosts.published_at, since), publicAtOrBefore(blogPosts.published_at, now)))
     .orderBy(desc(blogPosts.published_at))
     .limit(MAX_URLS_PER_RUN)
 

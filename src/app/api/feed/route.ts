@@ -8,12 +8,13 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/db/client';
 import { blogPosts } from '@/db/schema';
-import { and, desc, isNotNull, lte } from 'drizzle-orm';
+import { desc } from 'drizzle-orm';
 import { SITE_URL } from '@/lib/config';
 import { getBlogThumbnailUrl } from '@/lib/blog-thumbnails';
+import { publicAtOrBefore } from '@/lib/publication';
+import { presentBlogRevision } from '@/lib/blog-revision';
 
 export const dynamic = 'force-dynamic';
-export const revalidate = 3600; // 1시간 캐시
 
 const SITE_TITLE = '돌봄지기 - 돌봄로봇 종합 정보';
 const SITE_DESCRIPTION =
@@ -53,13 +54,13 @@ export async function GET(): Promise<NextResponse> {
       updated_at: blogPosts.updated_at,
     })
     .from(blogPosts)
-    .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
+    .where(publicAtOrBefore(blogPosts.published_at))
     .orderBy(desc(blogPosts.published_at))
     .limit(15);
 
   const now = new Date().toUTCString();
 
-  const postItems = latestPosts
+  const postItems = latestPosts.map(presentBlogRevision)
     .map((post) => {
       const url = `${SITE_URL}/blog/${post.slug}`;
       const title = escapeXml(post.title_ko);
@@ -108,7 +109,7 @@ ${postItems}
     status: 200,
     headers: {
       'Content-Type': 'application/rss+xml; charset=UTF-8',
-      'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      'Cache-Control': 'no-store',
     },
   });
 }

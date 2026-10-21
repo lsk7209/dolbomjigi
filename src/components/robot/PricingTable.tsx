@@ -64,8 +64,8 @@ export default function PricingTable({
   if (rentalAvailable) {
     rows.push({
       type: '단기 대여',
-      value: '지자체·복지관 문의',
-      note: '지원사업 통해 무료 또는 저렴하게 이용 가능',
+      value: '조건 별도 확인',
+      note: '대여 정보와 무료 지원 자격은 별개입니다. 계약·요금 확인이 필요합니다.',
       highlighted: false,
     })
   }

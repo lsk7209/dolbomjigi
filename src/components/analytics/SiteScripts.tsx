@@ -2,7 +2,7 @@
 
 import Script from 'next/script'
 import { usePathname } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 const MONETIZED_ROUTE_PREFIXES = [
   '/blog',
@@ -38,13 +38,15 @@ interface SiteScriptsProps {
 
 export default function SiteScripts({ adsensePublisherId, gaId }: SiteScriptsProps) {
   const pathname = usePathname()
+  const previousPath = useRef(pathname)
 
   useEffect(() => {
+    if (previousPath.current === pathname) return
+    previousPath.current = pathname
     if (!window.gtag) return
 
-    window.gtag('config', gaId, {
+    window.gtag('event', 'page_view', {
       page_path: pathname,
-      anonymize_ip: true,
     })
   }, [gaId, pathname])
 

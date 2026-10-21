@@ -1,3 +1,4 @@
+import { assertLocalDraft } from '../../lib/local-draft';
 import { createClient } from '@libsql/client';
 import { drizzle } from 'drizzle-orm/libsql';
 import * as schema from '../schema';
@@ -21,19 +22,19 @@ if (fs.existsSync(envFile)) {
   const lines = fs.readFileSync(envFile, 'utf-8').split('\n');
   for (const line of lines) {
     const match = line.match(/^([^#=]+)=(.*)$/);
-    if (match) process.env[match[1].trim()] = match[2].trim();
+    if (match && process.env[match[1].trim()] === undefined) process.env[match[1].trim()] = match[2].trim();
   }
 }
 
 async function seed() {
   const url = process.env.TURSO_DATABASE_URL;
-  const authToken = process.env.TURSO_AUTH_TOKEN;
 
   if (!url) {
     throw new Error('TURSO_DATABASE_URL environment variable is not set');
   }
 
-  const client = createClient({ url, authToken });
+  assertLocalDraft(url);
+  const client = createClient({ url });
   const db = drizzle(client, { schema });
 
   console.log('🌱 Seeding database...');
@@ -154,7 +155,7 @@ async function seed() {
   // Blog Posts 삽입
   console.log('📝 Inserting blog posts...');
   for (const post of blogPostsSeedData) {
-    await db.insert(blogPosts).values(post).onConflictDoNothing();
+    await db.insert(blogPosts).values({...post, published_at:null}).onConflictDoNothing();
   }
   console.log(`  ✓ ${blogPostsSeedData.length} blog posts inserted`);
 

@@ -1,7 +1,7 @@
 export interface SupportRegion {
   slug: string
   sido_code: string
-  level: "sido" | "sigungu"
+  level: 'sido' | 'sigungu'
 }
 
 export function getSupportProgramUrl(
@@ -10,12 +10,12 @@ export function getSupportProgramUrl(
 ): string {
   if (program.region_id === null) return `/support/national/${program.slug}`
   const region = regions.get(program.region_id)
-  if (!region) return "/support"
-  if (region.level === "sido") return `/support/region/${region.slug}`
+  if (!region) return '/support'
+  if (region.level === 'sido') return `/support/region/${region.slug}`
   const province = [...regions.values()].find(
-    (item) => item.level === "sido" && item.sido_code === region.sido_code,
+    (item) => item.level === 'sido' && item.sido_code === region.sido_code,
   )
   return province
     ? `/support/region/${province.slug}/${region.slug}`
-    : "/support"
+    : '/support'
 }

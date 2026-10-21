@@ -1,4 +1,5 @@
 import React from 'react'
+import { hasExpertReview, validRecordedDate, type ExpertReviewEvidence } from '@/lib/trust'
 
 interface AuthorInfo {
   name: string
@@ -15,8 +16,12 @@ interface ReviewerInfo {
 interface AuthorBlockProps {
   author: AuthorInfo
   reviewer?: ReviewerInfo
-  confirmedAt: string   // YYYY-MM-DD
+  confirmedAt?: string // Legacy caller value is not evidence of checking.
   nextUpdateAt?: string // YYYY-MM-DD
+  sourceCheckedAt?: string
+  contentUpdatedAt?: string
+  expertEvidence?: ExpertReviewEvidence
+  contentVersion?: string
 }
 
 /**
@@ -27,8 +32,10 @@ interface AuthorBlockProps {
 export default function AuthorBlock({
   author,
   reviewer,
-  confirmedAt,
-  nextUpdateAt,
+  sourceCheckedAt,
+  contentUpdatedAt,
+  expertEvidence,
+  contentVersion,
 }: AuthorBlockProps) {
   return (
     <aside
@@ -39,7 +46,7 @@ export default function AuthorBlock({
       <div className="flex items-center gap-2">
         <span className="font-semibold text-gray-900">작성</span>
         <a
-          href={`/authors/${author.slug}`}
+          href={`/authors/${author.slug === 'editorial-team' ? 'editor-team' : author.slug}`}
           className="text-blue-600 hover:underline font-medium"
         >
           {author.name}
@@ -50,7 +57,7 @@ export default function AuthorBlock({
       </div>
 
       {/* 감수자 (선택) */}
-      {reviewer && (
+      {reviewer && hasExpertReview(expertEvidence, contentVersion) && (
         <div className="flex items-center gap-2">
           <span className="font-semibold text-gray-900">감수</span>
           <a
@@ -67,12 +74,12 @@ export default function AuthorBlock({
 
       {/* 날짜 정보 */}
       <div className="flex flex-wrap gap-x-4 gap-y-1 text-gray-500 mt-1">
-        <time dateTime={confirmedAt}>
-          최종 확인일: <span className="text-gray-700">{confirmedAt}</span>
-        </time>
-        {nextUpdateAt && (
-          <time dateTime={nextUpdateAt}>
-            다음 갱신 예정: <span className="text-gray-700">{nextUpdateAt}</span>
+        {validRecordedDate(sourceCheckedAt) ? <time dateTime={sourceCheckedAt}>
+          원문 대조일: <span className="text-gray-700">{sourceCheckedAt}</span>
+        </time> : <span>원문 대조일: 확인 기록 없음</span>}
+        {validRecordedDate(contentUpdatedAt) && (
+          <time dateTime={contentUpdatedAt}>
+            내용 수정일: <span className="text-gray-700">{contentUpdatedAt}</span>
           </time>
         )}
       </div>

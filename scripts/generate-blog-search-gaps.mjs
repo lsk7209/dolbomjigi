@@ -4,7 +4,6 @@ import { createClient } from '@libsql/client'
 
 const ROOT = process.cwd()
 const OUT = path.join(ROOT, 'scripts', 'blog-generated-2026-search-gaps.json')
-const FIVE_HOURS_MS = 5 * 60 * 60 * 1000
 
 function loadEnv() {
   const envPath = path.join(ROOT, '.env.local')
@@ -274,6 +273,8 @@ const posts = selected.map((topic) => ({
   reading_time_minutes: 7,
   quality_score: scoreFor(topic),
   pass: true,
+  editorial_status: 'draft',
+  published_at: null,
   main_keyword: topic.main_keyword,
   related_keywords: topic.related_keywords,
   search_intent: topic.search_intent,
@@ -284,9 +285,7 @@ const posts = selected.map((topic) => ({
 
 fs.writeFileSync(OUT, JSON.stringify(posts, null, 2), 'utf8')
 
-const first = new Date(Date.now() + FIVE_HOURS_MS)
-const last = new Date(first.getTime() + (posts.length - 1) * FIVE_HOURS_MS)
 console.log(`generated=${posts.length}`)
 console.log(`output=${OUT}`)
 console.log(`sample=${posts[0].title}`)
-console.log(`local_schedule_if_empty=${first.toISOString()}..${last.toISOString()}`)
+console.log('editorial_status=draft; publication requires separate human approval')

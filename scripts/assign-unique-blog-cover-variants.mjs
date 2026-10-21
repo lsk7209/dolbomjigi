@@ -3,6 +3,7 @@ import os from 'os'
 import path from 'path'
 import { spawnSync } from 'child_process'
 import { createClient } from '@libsql/client'
+import { assertLocalDraftDb } from './local-draft-guard.mjs'
 
 const ROOT = process.cwd()
 const POSTS_DIR = path.join(ROOT, 'public', 'images', 'blog-ai', 'posts')
@@ -75,6 +76,7 @@ function sourceFor(post) {
   return path.join(ROOT, 'public', 'images', 'blog-ai', fileName)
 }
 
+assertLocalDraftDb()
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL,
   authToken: process.env.TURSO_AUTH_TOKEN,

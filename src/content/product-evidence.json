@@ -1,0 +1,84 @@
+{
+  "lovot": {
+    "displayModel": "LOVOT 3.0 (일본 공식 기준)",
+    "market": "JP",
+    "bodyPriceJpy": 577500,
+    "requiredServiceFromJpyMonthly": 9900,
+    "priceKrw": null,
+    "koreaAvailability": "unverified",
+    "sourceUrl": "https://lovot.life/pricing",
+    "checkedAt": "2026-10-20"
+  },
+  "moflin": {
+    "displayModel": "Moflin PE-M11 / PE-M10 (CASIO 일본 판매)",
+    "market": "JP",
+    "priceKrw": null,
+    "peM11PkJapanListPriceJpy": 64900,
+    "peM10JapanLaunchListPriceJpy": 59400,
+    "requiredSubscription": "not_established",
+    "optionalPaidSupportMembership": true,
+    "koreaAvailability": "unverified",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000516.000040622.html",
+    "checkedAt": "2026-10-20"
+  },
+  "hyodol": {
+    "displayModel": "효돌 (현행 세부 모델 미확인)",
+    "market": "KR",
+    "priceKrw": null,
+    "subscriptionKrwMonthly": null,
+    "fallDetection": "unverified",
+    "sourceUrl": "https://hyodol.com/",
+    "checkedAt": "2026-10-20"
+  },
+  "dasom-k": {
+    "displayModel": null,
+    "verified": false
+  },
+  "dasom-b": {
+    "displayModel": null,
+    "verified": false
+  },
+  "dasom-m": {
+    "displayModel": null,
+    "verified": false
+  },
+  "kkumdoli": {
+    "displayModel": null,
+    "verified": false
+  },
+  "bomi": {
+    "displayModel": null,
+    "verified": false
+  },
+  "raemi": {
+    "displayModel": null,
+    "verified": false
+  },
+  "maibom": {
+    "displayModel": null,
+    "verified": false
+  },
+  "aibo": {
+    "market": "JP",
+    "requiredBasicPlanJpyMonthly36Payments": 3278,
+    "requiredBasicPlanJpyThreeYearsPrepaid": 99000,
+    "priceKrw": null,
+    "sourceUrl": "https://aibo.sony.jp/feature/basic.html",
+    "checkedAt": "2026-10-20"
+  },
+  "elliq": {
+    "market": "US",
+    "priceKrw": null,
+    "subscriptionKrwMonthly": null,
+    "koreaAvailability": "unverified",
+    "sourceUrl": "https://elliq.com/collections/all",
+    "checkedAt": "2026-10-20"
+  },
+  "paro": {
+    "priceKrw": null,
+    "guaranteedMedicalBenefit": false,
+    "koreaAvailability": "unverified",
+    "sourceUrl": "https://www.parorobots.com/pdf/PARO%20Manual-2015-09.pdf",
+    "checkedAt": "2026-10-20"
+  }
+}

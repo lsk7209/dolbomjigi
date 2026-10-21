@@ -43,17 +43,18 @@ jobs:
         run: pnpm lint
 
       - name: Content lint check
-        run: |
-          echo "Content linter: checking for forbidden medical/promotional terms..."
-          echo "Note: DB content requires manual review (human_reviewed=true gate)."
-          echo "Content linter: OK"
+        run: pnpm exec tsx --test tests/*.test.ts tests/*.test.tsx
 
-      - name: Build
-        run: pnpm build
+      - name: Build production defaults
+        run: |
+          node scripts/create-test-db.mjs
+          pnpm build
         env:
-          # 빌드 시 필요한 더미 환경변수 (실제 DB 연결 없이 타입 체크용)
-          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL || 'libsql://placeholder.turso.io' }}
-          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN || 'placeholder-token' }}
+          DOLBOM_LOCAL_DRAFT_DB: ci.db
+          TURSO_DATABASE_URL: file:./.tmp/ci.db
+          TURSO_AUTH_TOKEN: ''
+          NEXT_PUBLIC_LOCAL_PREVIEW: '0'
+          NEXT_TELEMETRY_DISABLED: '1'
           NEXT_PUBLIC_GA_ID: ''
           BIZINFO_API_KEY: ''
           SLACK_WEBHOOK_URL: ''

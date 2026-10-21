@@ -167,7 +167,7 @@ const VERDICT_SCHEMA = {
     medical_violations: { type: 'array', items: { type: 'string' }, description: '의료표현 위반 단어 목록 (없으면 빈 배열)' },
     cliche_violations: { type: 'array', items: { type: 'string' }, description: '클리셰 위반 목록' },
     ai_disclosure_found: { type: 'boolean', description: 'AI 작성 고지 발견 여부' },
-    pass: { type: 'boolean', description: '발행 가능 여부 (품질>=90 AND 위반 0건)' },
+    pass: { type: 'boolean', description: '자동 구조 검사 통과 여부 (품질>=90 AND 위반 0건). 사람의 편집 승인과 무관' },
     weak_points: { type: 'string', description: '90점 미만 시 약점 (수정 지침)' },
   },
   required: ['quality_score', 'medical_violations', 'cliche_violations', 'ai_disclosure_found', 'pass'],
@@ -279,7 +279,7 @@ ${draft.body_md}
 3. AI 작성 고지 ("AI가 작성", "인공지능이 생성" 등)
 4. 자격 사칭
 
-**pass 기준**: quality_score >= 90 AND medical_violations 0건 AND cliche_violations 0건 AND ai_disclosure_found=false
+**pass 기준 (자동 구조 검사만 해당, 편집 승인 아님)**: quality_score >= 90 AND medical_violations 0건 AND cliche_violations 0건 AND ai_disclosure_found=false
 
 90점 미만이거나 위반이 있으면 weak_points에 구체적 수정 지침을 쓰세요.`
 }
@@ -318,6 +318,8 @@ const results = await pipeline(
       reading_time_minutes: draft.reading_time_minutes,
       quality_score: verdict.quality_score,
       pass: verdict.pass,
+      editorial_status: 'draft',
+      published_at: null,
       medical_violations: verdict.medical_violations,
       revisions,
     }

@@ -44,3 +44,9 @@ next-env.d.ts
 
 # 블로그 생성 원본 결과 (DB 적재 후 불필요)
 scripts/blog-generated-*.json
+
+# Local verification databases and session state (retain on disk).
+/.tmp/
+/.goal-harness/local-data/
+/.omx/
+/.playwright-cli/

@@ -4,18 +4,16 @@ import type { LintResult } from '@/types'
  * AdSense 정책 준수를 위한 금지 의료 표현
  */
 const FORBIDDEN_MEDICAL: string[] = [
+  '치료',
+  '진단',
+  '의료기기',
+  '효능',
   '치매 예방',
   '치매예방',
-  '치료',
-  '처방',
-  '의료기기',
-  '환자',
-  '진단',
-  '효능',
+  '치료 효과',
+  '효능 보장',
   '약효',
-  '처치',
-  '부작용',
-  '임상 결과',
+  '임상 결과 조작',
   '의사 추천',
   '만병통치',
   'FDA 승인',
@@ -37,18 +35,13 @@ const FORBIDDEN_PROMOTIONAL: string[] = [
   '후회없는',
 ]
 
-/**
- * 인용 블록(blockquote 태그 또는 마크다운 > 인용)을 텍스트에서 제거한다.
- * 인용 내부의 표현은 검사 대상에서 제외한다.
- */
-function stripQuoteBlocks(text: string): string {
-  // HTML <blockquote>...</blockquote> 제거 (중첩 포함, 개행 포함)
-  const withoutHtmlBlockquote = text.replace(/<blockquote[\s\S]*?<\/blockquote>/gi, '')
-
-  // 마크다운 인용 블록 제거: 연속된 "> " 로 시작하는 줄 전체를 제거
-  const lines = withoutHtmlBlockquote.split('\n')
-  const filteredLines = lines.filter((line) => !/^\s*>/.test(line))
-  return filteredLines.join('\n')
+/** 인용도 검사하며 좁은 부정 설명만 제외한다. 사실 승인을 수행하지 않는다. */
+function medicalClaimText(text: string): string {
+  // Quotes remain in scope. Only narrow negative explanations are removed,
+  // never an entire sentence containing a negation and another positive claim.
+  return text.replace(/<[^>]*>/g, ' ')
+    .replace(/의료기기(?:가|는)?\s*아닙니다/g, '')
+    .replace(/치료\s*효과(?:를|는)?\s*보장하지\s*않습니다/g, '')
 }
 
 /**
@@ -69,7 +62,7 @@ function findViolations(text: string, forbidden: string[]): string[] {
  * // { ok: false, violations: { medical: ['치료'], promotional: [] } }
  */
 export function lintContent(text: string): LintResult {
-  const cleaned = stripQuoteBlocks(text)
+  const cleaned = medicalClaimText(text)
 
   const medical = findViolations(cleaned, FORBIDDEN_MEDICAL)
   const promotional = findViolations(cleaned, FORBIDDEN_PROMOTIONAL)

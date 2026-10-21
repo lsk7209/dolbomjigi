@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { createClient } from '@libsql/client'
+import { assertLocalDraftDb } from './local-draft-guard.mjs'
 
 const MIN_BODY_CHARS = 4600
 const MIN_SCORE = 90
@@ -427,6 +428,7 @@ function audit(row) {
   return { score: Math.max(0, score), chars: body.length, h2, h3, checks, tableSeparators, callouts, internal, out }
 }
 
+assertLocalDraftDb()
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL,
   authToken: process.env.TURSO_AUTH_TOKEN,

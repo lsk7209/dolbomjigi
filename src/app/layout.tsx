@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import SiteScripts from '@/components/analytics/SiteScripts';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import ActionEvents from '@/components/common/ActionEvents';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import SiteScripts from '@/components/analytics/SiteScripts';
 import { SITE_URL, SITE_NAME } from '@/lib/config';
 import './globals.css';
 
@@ -86,7 +87,6 @@ export const metadata: Metadata = {
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: {
-    canonical: SITE_URL,
     types: {
       'application/rss+xml': `${SITE_URL}/feed.xml`,
     },
@@ -109,17 +109,50 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? 'G-09901YJY2H';
 const ADSENSE_PUBLISHER_ID =
   process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ?? 'ca-pub-3050601904412736';
 
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+  inLanguage: 'ko-KR',
+  publisher: {
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+};
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: SITE_URL,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const liveTelemetry = process.env.NEXT_PUBLIC_LOCAL_PREVIEW !== '1';
   return (
     <html
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
         {/* RSS 피드 자동 감지 */}
         <link
           rel="alternate"
@@ -136,16 +169,15 @@ export default function RootLayout({
         <Header />
 
         {/* 메인 콘텐츠 */}
-        <main className="flex-1">{children}</main>
+        <div className="flex-1">{children}</div>
 
         {/* 푸터 */}
         <Footer />
 
         {/* Vercel Analytics & Speed Insights */}
-        <Analytics />
-        <SpeedInsights />
+        {liveTelemetry && <><Analytics /><SpeedInsights /><ActionEvents /></>}
 
-        <SiteScripts adsensePublisherId={ADSENSE_PUBLISHER_ID} gaId={GA_ID} />
+        {liveTelemetry && <SiteScripts adsensePublisherId={ADSENSE_PUBLISHER_ID} gaId={GA_ID} />}
       </body>
     </html>
   );
