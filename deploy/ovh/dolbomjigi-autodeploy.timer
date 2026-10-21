@@ -1,0 +1,13 @@
+[Unit]
+Description=Poll Dolbomjigi main for successful CI every five minutes
+
+[Timer]
+OnBootSec=3min
+OnUnitInactiveSec=5min
+RandomizedDelaySec=15
+AccuracySec=10s
+Persistent=false
+Unit=dolbomjigi-autodeploy.service
+
+[Install]
+WantedBy=timers.target
