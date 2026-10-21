@@ -33,6 +33,9 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
+      - name: OVH deployment contract tests
+        run: python3 -m unittest discover -s tests -p ovh_autodeploy_test.py -v
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
