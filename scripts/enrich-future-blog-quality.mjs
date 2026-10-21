@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { createClient } from '@libsql/client'
+import { assertLocalDraftDb } from './local-draft-guard.mjs'
 
 const MIN_BODY_CHARS = 4200
 const MIN_SCORE = 90
@@ -358,6 +359,7 @@ ${mainSubject} 제품 하나로 끝나는 문제가 아닙니다. ${keywords[0]}
   }
 }
 
+assertLocalDraftDb()
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL,
   authToken: process.env.TURSO_AUTH_TOKEN,

@@ -1,3 +1,7 @@
+import EditorialRevision from '@/components/common/EditorialRevision'
+import VerifiedFacts from '@/components/robot/VerifiedFacts'
+import { presentRobot, comparisonSummary } from '@/lib/product-evidence'
+import { isPublicAt, publicAtOrBefore } from '@/lib/publication'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -35,16 +39,6 @@ function formatPrice(amount: number): string {
     return rem > 0 ? `${man.toLocaleString()}만 ${rem.toLocaleString()}원` : `${man.toLocaleString()}만원`
   }
   return `${amount.toLocaleString()}원`
-}
-
-function parseJsonArray(json: string | null | undefined): string[] {
-  if (!json) return []
-  try {
-    const parsed = JSON.parse(json)
-    return Array.isArray(parsed) ? parsed.map(String) : []
-  } catch {
-    return []
-  }
 }
 
 /** "a-vs-b" 슬러그에서 두 로봇 슬러그 추출 */
@@ -113,15 +107,15 @@ function buildDiffRows(robotA: Robot, robotB: Robot): DiffRow[] {
   // 월 구독
   rows.push({
     dimension: '월 구독',
-    valueA: robotA.subscription_monthly ? `${formatPrice(robotA.subscription_monthly)}/월` : '미지원',
-    valueB: robotB.subscription_monthly ? `${formatPrice(robotB.subscription_monthly)}/월` : '미지원',
+    valueA: robotA.subscription_monthly ? `${formatPrice(robotA.subscription_monthly)}/월` : '요금 조건 미확인',
+    valueB: robotB.subscription_monthly ? `${formatPrice(robotB.subscription_monthly)}/월` : '요금 조건 미확인',
   })
 
   // 대여 가능
   rows.push({
     dimension: '대여 가능 여부',
-    valueA: robotA.rental_available ? '가능' : '불가',
-    valueB: robotB.rental_available ? '가능' : '불가',
+    valueA: robotA.rental_available ? '가능' : '미확인',
+    valueB: robotB.rental_available ? '가능' : '미확인',
     winner:
       robotA.rental_available && !robotB.rental_available
         ? 'a'
@@ -142,8 +136,8 @@ function buildDiffRows(robotA: Robot, robotB: Robot): DiffRow[] {
   // 한국 시장
   rows.push({
     dimension: '국내 판매',
-    valueA: robotA.korea_market ? '판매 중' : '미출시',
-    valueB: robotB.korea_market ? '판매 중' : '미출시',
+    valueA: robotA.korea_market ? '판매 중' : '국내 판매 미확인',
+    valueB: robotB.korea_market ? '판매 중' : '국내 판매 미확인',
     winner:
       robotA.korea_market && !robotB.korea_market
         ? 'a'
@@ -160,7 +154,7 @@ function buildDiffRows(robotA: Robot, robotB: Robot): DiffRow[] {
 // ─────────────────────────────────────────
 export async function generateStaticParams() {
   try {
-    const rows = await db.select({ slug: comparisons.slug }).from(comparisons)
+    const rows = await db.select({ slug: comparisons.slug }).from(comparisons).where(publicAtOrBefore(comparisons.published_at))
     return rows.map((r) => ({ slug: r.slug }))
   } catch {
     return []
@@ -179,22 +173,26 @@ export async function generateMetadata({
   const parsed = parseSlugs(slug)
   if (!parsed) return { title: '비교 페이지' }
 
-  const [robotA] = await db
-    .select({ name_ko: robots.name_ko })
+  const [rawRobotA] = await db
+    .select({ name_ko: robots.name_ko, slug: robots.slug })
     .from(robots)
     .where(eq(robots.slug, parsed.slugA))
     .limit(1)
 
-  const [robotB] = await db
-    .select({ name_ko: robots.name_ko })
+  const [rawRobotB] = await db
+    .select({ name_ko: robots.name_ko, slug: robots.slug })
     .from(robots)
     .where(eq(robots.slug, parsed.slugB))
     .limit(1)
 
+  const robotA = rawRobotA ? presentRobot(rawRobotA) : undefined
+  const robotB = rawRobotB ? presentRobot(rawRobotB) : undefined
   if (!robotA || !robotB) return { title: '비교 페이지' }
 
-  const title = `${robotA.name_ko} vs ${robotB.name_ko} 비교 | 가격·기능·지원 총정리`
-  const description = `${robotA.name_ko}와 ${robotB.name_ko}를 가격, 주요 기능, 지자체 지원 현황 기준으로 상세 비교합니다. 내 상황에 맞는 돌봄 로봇을 선택하세요.`
+  const visibility = await db.select().from(comparisons).where(eq(comparisons.slug, slug)).get()
+  if (!visibility || !isPublicAt(visibility.published_at, new Date(), visibility, 'comparisons')) notFound()
+  const title = `${robotA.name_ko} vs ${robotB.name_ko} 비교 | 모델·비용·확인 조건`
+  const description = `${robotA.name_ko}와 ${robotB.name_ko}의 모델·비용·사용 조건을 확인합니다. 국내 요금과 지원사업 적용 여부는 별도 확인이 필요합니다.`
 
   return {
     title,
@@ -221,9 +219,11 @@ export default async function CompareDetailPage({
   const { slugA, slugB } = parsed
 
   // 두 로봇 조회
-  const [robotA] = await db.select().from(robots).where(eq(robots.slug, slugA)).limit(1)
-  const [robotB] = await db.select().from(robots).where(eq(robots.slug, slugB)).limit(1)
+  const [rawRobotA] = await db.select().from(robots).where(eq(robots.slug, slugA)).limit(1)
+  const [rawRobotB] = await db.select().from(robots).where(eq(robots.slug, slugB)).limit(1)
 
+  const robotA = rawRobotA ? presentRobot(rawRobotA) : undefined
+  const robotB = rawRobotB ? presentRobot(rawRobotB) : undefined
   if (!robotA || !robotB) notFound()
 
   // DB에서 비교 메타 조회 (있으면 활용)
@@ -232,6 +232,9 @@ export default async function CompareDetailPage({
     .from(comparisons)
     .where(eq(comparisons.slug, slug))
     .limit(1)
+
+  if (!comparison || !isPublicAt(comparison.published_at, new Date(), comparison, 'comparisons')) notFound()
+  if (slug === 'lovot-vs-moflin') return <main className="max-w-3xl mx-auto px-4 py-10 flex flex-col gap-6"><h1 className="text-2xl font-bold">LOVOT과 Moflin 비교: 모델·비용·사용 조건</h1><EditorialRevision path="/compare/lovot-vs-moflin"/><VerifiedFacts slug="lovot"/><VerifiedFacts slug="moflin"/><Link data-action="compare_product_open" href="/robot/lovot">LOVOT 상세</Link><Link data-action="compare_product_open" href="/robot/moflin">Moflin 상세</Link><AuthorBlock author={{name:'돌봄지기 편집팀',role:'편집',slug:'editor-team'}}/></main>
 
   // 작성자 조회 (비교 데이터가 있을 경우)
   let authorData: Author | undefined
@@ -246,11 +249,11 @@ export default async function CompareDetailPage({
   }
 
   const diffRows = buildDiffRows(robotA, robotB)
-  const prosA = comparison ? parseJsonArray(comparison.pros_a_json) : []
-  const prosB = comparison ? parseJsonArray(comparison.pros_b_json) : []
+  const prosA: string[] = []
+  const prosB: string[] = []
 
   // 페르소나 추천 (비교 데이터 활용 또는 기본값)
-  const recommendedPersona = comparison?.recommended_persona
+  const recommendedPersona = null
 
   // JSON-LD: ItemList
   const itemListJsonLd = {
@@ -273,11 +276,6 @@ export default async function CompareDetailPage({
     ],
   }
 
-  const todayDate = new Date()
-  const today = todayDate.toISOString().split('T')[0]
-  const nextUpdate = new Date(todayDate.getTime() + 90 * 24 * 60 * 60 * 1000)
-    .toISOString()
-    .split('T')[0]
 
   return (
     <>
@@ -307,8 +305,7 @@ export default async function CompareDetailPage({
       <div className="max-w-3xl mx-auto px-4 py-10 flex flex-col gap-12">
         {/* 핵심 답변 */}
         <AnswerBlock>
-          {comparison?.summary ??
-            `${robotA.name_ko}와 ${robotB.name_ko}는 각각 ${CATEGORY_LABEL[robotA.category] ?? robotA.category}와 ${CATEGORY_LABEL[robotB.category] ?? robotB.category} 제품입니다. 가격, 기능, 지원 현황을 비교하여 상황에 맞는 로봇을 선택하세요.`}
+          {comparisonSummary(slug)}
         </AnswerBlock>
 
         {/* 한 줄 결론 */}
@@ -439,7 +436,7 @@ export default async function CompareDetailPage({
                   </p>
                 )}
                 <p className="text-xs text-gray-400">
-                  대여: {robot.rental_available ? '가능' : '불가'}
+                  대여: {robot.rental_available ? '가능' : '미확인'}
                 </p>
                 <Link
                   href={`/robot/${robot.slug}/`}
@@ -546,8 +543,6 @@ export default async function CompareDetailPage({
                 }
               : undefined
           }
-          confirmedAt={today}
-          nextUpdateAt={nextUpdate}
         />
       </div>
     </>

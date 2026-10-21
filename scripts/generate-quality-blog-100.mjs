@@ -258,6 +258,8 @@ for (const situation of situations) {
       visual_elements: elements,
       quality_score: 0,
       pass: true,
+      editorial_status: 'draft',
+      published_at: null,
     }
     post.quality_score = scorePost(post)
     post.pass = post.quality_score >= 90
@@ -281,12 +283,14 @@ const manifest = {
   generated_count: posts.length,
   target_met: posts.length === 100,
   handoff_ready: true,
+  editorial_status: 'draft',
   min_quality_score: Math.min(...posts.map((post) => post.quality_score)),
   average_quality_score: Math.round(posts.reduce((sum, post) => sum + post.quality_score, 0) / posts.length),
   title_export_source: OUT,
   persona_source: 'inferred:dolbomjigi',
   duplicate_status: 'new-local-dedup-pass',
   review_items: [],
+  review_note: 'Structural scoring only; human editorial approval is pending.',
   failed_items: [],
   posts: posts.map((post) => ({
     slug: post.slug,
@@ -300,6 +304,7 @@ const manifest = {
     visual_elements: post.visual_elements,
     quality_score: post.quality_score,
     pass: post.pass,
+    editorial_status: post.editorial_status,
   })),
 }
 

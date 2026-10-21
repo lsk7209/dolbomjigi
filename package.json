@@ -10,14 +10,15 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/db/migrate.ts",
     "db:seed": "tsx src/db/seed/index.ts",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "test": "tsx --test tests/*.test.ts tests/*.test.tsx"
   },
   "dependencies": {
     "@libsql/client": "^0.17.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "drizzle-orm": "^0.45.2",
-    "next": "16.2.6",
+    "next": "16.4.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -28,7 +29,7 @@
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.10",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.4.1",
     "tailwindcss": "^4",
     "tsx": "^4.22.2",
     "typescript": "^5"

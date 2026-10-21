@@ -1,4 +1,5 @@
 import type { Robot } from '@/types'
+import { SITE_URL } from '@/lib/config'
 
 // ---------------------------------------------------------------------------
 // Product (돌봄 로봇)
@@ -12,31 +13,13 @@ export function buildProductJsonLd(robot: Robot): object {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: robot.name_ko,
-    manufacturer: {
-      '@type': 'Organization',
-      name: robot.manufacturer,
-    },
     category: robot.category,
   }
 
+  if (robot.manufacturer && !/확인|브랜드|판매판/.test(robot.manufacturer)) ld.manufacturer = { '@type':'Organization', name:robot.manufacturer }
   if (robot.name_en) ld['alternateName'] = robot.name_en
   if (robot.description) ld['description'] = robot.description
   if (robot.image_url) ld['image'] = robot.image_url
-
-  const hasPriceRange =
-    robot.price_min !== undefined ||
-    robot.price_max !== undefined ||
-    robot.subscription_monthly !== undefined
-
-  if (hasPriceRange) {
-    const offers: Record<string, unknown> = {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'KRW',
-    }
-    if (robot.price_min !== undefined) offers['lowPrice'] = robot.price_min
-    if (robot.price_max !== undefined) offers['highPrice'] = robot.price_max
-    ld['offers'] = offers
-  }
 
   return ld
 }
@@ -92,8 +75,8 @@ export function buildBreadcrumbJsonLd(
 export interface ArticleJsonLdParams {
   title: string
   description: string
-  datePublished: string
-  dateModified: string
+  datePublished?: string
+  dateModified?: string
   authorName: string
   url: string
   imageUrl?: string
@@ -108,14 +91,16 @@ export function buildArticleJsonLd(params: ArticleJsonLdParams): object {
     '@type': 'Article',
     headline: params.title,
     description: params.description,
-    datePublished: params.datePublished,
-    dateModified: params.dateModified,
     author: {
-      '@type': 'Person',
+      '@type': params.authorName.includes('편집팀') ? 'Organization' : 'Person',
       name: params.authorName,
+      ...(params.authorName.includes('편집팀') ? { '@id': `${SITE_URL}/#editorial-team`, url: `${SITE_URL}/authors/editor-team` } : {}),
     },
     url: params.url,
   }
+
+  if (params.datePublished && Number.isFinite(Date.parse(params.datePublished))) ld.datePublished = params.datePublished
+  if (params.dateModified && Number.isFinite(Date.parse(params.dateModified))) ld.dateModified = params.dateModified
 
   if (params.imageUrl) ld['image'] = params.imageUrl
 
@@ -141,7 +126,7 @@ export function buildGovernmentServiceJsonLd(
 ): object {
   return {
     '@context': 'https://schema.org',
-    '@type': 'GovernmentService',
+    '@type': 'WebPage',
     name: params.name,
     description: params.description,
     url: params.url,
@@ -149,10 +134,7 @@ export function buildGovernmentServiceJsonLd(
       '@type': 'AdministrativeArea',
       name: params.areaServed,
     },
-    provider: {
-      '@type': 'GovernmentOrganization',
-      name: '대한민국 정부',
-    },
+    // This site describes a program; it is not the government service provider.
   }
 }
 

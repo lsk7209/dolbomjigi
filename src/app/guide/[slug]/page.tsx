@@ -1,3 +1,7 @@
+import { presentRobot } from '@/lib/product-evidence'
+import EditorialRevision from '@/components/common/EditorialRevision'
+import { isPublicAt, publicAtOrBefore } from '@/lib/publication'
+export const dynamic = 'force-dynamic'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -85,7 +89,7 @@ function markdownExcerpt(md: string, maxLength = 220): string {
 // ─────────────────────────────────────────
 export async function generateStaticParams() {
   try {
-    const rows = await db.select({ slug: guides.slug }).from(guides)
+    const rows = await db.select({ slug: guides.slug }).from(guides).where(publicAtOrBefore(guides.published_at))
     return rows.map((r) => ({ slug: r.slug }))
   } catch {
     return []
@@ -107,7 +111,7 @@ export async function generateMetadata({
     .where(eq(guides.slug, slug))
     .limit(1)
 
-  if (!guide) return { title: '가이드를 찾을 수 없습니다' }
+  if (!guide || !isPublicAt(guide.published_at, new Date(), guide, 'guides')) return { title: '가이드를 찾을 수 없습니다' }
 
   const personaLabel = PERSONA_LABEL[guide.persona_group] ?? guide.persona_group
   const title = `${guide.title_ko} | ${personaLabel} 돌봄로봇 선택 가이드`
@@ -141,7 +145,9 @@ export default async function GuideDetailPage({
     .where(eq(guides.slug, slug))
     .limit(1)
 
-  if (!guide) notFound()
+  if (!guide || !isPublicAt(guide.published_at, new Date(), guide, 'guides')) notFound()
+
+  if (['mom-living-alone','welfare-center-coordinator'].includes(slug)) return <main className="max-w-3xl mx-auto px-4 py-10 flex flex-col gap-6"><h1 className="text-2xl font-bold">{guide.title_ko}</h1><EditorialRevision path={`/guide/${slug}`}/><AuthorBlock author={{name:'돌봄지기 편집팀',role:'편집',slug:'editor-team'}}/><Link href="/robot">제품별 확인 자료</Link><Link href="/support">지원사업 확인</Link></main>
 
   // 작성자·감수자 조회
   let authorData: Author | undefined
@@ -162,33 +168,10 @@ export default async function GuideDetailPage({
   if (recommendedIds.length > 0) {
     // 추천 로봇 ID 목록으로 조회
     const allRobots = await db.select().from(robots)
-    recommendedRobots = allRobots
+    recommendedRobots = allRobots.map(presentRobot)
       .filter((r) => recommendedIds.includes(r.id))
       .sort((a, b) => recommendedIds.indexOf(a.id) - recommendedIds.indexOf(b.id))
       .slice(0, 3)
-  }
-
-  // 추천 로봇이 부족하면 같은 페르소나에 맞는 기본 로봇으로 보완
-  if (recommendedRobots.length < 3) {
-    const fallbackCategory =
-      guide.persona_group === 'family_caregiver' || guide.persona_group === 'social_worker'
-        ? 'senior_care'
-        : guide.persona_group === 'public_servant'
-        ? 'monitoring'
-        : 'companion'
-
-    const fallbacks = await db
-      .select()
-      .from(robots)
-      .where(eq(robots.category, fallbackCategory as 'companion' | 'senior_care' | 'rehabilitation' | 'monitoring'))
-
-    const existingIds = new Set(recommendedRobots.map((r) => r.id))
-    for (const r of fallbacks) {
-      if (!existingIds.has(r.id)) {
-        recommendedRobots.push(r)
-        if (recommendedRobots.length >= 3) break
-      }
-    }
   }
 
   const personaLabel = PERSONA_LABEL[guide.persona_group] ?? guide.persona_group
@@ -202,30 +185,24 @@ export default async function GuideDetailPage({
     },
     {
       question: '돌봄 로봇 도입 비용이 부담스럽습니다. 지원사업을 받을 수 있나요?',
-      answer: '보건복지부와 지자체에서 독거 어르신, 저소득 가구, 복지시설 등을 대상으로 돌봄 로봇 무상 보급 또는 구매 보조금 지원사업을 운영하고 있습니다. 지역 주민센터·복지관 또는 이 사이트의 지원사업 페이지에서 확인하세요.',
+      answer: '지원 여부는 해당 지역의 실제 공고, 모집 기간, 제품과 신청 자격이 모두 일치할 때 판단할 수 있습니다. 대여 가능이나 가격 미입력은 무료 지원 근거가 아닙니다.',
     },
     {
       question: '돌봄 로봇을 어르신이 혼자 사용할 수 있나요?',
-      answer: '대부분의 국내 돌봄 로봇은 어르신이 단독으로 사용할 수 있도록 간단한 터치 인터페이스나 음성 인식 방식으로 설계되어 있습니다. 초기 설정 및 앱 연동은 가족이나 복지사의 도움이 필요할 수 있습니다.',
+      answer: '혼자 사용할 수 있는지는 제품별 조작·충전 방식과 이용자의 상태에 따라 다릅니다. 시연으로 확인하고 초기 설정과 고장 시 도움받을 사람을 정하세요.',
     },
     {
       question: '돌봄 로봇 도입 전 어떤 점을 확인해야 하나요?',
-      answer: 'Wi-Fi 연결 환경, 충전 위치, 낙상 감지 범위, AS 정책, 월 구독 여부 등을 사전에 확인하세요. 가능하다면 체험·대여 프로그램을 통해 실제 사용성을 먼저 확인하는 것을 권장합니다.',
+      answer: 'Wi-Fi 연결 환경, 충전 위치, 실제로 확인된 알림 기능과 대응 범위, AS 정책, 월 구독 여부 등을 사전에 확인하세요. 가능하다면 체험·대여 프로그램을 통해 실제 사용성을 먼저 확인하는 것을 권장합니다.',
     },
     {
       question: '가이드 내용은 얼마나 자주 업데이트되나요?',
-      answer: '이 가이드는 최소 분기(3개월)마다 최신 제품 정보와 지원사업 현황을 반영하여 업데이트됩니다. 정확한 최신 내용은 각 기관에 직접 문의하시기 바랍니다.',
+      answer: '확인 기록이 있는 원문 대조일과 내용 수정일만 구분해 표시합니다. 날짜가 없으면 최신 정보로 검증됐다는 뜻이 아닙니다.',
     },
   ]
 
   // 예산대별 옵션
   const priceTiers = [
-    {
-      tier: '무료 (지원사업)',
-      condition: '독거 어르신·저소득 가구 해당 시',
-      robots: recommendedRobots.filter((r) => r.rental_available || !r.price_min),
-      note: '지자체 지원사업 통한 무상 보급',
-    },
     {
       tier: '50만원 미만',
       condition: '저가 구독형 또는 소형 기기',
@@ -246,20 +223,17 @@ export default async function GuideDetailPage({
       robots: recommendedRobots.filter((r) => r.price_min && r.price_min >= 2000000),
       note: '고기능 재활·전문 돌봄 로봇',
     },
-  ].filter((tier) => tier.robots.length > 0 || tier.tier === '무료 (지원사업)')
+  ].filter((tier) => tier.robots.length > 0)
 
   // JSON-LD
   const publishedAt = guide.published_at
     ? guide.published_at.toISOString().split('T')[0]
-    : new Date().toISOString().split('T')[0]
-  const todayDate = new Date()
-  const today = todayDate.toISOString().split('T')[0]
+    : undefined
 
   const articleJsonLd = buildArticleJsonLd({
     title: guide.title_ko,
     description: guide.scenario ?? `${personaLabel} 대상 돌봄 로봇 선택 가이드`,
     datePublished: publishedAt,
-    dateModified: today,
     authorName: authorData?.name ?? '돌봄지기 편집팀',
     url: `${SITE_URL}/guide/${guide.slug}/`,
   })
@@ -272,9 +246,6 @@ export default async function GuideDetailPage({
     { name: guide.title_ko, url: `${SITE_URL}/guide/${guide.slug}/` },
   ])
 
-  const nextUpdate = new Date(todayDate.getTime() + 90 * 24 * 60 * 60 * 1000)
-    .toISOString()
-    .split('T')[0]
 
   return (
     <>
@@ -358,7 +329,7 @@ export default async function GuideDetailPage({
         {recommendedRobots.length > 0 && (
           <section aria-label="추천 로봇">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
-              {personaLabel} 추천 로봇 TOP {Math.min(3, recommendedRobots.length)}
+              {personaLabel} 추가 확인 후보 {recommendedRobots.length}개
             </h2>
             <ol className="flex flex-col gap-4">
               {recommendedRobots.map((robot, index) => (
@@ -523,8 +494,6 @@ export default async function GuideDetailPage({
                   slug: 'kim-bokji',
                 }
           }
-          confirmedAt={today}
-          nextUpdateAt={nextUpdate}
         />
       </div>
     </>

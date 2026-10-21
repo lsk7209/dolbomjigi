@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE_URL } from '@/lib/config'
+import HubQualitySections from '@/components/seo/HubQualitySections'
 
 export const metadata: Metadata = {
   title: '기관·시설 돌봄로봇 도입 가이드',
@@ -93,6 +94,8 @@ export default function BusinessPage() {
             </Link>
           </div>
         </div>
+
+        <HubQualitySections topic="business" />
 
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6">
           <Link href="/" className="hover:text-gray-800">홈</Link>

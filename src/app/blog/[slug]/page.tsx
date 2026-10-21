@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { db } from '@/db/client'
 import { blogPosts, authors } from '@/db/schema'
-import { eq, isNotNull, desc, and, lte } from 'drizzle-orm'
+import { and, eq, desc } from 'drizzle-orm'
 import AnswerBlock from '@/components/common/AnswerBlock'
 import AuthorBlock from '@/components/common/AuthorBlock'
 import JsonLdScript from '@/components/seo/JsonLdScript'
@@ -11,24 +11,22 @@ import { markdownToHtml, extractToc } from '@/lib/markdown'
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { SITE_URL, SITE_NAME } from '@/lib/config'
 import { getBlogThumbnailPath, getBlogThumbnailUrl } from '@/lib/blog-thumbnails'
+import { isPublicAt, publicAtOrBefore } from '@/lib/publication'
+import { presentBlogRevision } from '@/lib/blog-revision'
 import Link from 'next/link'
 
-export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 export const dynamicParams = true
 
 // ─────────────────────────────────────────
 // 정적 경로
 // ─────────────────────────────────────────
 export async function generateStaticParams() {
-  try {
-    const rows = await db
-      .select({ slug: blogPosts.slug })
-      .from(blogPosts)
-      .where(isNotNull(blogPosts.published_at))
-    return rows.map((r) => ({ slug: r.slug }))
-  } catch {
-    return []
-  }
+  const rows = await db
+    .select()
+    .from(blogPosts)
+    .where(publicAtOrBefore(blogPosts.published_at))
+  return rows.map((r) => ({ slug: r.slug }))
 }
 
 // ─────────────────────────────────────────
@@ -41,25 +39,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const post = await db
-    .select({
-      title_ko: blogPosts.title_ko,
-      subtitle: blogPosts.subtitle,
-      summary: blogPosts.summary,
-      cover_image_url: blogPosts.cover_image_url,
-      category: blogPosts.category,
-    })
+    .select()
     .from(blogPosts)
     .where(eq(blogPosts.slug, slug))
     .get()
 
-  if (!post) return { title: '글을 찾을 수 없습니다' }
+  if (!post || !isPublicAt(post.published_at, new Date(), post, 'blog_posts')) notFound()
 
-  const title = post.title_ko
-  const description = post.summary ?? post.subtitle ?? post.title_ko
+  const shown = presentBlogRevision(post)
+  const title = shown.title_ko
+  const description = shown.summary ?? shown.subtitle ?? shown.title_ko
   const imageUrl = getBlogThumbnailUrl({
     coverImageUrl: post.cover_image_url,
     category: post.category,
-    title: post.title_ko,
+    title: shown.title_ko,
     slug,
   })
 
@@ -72,7 +65,7 @@ export async function generateMetadata({
       type: 'article',
       url: `${SITE_URL}/blog/${slug}`,
       siteName: SITE_NAME,
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title_ko }],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: shown.title_ko }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -118,15 +111,15 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params
 
-  const post = await db
+  const rawPost = await db
     .select()
     .from(blogPosts)
     .where(eq(blogPosts.slug, slug))
     .get()
 
   // 미발행(null) 또는 예약 공개 전(미래)이면 404
-  if (!post || !post.published_at) notFound()
-  if (new Date(post.published_at).getTime() > new Date().getTime()) notFound()
+  if (!rawPost || !isPublicAt(rawPost.published_at, new Date(), rawPost, 'blog_posts')) notFound()
+  const post = presentBlogRevision(rawPost)
 
   const author = post.author_id
     ? await db.select().from(authors).where(eq(authors.id, post.author_id)).get()
@@ -143,11 +136,10 @@ export default async function BlogPostPage({
       published_at: blogPosts.published_at,
     })
     .from(blogPosts)
-    .where(and(isNotNull(blogPosts.published_at), lte(blogPosts.published_at, new Date())))
+    .where(and(publicAtOrBefore(blogPosts.published_at), eq(blogPosts.category, post.category)))
     .orderBy(desc(blogPosts.published_at))
     .limit(6)
-    .catch(() => [])
-    .then((rows) => rows.filter((r) => r.slug !== slug).slice(0, 3))
+    .then((rows) => rows.filter((r) => r.slug !== slug).slice(0, 3).map(presentBlogRevision))
 
   const html = markdownToHtml(post.body_md)
   const toc = extractToc(post.body_md)
@@ -164,18 +156,15 @@ export default async function BlogPostPage({
     slug: post.slug,
   })
 
-  const publishedAt = new Date(post.published_at)
-  const updatedAt = post.updated_at ? new Date(post.updated_at) : publishedAt
-  const modifiedAt = new Date(Math.max(publishedAt.getTime(), updatedAt.getTime()))
-  const modifiedDate = modifiedAt.toISOString().slice(0, 10)
+  const today = new Date(post.updated_at ?? post.published_at)
+  const todayStr = today.toISOString().slice(0, 10)
 
   const jsonLdData = [
     buildArticleJsonLd({
       title: post.title_ko,
       description: post.summary ?? post.title_ko,
-      datePublished: publishedAt.toISOString().slice(0, 10),
-      dateModified: modifiedDate,
-      authorName: author?.name ?? SITE_NAME,
+      datePublished: rawPost.published_at.toISOString().slice(0, 10),
+      authorName: author?.name ?? '돌봄지기 편집팀',
       url: `${SITE_URL}/blog/${slug}`,
       imageUrl: thumbnailUrl,
     }),
@@ -230,7 +219,7 @@ export default async function BlogPostPage({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={thumbnailPath}
-          alt={`${post.title_ko} 관련 실사형 돌봄로봇 이미지`}
+          alt={`${post.title_ko} 콘텐츠용 설명 이미지 (제품·사용 사례 증거 아님)`}
           className="w-full max-w-2xl h-48 sm:h-64 object-cover rounded-2xl mb-6 bg-gray-50"
         />
 
@@ -299,7 +288,7 @@ export default async function BlogPostPage({
             {author && (
               <AuthorBlock
                 author={{ name: author.name, role: author.role, slug: author.slug }}
-                confirmedAt={modifiedDate}
+                confirmedAt={todayStr}
               />
             )}
           </div>

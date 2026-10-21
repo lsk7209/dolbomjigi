@@ -1,23 +1,24 @@
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
-import { db } from "@/db/client";
-import { authors, guides, comparisons } from "@/db/schema";
-import { eq, or } from "drizzle-orm";
-import Sources from "@/components/common/Sources";
-import JsonLdScript from "@/components/seo/JsonLdScript";
-import { buildArticleJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
-import { SITE_URL, SITE_NAME } from "@/lib/config";
+import Link from 'next/link'
+import { notFound, permanentRedirect } from 'next/navigation'
+import type { Metadata } from 'next'
+import { db } from '@/db/client'
+import { authors, guides, comparisons } from '@/db/schema'
+import { eq, and } from 'drizzle-orm'
+import { publicAtOrBefore } from '@/lib/publication'
+import Sources from '@/components/common/Sources'
+import JsonLdScript from '@/components/seo/JsonLdScript'
+import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
+import { SITE_URL, SITE_NAME } from '@/lib/config'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
 // ─────────────────────────────────────────
 export async function generateStaticParams() {
   try {
-    const rows = await db.select({ slug: authors.slug }).from(authors);
-    return rows.map((r) => ({ slug: r.slug }));
+    const rows = await db.select({ slug: authors.slug }).from(authors)
+    return rows.map((r) => ({ slug: r.slug }))
   } catch {
-    return [];
+    return []
   }
 }
 
@@ -27,24 +28,25 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = await params
+  if (slug === 'editorial-team') permanentRedirect('/authors/editor-team')
   const author = await db
     .select()
     .from(authors)
     .where(eq(authors.slug, slug))
-    .get();
+    .get()
 
-  if (!author) return { title: "저자를 찾을 수 없습니다" };
+  if (!author) return { title: '저자를 찾을 수 없습니다' }
 
   const authorLabel = author.name.startsWith(SITE_NAME)
-    ? author.name.slice(SITE_NAME.length).trim() || "편집팀"
-    : author.name;
-  const title = `${authorLabel} | 저자 프로필`;
+    ? author.name.slice(SITE_NAME.length).trim() || '편집팀'
+    : author.name
+  const title = `${authorLabel} | 저자 프로필`
   const description =
-    author.bio_short ??
-    `${author.name}(${author.role})의 돌봄지기 저자 프로필 페이지입니다.`;
+    (author.slug === 'editor-team' ? author.bio_short : '등록된 작성자 정보입니다. 신원·자격·실제 감수 참여의 확인 기록은 없습니다.') ??
+    `${author.name}(${author.slug === 'editor-team' ? '편집팀' : '등록 정보 · 자격 미확인'})의 돌봄지기 저자 프로필 페이지입니다.`
 
   return {
     title,
@@ -52,46 +54,35 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      type: "profile",
+      type: 'profile',
     },
     alternates: {
       canonical: `${SITE_URL}/authors/${slug}`,
     },
-  };
+  }
 }
 
 // ─────────────────────────────────────────
 // credentials_json 파싱
 // ─────────────────────────────────────────
-function parseCredentials(json: string | null | undefined): string[] {
-  if (!json) return [];
-  try {
-    const parsed = JSON.parse(json);
-    if (Array.isArray(parsed)) return parsed.map(String);
-    if (typeof parsed === "object") return Object.values(parsed).map(String);
-    return [String(parsed)];
-  } catch {
-    return [];
-  }
-}
-
 // ─────────────────────────────────────────
 // 페이지 컴포넌트
 // ─────────────────────────────────────────
 export default async function AuthorProfilePage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>
 }) {
-  const { slug } = await params;
+  const { slug } = await params
+  if (slug === 'editorial-team') permanentRedirect('/authors/editor-team')
 
   const author = await db
     .select()
     .from(authors)
     .where(eq(authors.slug, slug))
-    .get();
+    .get()
 
-  if (!author) notFound();
+  if (!author) notFound()
 
   // 이 저자가 작성한 가이드
   const authoredGuides = await db
@@ -103,19 +94,9 @@ export default async function AuthorProfilePage({
       published_at: guides.published_at,
     })
     .from(guides)
-    .where(eq(guides.author_id, author.id));
+    .where(and(eq(guides.author_id, author.id), publicAtOrBefore(guides.published_at)))
 
-  // 이 저자가 감수한 가이드
-  const reviewedGuides = await db
-    .select({
-      id: guides.id,
-      slug: guides.slug,
-      title_ko: guides.title_ko,
-      persona_group: guides.persona_group,
-      published_at: guides.published_at,
-    })
-    .from(guides)
-    .where(eq(guides.reviewer_id, author.id));
+  const reviewedGuides: typeof authoredGuides = [] // No version-bound expert evidence exists.
 
   // 이 저자가 작성한 비교 콘텐츠
   const authoredComparisons = await db
@@ -126,34 +107,32 @@ export default async function AuthorProfilePage({
       published_at: comparisons.published_at,
     })
     .from(comparisons)
-    .where(eq(comparisons.author_id, author.id));
+    .where(and(eq(comparisons.author_id, author.id), publicAtOrBefore(comparisons.published_at)))
 
-  const credentials = parseCredentials(author.credentials_json);
-  const today = new Date().toISOString().slice(0, 10);
+  const credentials: string[] = []
+  const displayedBio = author.slug === 'editor-team' ? author.bio_short : '등록된 작성자입니다. 신원·자격·감수 참여를 확인할 근거가 아직 연결되지 않았습니다.'
 
   const PERSONA_LABEL: Record<string, string> = {
-    family_caregiver: "가족 돌봄인",
-    social_worker: "사회복지사",
-    public_servant: "공무원",
-    institution: "기관 담당자",
-  };
+    family_caregiver: '가족 돌봄인',
+    social_worker: '사회복지사',
+    public_servant: '공무원',
+    institution: '기관 담당자',
+  }
 
   const jsonLdData = [
     buildArticleJsonLd({
       title: `${author.name} 저자 프로필`,
-      description: author.bio_short ?? `${author.name}(${author.role})`,
-      datePublished: today,
-      dateModified: today,
+      description: (author.slug === 'editor-team' ? author.bio_short : '등록된 작성자 정보입니다. 신원·자격·실제 감수 참여의 확인 기록은 없습니다.') ?? `${author.name}(${author.slug === 'editor-team' ? '편집팀' : '등록 정보 · 자격 미확인'})`,
       authorName: author.name,
       url: `${SITE_URL}/authors/${slug}`,
       imageUrl: author.avatar_url ?? undefined,
     }),
     buildBreadcrumbJsonLd([
-      { name: "홈", url: SITE_URL },
-      { name: "저자", url: `${SITE_URL}/authors` },
+      { name: '홈', url: SITE_URL },
+      { name: '저자', url: `${SITE_URL}/authors` },
       { name: author.name, url: `${SITE_URL}/authors/${slug}` },
     ]),
-  ];
+  ]
 
   return (
     <>
@@ -163,17 +142,9 @@ export default async function AuthorProfilePage({
         {/* 브레드크럼 */}
         <nav className="text-xs text-gray-500" aria-label="breadcrumb">
           <ol className="flex items-center gap-1">
-            <li>
-              <Link href="/" className="hover:underline">
-                홈
-              </Link>
-            </li>
+            <li><Link href="/" className="hover:underline">홈</Link></li>
             <li aria-hidden="true">/</li>
-            <li>
-              <Link href="/authors" className="hover:underline">
-                저자
-              </Link>
-            </li>
+            <li><Link href="/authors" className="hover:underline">저자</Link></li>
             <li aria-hidden="true">/</li>
             <li className="text-gray-800 font-medium">{author.name}</li>
           </ol>
@@ -195,10 +166,8 @@ export default async function AuthorProfilePage({
           )}
           <div className="flex flex-col gap-2">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">
-                {author.name}
-              </h1>
-              <p className="text-sm text-gray-600 mt-0.5">{author.role}</p>
+              <h1 className="text-2xl font-bold text-gray-900">{author.name}</h1>
+              <p className="text-sm text-gray-600 mt-0.5">{author.slug === 'editor-team' ? '편집팀' : '등록 정보 · 자격 미확인'}</p>
             </div>
             {credentials.length > 0 && (
               <div className="flex flex-wrap gap-1">
@@ -219,9 +188,7 @@ export default async function AuthorProfilePage({
         {author.bio_short && (
           <section aria-label="소개">
             <h2 className="text-base font-semibold text-gray-900 mb-2">소개</h2>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              {author.bio_short}
-            </p>
+            <p className="text-sm text-gray-700 leading-relaxed">{displayedBio}</p>
           </section>
         )}
 
@@ -234,24 +201,16 @@ export default async function AuthorProfilePage({
             <ul className="flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-lg overflow-hidden">
               {authoredGuides.map((guide) => (
                 <li key={guide.id} className="bg-white hover:bg-gray-50">
-                  <Link
-                    href={`/guide/${guide.slug}`}
-                    className="flex items-center justify-between px-5 py-3"
-                  >
+                  <Link href={`/guide/${guide.slug}`} className="flex items-center justify-between px-5 py-3">
                     <div className="flex flex-col gap-0.5">
-                      <span className="text-sm font-medium text-gray-900">
-                        {guide.title_ko}
-                      </span>
+                      <span className="text-sm font-medium text-gray-900">{guide.title_ko}</span>
                       <span className="text-xs text-gray-500">
-                        {PERSONA_LABEL[guide.persona_group] ??
-                          guide.persona_group}
+                        {PERSONA_LABEL[guide.persona_group] ?? guide.persona_group}
                         {guide.published_at &&
-                          ` · ${new Date(guide.published_at).toLocaleDateString("ko-KR")}`}
+                          ` · ${new Date(guide.published_at).toLocaleDateString('ko-KR')}`}
                       </span>
                     </div>
-                    <span className="text-blue-600 text-sm shrink-0">
-                      &rarr;
-                    </span>
+                    <span className="text-blue-600 text-sm shrink-0">&rarr;</span>
                   </Link>
                 </li>
               ))}
@@ -268,24 +227,16 @@ export default async function AuthorProfilePage({
             <ul className="flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-lg overflow-hidden">
               {reviewedGuides.map((guide) => (
                 <li key={guide.id} className="bg-white hover:bg-gray-50">
-                  <Link
-                    href={`/guide/${guide.slug}`}
-                    className="flex items-center justify-between px-5 py-3"
-                  >
+                  <Link href={`/guide/${guide.slug}`} className="flex items-center justify-between px-5 py-3">
                     <div className="flex flex-col gap-0.5">
-                      <span className="text-sm font-medium text-gray-900">
-                        {guide.title_ko}
-                      </span>
+                      <span className="text-sm font-medium text-gray-900">{guide.title_ko}</span>
                       <span className="text-xs text-gray-500">
-                        {PERSONA_LABEL[guide.persona_group] ??
-                          guide.persona_group}
+                        {PERSONA_LABEL[guide.persona_group] ?? guide.persona_group}
                         {guide.published_at &&
-                          ` · ${new Date(guide.published_at).toLocaleDateString("ko-KR")}`}
+                          ` · ${new Date(guide.published_at).toLocaleDateString('ko-KR')}`}
                       </span>
                     </div>
-                    <span className="text-blue-600 text-sm shrink-0">
-                      &rarr;
-                    </span>
+                    <span className="text-blue-600 text-sm shrink-0">&rarr;</span>
                   </Link>
                 </li>
               ))}
@@ -302,16 +253,9 @@ export default async function AuthorProfilePage({
             <ul className="flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-lg overflow-hidden">
               {authoredComparisons.map((comp) => (
                 <li key={comp.id} className="bg-white hover:bg-gray-50">
-                  <Link
-                    href={`/compare/${comp.slug}`}
-                    className="flex items-center justify-between px-5 py-3"
-                  >
-                    <span className="text-sm font-medium text-gray-900">
-                      {comp.title_ko}
-                    </span>
-                    <span className="text-blue-600 text-sm shrink-0">
-                      &rarr;
-                    </span>
+                  <Link href={`/compare/${comp.slug}`} className="flex items-center justify-between px-5 py-3">
+                    <span className="text-sm font-medium text-gray-900">{comp.title_ko}</span>
+                    <span className="text-blue-600 text-sm shrink-0">&rarr;</span>
                   </Link>
                 </li>
               ))}
@@ -332,13 +276,13 @@ export default async function AuthorProfilePage({
         <Sources
           sources={[
             {
-              type: "official",
-              label: "돌봄지기 편집팀",
+              type: 'official',
+              label: '돌봄지기 편집팀',
               url: SITE_URL,
             },
           ]}
         />
       </main>
     </>
-  );
+  )
 }

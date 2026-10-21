@@ -11,10 +11,6 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         headers: [
           // 검색엔진 색인 지시
-          {
-            key: 'X-Robots-Tag',
-            value: 'index, follow',
-          },
           // XSS 방어
           {
             key: 'X-Content-Type-Options',
@@ -27,16 +23,6 @@ const nextConfig: NextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
-          },
-        ],
-      },
-      // 정적 페이지 캐시 (로봇 상세, 가이드, 블로그 등)
-      {
-        source: '/(robot|compare|guide|info|research|blog)/:slug*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
           },
         ],
       },
@@ -55,13 +41,13 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // RSS 피드 캐시
+      // 발행 취소와 예약 경계를 RSS 별칭에도 즉시 반영
       {
         source: '/feed.xml',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+            value: 'no-store',
           },
           {
             key: 'Content-Type',

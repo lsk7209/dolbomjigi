@@ -1,12 +1,16 @@
 # Dolbomjigi
 
 Canonical site: https://dolbomjigi.ehon365.kr/
-Last updated: 2026-06-21
 
 ## Site Scope
-Caregiving, welfare, family support, and daily-life guidance for Korean readers.
+Companion and care robots, model-specific comparisons, and Korean care-program notices. Not a manufacturer, seller, or government application service.
 
 ## Primary Crawl Targets
+- https://dolbomjigi.ehon365.kr/robot/lovot
+- https://dolbomjigi.ehon365.kr/robot/moflin
+- https://dolbomjigi.ehon365.kr/robot/hyodol
+- https://dolbomjigi.ehon365.kr/compare/lovot-vs-moflin
+- https://dolbomjigi.ehon365.kr/support
 - https://dolbomjigi.ehon365.kr/blog
 - https://dolbomjigi.ehon365.kr/about
 - https://dolbomjigi.ehon365.kr/contact
@@ -26,6 +30,6 @@ Caregiving, welfare, family support, and daily-life guidance for Korean readers.
 - Check /ads.txt for publisher authorization.
 
 ## Contact And Corrections
-- Contact: contact@dolbomjigi.ehon365.kr
+- Contact and correction route: https://dolbomjigi.ehon365.kr/contact
 - Correction requests should include the page URL and the specific claim to review.
 

@@ -261,6 +261,8 @@ const posts = JSON.parse(fs.readFileSync(INPUT, 'utf8')).map((post, idx) => {
   enriched.reading_time_minutes = Math.max(8, Math.round(enriched.body_md.length / 650))
   enriched.quality_score = score(enriched)
   enriched.pass = enriched.quality_score >= 90
+  enriched.editorial_status = 'draft'
+  enriched.published_at = null
   return enriched
 })
 
@@ -280,6 +282,7 @@ const manifest = {
   source: INPUT,
   output: OUT,
   count: posts.length,
+  editorial_status: 'draft',
   min_quality_score: Math.min(...posts.map((post) => post.quality_score)),
   average_chars: Math.round(posts.reduce((sum, post) => sum + post.body_md.length, 0) / posts.length),
   min_chars: Math.min(...posts.map((post) => post.body_md.length)),

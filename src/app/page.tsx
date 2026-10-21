@@ -1,47 +1,51 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { SITE_URL } from "@/lib/config";
-import { getSupportProgramUrl, type SupportRegion } from "@/lib/support-program-url";
-import { db } from "@/db/client";
-import { robots, supportPrograms, regions, blogPosts } from "@/db/schema";
-import { eq, desc, isNotNull, and, lte } from "drizzle-orm";
+import { publicAtOrBefore } from '@/lib/publication'
+import { presentBlogRevision } from '@/lib/blog-revision'
+import Link from 'next/link'
+import { presentRobot } from '@/lib/product-evidence'
+export const dynamic = 'force-dynamic'
+import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
+import { getSupportProgramUrl, type SupportRegion } from '@/lib/support-program-url'
+import { db } from '@/db/client'
+import { robots, supportPrograms, regions, blogPosts } from '@/db/schema'
+import { eq, desc } from 'drizzle-orm'
 
 export const metadata: Metadata = {
-  title: "돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드",
+  title: '돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드',
   description:
-    "어르신 돌봄로봇 제품 정보, 지자체 지원사업 신청 안내, 기관 도입 가이드를 한곳에서 확인하세요. 공공누리 데이터 기반 신뢰 정보.",
+    '어르신 돌봄로봇 제품 정보, 지자체 지원사업 신청 안내, 기관 도입 가이드를 한곳에서 확인하세요. 제품과 공고의 확인 범위를 구분한 안내.',
   openGraph: {
-    title: "돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드",
+    title: '돌봄지기 — 어르신 돌봄로봇 정보·신청·도입 가이드',
     description:
-      "어르신 돌봄로봇 제품 정보, 지자체 지원사업 신청 안내, 기관 도입 가이드를 한곳에서 확인하세요.",
+      '어르신 돌봄로봇 제품 정보, 지자체 지원사업 신청 안내, 기관 도입 가이드를 한곳에서 확인하세요.',
     url: SITE_URL,
-    type: "website",
-    siteName: "돌봄지기",
+    type: 'website',
+    siteName: '돌봄지기',
   },
   alternates: {
     canonical: SITE_URL,
   },
-};
+}
 
 // ─────────────────────────────────────────
 // 카테고리 한글
 // ─────────────────────────────────────────
 const CATEGORY_LABEL: Record<string, string> = {
-  companion: "말벗·반려 로봇",
-  senior_care: "돌봄 보조",
-  rehabilitation: "재활",
-  monitoring: "모니터링",
-};
+  companion: '말벗·반려 로봇',
+  senior_care: '돌봄 보조',
+  rehabilitation: '재활',
+  monitoring: '모니터링',
+}
 
 // ─────────────────────────────────────────
 // 프로그램 유형 한글
 // ─────────────────────────────────────────
 const PROGRAM_TYPE_LABEL: Record<string, string> = {
-  free_distribution: "무상 보급",
-  rental: "렌탈",
-  subsidy: "보조금",
-  rd_grant: "R&D 지원",
-};
+  free_distribution: '무상 보급',
+  rental: '렌탈',
+  subsidy: '보조금',
+  rd_grant: 'R&D 지원',
+}
 
 // ─────────────────────────────────────────
 // 홈페이지 (정적 + ISR)
@@ -65,7 +69,7 @@ export default async function HomePage() {
     .from(robots)
     .orderBy(desc(robots.created_at))
     .limit(8)
-    .catch(() => [] as (typeof robots.$inferSelect)[]);
+    .then(rows => rows.map(row => presentRobot(row)))
 
   // 최신 지원사업 5개 (human_reviewed=true)
   const latestPrograms = await db
@@ -82,21 +86,9 @@ export default async function HomePage() {
     .where(eq(supportPrograms.human_reviewed, true))
     .orderBy(desc(supportPrograms.id))
     .limit(5)
-    .catch(
-      () =>
-        [] as Array<{
-          id: number;
-          slug: string;
-          name_ko: string;
-          program_type: "free_distribution" | "rental" | "subsidy" | "rd_grant";
-          status: "active" | "closed" | "unknown";
-          region_id: number | null;
-          period_end: Date | null;
-        }>,
-    );
 
   // 최신 블로그 포스트 3개
-  const latestBlogPosts = await db
+  const latestBlogPosts = (await db
     .select({
       id: blogPosts.id,
       slug: blogPosts.slug,
@@ -107,31 +99,19 @@ export default async function HomePage() {
       published_at: blogPosts.published_at,
     })
     .from(blogPosts)
-    .where(
-      and(
-        isNotNull(blogPosts.published_at),
-        lte(blogPosts.published_at, new Date()),
-      ),
-    )
+    .where(publicAtOrBefore(blogPosts.published_at))
     .orderBy(desc(blogPosts.published_at))
-    .limit(3)
-    .catch(() => []);
+    .limit(3)).map(presentBlogRevision)
 
   // 지역 정보 (프로그램용)
   const regionIds = latestPrograms
     .map((p) => p.region_id)
-    .filter((id): id is number => id !== null);
+    .filter((id): id is number => id !== null)
 
-  const regionMap = new Map<
-    number,
-    SupportRegion & { sido_name: string; sigungu_name: string | null }
-  >();
+  const regionMap = new Map<number, SupportRegion & { sido_name: string; sigungu_name: string | null }>()
   if (regionIds.length > 0) {
-    const allRegions = await db
-      .select()
-      .from(regions)
-      .catch(() => []);
-    allRegions.forEach((r) => regionMap.set(r.id, r));
+    const allRegions = await db.select().from(regions)
+    allRegions.forEach((r) => regionMap.set(r.id, r))
   }
 
   return (
@@ -140,11 +120,10 @@ export default async function HomePage() {
       <section className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-4xl px-4 py-16 flex flex-col items-center text-center gap-4">
           <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800">
-            공공누리 데이터 기반 · 전문가 검증
+            제품 비교 · 지원 공고 확인 · 기관 도입 안내
           </span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-            어르신 돌봄로봇
-            <br />
+            어르신 돌봄로봇<br />
             정보·신청·도입 가이드
           </h1>
           <p className="max-w-lg text-base text-gray-600 leading-relaxed">
@@ -169,53 +148,34 @@ export default async function HomePage() {
       </section>
 
       <div className="mx-auto max-w-4xl px-4 py-10 flex flex-col gap-12 w-full">
+
         {/* ── 주요 카테고리 ── */}
         <section aria-label="주요 카테고리">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
-            무엇을 찾으시나요?
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">무엇을 찾으시나요?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link
               href="/robot"
               className="flex flex-col gap-2 border border-gray-200 rounded-xl px-5 py-5 bg-white hover:shadow-md hover:border-blue-300 transition-all"
             >
-              <span className="text-2xl" aria-hidden="true">
-                🤖
-              </span>
-              <span className="text-base font-semibold text-gray-900">
-                돌봄로봇 제품
-              </span>
-              <span className="text-sm text-gray-500">
-                말벗·돌봄·재활·모니터링 제품 비교
-              </span>
+              <span className="text-2xl" aria-hidden="true">🤖</span>
+              <span className="text-base font-semibold text-gray-900">돌봄로봇 제품</span>
+              <span className="text-sm text-gray-500">말벗·돌봄·재활·모니터링 제품 비교</span>
             </Link>
             <Link
               href="/support"
               className="flex flex-col gap-2 border border-gray-200 rounded-xl px-5 py-5 bg-white hover:shadow-md hover:border-green-300 transition-all"
             >
-              <span className="text-2xl" aria-hidden="true">
-                📋
-              </span>
-              <span className="text-base font-semibold text-gray-900">
-                지원사업 찾기
-              </span>
-              <span className="text-sm text-gray-500">
-                지역별 무상보급·렌탈·보조금 안내
-              </span>
+              <span className="text-2xl" aria-hidden="true">📋</span>
+              <span className="text-base font-semibold text-gray-900">지원사업 찾기</span>
+              <span className="text-sm text-gray-500">지역별 무상보급·렌탈·보조금 안내</span>
             </Link>
             <Link
               href="/guide"
               className="flex flex-col gap-2 border border-gray-200 rounded-xl px-5 py-5 bg-white hover:shadow-md hover:border-purple-300 transition-all"
             >
-              <span className="text-2xl" aria-hidden="true">
-                📖
-              </span>
-              <span className="text-base font-semibold text-gray-900">
-                이용 가이드
-              </span>
-              <span className="text-sm text-gray-500">
-                선택 방법·신청 절차·도입 가이드
-              </span>
+              <span className="text-2xl" aria-hidden="true">📖</span>
+              <span className="text-base font-semibold text-gray-900">이용 가이드</span>
+              <span className="text-sm text-gray-500">선택 방법·신청 절차·도입 가이드</span>
             </Link>
           </div>
         </section>
@@ -224,10 +184,7 @@ export default async function HomePage() {
         <section aria-label="최신 돌봄로봇 제품">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900">최신 돌봄로봇</h2>
-            <Link
-              href="/robot"
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <Link href="/robot" className="text-sm text-blue-600 hover:underline">
               전체 보기 &rarr;
             </Link>
           </div>
@@ -263,9 +220,7 @@ export default async function HomePage() {
                         {CATEGORY_LABEL[robot.category] ?? robot.category}
                       </span>
                     </div>
-                    <span className="text-xs text-gray-500">
-                      {robot.manufacturer}
-                    </span>
+                    <span className="text-xs text-gray-500">{robot.manufacturer}</span>
                     {robot.description_short && (
                       <p className="text-xs text-gray-600 line-clamp-2 mt-0.5">
                         {robot.description_short}
@@ -279,8 +234,7 @@ export default async function HomePage() {
                       )}
                       {robot.subscription_monthly && (
                         <span>
-                          월정액{" "}
-                          {(robot.subscription_monthly / 10000).toFixed(0)}만원~
+                          월정액 {(robot.subscription_monthly / 10000).toFixed(0)}만원~
                         </span>
                       )}
                       {robot.rental_available && (
@@ -300,60 +254,47 @@ export default async function HomePage() {
         <section aria-label="최신 돌봄로봇 지원사업">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900">최신 지원사업</h2>
-            <Link
-              href="/support"
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <Link href="/support" className="text-sm text-blue-600 hover:underline">
               전체 보기 &rarr;
             </Link>
           </div>
 
           {latestPrograms.length === 0 ? (
             <p className="text-sm text-gray-500 py-8 text-center border border-gray-200 rounded-xl bg-white">
-              현재 진행중인 검증된 지원사업이 없습니다.
+              현재 표시할 편집 자료가 없습니다. 신규 모집 여부는 개별 공고를 확인해야 합니다.
             </p>
           ) : (
             <ul className="flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-xl overflow-hidden bg-white">
               {latestPrograms.map((prog) => {
-                const region = prog.region_id
-                  ? regionMap.get(prog.region_id)
-                  : null;
+                const region = prog.region_id ? regionMap.get(prog.region_id) : null
                 const regionName = region
-                  ? `${region.sido_name}${region.sigungu_name ? ` ${region.sigungu_name}` : ""}`
-                  : "국가";
-                const href = getSupportProgramUrl(prog, regionMap);
+                  ? `${region.sido_name}${region.sigungu_name ? ` ${region.sigungu_name}` : ''}`
+                  : '국가'
+                const href = getSupportProgramUrl(prog, regionMap)
 
                 return (
                   <li key={prog.id} className="hover:bg-gray-50">
-                    <Link
-                      href={href}
-                      className="flex items-center justify-between px-5 py-4 gap-3"
-                    >
+                    <Link href={href} className="flex items-center justify-between px-5 py-4 gap-3">
                       <div className="flex flex-col gap-1">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className="text-sm font-medium text-gray-900">
                             {prog.name_ko}
                           </span>
                           <span className="inline-flex items-center rounded px-2 py-0.5 text-xs bg-blue-100 text-blue-800">
-                            {PROGRAM_TYPE_LABEL[prog.program_type] ??
-                              prog.program_type}
+                            {PROGRAM_TYPE_LABEL[prog.program_type] ?? prog.program_type}
                           </span>
-                          {prog.status === "active" && (
+                          {prog.status === 'active' && (
                             <span className="inline-flex items-center rounded px-2 py-0.5 text-xs bg-green-100 text-green-800">
-                              진행중
+                              모집 여부 확인 필요
                             </span>
                           )}
                         </div>
-                        <span className="text-xs text-gray-500">
-                          {regionName}
-                        </span>
+                        <span className="text-xs text-gray-500">{regionName}</span>
                       </div>
-                      <span className="text-blue-600 text-sm shrink-0">
-                        &rarr;
-                      </span>
+                      <span className="text-blue-600 text-sm shrink-0">&rarr;</span>
                     </Link>
                   </li>
-                );
+                )
               })}
             </ul>
           )}
@@ -364,10 +305,7 @@ export default async function HomePage() {
           <section aria-label="최신 블로그">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-gray-900">최신 블로그</h2>
-              <Link
-                href="/blog"
-                className="text-sm text-blue-600 hover:underline"
-              >
+              <Link href="/blog" className="text-sm text-blue-600 hover:underline">
                 전체 보기 &rarr;
               </Link>
             </div>
@@ -379,15 +317,10 @@ export default async function HomePage() {
                   className="flex flex-col gap-2 border border-gray-200 rounded-xl bg-white hover:shadow-md hover:border-indigo-200 transition-all px-4 py-4"
                 >
                   <span className="inline-flex self-start items-center rounded-full px-2 py-0.5 text-xs font-medium bg-indigo-100 text-indigo-800">
-                    {post.category === "product_review"
-                      ? "제품 리뷰"
-                      : post.category === "support_program"
-                        ? "지원사업"
-                        : post.category === "guide"
-                          ? "가이드"
-                          : post.category === "news"
-                            ? "뉴스"
-                            : "돌봄 정보"}
+                    {post.category === 'product_review' ? '제품 리뷰' :
+                     post.category === 'support_program' ? '지원사업' :
+                     post.category === 'guide' ? '가이드' :
+                     post.category === 'news' ? '뉴스' : '돌봄 정보'}
                   </span>
                   <p className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2">
                     {post.title_ko}
@@ -397,9 +330,7 @@ export default async function HomePage() {
                       {post.summary}
                     </p>
                   )}
-                  <span className="text-xs text-indigo-600 mt-auto">
-                    읽기 &rarr;
-                  </span>
+                  <span className="text-xs text-indigo-600 mt-auto">읽기 &rarr;</span>
                 </Link>
               ))}
             </div>
@@ -437,20 +368,12 @@ export default async function HomePage() {
 
         {/* ── 하단 링크 ── */}
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <Link href="/about" className="hover:text-gray-800">
-            사이트 소개
-          </Link>
-          <Link href="/privacy" className="hover:text-gray-800">
-            개인정보처리방침
-          </Link>
-          <Link href="/terms" className="hover:text-gray-800">
-            이용약관
-          </Link>
-          <Link href="/research" className="hover:text-gray-800">
-            연구 자료
-          </Link>
+          <Link href="/about" className="hover:text-gray-800">사이트 소개</Link>
+          <Link href="/privacy" className="hover:text-gray-800">개인정보처리방침</Link>
+          <Link href="/terms" className="hover:text-gray-800">이용약관</Link>
+          <Link href="/research" className="hover:text-gray-800">연구 자료</Link>
         </footer>
       </div>
     </div>
-  );
+  )
 }

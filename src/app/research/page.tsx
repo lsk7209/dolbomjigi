@@ -1,23 +1,24 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { SITE_URL } from "@/lib/config";
-import { db } from "@/db/client";
-import { researchStudies } from "@/db/schema";
-import { desc } from "drizzle-orm";
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/config'
+import { db } from '@/db/client'
+import { researchStudies } from '@/db/schema'
+import { desc } from 'drizzle-orm'
+import HubQualitySections from '@/components/seo/HubQualitySections'
 
 export const metadata: Metadata = {
-  title: "돌봄로봇 연구 논문 목록",
+  title: '돌봄로봇 연구 논문 목록',
   description:
-    "돌봄로봇의 효과, 기술, 정책에 관한 국내외 학술 연구 논문을 모았습니다. 연도·저널별로 정리된 최신 연구를 확인하세요.",
+    '돌봄로봇의 효과, 기술, 정책에 관한 국내외 학술 연구 논문을 모았습니다. 연도·저널별로 정리된 최신 연구를 확인하세요.',
   openGraph: {
-    title: "돌봄로봇 연구 논문 목록 | 돌봄지기",
-    description: "국내외 돌봄로봇 학술 연구 논문 모음",
+    title: '돌봄로봇 연구 논문 목록 | 돌봄지기',
+    description: '국내외 돌봄로봇 학술 연구 논문 모음',
     url: `${SITE_URL}/research`,
-    type: "website",
-    siteName: "돌봄지기",
+    type: 'website',
+    siteName: '돌봄지기',
   },
   alternates: { canonical: `${SITE_URL}/research` },
-};
+}
 
 export default async function ResearchListPage() {
   const studies = await db
@@ -32,22 +33,19 @@ export default async function ResearchListPage() {
     })
     .from(researchStudies)
     .orderBy(desc(researchStudies.year))
-    .catch(() => [] as (typeof researchStudies.$inferSelect)[]);
+    .catch(() => [] as typeof researchStudies.$inferSelect[])
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <section className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-4xl px-4 py-10">
-          <p className="text-sm text-purple-600 font-medium mb-1">
-            돌봄지기 &rsaquo; 연구
-          </p>
+          <p className="text-sm text-purple-600 font-medium mb-1">돌봄지기 &rsaquo; 연구</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
             돌봄로봇 연구 논문
           </h1>
           <p className="text-gray-600 text-sm leading-relaxed max-w-2xl">
-            돌봄로봇의 효과·기술·정책에 관한 국내외 학술 연구 논문을
-            정리했습니다. 각 논문의 핵심 결과와 한국 현장 적용 시사점을 함께
-            제공합니다.
+            돌봄로봇의 효과·기술·정책에 관한 국내외 학술 연구 논문을 정리했습니다.
+            각 논문의 핵심 결과와 한국 현장 적용 시사점을 함께 제공합니다.
           </p>
         </div>
       </section>
@@ -78,36 +76,28 @@ export default async function ResearchListPage() {
                 </div>
                 <p className="text-xs text-gray-500">
                   {study.authors_list}
-                  {study.journal ? ` · ${study.journal}` : ""}
+                  {study.journal ? ` · ${study.journal}` : ''}
                 </p>
                 {study.summary_ko && (
                   <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed">
                     {study.summary_ko}
                   </p>
                 )}
-                <span className="text-xs text-purple-600 mt-0.5">
-                  논문 보기 &rarr;
-                </span>
+                <span className="text-xs text-purple-600 mt-0.5">논문 보기 &rarr;</span>
               </Link>
             ))}
           </>
         )}
 
+        <HubQualitySections topic="research" />
+
         <footer className="flex flex-wrap justify-center gap-4 text-sm text-gray-500 border-t border-gray-200 pt-6 mt-4">
-          <Link href="/" className="hover:text-gray-800">
-            홈
-          </Link>
-          <Link href="/info" className="hover:text-gray-800">
-            정보
-          </Link>
-          <Link href="/guide" className="hover:text-gray-800">
-            이용 가이드
-          </Link>
-          <Link href="/robot" className="hover:text-gray-800">
-            제품 목록
-          </Link>
+          <Link href="/" className="hover:text-gray-800">홈</Link>
+          <Link href="/info" className="hover:text-gray-800">정보</Link>
+          <Link href="/guide" className="hover:text-gray-800">이용 가이드</Link>
+          <Link href="/robot" className="hover:text-gray-800">제품 목록</Link>
         </footer>
       </div>
     </div>
-  );
+  )
 }
