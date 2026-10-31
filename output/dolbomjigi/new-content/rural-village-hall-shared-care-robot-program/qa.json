@@ -17,7 +17,7 @@
   "review_report": {
     "score": 100,
     "grade": "EXCELLENT",
-    "reviewed_at": "2026-10-31T05:27:35.640Z",
+    "reviewed_at": "2026-10-31T07:23:15.203Z",
     "metrics": {
       "character_count": 4282,
       "answer_block_length": 272,
@@ -33,5 +33,5 @@
       "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
     ]
   },
-  "qa_score": 95
+  "qa_score": 100
 }

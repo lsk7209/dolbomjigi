@@ -5,7 +5,7 @@
   "review_report": {
     "score": 100,
     "grade": "EXCELLENT",
-    "reviewed_at": "2026-10-31T05:28:09.850Z",
+    "reviewed_at": "2026-10-31T07:23:15.246Z",
     "metrics": {
       "character_count": 4461,
       "answer_block_length": 186,
@@ -32,5 +32,6 @@
     "has_checklist": true,
     "has_faq": true,
     "has_internal_links": true
-  }
+  },
+  "qa_score": 100
 }
