@@ -1,0 +1,36 @@
+{
+  "slug": "senior-smart-cane-radar-obstacle-detect",
+  "passed": true,
+  "score": 100,
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:27:35.684Z",
+    "metrics": {
+      "character_count": 4641,
+      "answer_block_length": 205,
+      "faq_count": 4,
+      "internal_link_count": 3,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "linter": {
+    "forbidden_medical_terms": 0,
+    "forbidden_promotional_terms": 0,
+    "unverified_claims": 0
+  },
+  "structure": {
+    "has_answer_block": true,
+    "has_table": true,
+    "has_checklist": true,
+    "has_faq": true,
+    "has_internal_links": true
+  }
+}

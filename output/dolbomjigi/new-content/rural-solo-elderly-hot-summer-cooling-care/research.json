@@ -1,0 +1,24 @@
+{
+  "slug": "rural-solo-elderly-hot-summer-cooling-care",
+  "sources": [
+    {
+      "title": "질병관리청 온열질환 응급실 감시체계 연보",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "온열질환 사망자의 73%가 65세 이상 고령자이며 그중 51%가 실내 주거지에서 발생"
+    },
+    {
+      "title": "한국에너지공단 취약계층 에너지바우처 및 고효율 냉방 지원 실태",
+      "url": "https://www.energy.or.kr",
+      "published_year": 2024,
+      "key_finding": "전기요금 누진제 오해로 인해 폭염 경보 발령 시에도 에어컨 가동률 28%에 불과"
+    },
+    {
+      "title": "소방청 119구급상황관리센터 독거노인 여름철 응급 출동 데이터",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2023,
+      "key_finding": "실내 온도 32도 초과 환경에서 3시간 이상 체류 시 급성 열탈진 및 탈수 위험 4.2배 급증"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

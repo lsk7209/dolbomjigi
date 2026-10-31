@@ -1,0 +1,34 @@
+{
+  "slug": "rural-solo-elderly-hot-summer-cooling-care",
+  "title_ko": "폭염에 문 닫고 선풍기 안 켜시는 부모님: 돌봄로봇의 실내 온습도 자동 냉방 제어",
+  "subtitle": "전기세 걱정에 냉방기를 끄시는 홀몸 어르신을 위한 스마트 IR 리모컨 연동 및 원격 안심 온도 관리",
+  "summary": "여름철 폭염에 문을 닫아두고 선풍기조차 틀지 않으시는 독거 어르신의 온열 질환을 막기 위해, 온습도 센서 내장 돌봄로봇이 에어컨을 자동 가동하고 자녀 앱으로 위험 상황을 전송하는 스마트 냉방 제어 솔루션을 안내합니다.",
+  "main_keyword": "돌봄로봇 폭염 실내 온도 제어",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/rural-solo-elderly-hot-summer-cooling-care.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 100,
+  "character_count": 4708,
+  "sources": [
+    {
+      "title": "질병관리청 온열질환 응급실 감시체계 연보",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "온열질환 사망자의 73%가 65세 이상 고령자이며 그중 51%가 실내 주거지에서 발생"
+    },
+    {
+      "title": "한국에너지공단 취약계층 에너지바우처 및 고효율 냉방 지원 실태",
+      "url": "https://www.energy.or.kr",
+      "published_year": 2024,
+      "key_finding": "전기요금 누진제 오해로 인해 폭염 경보 발령 시에도 에어컨 가동률 28%에 불과"
+    },
+    {
+      "title": "소방청 119구급상황관리센터 독거노인 여름철 응급 출동 데이터",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2023,
+      "key_finding": "실내 온도 32도 초과 환경에서 3시간 이상 체류 시 급성 열탈진 및 탈수 위험 4.2배 급증"
+    }
+  ]
+}

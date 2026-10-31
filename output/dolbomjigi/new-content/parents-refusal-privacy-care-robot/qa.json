@@ -51,11 +51,11 @@
   ],
   "final_verdict": "ready_for_editor",
   "review_report": {
-    "score": 95,
+    "score": 100,
     "grade": "EXCELLENT",
-    "reviewed_at": "2026-10-31T05:18:17.599Z",
+    "reviewed_at": "2026-10-31T05:27:35.634Z",
     "metrics": {
-      "character_count": 7141,
+      "character_count": 7364,
       "answer_block_length": 203,
       "faq_count": 3,
       "internal_link_count": 4,
@@ -64,12 +64,12 @@
       "promotional_violation_count": 0,
       "ai_cliche_count": 0
     },
-    "issues": [
-      "실무 팁(Callout) 또는 프로세스 블록 부재"
-    ],
+    "issues": [],
     "improvements": [
       "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
     ]
   },
-  "qa_score": 95
+  "qa_score": 95,
+  "score": 100,
+  "passed": true
 }

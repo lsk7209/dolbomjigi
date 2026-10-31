@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-10-31T05:18:17.679Z",
+  "updated_at": "2026-10-31T05:27:35.699Z",
   "requested_count": 5,
-  "completed_count": 56,
+  "completed_count": 60,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -495,10 +495,10 @@
       "input_id": "topic-45",
       "output_path": "output/dolbomjigi/new-content/social-worker-care-robot-group-program-toolkit",
       "status": "published",
-      "qa_score": 98,
+      "qa_score": 100,
       "character_count": 3975,
       "reason": "발행 승인 및 blog_posts 시드 적재 완료",
-      "content_hash": "34e64c16b6869d04c5f770f1e7c483b91a137569e7a00199891d54f22c53f13a"
+      "content_hash": "14ce5645c1809b4b63d15fed2424e5d4552382e7b4722422beae465dae430aaa"
     },
     {
       "title": "치매 부모님 야간 낙상 및 배회 감지 스마트 매트리스 센서",
@@ -615,31 +615,81 @@
       "character_count": 3673,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "a38f027a8a5df7e7593fa22f5e6bb8fd09f5c5bec163756666131eb310cc6bf6"
+    },
+    {
+      "title": "보행 중 턱 걸림 방지: 스마트 지팡이와 돌봄로봇의 실외 보행 안전 연동",
+      "slug": "senior-smart-cane-radar-obstacle-detect",
+      "input_id": "topic-57",
+      "output_path": "output/dolbomjigi/new-content/senior-smart-cane-radar-obstacle-detect",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4641,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "ca430f977df473ac47abd01dba8528ce2b9de45d480ed0ca3518665053308f67"
+    },
+    {
+      "title": "폭염에 문 닫고 선풍기 안 켜시는 부모님: 돌봄로봇의 실내 온습도 자동 냉방 제어",
+      "slug": "rural-solo-elderly-hot-summer-cooling-care",
+      "input_id": "topic-58",
+      "output_path": "output/dolbomjigi/new-content/rural-solo-elderly-hot-summer-cooling-care",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4708,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "77e50a5c02df8bf2933225b3393e2da6c78a066d65fde639c3f233de5f75f9fa"
+    },
+    {
+      "title": "매일 밤 부모님 마음을 기록하는 돌봄로봇의 음성 일기와 가족 공유 가이드",
+      "slug": "care-robot-ai-voice-diary-emotional-record",
+      "input_id": "topic-59",
+      "output_path": "output/dolbomjigi/new-content/care-robot-ai-voice-diary-emotional-record",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4497,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "7bbb56616bd116b36592c977005a4e27e88ca14a0d0a1111c2f2b01d69c43fe6"
+    },
+    {
+      "title": "산골짜기 통신 끊김 해결: 사회복지사를 위한 돌봄로봇 LTE 모뎀 및 음영 지역 복구 매뉴얼",
+      "slug": "social-worker-care-robot-network-troubleshooting",
+      "input_id": "topic-60",
+      "output_path": "output/dolbomjigi/new-content/social-worker-care-robot-network-troubleshooting",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4459,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "65f4483da3448673337969fa19026fce0a74f69e32d17eaba021ad1fb90972cd"
     }
   ],
   "next_queue": [
     {
-      "slug": "senior-smart-cane-radar-obstacle-detect",
-      "title": "보행 중 턱 걸림 방지: 스마트 지팡이와 돌봄로봇의 실외 보행 안전 연동",
-      "main_keyword": "스마트 지팡이 보행 장애물 감지",
+      "slug": "senior-nutrition-water-intake-robot-alert",
+      "title": "탈수 방지 미온수 마시기 알림: 돌봄로봇의 시니어 수분 섭취 케어 루틴",
+      "main_keyword": "돌봄로봇 어르신 수분 섭취 알림",
       "target_persona": "family_caregiver"
     },
     {
-      "slug": "rural-solo-elderly-hot-summer-cooling-care",
-      "title": "폭염에 문 닫고 선풍기 안 켜시는 부모님: 돌봄로봇의 실내 온습도 자동 냉방 제어",
-      "main_keyword": "돌봄로봇 폭염 실내 온도 제어",
+      "slug": "rural-solo-elderly-gas-leak-detector-sync",
+      "title": "가스 누출 즉시 환기 팬 가동: 돌봄로봇과 무선 가스 센서 연동법",
+      "main_keyword": "돌봄로봇 무선 가스 감지기 연동",
       "target_persona": "family_caregiver"
     },
     {
-      "slug": "care-robot-ai-voice-diary-emotional-record",
-      "title": "매일 밤 부모님 마음을 기록하는 돌봄로봇의 음성 일기와 가족 공유 가이드",
-      "main_keyword": "돌봄로봇 음성 일기 가족 공유",
+      "slug": "senior-visual-impairment-color-contrast-robot",
+      "title": "저시력 백내장 어르신을 위한 돌봄로봇 고대비 화면 및 음성 돋보기",
+      "main_keyword": "저시력 어르신 돌봄로봇 고대비 화면",
       "target_persona": "family_caregiver"
     },
     {
-      "slug": "social-worker-care-robot-network-troubleshooting",
-      "title": "산골짜기 통신 끊김 해결: 사회복지사를 위한 돌봄로봇 LTE 모뎀 및 음영 지역 복구 매뉴얼",
-      "main_keyword": "돌봄로봇 통신 장애 복구",
+      "slug": "dementia-sleep-apnea-pillow-robot-link",
+      "title": "야간 코골이와 수면 무호흡 감지: 스마트 베개와 돌봄로봇의 수면 케어",
+      "main_keyword": "돌봄로봇 스마트 베개 수면 무호흡 감지",
+      "target_persona": "family_caregiver"
+    },
+    {
+      "slug": "social-worker-care-robot-intake-consultation-form",
+      "title": "신규 대상자 돌봄로봇 보급 초기 상담 서식과 적합도 평가표",
+      "main_keyword": "사회복지사 돌봄로봇 초기 상담 서식",
       "target_persona": "social_worker"
     }
   ]

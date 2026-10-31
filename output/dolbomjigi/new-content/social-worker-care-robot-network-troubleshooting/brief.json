@@ -1,0 +1,11 @@
+{
+  "slug": "social-worker-care-robot-network-troubleshooting",
+  "title_ko": "산골짜기 통신 끊김 해결: 사회복지사를 위한 돌봄로봇 LTE 모뎀 및 음영 지역 복구 매뉴얼",
+  "target_audience": "social_worker",
+  "primary_goal": "농어촌 산간 독거 어르신 댁에서 빈번하게 발생하는 돌봄로봇 통신 두절을 신속히 해결하기 위해, 사회복지사와 생활지원사가 현장에서 10분 만에 점검할 수 있는 LTE 모뎀 점검 루틴과 통신사 중계기 신청 요령을 정리했습니다.",
+  "core_questions_answered": [
+    "시니어 보행/냉방/정서/통신 핵심 위험 요인 분석",
+    "돌봄로봇과의 하드웨어 및 소프트웨어 무선 연동 구조",
+    "가정 및 현장에서 즉시 적용 가능한 실무 안전 수칙"
+  ]
+}

@@ -1,40 +1,64 @@
 {
-  "totalCount": 56,
-  "avgScore": 99.4,
+  "totalCount": 60,
+  "avgScore": 100,
   "gradeCounts": {
-    "EXCELLENT": 55,
-    "GOOD": 1,
+    "EXCELLENT": 60,
+    "GOOD": 0,
     "NEEDS_IMPROVEMENT": 0,
     "POOR": 0
   },
   "scoreDist": {
-    "100": 50,
-    "95-99": 5,
-    "90-94": 1,
+    "100": 60,
+    "95-99": 0,
+    "90-94": 0,
     "85-89": 0,
     "below-85": 0
   },
   "characterStats": {
-    "avg": 4970,
+    "avg": 4962,
     "min": 3573,
     "minSlug": "senior-hearing-aid-bluetooth-care-robot-paring",
-    "max": 7660,
-    "maxSlug": "social-worker-care-robot-emergency-protocol"
+    "max": 7717,
+    "maxSlug": "parents-home-no-wifi-care-robot"
   },
   "structureStats": {
     "answerBlockRate": "100.0%",
-    "avgAnswerBlockChars": 249,
-    "tableRate": "98.2%",
-    "calloutRate": "94.6%",
+    "avgAnswerBlockChars": 246,
+    "tableRate": "100.0%",
+    "calloutRate": "100.0%",
     "avgFaqCount": 4.1,
     "avgInternalLinks": 3.6
   },
   "complianceStats": {
     "medicalViolations": 0,
     "promotionalViolations": 0,
-    "aiCliches": 2
+    "aiCliches": 0
   },
   "sampleTopPosts": [
+    {
+      "slug": "parents-home-no-wifi-care-robot",
+      "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
+      "score": 100,
+      "grade": "EXCELLENT",
+      "charCount": 7717,
+      "issues": []
+    },
+    {
+      "slug": "long-term-care-insurance-robot-welfare-equipment",
+      "title": "부모님 장기요양등급으로 돌봄로봇을 복지용구로 지원받을 수 있을까?",
+      "score": 100,
+      "grade": "EXCELLENT",
+      "charCount": 7104,
+      "issues": []
+    },
+    {
+      "slug": "parents-refusal-privacy-care-robot",
+      "title": "“나를 감시하느냐” 부모님의 돌봄로봇 거부감과 카메라 걱정 푸는 법",
+      "score": 100,
+      "grade": "EXCELLENT",
+      "charCount": 7364,
+      "issues": []
+    },
     {
       "slug": "mild-cognitive-impairment-night-wandering-robot",
       "title": "경도인지장애 부모님의 야간 안부 확인, 돌봄로봇 센서의 기능과 현실적 한계",
@@ -50,82 +74,7 @@
       "grade": "EXCELLENT",
       "charCount": 7271,
       "issues": []
-    },
-    {
-      "slug": "social-worker-care-robot-emergency-protocol",
-      "title": "복지관 관제 화면에 어르신 이상 신호가 떴을 때: 119 출동 및 비상 연락 실무 매뉴얼",
-      "score": 100,
-      "grade": "EXCELLENT",
-      "charCount": 7660,
-      "issues": []
-    },
-    {
-      "slug": "life-support-worker-home-visit-checklist",
-      "title": "생활지원사의 주 1회 가정 방문: 돌봄로봇 10분 점검 및 어르신 반응 기록법",
-      "score": 100,
-      "grade": "EXCELLENT",
-      "charCount": 7016,
-      "issues": []
-    },
-    {
-      "slug": "parents-hearing-loss-voice-robot-tuning",
-      "title": "귀가 어두우신 난청 부모님을 위한 돌봄로봇 음량 조절과 주파수 설정 요령",
-      "score": 100,
-      "grade": "EXCELLENT",
-      "charCount": 6937,
-      "issues": []
     }
   ],
-  "sampleMinorIssues": [
-    {
-      "slug": "parents-home-no-wifi-care-robot",
-      "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
-      "score": 95,
-      "grade": "EXCELLENT",
-      "charCount": 7502,
-      "issues": [
-        "실무 팁(Callout) 또는 프로세스 블록 부재"
-      ]
-    },
-    {
-      "slug": "long-term-care-insurance-robot-welfare-equipment",
-      "title": "부모님 장기요양등급으로 돌봄로봇을 복지용구로 지원받을 수 있을까?",
-      "score": 95,
-      "grade": "EXCELLENT",
-      "charCount": 6880,
-      "issues": [
-        "실무 팁(Callout) 또는 프로세스 블록 부재"
-      ]
-    },
-    {
-      "slug": "parents-refusal-privacy-care-robot",
-      "title": "“나를 감시하느냐” 부모님의 돌봄로봇 거부감과 카메라 걱정 푸는 법",
-      "score": 95,
-      "grade": "EXCELLENT",
-      "charCount": 7141,
-      "issues": [
-        "실무 팁(Callout) 또는 프로세스 블록 부재"
-      ]
-    },
-    {
-      "slug": "rural-village-hall-shared-care-robot-program",
-      "title": "농촌 경로당 공동 이용 돌봄로봇: 어르신 여가 프로그램과 건강 체조 운영 팁",
-      "score": 95,
-      "grade": "EXCELLENT",
-      "charCount": 4281,
-      "issues": [
-        "AI 상투구/클리셰 검출: 폭발적"
-      ]
-    },
-    {
-      "slug": "rural-bus-schedule-care-robot-voice-query",
-      "title": "시골 장날 군내버스 시간표 물어보시는 부모님: 돌봄로봇 실시간 대중교통 음성 안내",
-      "score": 90,
-      "grade": "GOOD",
-      "charCount": 3639,
-      "issues": [
-        "비교/스펙 데이터 테이블(Table) 부재"
-      ]
-    }
-  ]
+  "sampleMinorIssues": []
 }

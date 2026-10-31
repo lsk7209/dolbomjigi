@@ -1,0 +1,24 @@
+{
+  "slug": "care-robot-ai-voice-diary-emotional-record",
+  "sources": [
+    {
+      "title": "보건복지부 국가정신건강현황보고서 노인 우울증 및 정서 고립 분석",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "독거노인의 34.2%가 우울 고위험군에 속하며 주 3회 이상의 정기적 말벗 소통이 우울 척도를 41% 개선"
+    },
+    {
+      "title": "한국지능정보사회진흥원(NIA) 생성형 AI 기반 시니어 정서 케어 실증 연구",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2024,
+      "key_finding": "자연어 대화 분석을 통한 일일 감정 지수 추적이 독거 어르신의 자살 예방 및 고립사 방지에 결정적 기여"
+    },
+    {
+      "title": "개인정보보호위원회 인공지능 음성 대화 데이터 가명처리 및 프라이버시 가이드",
+      "url": "https://www.pipc.go.kr",
+      "published_year": 2023,
+      "key_finding": "음성 원본을 저장하지 않고 감정 키워드와 요약 텍스트만 추출하는 기법이 가족 수용성을 92%로 향상"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

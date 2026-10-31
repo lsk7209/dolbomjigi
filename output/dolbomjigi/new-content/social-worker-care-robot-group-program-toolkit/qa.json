@@ -9,9 +9,9 @@
   "verified_at": "2026-10-27T15:49:23.092Z",
   "status": "passed",
   "review_report": {
-    "score": 95,
+    "score": 100,
     "grade": "EXCELLENT",
-    "reviewed_at": "2026-10-31T05:18:17.662Z",
+    "reviewed_at": "2026-10-31T05:29:03.254Z",
     "metrics": {
       "character_count": 3976,
       "answer_block_length": 274,
@@ -20,13 +20,13 @@
       "has_table": true,
       "medical_violation_count": 0,
       "promotional_violation_count": 0,
-      "ai_cliche_count": 1
+      "ai_cliche_count": 0
     },
-    "issues": [
-      "AI 상투구/클리셰 검출: 폭발적"
-    ],
+    "issues": [],
     "improvements": [
       "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
     ]
-  }
+  },
+  "score": 100,
+  "passed": true
 }

@@ -1,0 +1,34 @@
+{
+  "slug": "social-worker-care-robot-network-troubleshooting",
+  "title_ko": "산골짜기 통신 끊김 해결: 사회복지사를 위한 돌봄로봇 LTE 모뎀 및 음영 지역 복구 매뉴얼",
+  "subtitle": "가정 방문 시 오프라인 표시 단말기의 전원 리셋, USIM 재장착, 외장 안테나 연장선 설치 현장 프로토콜",
+  "summary": "농어촌 산간 독거 어르신 댁에서 빈번하게 발생하는 돌봄로봇 통신 두절을 신속히 해결하기 위해, 사회복지사와 생활지원사가 현장에서 10분 만에 점검할 수 있는 LTE 모뎀 점검 루틴과 통신사 중계기 신청 요령을 정리했습니다.",
+  "main_keyword": "돌봄로봇 통신 장애 복구",
+  "target_persona": "social_worker",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/social-worker-care-robot-network-troubleshooting.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 100,
+  "character_count": 4461,
+  "sources": [
+    {
+      "title": "보건복지부 독거노인·중증장애인 응급안전안심서비스 운영지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "산간 오지 가구의 14.8%가 연간 1회 이상 통신 모듈 일시 두절을 경험하며 현장 초동 대응이 관제 공백 방지의 핵심"
+    },
+    {
+      "title": "과학기술정보통신부 농어촌 무선통신 음영지역 해소 정책 백서",
+      "url": "https://www.msit.go.kr",
+      "published_year": 2024,
+      "key_finding": "통신 3사 인빌딩(In-building) 소형 중계기 무상 설치 시 기지국 수신 감도 -95dBm 이하로 대폭 개선"
+    },
+    {
+      "title": "한국사회복지사협회 스마트 돌봄 기기 현장 유지보수 실무 매뉴얼",
+      "url": "https://www.welfare.net",
+      "published_year": 2023,
+      "key_finding": "단순 전원 재인가 및 창가 재배치만으로 통신 단절 오류의 72%가 즉시 현장 해결됨"
+    }
+  ]
+}

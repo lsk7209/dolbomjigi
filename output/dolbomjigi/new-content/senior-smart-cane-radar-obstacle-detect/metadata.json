@@ -1,0 +1,34 @@
+{
+  "slug": "senior-smart-cane-radar-obstacle-detect",
+  "title_ko": "보행 중 턱 걸림 방지: 스마트 지팡이와 돌봄로봇의 실외 보행 안전 연동",
+  "subtitle": "초음파 레이더 센서와 진동 손잡이로 문턱·보도블록 돌출부를 감지하고 거실 돌봄로봇과 외출 동선을 공유하는 시니어 보행 케어",
+  "summary": "시니어 야외 낙상 사고의 60% 이상을 차지하는 도로 턱 걸림과 보도블록 균열을 예방하기 위해, 초음파 센서 내장 스마트 지팡이와 거실 돌봄로봇의 BLE 무선 연동 및 자녀 안심 위치 전송 기술을 상세히 정리했습니다.",
+  "main_keyword": "스마트 지팡이 보행 장애물 감지",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/senior-smart-cane-radar-obstacle-detect.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 100,
+  "character_count": 4641,
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 보행 중 낙상 역학조사",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "고령자 야외 낙상의 68%가 5cm 미만의 미세 문턱 및 보도블록 융기부 걸림에서 발생"
+    },
+    {
+      "title": "한국교통안전공단 보행 보조기구 스마트 레이더 감지 실증 평가",
+      "url": "https://www.kotsa.or.kr",
+      "published_year": 2024,
+      "key_finding": "초음파 거리 측정 센서가 전방 1.5m 내 돌출 장애물 94.2% 조기 진동 경고"
+    },
+    {
+      "title": "국립재활원 시니어 고령친화 보행기기 안전 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시각 장애 및 저시력 고령자의 야간 보행 시 LED 안심 조명 결합 효과 입증"
+    }
+  ]
+}

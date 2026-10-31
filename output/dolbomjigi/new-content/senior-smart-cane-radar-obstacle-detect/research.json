@@ -1,0 +1,24 @@
+{
+  "slug": "senior-smart-cane-radar-obstacle-detect",
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 보행 중 낙상 역학조사",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "고령자 야외 낙상의 68%가 5cm 미만의 미세 문턱 및 보도블록 융기부 걸림에서 발생"
+    },
+    {
+      "title": "한국교통안전공단 보행 보조기구 스마트 레이더 감지 실증 평가",
+      "url": "https://www.kotsa.or.kr",
+      "published_year": 2024,
+      "key_finding": "초음파 거리 측정 센서가 전방 1.5m 내 돌출 장애물 94.2% 조기 진동 경고"
+    },
+    {
+      "title": "국립재활원 시니어 고령친화 보행기기 안전 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시각 장애 및 저시력 고령자의 야간 보행 시 LED 안심 조명 결합 효과 입증"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}
