@@ -1,0 +1,24 @@
+{
+  "slug": "rural-solo-elderly-gas-leak-detector-sync",
+  "sources": [
+    {
+      "title": "한국가스안전공사 가스사고 연감 고령자 단독가구 사고 분석",
+      "url": "https://www.kgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "농어촌 단독주택 가스 사고의 64%가 65세 이상 고령자 세대에서 냄새 미인지로 발생"
+    },
+    {
+      "title": "소방청 국가화재정보센터 주택 주방 가스 누출 및 화재 통계",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "무선 연동형 자동 가스 차단기 및 배기 팬 작동 시 대형 폭발 화재 전이율 88% 감소"
+    },
+    {
+      "title": "국립재활원 독거노인·장애인 안전 주거환경 표준 가이드",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시청각 복합 경보(거실 음성 안내+적색 점멸등)가 청력 감퇴 노인의 초기 대피 성공률을 91% 향상"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

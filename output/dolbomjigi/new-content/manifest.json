@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-10-31T13:40:24.123Z",
+  "updated_at": "2026-10-31T15:03:59.130Z",
   "requested_count": 5,
-  "completed_count": 61,
+  "completed_count": 62,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -670,15 +670,20 @@
       "character_count": 6388,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "3d8fc03308ebc96ac7547b054bc9d75ff2952bec5ba3af083156fbeb5b501540"
+    },
+    {
+      "title": "가스 누출 즉시 환기 팬 가동: 돌봄로봇과 무선 가스 센서 연동법",
+      "slug": "rural-solo-elderly-gas-leak-detector-sync",
+      "input_id": "topic-62",
+      "output_path": "output/dolbomjigi/new-content/rural-solo-elderly-gas-leak-detector-sync",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4922,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "3ad19011a369bcd1aa41ce7476546656eeeff1c724a5bb6ec6e848a7567bb572"
     }
   ],
   "next_queue": [
-    {
-      "slug": "rural-solo-elderly-gas-leak-detector-sync",
-      "title": "가스 누출 즉시 환기 팬 가동: 돌봄로봇과 무선 가스 센서 연동법",
-      "main_keyword": "돌봄로봇 무선 가스 감지기 연동",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "senior-visual-impairment-color-contrast-robot",
       "title": "저시력 백내장 어르신을 위한 돌봄로봇 고대비 화면 및 음성 돋보기",
