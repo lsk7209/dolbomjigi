@@ -1,0 +1,24 @@
+{
+  "slug": "social-worker-care-robot-intake-consultation-form",
+  "sources": [
+    {
+      "title": "보건복지부 노인맞춤돌봄서비스 스마트 돌봄기기 보급 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "사전 적합도 평가표를 활용한 가구 매칭 시 기기 반납률이 기존 24%에서 6% 미만으로 대폭 감소"
+    },
+    {
+      "title": "한국보건사회연구원 취약노인 스마트 케어 서비스 효과성 실증 조사",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2024,
+      "key_finding": "단순 보급보다 어르신의 정서 선호도(인형 애착형 vs 정보 화면형)에 따른 2원화 분류가 필수적임"
+    },
+    {
+      "title": "국립재활원 수요자 중심 스마트 돌봄로봇 현장 활용 지침서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "10분 초기 인터뷰 서식 도입이 전담 사회복지사의 행정 사후 관리 부담을 40% 경감"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

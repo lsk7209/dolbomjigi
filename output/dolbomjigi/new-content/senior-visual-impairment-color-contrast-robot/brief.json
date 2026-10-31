@@ -1,0 +1,11 @@
+{
+  "slug": "senior-visual-impairment-color-contrast-robot",
+  "title_ko": "저시력 백내장 어르신을 위한 돌봄로봇 고대비 화면 및 음성 돋보기",
+  "target_audience": "family_caregiver",
+  "primary_goal": "백내장이나 황반변성 등 노인성 안질환으로 인해 스마트폰이나 약봉지 글씨를 읽기 어려운 부모님을 위해, 돌봄로봇의 7:1 고대비 흑백 반전 디스플레이와 AI 음성 돋보기 카메라 연동법을 안내합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

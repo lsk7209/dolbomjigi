@@ -1,0 +1,11 @@
+{
+  "slug": "social-worker-care-robot-intake-consultation-form",
+  "title_ko": "신규 대상자 돌봄로봇 보급 초기 상담 서식과 적합도 평가표",
+  "target_audience": "social_worker",
+  "primary_goal": "복지관 사회복지사와 생활지원사가 신규 독거 어르신 댁을 방문하여 대화형 인형, 화면형 로봇, 센서 패키지 중 적합한 기기를 매칭하고 거부감을 줄일 수 있는 초기 상담 표준 평가표와 현장 인터뷰 기법을 제공합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

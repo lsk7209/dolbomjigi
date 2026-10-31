@@ -1,0 +1,24 @@
+{
+  "slug": "dementia-sleep-apnea-pillow-robot-link",
+  "sources": [
+    {
+      "title": "대한수면의학회 노인 수면호흡장애 및 인지 기능 연관성 임상 가이드",
+      "url": "https://www.sleepmed.or.kr",
+      "published_year": 2024,
+      "key_finding": "야간 무호흡 지수(AHI) 15회 이상 노인층의 인지 저하 속도가 일반군 대비 2.1배 가속화됨"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 슬립테크 기기 고령자 안전성 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "에어백 자동 체위 변경 베개가 야간 폐쇄성 코골이 시간을 평균 68% 유의미하게 단축"
+    },
+    {
+      "title": "국립재활원 노인·만성질환자 비접촉식 생체 신호 모니터링 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "몸에 부착하지 않는 베개 내장 압전 센서가 고령자의 심리적 수면 방해를 최소화함"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}
