@@ -17,6 +17,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { execSync } from 'node:child_process';
 import { runAutoPipeline } from './auto-daily-content.mjs';
 import { runDeepReview } from './deep-review.mjs';
 
@@ -41,6 +42,30 @@ function log(message, level = 'INFO') {
   }
 }
 
+function autoGitPush(totalPosts) {
+  try {
+    const status = execSync('git status --porcelain', { encoding: 'utf8' }).trim();
+    if (!status) {
+      log('ℹ️ Git 작업 트리가 최신 상태입니다. 원격 동기화를 유지합니다.');
+      return;
+    }
+
+    log('📦 신규 발행 및 갱신 사항 감지. 배포 전 단위 테스트 수행...');
+    execSync('pnpm test', { stdio: 'pipe' });
+
+    log('🚀 변경 사항 스테이징 및 커밋 생성...');
+    execSync('git add -A', { stdio: 'pipe' });
+    const msg = `feat(auto-daemon): publish & sync ${totalPosts} verified posts`;
+    execSync(`git commit -m "${msg}"`, { stdio: 'pipe' });
+
+    log('🌐 GitHub origin main 자동 푸시 실행...');
+    execSync('git push origin main', { stdio: 'pipe' });
+    log('🎉 [배포 완료] GitHub 푸시 완료. OVH 자동 배포 파이프라인 가동.');
+  } catch (err) {
+    log(`⚠️ 자동 푸시 중 오류 발생 (로컬 작업 보존): ${err.message}`, 'WARN');
+  }
+}
+
 async function executeCycle() {
   log('================================================================');
   log('🚀 돌봄지기 무인 자율 데몬 사이클 시작 (Dolbomjigi Daemon Wake-up)');
@@ -58,6 +83,8 @@ async function executeCycle() {
 
     if (reviewResult.lintIssues.length === 0 && reviewResult.brokenInternalBlogLinks.length === 0 && reviewResult.approvalHashMismatches.length === 0) {
       log('🎉 [리뷰 통과] 모든 콘텐츠 및 사이트 무결성 기준을 100% 충족하여 안전하게 승인 상태를 유지합니다.');
+      // 3단계: GitHub 자동 푸시 및 OVH 자동 배포 트리거
+      autoGitPush(reviewResult.totalPosts);
     } else {
       log('⚠️ [리뷰 알림] 미달 항목이 감지되어 다음 사이클에서 보완을 재시도합니다.', 'WARN');
     }
