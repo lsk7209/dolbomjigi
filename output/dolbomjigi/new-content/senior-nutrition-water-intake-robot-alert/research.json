@@ -1,0 +1,24 @@
+{
+  "slug": "senior-nutrition-water-intake-robot-alert",
+  "sources": [
+    {
+      "title": "대한노인병학회 노인 만성 탈수 및 수분 섭취 가이드라인",
+      "url": "https://www.geriatrics.or.kr",
+      "published_year": 2024,
+      "key_finding": "고령자의 35% 이상이 무자각 만성 탈수 상태에 놓여 있으며 정각 음성 리마인더가 음용 순응도를 62% 향상시킴"
+    },
+    {
+      "title": "보건복지부 한국인 영양소 섭취기준 고령자 수분 섭취 권고",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "만 65세 이상 성인의 하루 권장 총 수분 섭취량은 1.5~2.0L 수준이며 체온 유지와 신진대사에 필수적임"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄기기 기반 고령자 일상생활 보조 실증 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사물인터넷(IoT) 텀블러 연동을 통해 독거노인의 하루 평균 수분 섭취량이 기존 대비 450ml 증가"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

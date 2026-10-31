@@ -182,6 +182,17 @@ const QUEUE_ARTICLES = {
   }
 };
 
+async function loadTemplate(slug) {
+  if (QUEUE_ARTICLES[slug]) return QUEUE_ARTICLES[slug];
+  const templatePath = path.join(ROOT, 'scripts', 'article-templates', `${slug}.mjs`);
+  if (fs.existsSync(templatePath)) {
+    const fileUrl = `file://${templatePath.replace(/\\/g, '/')}`;
+    const mod = await import(fileUrl);
+    return mod.default || mod.article;
+  }
+  return null;
+}
+
 // 큐 자동 소비 및 기사 생성 메인 함수
 export async function consumeQueueAndGenerate(count = 1) {
   console.log(`\n🤖 [자율 기사 생성 엔진] 큐 확인 및 기사 자율 집필 가동 (최대 ${count}건)`);
@@ -205,7 +216,7 @@ export async function consumeQueueAndGenerate(count = 1) {
 
   for (let i = 0; i < count && manifest.next_queue.length > 0; i++) {
     const queueItem = manifest.next_queue[0];
-    const postData = QUEUE_ARTICLES[queueItem.slug];
+    const postData = await loadTemplate(queueItem.slug);
 
     if (!postData) {
       console.log(`⚠️ 큐 항목 [${queueItem.slug}]에 대한 원천 집필 템플릿이 아직 준비되지 않았습니다. 건너뜁니다.`);

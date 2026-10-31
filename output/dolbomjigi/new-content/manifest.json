@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-10-31T07:40:06.399Z",
+  "updated_at": "2026-10-31T12:58:17.586Z",
   "requested_count": 5,
-  "completed_count": 60,
+  "completed_count": 61,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -659,15 +659,20 @@
       "character_count": 4459,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "65f4483da3448673337969fa19026fce0a74f69e32d17eaba021ad1fb90972cd"
+    },
+    {
+      "title": "탈수 방지 미온수 마시기 알림: 돌봄로봇의 시니어 수분 섭취 케어 루틴",
+      "slug": "senior-nutrition-water-intake-robot-alert",
+      "input_id": "topic-61",
+      "output_path": "output/dolbomjigi/new-content/senior-nutrition-water-intake-robot-alert",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 6388,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "3d8fc03308ebc96ac7547b054bc9d75ff2952bec5ba3af083156fbeb5b501540"
     }
   ],
   "next_queue": [
-    {
-      "slug": "senior-nutrition-water-intake-robot-alert",
-      "title": "탈수 방지 미온수 마시기 알림: 돌봄로봇의 시니어 수분 섭취 케어 루틴",
-      "main_keyword": "돌봄로봇 어르신 수분 섭취 알림",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "rural-solo-elderly-gas-leak-detector-sync",
       "title": "가스 누출 즉시 환기 팬 가동: 돌봄로봇과 무선 가스 센서 연동법",
