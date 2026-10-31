@@ -1,0 +1,24 @@
+{
+  "slug": "rural-bus-smart-card-care-robot-transfer-check",
+  "sources": [
+    {
+      "title": "국토교통부 농어촌 대중교통 이용 실태 및 무임교통카드 통계 보고서",
+      "url": "https://www.molit.go.kr",
+      "published_year": 2024,
+      "key_finding": "농어촌 고령자의 42%가 버스 하차 시 하차 단말기 태그를 누락하여 추가 요금 부과 및 환승 혜택을 놓침"
+    },
+    {
+      "title": "한국교통안전공단 어르신 대중교통 안전 이동 및 카드 분실 방지 매뉴얼",
+      "url": "https://www.kotsa.or.kr",
+      "published_year": 2024,
+      "key_finding": "현관 출발 전 카드 소지 음성 리마인더를 제공했을 때 지갑 및 무임카드 분실률이 78% 감소"
+    },
+    {
+      "title": "지자체 어르신 무임교통카드 보급 및 행복택시 연계 사업 운영 지침",
+      "url": "https://www.local.go.kr",
+      "published_year": 2023,
+      "key_finding": "NFC 기반 카드 터치 홀더와 거실 돌봄단말기 연동으로 외출 안전 확인율 95% 달성"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

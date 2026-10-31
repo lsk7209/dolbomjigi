@@ -1,4 +1,4 @@
-export default {
+const template = {
   slug: 'senior-nutrition-water-intake-robot-alert',
   title_ko: '탈수 방지 미온수 마시기 알림: 돌봄로봇의 시니어 수분 섭취 케어 루틴',
   subtitle: '갈증 중추 둔화로 인한 만성 탈수와 급성 신장 손상을 예방하는 스마트 보온병 및 음성 리마인더 연동 가이드',
@@ -185,3 +185,5 @@ export default {
 - [국립재활원 돌봄로봇 일상 생활 지원 센서 실증 보고서](https://www.nrc.go.kr/) (2026-10-31 확인)
 `
 };
+
+export default template;

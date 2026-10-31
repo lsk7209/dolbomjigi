@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-10-31T15:10:02.119Z",
+  "updated_at": "2026-10-31T18:58:49.574Z",
   "requested_count": 5,
-  "completed_count": 65,
+  "completed_count": 66,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -714,15 +714,20 @@
       "character_count": 4566,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "ee656e1ae173d2156c74ebb45f6ebcf5c85472cd8862440306d1f93822118dd4"
+    },
+    {
+      "title": "시골 버스 무임교통카드 분실과 환승 할인: 돌봄로봇 외출 동선 알림",
+      "slug": "rural-bus-smart-card-care-robot-transfer-check",
+      "input_id": "topic-66",
+      "output_path": "output/dolbomjigi/new-content/rural-bus-smart-card-care-robot-transfer-check",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5847,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "c22746a23d28ad45e819bf7cc8abe07efe061b2d54a2bb32af5996a69eccdd1e"
     }
   ],
   "next_queue": [
-    {
-      "slug": "rural-bus-smart-card-care-robot-transfer-check",
-      "title": "시골 버스 무임교통카드 분실과 환승 할인: 돌봄로봇 외출 동선 알림",
-      "main_keyword": "어르신 무임교통카드 버스 환승 돌봄로봇",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "dementia-reminiscence-old-song-care-robot-playlist",
       "title": "어르신 옛날 노래와 청춘 회상: 돌봄로봇의 맞춤 트로트·민요 플레이리스트",

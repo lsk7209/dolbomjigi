@@ -1,4 +1,4 @@
-export default {
+const template = {
   slug: 'rural-solo-elderly-gas-leak-detector-sync',
   title_ko: '가스 누출 즉시 환기 팬 가동: 돌봄로봇과 무선 가스 센서 연동법',
   subtitle: '후각 저하로 가스 냄새를 맡지 못하는 시골 독거 부모님을 위한 자동 밸브 차단 및 환기 배기 팬 연동 안전 가이드',
@@ -152,3 +152,5 @@ export default {
 - [보건복지부 독거노인종합지원센터 취약노인 주거안전 점검 지침](https://www.1661-2129.or.kr/) (2026-11-01 확인)
 - [산업통상자원부 에너지안전과 고령자 가스안전장치 규격 기준](https://www.motie.go.kr/) (2026-11-01 확인)`
 };
+
+export default template;

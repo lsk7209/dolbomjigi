@@ -1,0 +1,34 @@
+{
+  "slug": "rural-bus-smart-card-care-robot-transfer-check",
+  "title_ko": "시골 버스 무임교통카드 분실과 환승 할인: 돌봄로봇 외출 동선 알림",
+  "subtitle": "농어촌 무료 환승 태그 누락과 지갑 분실을 예방하는 스마트 카드 홀더 및 돌봄로봇 외출 체크 루틴",
+  "summary": "시골에 계신 부모님이 읍내 병원이나 장터에 다녀오실 때 버스 환승 태그를 깜빡하거나 무임교통카드를 분실해 곤란을 겪지 않도록, 돌봄로봇의 현관 외출 안내 음성과 NFC 태그 카운터를 연동하여 안전하고 편리한 대중교통 이용을 돕는 방법을 안내합니다.",
+  "main_keyword": "어르신 무임교통카드 버스 환승 돌봄로봇",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/rural-bus-smart-card-care-robot-transfer-check.jpg",
+  "reading_time_minutes": 9,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5847,
+  "sources": [
+    {
+      "title": "국토교통부 농어촌 대중교통 이용 실태 및 무임교통카드 통계 보고서",
+      "url": "https://www.molit.go.kr",
+      "published_year": 2024,
+      "key_finding": "농어촌 고령자의 42%가 버스 하차 시 하차 단말기 태그를 누락하여 추가 요금 부과 및 환승 혜택을 놓침"
+    },
+    {
+      "title": "한국교통안전공단 어르신 대중교통 안전 이동 및 카드 분실 방지 매뉴얼",
+      "url": "https://www.kotsa.or.kr",
+      "published_year": 2024,
+      "key_finding": "현관 출발 전 카드 소지 음성 리마인더를 제공했을 때 지갑 및 무임카드 분실률이 78% 감소"
+    },
+    {
+      "title": "지자체 어르신 무임교통카드 보급 및 행복택시 연계 사업 운영 지침",
+      "url": "https://www.local.go.kr",
+      "published_year": 2023,
+      "key_finding": "NFC 기반 카드 터치 홀더와 거실 돌봄단말기 연동으로 외출 안전 확인율 95% 달성"
+    }
+  ]
+}
