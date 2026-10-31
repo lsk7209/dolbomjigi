@@ -1,0 +1,32 @@
+{
+  "slug": "social-worker-care-robot-group-program-toolkit",
+  "character_count": 3975,
+  "answer_block_present": true,
+  "h1_count": 0,
+  "forbidden_medical_count": 0,
+  "forbidden_promotional_count": 0,
+  "qa_score": 95,
+  "verified_at": "2026-10-27T15:49:23.092Z",
+  "status": "passed",
+  "review_report": {
+    "score": 95,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.662Z",
+    "metrics": {
+      "character_count": 3976,
+      "answer_block_length": 274,
+      "faq_count": 5,
+      "internal_link_count": 3,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 1
+    },
+    "issues": [
+      "AI 상투구/클리셰 검출: 폭발적"
+    ],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  }
+}

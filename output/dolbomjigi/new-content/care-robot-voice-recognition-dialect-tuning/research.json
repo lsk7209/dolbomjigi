@@ -1,0 +1,27 @@
+{
+  "slug": "care-robot-voice-recognition-dialect-tuning",
+  "sources": [
+    {
+      "title": "국립국어원 한국어 방언 음성 데이터베이스 구축 및 지역별 음운 특성 연구",
+      "url": "https://www.korean.go.kr",
+      "published_year": 2023,
+      "key_finding": "경상도 방언의 고저 성조와 전라도 방언의 비모음화 어미가 표준어 학습 기반 음성인식 엔진의 단어 매칭 실패율을 최대 35% 증가시킴"
+    },
+    {
+      "title": "한국음향학회 고령층 지역 방언 화자의 음성인식률 향상을 위한 음향 모델 보정 기법",
+      "url": "https://www.ask.or.kr",
+      "published_year": 2024,
+      "key_finding": "마이크 지향각 튜닝과 발화 거리 1m 이내 제한, 고빈도 방언 어휘의 맞춤 사전 등록을 통해 어르신 방언 인식률을 61%에서 89%로 대폭 개선"
+    },
+    {
+      "title": "한국소비자원 AI 기반 노인 돌봄 음성 인터페이스 사용성 평가 보고서",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "어르신들이 음성인식 실패 경험을 3회 이상 겪을 경우 기기 사용을 전면 중단하는 기피 현상이 발생하므로 초기 호출 감도 최적화가 필수적임"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "지역 억양과 고유 방언 음운 인식률을 높이는 마이크 감도 조절과 맞춤 명령어 등록 요령"
+  }
+}

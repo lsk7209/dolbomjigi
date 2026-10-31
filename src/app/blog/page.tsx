@@ -7,6 +7,7 @@ import { getBlogThumbnailPath } from '@/lib/blog-thumbnails'
 import { publicAtOrBefore } from '@/lib/publication'
 import { presentBlogRevision } from '@/lib/blog-revision'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const dynamic = 'force-dynamic'
 
@@ -45,7 +46,14 @@ function formatDate(d: Date | null): string {
   return new Date(d).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
-export default async function BlogListPage() {
+interface BlogListPageProps {
+  searchParams?: Promise<{ category?: string }>
+}
+
+export default async function BlogListPage({ searchParams }: BlogListPageProps) {
+  const resolvedSearchParams = searchParams ? await searchParams : undefined
+  const selectedCategory = resolvedSearchParams?.category
+
   const posts = (await db
     .select({
       id: blogPosts.id,
@@ -65,6 +73,9 @@ export default async function BlogListPage() {
     .orderBy(desc(blogPosts.published_at))).map(presentBlogRevision)
 
   const categories = Array.from(new Set(posts.map((p) => p.category)))
+  const filteredPosts = selectedCategory
+    ? posts.filter((p) => p.category === selectedCategory)
+    : posts
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -85,43 +96,64 @@ export default async function BlogListPage() {
         {/* 카테고리 필터 */}
         {categories.length > 1 && (
           <nav aria-label="카테고리 필터" className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
-              <span
-                key={cat}
-                className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium ${CATEGORY_COLOR[cat] ?? 'bg-gray-100 text-gray-700'}`}
-              >
-                {CATEGORY_LABEL[cat] ?? cat}
-              </span>
-            ))}
+            <Link
+              href="/blog"
+              className={`inline-flex items-center rounded-full px-3.5 py-1 text-xs font-medium transition-colors ${
+                !selectedCategory
+                  ? 'bg-gray-900 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              전체 ({posts.length})
+            </Link>
+            {categories.map((cat) => {
+              const isActive = selectedCategory === cat
+              const count = posts.filter((p) => p.category === cat).length
+              return (
+                <Link
+                  key={cat}
+                  href={`/blog?category=${cat}`}
+                  className={`inline-flex items-center rounded-full px-3.5 py-1 text-xs font-medium transition-colors ${
+                    isActive
+                      ? 'bg-indigo-700 text-white'
+                      : `${CATEGORY_COLOR[cat] ?? 'bg-gray-100 text-gray-700'} hover:opacity-80`
+                  }`}
+                >
+                  {CATEGORY_LABEL[cat] ?? cat} ({count})
+                </Link>
+              )
+            })}
           </nav>
         )}
 
         {/* 카드 그리드 */}
-        {posts.length === 0 ? (
-          <p className="text-sm text-gray-400 py-16 text-center">
-            아직 게시된 글이 없습니다.
+        {filteredPosts.length === 0 ? (
+          <p className="text-sm text-gray-400 py-16 text-center border border-dashed border-gray-200 rounded-2xl">
+            선택하신 카테고리에 등록된 글이 없습니다.
           </p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {posts.map((post) => (
+            {filteredPosts.map((post) => (
               <Link
                 key={post.id}
                 href={`/blog/${post.slug}`}
                 className="flex flex-col rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:border-indigo-100 transition-all overflow-hidden"
               >
                 {/* 커버 이미지 */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={getBlogThumbnailPath({
-                    coverImageUrl: post.cover_image_url,
-                    category: post.category,
-                    title: post.title_ko,
-                    slug: post.slug,
-                  })}
-                  alt={`${post.title_ko} 관련 실사형 돌봄로봇 이미지`}
-                  className="w-full h-40 object-cover bg-gray-50"
-                  loading="lazy"
-                />
+                <div className="relative w-full h-40 bg-gray-50 overflow-hidden">
+                  <Image
+                    src={getBlogThumbnailPath({
+                      coverImageUrl: post.cover_image_url,
+                      category: post.category,
+                      title: post.title_ko,
+                      slug: post.slug,
+                    })}
+                    alt={`${post.title_ko} 관련 실사형 돌봄로봇 이미지`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
 
                 <div className="flex flex-col gap-2 p-4 flex-1">
                   {/* 카테고리 배지 */}

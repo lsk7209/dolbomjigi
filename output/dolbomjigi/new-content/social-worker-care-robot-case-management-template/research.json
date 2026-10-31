@@ -1,0 +1,27 @@
+{
+  "slug": "social-worker-care-robot-case-management-template",
+  "sources": [
+    {
+      "title": "보건복지부 노인맞춤돌봄서비스 ICT 돌봄기기 통합 사례관리 실무 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "표준화된 정량 지표(단축형 노인우울척도 SGDS-K, 사회적 고립 척도, 주간 대화량)를 기록한 기관이 차년도 지자체 보조금 평가에서 최고 등급 획득"
+    },
+    {
+      "title": "한국사회복지관협회 스마트 복지관 선도 사업 성과평가 체계 구축 연구",
+      "url": "https://www.kaswc.or.kr",
+      "published_year": 2023,
+      "key_finding": "정성적 인터뷰와 관제 대시보드 정량 데이터를 융합한 복합 서식을 적용할 때 생활지원사의 상담 기록 작성 시간 35% 단축"
+    },
+    {
+      "title": "중앙노인보호전문기관 독거 고령자 고독사 예방 모니터링 보고서",
+      "url": "https://www.noinboho.or.kr",
+      "published_year": 2024,
+      "key_finding": "로봇 도입 전후 3개월 추적 평가에서 72시간 이상 움직임 미감지 위험 가구 조기 발굴 건수가 전년 대비 4배 증가"
+    }
+  ],
+  "target_analysis": {
+    "persona": "social_worker",
+    "pain_point": "우울감 척도, 고독감 완화, 일상생활 수행능력(ADL) 변화를 정량 기록하는 실무 서식 가이드"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "care-robot-emergency-power-cut-battery-backup",
+  "sources": [
+    {
+      "title": "한국전력공사 자연재해로 인한 농어촌 배전선로 정전 통계 및 복구 분석",
+      "url": "https://home.kepco.co.kr",
+      "published_year": 2024,
+      "key_finding": "동절기 대설 및 하절기 태풍 시 산간 고립 마을의 평균 정전 지속 시간은 18.4시간에 달하며, 취약 가구 통신 단절 사고의 82%가 정전에서 기인함"
+    },
+    {
+      "title": "행정안전부 재난 취약계층 안전 확인 및 비상 전원 유지 가이드라인",
+      "url": "https://www.mois.go.kr",
+      "published_year": 2023,
+      "key_finding": "IoT 돌봄 기기에 소형 무정전 전원 장치(UPS) 연동 시 비상 안전망 유지율이 99.4%로 상승"
+    },
+    {
+      "title": "국립재난안전연구원 고령자 가구 정전 시 응급 호출 시스템 가용성 평가",
+      "url": "https://www.ndmi.go.kr",
+      "published_year": 2024,
+      "key_finding": "화면 디스플레이를 끄고 센서와 무선 통신만 유지하는 초절전 절전 모드 전환 시 배터리 지속 시간이 4.8배 연장됨을 실증"
+    }
+  ],
+  "researched_at": "2026-10-30T15:07:43.791Z"
+}

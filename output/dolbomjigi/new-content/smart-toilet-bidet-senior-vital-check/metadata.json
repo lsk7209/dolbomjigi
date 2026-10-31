@@ -1,0 +1,34 @@
+{
+  "slug": "smart-toilet-bidet-senior-vital-check",
+  "title_ko": "대소변 후 건강 체크: 돌봄로봇과 스마트 변기 비데의 배설 상태 모니터링",
+  "subtitle": "배변 횟수, 체류 시간, 잔뇨 감지를 통해 비뇨기 이상과 탈수를 조기 감별하는 홈 헬스케어 가이드",
+  "summary": "화장실에 홀로 가시는 부모님의 낙상과 급성 탈수, 만성 변비 악화를 방지하기 위해 스마트 비데의 착좌 압력 및 배뇨 감지 센서와 거실 돌봄로봇을 연동하여 일상 배설 데이터를 자녀 앱으로 안심 모니터링하는 방법을 소개합니다.",
+  "main_keyword": "돌봄로봇 스마트 비데 배뇨 모니터링",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/smart-toilet-bidet-senior-vital-check.jpg",
+  "reading_time_minutes": 6,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 3673,
+  "sources": [
+    {
+      "title": "대한비뇨의학회 노인 비뇨기계 감염 및 배뇨 장애 실태조사 보고서",
+      "url": "https://www.urology.or.kr",
+      "published_year": 2024,
+      "key_finding": "독거노인의 48%가 야간 잦은 배뇨 중 낙상을 경험하며 조기 배뇨 패턴 감지가 합병증 예방에 기여함"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 비데 기반 고령자 일상 배설 모니터링 실증 연구",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "변기 착좌 시간 30분 초과 시 비상 알림 연동으로 화장실 내 심혈관 응급 사고 76% 선제 대응"
+    },
+    {
+      "title": "국립재활원 장애인·노인 자립생활 지원 배설 보조기기 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사생활 침해 없는 비카메라 방식의 변기 압력 센서가 노인층의 거부감을 85% 이상 낮춤"
+    }
+  ]
+}

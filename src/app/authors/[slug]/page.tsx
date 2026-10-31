@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { db } from '@/db/client'
@@ -9,6 +10,8 @@ import Sources from '@/components/common/Sources'
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { SITE_URL, SITE_NAME } from '@/lib/config'
+
+export const dynamic = 'force-dynamic'
 
 // ─────────────────────────────────────────
 // 정적 경로 생성
@@ -153,10 +156,11 @@ export default async function AuthorProfilePage({
         {/* 저자 프로필 헤더 */}
         <header className="flex items-start gap-5">
           {author.avatar_url ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               src={author.avatar_url}
               alt={`${author.name} 프로필 사진`}
+              width={80}
+              height={80}
               className="w-20 h-20 rounded-full object-cover border-2 border-gray-200 shrink-0"
             />
           ) : (

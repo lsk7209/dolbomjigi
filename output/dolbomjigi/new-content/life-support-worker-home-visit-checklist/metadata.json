@@ -1,0 +1,29 @@
+{
+  "slug": "life-support-worker-home-visit-checklist",
+  "suggested_content_type": "guide",
+  "title_ko": "생활지원사의 주 1회 가정 방문: 돌봄로봇 10분 점검 및 어르신 반응 기록법",
+  "subtitle": "촉박한 방문 시간 동안 기기 고장을 감별하는 3점 점검 루틴과 복지관 전산용 5단계 관찰 일지 작성법",
+  "summary": "노인맞춤돌봄서비스 생활지원사가 주 1회 가정을 방문할 때 10분 만에 돌봄로봇 하드웨어(터치 센서, 충전 단자, 통신 신호)를 점검하고, 어르신의 수용 반응을 복지관 전산 일지에 객관적으로 기록하는 표준 체크리스트와 중재 요령을 안내합니다.",
+  "meta_description": "생활지원사를 위한 돌봄로봇 10분 가정 방문 점검 체크리스트! 충전 단자 및 통신 확인법부터 어르신 반응 5단계 사례관리 일지 작성 팁까지 완벽 정리.",
+  "main_keyword": "생활지원사 돌봄로봇",
+  "cover_image_url": "/images/blog-ai/posts/life-support-worker-home-visit-checklist.jpg",
+  "internal_links": [
+    "/guide/life-support-staff-guide",
+    "/guide/social-worker-guide",
+    "/guide/mom-living-alone",
+    "/blog/care-robot-setup-guide-for-beginners"
+  ],
+  "image_suggestions": [
+    {
+      "description": "생활지원사가 어르신 댁을 방문하여 돌봄로봇 인형의 충전 상태를 확인하고 밝은 표정으로 일지를 기록하는 모습",
+      "alt": "생활지원사의 돌봄로봇 10분 점검 및 어르신 교감 반응 기록",
+      "path": "/images/blog-ai/posts/life-support-worker-home-visit-checklist.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-22T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 29,
+      "max": 30,
+      "evidence": "3대 도입 경로(지자체 무상, 복지용구 급여, 개인 자비 패키지)별 비용 구조와 견적 6대 필수 점검 사항을 상세히 분석하여 독자가 실제 행동으로 옮길 수 있는 명확한 가이드를 제공함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "시드의 잘못된 '198만 원/49,800원' 단일 정가 주장을 바로잡고, 복지용구 160만 원 한도 및 본인부담률(6~15%), 공식몰 패키지 실가격을 최신 공식 출처로 확인하여 반영함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 20,
+      "max": 20,
+      "evidence": "LTE 무선 모듈과 클라우드 관제 서버 운영비가 결합된 월 이용료의 실체적 구성을 효돌의 제품 특성에 맞게 고유하게 설명함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "도입 의사결정 흐름도와 비교표, 체크리스트를 적절히 배치하고 자연스러운 검색 의도 키워드와 내부 링크를 연결함"
+    },
+    "total": 98
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "각 지자체별 당해 연도 효돌 보급 예산 소진 여부는 개별 지자체 공고에 따름"
+  ]
+}

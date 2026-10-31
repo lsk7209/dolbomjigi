@@ -1,0 +1,24 @@
+{
+  "slug": "smart-refrigerator-door-sensor-care-robot-inactivity",
+  "sources": [
+    {
+      "title": "보건복지부 독거노인 식생활 실태 및 영양 결핍 위험 요인 조사 보고서",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "독거 고령자의 48%가 불규칙한 식사로 만성 탈수와 단백질 결핍을 겪으며, 고독사 가구의 91%가 사망 3일 전부터 주방 활동이 중단됨"
+    },
+    {
+      "title": "한국보건사회연구원 스마트 IoT 센서를 활용한 고독사 예방 체계 실증 평가",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "현관문 센서 대비 냉장고 도어 센서가 실제 실내 생존 및 영양 섭취 활동을 입증하는 신뢰도가 98.2%에 달함"
+    },
+    {
+      "title": "지자체 스마트 돌봄마을 사물인터넷(IoT) 안심 센서 운영 성과집",
+      "url": "https://www.korea.kr",
+      "published_year": 2024,
+      "key_finding": "냉장고 12시간 미개폐 알림을 통해 급성 뇌경색 및 저혈당 쇼크로 쓰러진 독거 어르신 124명을 골든타임 내 구조"
+    }
+  ],
+  "researched_at": "2026-10-27T15:49:23.092Z"
+}

@@ -14,6 +14,7 @@ import { getBlogThumbnailPath, getBlogThumbnailUrl } from '@/lib/blog-thumbnails
 import { isPublicAt, publicAtOrBefore } from '@/lib/publication'
 import { presentBlogRevision } from '@/lib/blog-revision'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const dynamic = 'force-dynamic'
 export const dynamicParams = true
@@ -22,11 +23,15 @@ export const dynamicParams = true
 // 정적 경로
 // ─────────────────────────────────────────
 export async function generateStaticParams() {
-  const rows = await db
-    .select()
-    .from(blogPosts)
-    .where(publicAtOrBefore(blogPosts.published_at))
-  return rows.map((r) => ({ slug: r.slug }))
+  try {
+    const rows = await db
+      .select()
+      .from(blogPosts)
+      .where(publicAtOrBefore(blogPosts.published_at))
+    return rows.map((r) => ({ slug: r.slug }))
+  } catch {
+    return []
+  }
 }
 
 // ─────────────────────────────────────────
@@ -216,12 +221,16 @@ export default async function BlogPostPage({
         </header>
 
         {/* 커버 이미지 */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={thumbnailPath}
-          alt={`${post.title_ko} 콘텐츠용 설명 이미지 (제품·사용 사례 증거 아님)`}
-          className="w-full max-w-2xl h-48 sm:h-64 object-cover rounded-2xl mb-6 bg-gray-50"
-        />
+        <div className="relative w-full max-w-2xl h-48 sm:h-64 rounded-2xl mb-6 overflow-hidden bg-gray-50">
+          <Image
+            src={thumbnailPath}
+            alt={`${post.title_ko} 콘텐츠용 설명 이미지 (제품·사용 사례 증거 아님)`}
+            fill
+            priority
+            sizes="(max-width: 672px) 100vw, 672px"
+            className="object-cover"
+          />
+        </div>
 
         {/* 2컬럼 레이아웃 (TOC + 본문) */}
         <div className="flex gap-10 items-start">

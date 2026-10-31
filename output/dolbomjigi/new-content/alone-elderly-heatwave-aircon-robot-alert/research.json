@@ -1,0 +1,27 @@
+{
+  "slug": "alone-elderly-heatwave-aircon-robot-alert",
+  "sources": [
+    {
+      "title": "질병관리청 온열질환 응급실감시체계 운영 결과 연보",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "전체 온열질환 사망자의 52%가 65세 이상 고령층이며, 실내 발생 장소 중 78%가 냉방 기기를 가동하지 않은 단독 주택 및 아파트 주거지 내부임"
+    },
+    {
+      "title": "소방청 폭염 대비 독거노인 취약계층 구급활동 및 인명피해 분석 보고서",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "실내 온도가 32도를 초과할 때 고령자의 뇌졸중 및 탈수 위험도가 3배 급증하며, 자녀의 원격 개입이 온열질환 골든타임을 확보하는 유일한 수단임"
+    },
+    {
+      "title": "한국에너지공단 주택용 전력 누진제 완화 구간 및 취약계층 에너지바우처 실태",
+      "url": "https://www.energy.or.kr",
+      "published_year": 2023,
+      "key_finding": "독거 어르신 가구의 84%가 전기요금 폭탄에 대한 심리적 공포로 체감온도 35도 이상에서도 선풍기 1대만 가동하는 냉방 회피 행태를 보임"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "실내 고온 감지 센서 알림과 IoT 스마트 리모컨 연동으로 부모님 온열질환 원격 예방하기"
+  }
+}

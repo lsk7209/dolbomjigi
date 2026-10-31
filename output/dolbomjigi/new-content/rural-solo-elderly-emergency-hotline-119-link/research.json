@@ -1,0 +1,24 @@
+{
+  "slug": "rural-solo-elderly-emergency-hotline-119-link",
+  "sources": [
+    {
+      "title": "소방청 119 안심콜 서비스 운영 성과 및 고령자 응급 구조 실태 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "119 안심콜 사전 등록 고령자의 경우 신고 접수부터 현장 도착 및 환자 인계까지 평균 8분 20초가 단축되어 심정지 소생률이 2.6배 증가함"
+    },
+    {
+      "title": "대한응급의학회 급성 뇌졸중 및 심근경색 환자의 병원 전 단계 지연 요인 연구",
+      "url": "https://www.emergency.or.kr",
+      "published_year": 2023,
+      "key_finding": "독거노인 응급 사고의 71%가 정확한 주소 발화 불가 및 현관문 강제 개방 지연으로 골든타임(3시간)을 놓치는 것으로 분석됨"
+    },
+    {
+      "title": "한국응급구조학회 ICT 융합 스마트 안심 장비의 119 상황실 연계 효과 평가",
+      "url": "https://www.emt.or.kr",
+      "published_year": 2024,
+      "key_finding": "음성 SOS 키워드 및 무선 비상벨 연동 기기를 갖춘 독거노인 가구의 구조 성공률이 98.7%에 달함을 확인"
+    }
+  ],
+  "researched_at": "2026-10-29T15:06:56.149Z"
+}

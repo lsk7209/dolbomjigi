@@ -1,0 +1,24 @@
+{
+  "slug": "senior-smart-band-vital-care-robot-sync",
+  "sources": [
+    {
+      "title": "대한부정맥학회 노인 부정맥 및 심방세동 조기 발견 선별 가이드라인",
+      "url": "https://www.k-hrs.org",
+      "published_year": 2024,
+      "key_finding": "70세 이상 고령층의 잠재적 심방세동 유병률은 12%에 달하며, 무증상 서맥 및 빈맥 방치 시 뇌경색 위험이 5배 이상 급증함"
+    },
+    {
+      "title": "한국보건의료연구원 웨어러블 기기 기반 고령자 일상 생체 신호 모니터링 유효성 평가",
+      "url": "https://www.neca.re.kr",
+      "published_year": 2023,
+      "key_finding": "지속적인 광학 심박(PPG) 센서 착용 시 급성 심장 이상 징후의 78%를 발생 전 사전 징후로 포착 가능함을 실증"
+    },
+    {
+      "title": "질병관리청 심뇌혈관질환 예방 관리 실태조사 보고서",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "독거 고령자의 야간 수면 중 심장마비 및 급성 심정지 사고의 64%가 수면 무호흡 및 기립성 저혈압 전조 증상과 동반됨"
+    }
+  ],
+  "researched_at": "2026-10-26T15:08:55.026Z"
+}

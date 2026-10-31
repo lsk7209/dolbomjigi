@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 29,
+      "max": 30,
+      "evidence": "인형형(효돌)과 화면형(다솜)의 폼팩터 차이, 대화 및 인지 보조 방식, 보호자 관제 차이, 어르신 성향별 5대 선택 기준을 종합적으로 제공하여 실무 의사결정을 완벽히 지원함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "다솜의 제조사(원더풀플랫폼) 및 모델 라인업 오류를 바로잡고, 거치형 기기의 야외 배회 감지 불가 사실을 명시하여 환각 및 과장을 완전히 제거함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "단순 스펙 나열이 아닌 어르신의 시력·청력·기계 거부감 등 실제 현장 수용도를 기준으로 비교 흐름도와 실무 점검표를 독창적으로 도출함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "양사 핵심 특징 대조표와 의사결정 흐름도를 포함하고, 실제 운영 중인 사이트 내부 링크를 맥락에 맞게 자연스럽게 연결함"
+    },
+    "total": 97
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "각 지자체별 당해 연도 보급 로봇 선정 기종(효돌 vs 다솜)은 시기별 입찰 결과에 따라 상이함"
+  ]
+}

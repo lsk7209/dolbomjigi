@@ -1,0 +1,29 @@
+{
+  "slug": "care-robot-fall-detection-radar-blindspot",
+  "suggested_content_type": "guide",
+  "title_ko": "화장실 낙상 사고는 감지할 수 있을까? 돌봄로봇 레이더 센서 설치 위치와 한계",
+  "subtitle": "밀리미터파(mmWave) 전파의 타일 벽 투과 한계와 욕실 골든타임 사각지대 방어 3종 세트",
+  "summary": "돌봄로봇의 비접촉 레이더 낙상 센서가 문이 닫힌 화장실 내부까지 감지할 수 있는지 과학적 팩트체크를 진행했습니다. 타일 벽과 두꺼운 문에 막히는 전파 투과 한계를 밝히고, 거실 로봇과 욕실 전용 방수 비상벨·미끄럼 방지 매트를 결합한 3중 안전망을 안내합니다.",
+  "meta_description": "화장실 낙상 사고 돌봄로봇이 감지할 수 있을까? mmWave 레이더 센서 투과 한계와 방수 비상벨·매트 결합으로 욕실 골든타임 지키는 법.",
+  "main_keyword": "돌봄로봇 낙상 감지",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-fall-detection-radar-blindspot.jpg",
+  "internal_links": [
+    "/info/how-companion-robots-work",
+    "/guide/parents-80s-gift",
+    "/guide/lonely-deaths-prevention",
+    "/blog/rehabilitation-robot-for-stroke-recovery"
+  ],
+  "image_suggestions": [
+    {
+      "description": "거실에 설치된 돌봄로봇의 레이더 파장 범위와 타일로 막힌 화장실 내부 사각지대를 보여주는 스마트홈 안전 단면도",
+      "alt": "돌봄로봇 레이더 낙상 센서의 감지 범위와 화장실 사각지대",
+      "path": "/images/blog-ai/posts/care-robot-fall-detection-radar-blindspot.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-23T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 30,
+      "max": 30,
+      "evidence": "카시오 정식 판매 체계(PE-M11/PE-M10)의 최신 가격 및 USB-C 하우스 차이, 말뜻 미이해 한계, 필수 월 구독료 부재, 시니어 선물 시 4대 주의사항을 체계적으로 제공함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "2026년 7월 카시오 공식 발표(PE-M11PK 64,900엔) 및 선택형 Club Moflin(연 6,600엔) 요율, 뱅가드 펀딩판과의 앱 지원 분리 사실을 공식 출처로 완벽히 검증함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "'말하지 않기 때문에 더 편안하다'는 어르신 소통 심리와 충전 둥지 안착, 털 위생 관리 등 실생활의 구체적 난제를 독창적으로 규명함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "PE-M10 vs PE-M11 비교표와 선물 적합성 자가 점검표를 적절히 배치하고 실제 작동하는 사이트 내부 링크를 맥락에 맞게 자연스럽게 결합함"
+    },
+    "total": 98
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "카시오의 향후 한국 공식 유통 및 KC 전파인증 일정 발표 시 업데이트 필요"
+  ]
+}

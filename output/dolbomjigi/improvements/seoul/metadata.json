@@ -1,0 +1,18 @@
+{
+  "original_url": "/support/region/seoul",
+  "slug": "seoul",
+  "original_id": 1,
+  "original_published_at": null,
+  "title_ko": "서울 반려로봇 지원사업: 과거 보급 사례와 2026년 신청 경로",
+  "subtitle": "서울시청 직접 접수 불가, 25개 자치구 동주민센터 및 안심돌봄120 확인법",
+  "summary": "2026년 서울시 반려로봇 신규 신청은 시청 일괄 접수가 아닌 25개 자치구별 분산 사업입니다. 과거 2023~2024년 480대 보급 실적의 착시를 바로잡고, 관할 동주민센터와 안심돌봄120(120+3번)을 통해 관내 잔여 물량과 자격을 확인하는 실무 절차를 안내합니다.",
+  "meta_description": "서울시 어르신 반려로봇 지원사업의 2026년 최신 현황을 확인하세요. 과거 보급 실적과 현재 상태를 분리하고, 25개 자치구별 주민센터 및 안심돌봄120 공식 신청 경로를 안내합니다.",
+  "internal_links": [
+    "/support",
+    "/ranking/government-supported",
+    "/robot/hyodol",
+    "/blog/hyodol-monthly-fee-breakdown",
+    "/guide/mom-living-alone"
+  ],
+  "proposed_changes": "영구 활성(active) 상태로 잘못 표기되었던 2024년 사업 데이터를 바로잡고, 2026년 현재 신규 신청 상태를 '미확인(자치구 분산 공모)'으로 정정함. 안심돌봄120(02-1668-0120) 공식 창구와 자치구별 유선 문의 체크리스트를 신설함."
+}

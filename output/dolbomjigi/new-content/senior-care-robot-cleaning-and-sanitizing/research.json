@@ -1,0 +1,27 @@
+{
+  "slug": "senior-care-robot-cleaning-and-sanitizing",
+  "sources": [
+    {
+      "title": "한국의류시험연구원(KATRI) 섬유 제품 살균 및 항균 시험 검사 기준",
+      "url": "https://www.katri.re.kr",
+      "published_year": 2023,
+      "key_finding": "전자 부품 내장 봉제류는 침수 세탁이 불가하므로 40도 미온수 중성세제 거품 흡착과 무알코올 소독제를 통해 표면 세균을 99.9% 사멸할 수 있음"
+    },
+    {
+      "title": "돌봄로봇(효돌·다솜) 제조사 공식 하드웨어 유지관리 및 위생 클리닝 매뉴얼",
+      "url": "https://www.hyodol.com",
+      "published_year": 2024,
+      "key_finding": "통째 물세탁 시 내부 메인보드 쇼트 및 충전식 리튬 배터리 폭발 위험으로 무상 AS가 영구 제외되므로 반드시 외피 분리 수칙을 준수해야 함"
+    },
+    {
+      "title": "대한노인병학회 노년기 피부 건조증 및 접촉성 피부염 예방 환경 관리 지침",
+      "url": "https://www.geriatrics.or.kr",
+      "published_year": 2024,
+      "key_finding": "오염된 침구 및 인형에 번식하는 집먼지진드기와 황색포도상구균이 고령자의 피부 소양증 및 호흡기 질환 악화의 주원인으로 작용함"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "기판 침수와 배터리 손상 없이 외피 분리 세탁 및 스팀·소독 티슈로 봉제인형 관리하는 법"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "original_url": "/robot/hyodol",
+  "slug": "hyodol",
+  "original_id": 1,
+  "original_published_at": null,
+  "title_ko": "효돌: 부모님 집에 들이기 전 살펴볼 기능과 실제 비용",
+  "subtitle": "손주 인형 폼팩터, LTE 내장 통신, 3가지 도입 경로(지자체·복지용구·개인) 완전 정리",
+  "summary": "국내 1위 시니어 돌봄로봇 효돌의 상세 스펙과 도입 비용을 정리했습니다. 198만 원 단일 정가 오해를 바로잡고 지자체 무상 보급, 장기요양 복지용구(본인부담 6~15%), 개인 약정 패키지의 차이와 보호자 전용 앱의 4대 안심 기능을 안내합니다.",
+  "meta_description": "AI 시니어 돌봄로봇 효돌의 가격과 기능을 안내합니다. 봉제 인형 폼팩터, LTE 내장 통신, 복약 안내, 지자체 무상 보급 및 복지용구 신청 조건을 확인하세요.",
+  "internal_links": [
+    "/blog/hyodol-monthly-fee-breakdown",
+    "/blog/hyodol-vs-dasom-comparison",
+    "/guide/mom-living-alone",
+    "/support",
+    "/compare"
+  ],
+  "proposed_changes": "시드의 검증되지 않은 '198만 원/월 49,800원' 단일 가격과 과장된 낙상 감지 주장을 정정함. LTE 내장 통신 모듈과 정전식 터치 센서 사양을 명시하고, 지자체·복지용구·개인 패키지의 3대 도입 경로를 신설함."
+}

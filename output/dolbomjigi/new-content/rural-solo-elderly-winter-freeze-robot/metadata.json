@@ -1,0 +1,29 @@
+{
+  "slug": "rural-solo-elderly-winter-freeze-robot",
+  "suggested_content_type": "guide",
+  "title_ko": "겨울철 한파와 보일러 동파 위험, 시골 부모님 댁 돌봄로봇 온도 센서 연동법",
+  "subtitle": "실내 저체온증과 난방 배관 동파를 사전에 막는 3단계 온도 알림 설정과 온열 매트 교차 검증 기술",
+  "summary": "겨울철 혹한기 시골 부모님 댁의 실내 저체온증과 보일러 동파를 원격으로 막는 실무 가이드입니다. 돌봄로봇 내장 온습도 센서의 15도 이하 한파 알림 세팅, 외풍 차단 기기 배치법, 스마트플러그 온열 매트 전력 감지 연계 수칙을 안내합니다.",
+  "meta_description": "시골 부모님 겨울철 저체온증과 보일러 동파 방지법! 돌봄로봇 실내 온도 센서 알림 설정부터 스마트플러그 연동까지 원격 한파 안전 가이드.",
+  "main_keyword": "돌봄로봇 한파 예방",
+  "cover_image_url": "/images/blog-ai/posts/rural-solo-elderly-winter-freeze-robot.jpg",
+  "internal_links": [
+    "/guide/dad-rural-residence",
+    "/guide/mom-living-alone",
+    "/blog/hyodol-monthly-fee-breakdown",
+    "/blog/care-robot-setup-guide-for-beginners"
+  ],
+  "image_suggestions": [
+    {
+      "description": "겨울철 눈 덮인 시골집 안방에서 돌봄로봇이 실내 온도를 측정하고 스마트폰 앱으로 온도가 표시되는 모습",
+      "alt": "시골 부모님 댁 돌봄로봇의 실내 온도 감지 및 한파 예방",
+      "path": "/images/blog-ai/posts/rural-solo-elderly-winter-freeze-robot.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-23T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

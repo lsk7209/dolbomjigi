@@ -22,9 +22,13 @@ async function findProgram(slug: string) {
 }
 
 export async function generateStaticParams() {
-  const programs = await db.select({ slug: supportPrograms.slug }).from(supportPrograms)
-    .where(and(isNull(supportPrograms.region_id), eq(supportPrograms.human_reviewed, true)))
-  return programs.map((program) => ({ slug: program.slug }))
+  try {
+    const programs = await db.select({ slug: supportPrograms.slug }).from(supportPrograms)
+      .where(and(isNull(supportPrograms.region_id), eq(supportPrograms.human_reviewed, true)))
+    return programs.map((program) => ({ slug: program.slug }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {

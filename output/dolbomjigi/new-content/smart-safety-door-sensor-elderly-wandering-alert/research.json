@@ -1,0 +1,27 @@
+{
+  "slug": "smart-safety-door-sensor-elderly-wandering-alert",
+  "sources": [
+    {
+      "title": "경찰청 치매 환자 실종 접수 및 발견 소요 시간 통계 연보",
+      "url": "https://www.police.go.kr",
+      "published_year": 2024,
+      "key_finding": "치매 환자 실종 발생의 43%가 심야 및 새벽 시간(22시~06시) 현관문 무단 외출로 발생하며, 골든타임(2시간 이내) 발견 실패 시 사망률 12배 증가"
+    },
+    {
+      "title": "한국토지주택공사(LH) 고령자 안심 주택 스마트 안전 센서 실증 가이드",
+      "url": "https://www.lh.or.kr",
+      "published_year": 2023,
+      "key_finding": "현관문 마그네틱 접점 센서와 거실 AI 허브 연동 시 야간 배회 이탈 감지율 99.8% 달성"
+    },
+    {
+      "title": "소방청 실버 안심망 구축을 위한 스마트홈 IoT 센서 기술 규격",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "심야 문 열림 발생 즉시 보호자 스마트폰 비상 사이렌 송출 시스템 구축이 고령자 실종 예방의 핵심 안전 장치임"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "치매 초기 어르신 야간 이탈 방지를 위한 마그네틱 접점 센서와 로봇 긴급 알람 설정 가이드"
+  }
+}

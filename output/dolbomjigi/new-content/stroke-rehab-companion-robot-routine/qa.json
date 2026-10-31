@@ -1,0 +1,72 @@
+{
+  "slug": "stroke-rehab-companion-robot-routine",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "가정 내 재활 정체기를 겪는 편마비 어르신의 심리적 원인을 짚고, 낙상 위험 없는 의자 착석 4단계 안전 체조 프로토콜과 규칙적 알림 스케줄을 실무적으로 완성함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "국립재활원 뇌졸중 환자 재가 운동 가이드라인, 한국로봇산업진흥원 고령자 신체 활력 연구, 보건복지부 낙상 예방 수칙 등 공인된 1차 출처를 정확히 반영함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존의 고가 착용형 외골격 로봇 중심 설명에서 탈피하여 일반 가정의 대화형 로봇 체조 프로그램을 활용한 일상 루틴 형성에 집중해 차별화된 가치를 창출함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용, 내부 링크 4개 정상 연결, 메타데이터 및 무리한 관절 신장 금지 주의사항 완비"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 5541,
+  "compared_existing_items": [
+    "rehabilitation-robot-for-stroke-recovery",
+    "parents-recent-hospitalization",
+    "senior-friendly",
+    "how-companion-robots-work"
+  ],
+  "similarity_signals": "기존 개론 글이 병원용 고가 장비에 집중했던 반면, 본 글은 일반 가정용 돌봄로봇의 음악과 칭찬 피드백을 활용한 의자 착석 4단계 일상 체조에 집중하여 완전히 차별화됨",
+  "revisions_made": [
+    "의자 착석 4단계 관절 안전 스트레칭 동작별 세부 가이드 보강",
+    "오전 10시·오후 3시 알림 스케줄링 추천표 추가"
+  ],
+  "remaining_risks": [
+    "기기별 체조 음원 및 음성 안내 지원 모델 세부 펌웨어 차이 확인 필요"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.617Z",
+    "metrics": {
+      "character_count": 5541,
+      "answer_block_length": 206,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

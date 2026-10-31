@@ -21,8 +21,12 @@ async function findSido(slug: string) {
 }
 
 export async function generateStaticParams() {
-  const rows = await db.select({ slug: regions.slug }).from(regions).where(eq(regions.level, 'sido'))
-  return rows.map((row) => ({ sido: row.slug }))
+  try {
+    const rows = await db.select({ slug: regions.slug }).from(regions).where(eq(regions.level, 'sido'))
+    return rows.map((row) => ({ sido: row.slug }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {

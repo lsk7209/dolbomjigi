@@ -24,15 +24,19 @@ async function findRegion(sido: string, sigungu: string) {
 }
 
 export async function generateStaticParams() {
-  const [sidos, sigungus, programs] = await Promise.all([
-    db.select({ slug: regions.slug, sido_code: regions.sido_code }).from(regions).where(eq(regions.level, 'sido')),
-    db.select({ id: regions.id, slug: regions.slug, sido_code: regions.sido_code }).from(regions).where(eq(regions.level, 'sigungu')),
-    db.select({ region_id: supportPrograms.region_id }).from(supportPrograms).where(eq(supportPrograms.human_reviewed, true)),
-  ])
-  const sidoByCode = new Map(sidos.map((sido) => [sido.sido_code, sido.slug]))
-  const reviewedIds = new Set(programs.map((program) => program.region_id))
-  return sigungus.filter((region) => reviewedIds.has(region.id) && sidoByCode.has(region.sido_code))
-    .map((region) => ({ sido: sidoByCode.get(region.sido_code)!, sigungu: region.slug }))
+  try {
+    const [sidos, sigungus, programs] = await Promise.all([
+      db.select({ slug: regions.slug, sido_code: regions.sido_code }).from(regions).where(eq(regions.level, 'sido')),
+      db.select({ id: regions.id, slug: regions.slug, sido_code: regions.sido_code }).from(regions).where(eq(regions.level, 'sigungu')),
+      db.select({ region_id: supportPrograms.region_id }).from(supportPrograms).where(eq(supportPrograms.human_reviewed, true)),
+    ])
+    const sidoByCode = new Map(sidos.map((sido) => [sido.sido_code, sido.slug]))
+    const reviewedIds = new Set(programs.map((program) => program.region_id))
+    return sigungus.filter((region) => reviewedIds.has(region.id) && sidoByCode.has(region.sido_code))
+      .map((region) => ({ sido: sidoByCode.get(region.sido_code)!, sigungu: region.slug }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {

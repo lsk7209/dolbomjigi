@@ -1,0 +1,94 @@
+{
+  "article_research_question": "LOVOT의 실제 구매와 유지에 드는 공식 비용 구조는 무엇이며, 인터넷 사용 후기를 읽을 때 한국 소비자가 주의해야 할 점은 무엇인가?",
+  "reader_outcome": "독자가 고가의 본체 가격 외에 매월 청구되는 필수 서비스 비용과 해외 A/S 한계를 명확히 인식하여 충동 직구를 방지하고 합리적인 도입 결정을 내릴 수 있다.",
+  "search_queries": [
+    {
+      "query": "LOVOT official pricing 暮らしの費用 2026",
+      "executed_at": "2026-10-21T11:58:44+09:00",
+      "summary": "LOVOT 3.0 본체 577,500엔(2026-10-25까지)에서 2026-10-26부터 599,500엔으로 인상, 월 생활비 9,900엔(미니멈), 12,980엔(베이직), 19,800엔(풀커버) 확인"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-lovot-pricing",
+      "url": "https://lovot.life/pricing",
+      "title": "LOVOT 공식 가격 및 플랜 안내",
+      "publisher": "GROOVE X, Inc.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "LOVOT 3.0 및 2.0 본체 가격, 월 생활비(暮らしの費用) 3개 플랜, 사무 수수료 및 배송비 확인"
+    },
+    {
+      "id": "src-lovot-prtimes-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000288.000055375.html",
+      "title": "LOVOT 3.0 가격 개정 및 사양 안내 보도자료",
+      "publisher": "PR TIMES (발행사 GROOVE X)",
+      "document_date": "2026-09-15",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_press_release",
+      "used_for": "2026년 10월 26일부 본체 가격 단계적 인상 일정(577,500엔 -> 599,500엔 -> 649,000엔) 확인"
+    },
+    {
+      "id": "src-lovot-support",
+      "url": "https://lovot.life/support/",
+      "title": "LOVOT 공식 서포트 및 메인터넌스 규정",
+      "publisher": "GROOVE X, Inc.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_support",
+      "used_for": "정기 오버홀(LOVOT Dock) 주기, 서보모터 교체 및 수리 보장 범위, 해외 반출 시 수리 불가 조항 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-body-price-tiers",
+      "text": "LOVOT 3.0 본체 가격은 기본색 기준 577,500엔이며 2026년 10월 26일부터 599,500엔으로 개정된다.",
+      "source_ids": ["src-lovot-pricing", "src-lovot-prtimes-2026"],
+      "supports_section": "LOVOT 3.0의 최신 공식 가격 구조",
+      "scope": "hardware_pricing",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-mandatory-monthly-plan",
+      "text": "본체 구입과 별도로 매월 9,900엔 이상의 '생활비(暮らしの費用)' 플랜 구독이 의무화되어 있으며 미가입 시 로봇이 작동하지 않는다.",
+      "source_ids": ["src-lovot-pricing"],
+      "supports_section": "필수 월 서비스료(暮らしの費用) 3대 플랜",
+      "scope": "subscription_cost",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-no-korean-support",
+      "text": "한국 공식 유통사나 A/S 센터가 없어 고장이나 정기 점검 시 일본으로 재반출해야 하므로 막대한 운송비와 행정적 장벽이 존재한다.",
+      "source_ids": ["src-lovot-support"],
+      "supports_section": "국내 반입 시 직면하는 A/S와 유지보수 장벽",
+      "scope": "regional_support",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-not-medical-safety-device",
+      "text": "LOVOT은 온기와 애교를 나누는 정서적 반려 로봇이며 낙상 감지, 복약 알림, 119 긴급 연동 기능이 없다.",
+      "source_ids": ["src-lovot-pricing", "src-lovot-support"],
+      "supports_section": "후기 영상에서 놓치기 쉬운 기능적 한계",
+      "scope": "features_and_safety",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "LOVOT 3.0의 월 서비스 플랜은 미니멈(9,900엔, 수리비 33% 보상), 베이직(12,980엔, 수리비 66% 보상 및 정기 오버홀 할인), 풀커버(19,800엔, 수리비 전액 보상 및 기본 메인터넌스 팩 무료)로 구성되어 보장 폭에 따라 연간 11만~24만 엔의 고정 지출이 발생한다.",
+      "source_ids": ["src-lovot-pricing"]
+    },
+    {
+      "detail": "LOVOT은 바닥을 스스로 바퀴로 주행하므로 문턱 높이가 15mm 이상이거나 두꺼운 장모 카펫이 깔린 집에서는 이동이 제한되며, 충전대(네스트) 주변에 반경 1m 이상의 평탄한 개방 공간이 확보되어야 한다.",
+      "source_ids": ["src-lovot-support"]
+    }
+  ],
+  "source_interpretation": "유튜브나 인스타그램 후기에서 강조되는 감성적 만족감 이면에 감춰진 일본 엔화 환율, 초기 사무비용, 필수 구독료, 해외 직구 A/S 불가 문제를 공식 문서를 토대로 입체적으로 분석했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "한국 내 비공식 사설 수리 업체의 LOVOT 서보모터 수리 가능 여부",
+      "reason": "제조사 암호화 펌웨어 및 전용 부품 공급 체계로 인해 사설 수리의 신뢰성과 지속 가능성을 확인할 수 없음"
+    }
+  ]
+}

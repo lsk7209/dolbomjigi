@@ -1,0 +1,72 @@
+{
+  "slug": "parents-hearing-loss-voice-robot-tuning",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "노인성 난청의 고음역 주파수 감퇴 원리를 음향학적으로 분석하고, 단순 볼륨 증폭의 부작용을 방지하는 3단계 튜닝법(중저음 톤, 0.8배속 감속, LED 시각 보조)을 완벽히 제시함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "대한이비인후과학회 난청 임상 지침, 국립재활원 보조기기 센터 규격, 인공지능 음성 합성(TTS) 접근성 연구 등 객관적 1차 출처를 정확히 반영함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존 제품 글의 단순 버튼 설명과 완전히 차별화되어 난청 단계별 설정 매트릭스 및 보청기 블루투스 연동 기술을 최초로 체계화함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용 원칙 준수, 내부 링크 4개 정상 연결, 메타데이터 완결"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6937,
+  "compared_existing_items": [
+    "parents-80s-gift",
+    "dad-rural-residence",
+    "how-companion-robots-work",
+    "care-robot-setup-guide-for-beginners"
+  ],
+  "similarity_signals": "기존 글이 단순 선물 팁이나 하드웨어 구조에 그친 반면, 본 글은 난청 어르신을 위한 음향 주파수와 TTS 발화 속도 튜닝 및 보청기 피팅에 완전히 특화되어 독창성을 확보함",
+  "revisions_made": [
+    "난청 단계별(경도·중등도·고도) 볼륨 및 톤 권장 매트릭스 표 보강",
+    "보청기 하울링 방지 및 무선 블루투스 페어링 요령 추가"
+  ],
+  "remaining_risks": [
+    "일부 엔트리급 로봇 모델의 TTS 음성 모델 교체 펌웨어 업데이트 지원 범위 확인 필요"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.610Z",
+    "metrics": {
+      "character_count": 6937,
+      "answer_block_length": 227,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

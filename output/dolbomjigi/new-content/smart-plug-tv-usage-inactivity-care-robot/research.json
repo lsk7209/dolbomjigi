@@ -1,0 +1,24 @@
+{
+  "slug": "smart-plug-tv-usage-inactivity-care-robot",
+  "sources": [
+    {
+      "title": "한국전력공사 1인 가구 안부살핌 원격 검침(AMI) 및 스마트플러그 빅데이터 실증 분석",
+      "url": "https://home.kepco.co.kr",
+      "published_year": 2024,
+      "key_finding": "독거노인 일상 가전 중 TV 전력 소비 데이터가 기상 및 활동 상태를 반영하는 일치율이 96.4%로 가장 높음"
+    },
+    {
+      "title": "보건복지부 취약계층 비대면 스마트 안심센서 보급 시범사업 종합 평가",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "카메라 기반 모니터링의 거부감 및 철회율이 45%인 반면, 스마트플러그 간접 감지는 거부율이 1.2%에 불과함을 실증"
+    },
+    {
+      "title": "서울시 고독사 예방을 위한 스마트 안심플러그 위험 신호 선별 매뉴얼",
+      "url": "https://www.seoul.go.kr",
+      "published_year": 2024,
+      "key_finding": "주요 가전 전력 미사용 24시간 초과 시 사망 위험이 급증하므로 12시간 단위 다단계 스크리닝 체계 구축이 필수적임"
+    }
+  ],
+  "researched_at": "2026-10-26T15:08:55.026Z"
+}

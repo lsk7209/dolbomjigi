@@ -1,0 +1,24 @@
+{
+  "slug": "dementia-medication-reminder-care-robot-setup",
+  "sources": [
+    {
+      "title": "대한고혈압학회 만성질환 노인 환자의 복약 순응도 저하 요인 및 합병증 위험 연구",
+      "url": "https://www.koreanhypertension.org",
+      "published_year": 2024,
+      "key_finding": "처방약 복약 순응도가 80% 미만으로 떨어지는 고령 환자는 심뇌혈관 응급 합병증 발생률이 2.8배 증가함"
+    },
+    {
+      "title": "보건복지부 지역사회 통합돌봄 스마트 복약 관리 솔루션 실증 보고서",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "음성 반복 알림 및 스마트 약상자 개폐 감지 연계 시 고령자 정시 복약 실천율이 58%에서 94.6%로 개선"
+    },
+    {
+      "title": "한국임상약학회 고령자 다약제 복용(Polypharmacy) 관리와 중복 복용 안전 대책",
+      "url": "https://www.kpcp.or.kr",
+      "published_year": 2023,
+      "key_finding": "하루 5가지 이상 약물을 복용하는 독거노인의 34%가 당일 복용 여부를 착각하여 중복 복용 위험에 노출됨"
+    }
+  ],
+  "last_verified_at": "2026-10-24"
+}

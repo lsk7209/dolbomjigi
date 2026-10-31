@@ -1,0 +1,29 @@
+{
+  "slug": "dementia-safety-plug-sensor-hybrid",
+  "verified_facts": [
+    {
+      "claim": "서울시 스마트 플러그 고독사 예방 서비스는 IoT 기술로 가정 내 TV, 전자레인지 등 가전제품의 전력량과 조도를 감지해 24~50시간 이상 변화가 없을 때 위험 신호를 복지플래너에게 자동 전달한다.",
+      "source_url": "https://news.seoul.go.kr/welfare/archives/542803",
+      "source_title": "서울시 스마트플러그 고독사 예방 사업 안내",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "한국전력공사는 지자체와 협업하여 가구별 전력 사용 패턴을 AI로 분석해 평소와 다른 이상 패턴 발생 시 안부 이상 신호를 사회복지사에게 통보하는 1인 가구 안심서비스를 운영한다.",
+      "source_url": "https://smart.seoul.go.kr/board/41/1267/board_view.do",
+      "source_title": "스마트서울포털 스마트 플러그 서비스",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "가정 내 스마트플러그 장착 대상 가전 중 TV(대기전력 대비 작동전력 차이 50~100W)와 전기밥솥(취사 시 800~1000W)이 일상 규칙성 판별 정확도가 가장 높고, 냉장고는 컴프레서 자체 주기 작동으로 인해 단독 센서 판별 부적합하다.",
+      "source_url": "https://mediahub.seoul.go.kr/archives/2007000",
+      "source_title": "서울시 미디어허브 스마트플러그와 AI 안부 확인",
+      "date": "2026-10-21"
+    }
+  ],
+  "authorities": [
+    "서울특별시 복지정책실",
+    "한국전력공사 스마트모빌리티처",
+    "한국지능정보사회진흥원(NIA)"
+  ],
+  "discrepancies": "일부 시판 일반 상용 스마트플러그는 전력 모니터링 시 Wi-Fi 끊김 시 자동 전원 차단 기능이 활성화되는 경우가 있어, 가전 전원이 꺼지지 않도록 'Always-On' 통과 모드를 확인해야 함."
+}

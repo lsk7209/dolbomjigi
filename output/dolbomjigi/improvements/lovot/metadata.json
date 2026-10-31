@@ -1,0 +1,18 @@
+{
+  "original_url": "/robot/lovot",
+  "slug": "lovot",
+  "original_id": 10,
+  "original_published_at": null,
+  "title_ko": "LOVOT 3.0: 공식 가격, 필수 월 유지비, 국내 도입 가이드",
+  "subtitle": "본체값 58만 엔, 매월 청구되는 생활비 플랜, 정기 오버홀과 국내 직구 현실",
+  "summary": "일본 GROOVE X의 교감형 로봇 LOVOT 3.0의 최신 공식 가격과 사양을 안내합니다. 본체 가격 577,500엔(10/26부 599,500엔) 외에 매월 9,900엔 이상의 필수 생활비, 정기 오버홀(LOVOT Dock) 주기, 실내 문턱 15mm 제약, 국내 A/S 불가 현실을 꼼꼼히 정리했습니다.",
+  "meta_description": "LOVOT(라봇) 3.0의 일본 공식 가격과 필수 월 서비스료, 하드웨어 사양을 완벽 정리했습니다. 한국 직구 시 직면하는 유지보수 및 돌봄 기능의 한계를 확인하세요.",
+  "internal_links": [
+    "/compare/lovot-vs-moflin",
+    "/robot/moflin",
+    "/blog/lovot-real-user-experience",
+    "/guide/mom-living-alone",
+    "/robot/hyodol"
+  ],
+  "proposed_changes": "임의의 원화 추정 가격을 삭제하고 2026년 가을 최신 엔화 가격과 暮らしの費用 3대 플랜 요율을 반영함. 정기 오버홀 주기 및 실내 주거 환경(문턱) 적합성 점검표를 신설함."
+}

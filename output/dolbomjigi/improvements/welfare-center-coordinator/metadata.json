@@ -1,0 +1,18 @@
+{
+  "original_url": "/guide/welfare-center-coordinator",
+  "slug": "welfare-center-coordinator",
+  "original_id": 13,
+  "original_published_at": 1715299200,
+  "title_ko": "복지관·돌봄센터의 돌봄로봇 도입: 시범 운영부터 사후 평가까지",
+  "subtitle": "실패 없는 기관 도입을 위한 4단계 표준 로드맵과 실무 운영 매뉴얼",
+  "summary": "복지관, 주간보호센터, 요양시설에서 돌봄로봇을 도입할 때 반드시 지켜야 할 실무 절차를 정리했습니다. 기기 구매보다 선행되어야 할 운영 설계, 개인정보 및 음성 데이터 동의서 작성, 직원 업무 분장, 2~4주 소규모 시범 운영 평가, 숨은 운영비(TCO) 계산법을 완벽히 안내합니다.",
+  "meta_description": "노인복지관 및 돌봄센터 담당자를 위한 돌봄로봇 도입 완전 가이드. 운영 설계, 개인정보 동의서, 직원 업무 분장, 2~4주 시범 운영 및 TCO 비용 계산법을 확인하세요.",
+  "internal_links": [
+    "/compare",
+    "/robot/hyodol",
+    "/blog/hyodol-vs-dasom-comparison",
+    "/support",
+    "/ranking/senior-friendly"
+  ],
+  "proposed_changes": "1,000자 수준의 단순 메모 초안을 5,500자 이상의 기관 표준 실무 지침서로 전면 개편함. 기관 도입 4단계 로드맵, 개인정보 및 보안 점검표, 총소요비용(TCO) 계산 공식, 시범 운영 KPI 체크리스트를 신설함."
+}

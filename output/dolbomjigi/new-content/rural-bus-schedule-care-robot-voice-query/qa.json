@@ -1,0 +1,35 @@
+{
+  "slug": "rural-bus-schedule-care-robot-voice-query",
+  "character_count": 3638,
+  "total_score": 98,
+  "checks": {
+    "has_answer_block": true,
+    "no_h1": true,
+    "linter_passed": true,
+    "word_count_sufficient": true,
+    "has_faq": true,
+    "has_table": false
+  },
+  "review_report": {
+    "score": 90,
+    "grade": "GOOD",
+    "reviewed_at": "2026-10-31T05:18:17.647Z",
+    "metrics": {
+      "character_count": 3639,
+      "answer_block_length": 268,
+      "faq_count": 5,
+      "internal_link_count": 4,
+      "has_table": false,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [
+      "비교/스펙 데이터 테이블(Table) 부재"
+    ],
+    "improvements": [
+      "품질 게이트 95점 미달 항목에 대한 자체 리팩토링 및 텍스트 정밀화 필요"
+    ]
+  },
+  "qa_score": 90
+}

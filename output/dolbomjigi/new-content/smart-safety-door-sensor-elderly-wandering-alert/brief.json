@@ -1,0 +1,7 @@
+{
+  "title": "야간 현관문 열림 감지와 배회 알림: 돌봄로봇 무선 도어 센서 스마트 연동법",
+  "slug": "smart-safety-door-sensor-elderly-wandering-alert",
+  "target_persona": "family_caregiver",
+  "main_keyword": "돌봄로봇 현관문 센서",
+  "goal": "밤중에 홀로 현관문을 열고 나가시는 부모님의 안전을 지키기 위해, 돌봄로봇과 무선 마그네틱 도어 센서를 지그비(Zigbee)나 블루투스로 연동하여 심야 문 열림 시 보호자 스마트폰으로 즉시 비상 알림을 전송하는 구축법을 안내합니다."
+}

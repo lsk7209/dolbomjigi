@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { SITE_URL } from '@/lib/config'
+
+export const dynamic = 'force-dynamic'
 import { db } from '@/db/client'
 import { researchStudies } from '@/db/schema'
 import { desc } from 'drizzle-orm'

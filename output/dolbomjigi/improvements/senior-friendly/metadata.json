@@ -1,0 +1,18 @@
+{
+  "original_url": "/ranking/senior-friendly",
+  "slug": "senior-friendly",
+  "original_id": "senior-friendly",
+  "original_published_at": null,
+  "title_ko": "어르신 돌봄로봇 선택, '인기 순위'보다 중요한 5대 검증 기준",
+  "subtitle": "조작 편의, 핵심 목적, 비상 대응, 총소요비용, 개인정보로 가려내는 최적의 기기",
+  "summary": "어르신 돌봄로봇에는 전국 공통 1위가 존재하지 않습니다. 어르신의 시력·청력·악력 상태, 주 돌봄 목적(정서 교감 vs 복약 알림 vs 모니터링), 비상 알림 전달 체계, 숨은 총비용(TCO), 개인정보 보호의 5대 기준으로 부모님께 꼭 맞는 기기를 찾는 법을 안내합니다.",
+  "meta_description": "어르신 맞춤형 돌봄로봇 선택 5대 기준을 공개합니다. 광고성 인기 순위를 배제하고 어르신 신체 조작 편의성, 복약 알림, 총비용, 비상 대응 체계를 꼼꼼히 검증하세요.",
+  "internal_links": [
+    "/robot/hyodol",
+    "/robot/moflin",
+    "/robot/lovot",
+    "/compare/lovot-vs-moflin",
+    "/guide/mom-living-alone"
+  ],
+  "proposed_changes": "상업적 일렬 순위 나열을 폐기하고 어르신의 신체·인지적 특성과 주 돌봄 목적에 기반한 5대 실무 검증 프레임워크를 신설함. 공식 근거가 부족한 미확인 기기를 제외하고 사실이 확인된 제품 중심의 객관적 장단점 표를 제공함."
+}

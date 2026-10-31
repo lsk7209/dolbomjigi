@@ -1,0 +1,12 @@
+{
+  "slug": "smart-refrigerator-door-sensor-care-robot-inactivity",
+  "title_ko": "냉장고 문 12시간 안 열리면 안부 전화: 식생활 모니터링 연동 기술",
+  "subtitle": "독거노인 영양 결핍과 탈수를 조기 발견하는 무선 자석 도어 센서와 돌봄로봇 식사 안심 알림 구축법",
+  "summary": "혼자 사시는 부모님이 식사를 제때 챙겨 드시는지 확인하고 고독사를 방지하기 위해, 냉장고 문에 부착한 초소형 자석 도어 센서로 개폐 패턴을 24시간 감지하고 12시간 동안 미개폐 시 돌봄로봇과 보호자 앱으로 안부를 확인하는 비침습 식생활 안심망을 안내합니다.",
+  "cover_image_url": "/images/blog-ai/posts/smart-refrigerator-door-sensor-care-robot-inactivity.jpg",
+  "main_keyword": "돌봄로봇 냉장고 문 센서",
+  "reading_time_minutes": 6,
+  "category": "guide",
+  "target_persona": "family_caregiver",
+  "published_at": "2026-10-27T15:49:23.092Z"
+}

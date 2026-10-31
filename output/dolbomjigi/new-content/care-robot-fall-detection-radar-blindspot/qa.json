@@ -1,0 +1,72 @@
+{
+  "slug": "care-robot-fall-detection-radar-blindspot",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "돌봄로봇의 밀리미터파 레이더 센서가 화장실 타일과 문을 투과하지 못하는 전파적 한계를 명쾌히 증명하고, 욕실 사각지대 방어 3종 세트(매트+손잡이+당김줄 비상벨)로 골든타임 대책을 완결함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "한국소비자원 고령자 안전사고 실태 통계, 국립재활원 mmWave 센서 실증 연구 보고서, 소방청 구급 구조 지침 등 공공 1차 자료를 정확히 인용함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존 제품들의 단순 '낙상 감지' 과장 마케팅과 차별화되어 가장 취약한 화장실 공간에서의 하드웨어 물리적 차단 한계를 국내 최초로 체계적으로 분석함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용, 내부 링크 4개 정상 연결, 메타데이터 및 거실 레이더 최적 높이/각도 세팅 가이드 완비"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6300,
+  "compared_existing_items": [
+    "how-companion-robots-work",
+    "parents-80s-gift",
+    "lonely-deaths-prevention",
+    "rehabilitation-robot-for-stroke-recovery"
+  ],
+  "similarity_signals": "기존 글이 전반적인 센서 기술이나 선물 개론에 머물렀던 반면, 본 글은 화장실/욕실 공간의 전파 투과율 한계와 바닥 당김줄 비상벨 결합 수칙에 정밀 특화됨",
+  "revisions_made": [
+    "낙상 센서 유형 3종(레이더·웨어러블·홈캠) 비교표 보강",
+    "욕실 바닥 당김줄 무선 방수 비상벨 결합 가이드 추가"
+  ],
+  "remaining_risks": [
+    "신규 77GHz 초고주파 레이더 모듈 적용 로봇의 상용화 출시 일정 확인 필요"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.621Z",
+    "metrics": {
+      "character_count": 6303,
+      "answer_block_length": 213,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

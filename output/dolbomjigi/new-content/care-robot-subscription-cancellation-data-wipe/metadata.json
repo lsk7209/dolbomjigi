@@ -1,0 +1,29 @@
+{
+  "slug": "care-robot-subscription-cancellation-data-wipe",
+  "suggested_content_type": "guide",
+  "title_ko": "돌봄로봇 해지·반납할 때 위약금과 부모님 개인정보 초기화 확인법",
+  "subtitle": "렌탈 중도 해지 위약금 합법 기준과 기기·클라우드 음성 데이터 5단계 완전 삭제 매뉴얼",
+  "summary": "돌봄로봇 렌탈을 중도 해지할 때 발생하는 위약금의 공정위 표준 기준(잔여 렌탈료의 10%)과 요양원 입소 시 위약금 면제 신청법을 정리했습니다. 기기 반납 시 음성 대화와 가족 연락처를 영구 삭제하는 5단계 공장초기화 절차를 안내합니다.",
+  "meta_description": "돌봄로봇 렌탈 중도 해지 위약금 계산법과 면제 요건! 반납 전 부모님의 음성 대화와 개인정보를 안전하게 지우는 5단계 공장초기화 가이드입니다.",
+  "main_keyword": "돌봄로봇 위약금",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-subscription-cancellation-data-wipe.jpg",
+  "internal_links": [
+    "/blog/hyodol-monthly-fee-breakdown",
+    "/ranking/senior-friendly",
+    "/guide/welfare-center-coordinator",
+    "/guide/parents-recent-hospitalization"
+  ],
+  "image_suggestions": [
+    {
+      "description": "돌봄로봇 렌탈 계약 종료 및 위약금 정산과 기기 반납 체크리스트 안내 이미지",
+      "alt": "돌봄로봇 렌탈 계약 해지 및 개인정보 초기화",
+      "path": "/images/blog-ai/posts/care-robot-subscription-cancellation-data-wipe.jpg",
+      "type": "featured_header",
+      "license_status": "official_asset_ready"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-21T09:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

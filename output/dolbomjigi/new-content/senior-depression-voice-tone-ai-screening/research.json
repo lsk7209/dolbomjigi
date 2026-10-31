@@ -1,0 +1,24 @@
+{
+  "slug": "senior-depression-voice-tone-ai-screening",
+  "sources": [
+    {
+      "title": "대한신경정신의학회 노년기 우울증의 임상적 특징 및 음성 바이오마커 유효성 연구",
+      "url": "https://www.knpa.or.kr",
+      "published_year": 2024,
+      "key_finding": "노인 우울증 환자의 60%가 전형적인 슬픔 대신 신체 증상이나 무기력으로 나타나는 가면성 우울증을 겪으며, 음성 피치 변동폭 감소가 주요 조기 지표임"
+    },
+    {
+      "title": "한국인공지능학회 일상 음성 대화 기반 고령층 정서 건강 스크리닝 모델 평가",
+      "url": "https://www.ai-korea.org",
+      "published_year": 2023,
+      "key_finding": "발화 속도 저하와 문장 간 휴지(Pause) 시간 분석을 통해 단축형 노인 우울 척도(SGDS-K) 위험군을 88.4%의 신뢰도로 조기 선별"
+    },
+    {
+      "title": "국립정신건강센터 지역사회 기반 노인 정신건강 예방 및 관리 가이드라인",
+      "url": "https://www.ncmh.go.kr",
+      "published_year": 2024,
+      "key_finding": "우울 위험 신호 발견 후 2주 이내 가족과의 대면 접촉 및 지자체 상담 연계 시 만성화 위험이 50% 이상 감소함"
+    }
+  ],
+  "researched_at": "2026-10-29T15:06:56.149Z"
+}

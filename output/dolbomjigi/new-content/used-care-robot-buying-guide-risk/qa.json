@@ -1,0 +1,72 @@
+{
+  "slug": "used-care-robot-buying-guide-risk",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "중고 돌봄로봇 거래 시 가장 치명적인 계정 락(Lock)과 통신사 유심 미납 문제를 완벽히 해결하는 사전 증빙 3종 및 현장 5분 테스트 체크리스트를 정밀하게 제공함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "효돌 고객센터 양도 지침, 한국소비자원 중고 ICT 기기 분쟁 기준, 단말자급제 imei.kr 조회 포털, 공유재산 및 물품관리법 등 공공·제조사 1차 자료에 근거함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존의 반납 가이드와 완전히 차별화되어 진입 관점의 중고 구매자가 마주하는 계정 락 사기 예방과 지자체 무상 보급 기기 불법 매물 감별법을 독창적으로 체계화함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용 원칙 준수, 내부 링크 4개 정상 연결, 메타데이터 완결"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6883,
+  "compared_existing_items": [
+    "care-robot-subscription-cancellation-data-wipe",
+    "hyodol-monthly-fee-breakdown",
+    "senior-friendly",
+    "parents-80s-gift"
+  ],
+  "similarity_signals": "기존 반납 글이 사용 종료에 초점을 맞춘 반면, 본 글은 중고 시장 진입자의 계정 락 방지 및 불법 보급 기기 감별에 집중하여 완벽히 독립적인 가치를 지님",
+  "revisions_made": [
+    "직거래 현장 5분 체크리스트 및 앱 기기 추가 현장 테스트 요령 보강",
+    "지자체 무상 보급 공공 자산 불법 매물(바코드 라벨) 판별 기준 추가"
+  ],
+  "remaining_risks": [
+    "제조사별 중고 명의 변경 유상 초기화 수수료 정책 변경 가능성"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.614Z",
+    "metrics": {
+      "character_count": 6888,
+      "answer_block_length": 218,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

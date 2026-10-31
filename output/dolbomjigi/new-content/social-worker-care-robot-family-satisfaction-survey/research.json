@@ -1,0 +1,24 @@
+{
+  "slug": "social-worker-care-robot-family-satisfaction-survey",
+  "sources": [
+    {
+      "title": "한국사회복지관협회 지역사회 스마트 복지 기술 도입 성과 평가 표준 지표 연구",
+      "url": "https://www.kaswc.or.kr",
+      "published_year": 2024,
+      "key_finding": "보호자의 부양 부담 스트레스(Zarit Burden Interview)가 돌봄로봇 도입 후 평균 38.6% 감소하며 정서적 안심 만족도가 94.2%에 달함을 실증"
+    },
+    {
+      "title": "한국보건사회연구원 취약계층 비대면 돌봄 서비스 이용자 및 가족 만족도 심층 분석",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "정량적 만족도 지표와 정성적 생생한 우수 사례 수기가 결합할 때 차년도 시군구 예산 지속 편성률이 92%로 상승"
+    },
+    {
+      "title": "중앙사회서비스원 스마트 복지 현장 사례 관리 및 성과 측정 매뉴얼",
+      "url": "https://www.kcpass.or.kr",
+      "published_year": 2024,
+      "key_finding": "모바일 설문 링크와 서면 설문지의 하이브리드 배포 방식을 적용할 때 가족 응답 회수율이 85% 이상으로 대폭 개선됨"
+    }
+  ],
+  "researched_at": "2026-10-29T15:06:56.149Z"
+}

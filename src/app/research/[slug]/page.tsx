@@ -10,6 +10,8 @@ import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { SITE_URL } from '@/lib/config'
 
+export const dynamic = 'force-dynamic'
+
 // ─────────────────────────────────────────
 // 정적 경로 생성
 // ─────────────────────────────────────────

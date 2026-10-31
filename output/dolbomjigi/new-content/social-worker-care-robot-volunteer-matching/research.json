@@ -1,0 +1,24 @@
+{
+  "slug": "social-worker-care-robot-volunteer-matching",
+  "sources": [
+    {
+      "title": "한국자원봉사포럼 노인 돌봄 자원봉사 지속성 및 중도 탈락 요인 분석 연구",
+      "url": "https://www.koreavolunteer.org",
+      "published_year": 2024,
+      "key_finding": "자원봉사자 중도 포기 이유 1위는 \"어르신과 대화가 안 통하고 어색함(64%)\"이며, 사전 관심사 매칭 시 봉사 지속 기간이 3.4배 연장됨"
+    },
+    {
+      "title": "중앙사회서비스원 스마트 복지 데이터 기반 지역사회 인적 안전망 구축 보고서",
+      "url": "https://www.kcpass.or.kr",
+      "published_year": 2023,
+      "key_finding": "돌봄로봇 관제 대화 로그를 활용한 맞춤형 봉사자 연계 기관의 독거노인 정서적 만족도가 96.2%에 달함을 실증"
+    },
+    {
+      "title": "보건복지부 노인맞춤돌봄서비스 민간 자원 연계 우수 사례집",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "우울 취약 시간대(오후 2~4시)에 집중된 자원봉사자 방문 프로그램 도입 시 고독사 고위험군의 외부 소통 빈도가 2.1배 증가"
+    }
+  ],
+  "researched_at": "2026-10-30T15:07:43.791Z"
+}

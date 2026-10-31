@@ -11,6 +11,8 @@ import { db } from '@/db/client'
 import { robots, comparisons, authors } from '@/db/schema'
 import { SITE_URL } from '@/lib/config'
 
+export const dynamic = 'force-dynamic'
+
 import JsonLdScript from '@/components/seo/JsonLdScript'
 import AnswerBlock from '@/components/common/AnswerBlock'
 import Sources from '@/components/common/Sources'

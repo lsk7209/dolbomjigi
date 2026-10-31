@@ -1,0 +1,29 @@
+{
+  "slug": "social-worker-care-robot-emergency-protocol",
+  "suggested_content_type": "guide",
+  "title_ko": "복지관 관제 화면에 어르신 이상 신호가 떴을 때: 119 출동 및 비상 연락 실무 매뉴얼",
+  "subtitle": "장시간 미움직임과 긴급 SOS 알림 발생 시 단순 오감지 판별과 119 공동 대응 3단계 SOP",
+  "summary": "복지관 돌봄로봇 및 응급안전 관제 대시보드에 이상 경보가 발생했을 때 사회복지사가 준수해야 할 표준 긴급 대응 절차(SOP)를 정리했습니다. 1차 유무선 확인, 2차 생활지원사 긴급 현장 출동, 3차 119·경찰 강제 개방 연계 기준과 병력 정보 인계 체크리스트를 제공합니다.",
+  "meta_description": "복지관 돌봄로봇 관제 화면에 어르신 이상 신호 발생 시 119 출동 연계와 비상 연락 실무 매뉴얼! 오경보 판별부터 도어락 강제 개방 인계 수칙까지 완벽 정리.",
+  "main_keyword": "돌봄로봇 응급 대응",
+  "cover_image_url": "/images/blog-ai/posts/social-worker-care-robot-emergency-protocol.jpg",
+  "internal_links": [
+    "/guide/social-worker-guide",
+    "/guide/life-support-staff-guide",
+    "/guide/lonely-deaths-prevention",
+    "/blog/nursing-home-robot-5-checklist"
+  ],
+  "image_suggestions": [
+    {
+      "description": "복지관 관제 모니터에 이상 신호가 감지되어 사회복지사가 비상 연락망을 가동하고 119와 협업하는 상황도",
+      "alt": "복지관 돌봄로봇 관제 화면 이상 신호 발생 시 119 긴급 대응 절차",
+      "path": "/images/blog-ai/posts/social-worker-care-robot-emergency-protocol.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-22T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

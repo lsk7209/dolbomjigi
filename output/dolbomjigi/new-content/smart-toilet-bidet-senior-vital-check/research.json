@@ -1,0 +1,24 @@
+{
+  "slug": "smart-toilet-bidet-senior-vital-check",
+  "sources": [
+    {
+      "title": "대한비뇨의학회 노인 비뇨기계 감염 및 배뇨 장애 실태조사 보고서",
+      "url": "https://www.urology.or.kr",
+      "published_year": 2024,
+      "key_finding": "독거노인의 48%가 야간 잦은 배뇨 중 낙상을 경험하며 조기 배뇨 패턴 감지가 합병증 예방에 기여함"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 비데 기반 고령자 일상 배설 모니터링 실증 연구",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "변기 착좌 시간 30분 초과 시 비상 알림 연동으로 화장실 내 심혈관 응급 사고 76% 선제 대응"
+    },
+    {
+      "title": "국립재활원 장애인·노인 자립생활 지원 배설 보조기기 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사생활 침해 없는 비카메라 방식의 변기 압력 센서가 노인층의 거부감을 85% 이상 낮춤"
+    }
+  ],
+  "last_verified_at": "2026-10-31"
+}

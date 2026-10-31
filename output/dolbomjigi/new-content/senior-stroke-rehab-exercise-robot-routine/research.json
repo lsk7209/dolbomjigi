@@ -1,0 +1,27 @@
+{
+  "slug": "senior-stroke-rehab-exercise-robot-routine",
+  "sources": [
+    {
+      "title": "대한뇌졸중학회 뇌졸중 환자의 가정 내 장기 일상생활 복귀 및 자가 운동 가이드라인",
+      "url": "https://www.stroke.or.kr",
+      "published_year": 2024,
+      "key_finding": "급성기 퇴원 후 가정 내에서 규칙적인 매일 20분 관절 가동 운동을 지속한 환자군이 미운동군 대비 일상생활 동작(ADL) 점수 38% 향상"
+    },
+    {
+      "title": "국립재활원 재활로봇 보급사업 실증 연구 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "시청각 피드백을 제공하는 대화형 돌봄로봇과 함께 운동한 고령 환자의 운동 순응도와 완수율이 단순 자가 운동 대비 2.8배 증가"
+    },
+    {
+      "title": "한국보건사회연구원 노인 만성질환자의 가정 내 기능 회복을 위한 스마트 돌봄 실태",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "어르신들이 가장 힘들어하는 재활 포기 원인은 고독감과 단조로움이며, 로봇의 칭찬 음성과 동작 인식이 강력한 동기부여 요소로 작용함"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "가정 내 상하지 스트레칭 유도 음성과 모션 인식 피드백을 활용한 단계별 생활 운동법"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "rural-village-bus-station-care-robot-schedule",
+  "title": "도서산간 어르신 맞춤형 마을버스 도착 알림과 보행 보조 연계",
+  "subtitle": "하루 3회 군내버스 놓치지 않는 지자체 BIS API 연동과 어르신 보행 속도 맞춤형 10분 전 출발 예보",
+  "target_persona": "family_caregiver",
+  "main_keyword": "돌봄로봇 마을버스 도착 알림",
+  "character_count_target": 3500,
+  "answer_block_required": true,
+  "created_at": "2026-10-27T15:49:23.092Z"
+}

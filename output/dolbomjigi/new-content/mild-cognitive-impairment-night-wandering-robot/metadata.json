@@ -1,0 +1,29 @@
+{
+  "slug": "mild-cognitive-impairment-night-wandering-robot",
+  "suggested_content_type": "guide",
+  "title_ko": "경도인지장애 부모님의 야간 안부 확인, 돌봄로봇 센서의 기능과 현실적 한계",
+  "subtitle": "로봇 센서의 유효 감지 반경 팩트체크와 스마트 도어센서·GPS 배회감지기 3중 결합법",
+  "summary": "돌봄로봇의 모션 센서는 특정 반경(2~5m) 내 움직임만 감지하므로 야간 배회나 현관문 이탈을 단독으로 방어할 수 없습니다. 돌봄로봇의 기술적 한계를 정확히 짚고, 스마트 도어센서와 치매안심센터 GPS 배회감지기를 결합하여 야간 안전망을 구축하는 방법을 안내합니다.",
+  "meta_description": "경도인지장애 부모님의 밤중 배회, 돌봄로봇 센서로 충분할까요? 로봇 센서의 감지 한계와 스마트 도어센서, GPS 배회감지기를 결합한 야간 다중 안전망 구축 가이드입니다.",
+  "main_keyword": "경도인지장애 돌봄로봇",
+  "cover_image_url": "/images/blog-ai/posts/mild-cognitive-impairment-night-wandering-robot.jpg",
+  "internal_links": [
+    "/guide/cognitive-care-elderly",
+    "/info/cognitive-health-support-tech",
+    "/guide/lonely-deaths-prevention",
+    "/blog/rehabilitation-robot-for-stroke-recovery"
+  ],
+  "image_suggestions": [
+    {
+      "description": "야간 시간대 어르신의 수면 안전과 안부 확인을 돕는 안심 돌봄 환경 대표 이미지",
+      "alt": "야간 어르신 안부 확인과 돌봄로봇 센서 안전망",
+      "path": "/images/blog-ai/posts/mild-cognitive-impairment-night-wandering-robot.jpg",
+      "type": "featured_header",
+      "license_status": "official_asset_ready"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-21T09:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

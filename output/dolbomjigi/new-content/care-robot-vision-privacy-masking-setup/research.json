@@ -1,0 +1,27 @@
+{
+  "slug": "care-robot-vision-privacy-masking-setup",
+  "sources": [
+    {
+      "title": "개인정보보호위원회 인공지능 기반 노인 돌봄 기기 영상정보 처리 가이드라인",
+      "url": "https://www.pipc.go.kr",
+      "published_year": 2024,
+      "key_finding": "사적 공간인 가정 내 영상 수집 시 원본 스트리밍 대신 온디바이스 특징점(스켈레톤) 추출 및 프라이버시 마스킹 처리를 기본 권고함"
+    },
+    {
+      "title": "한국전자통신연구원(ETRI) 지능형 영상 센서 기반 낙상 및 행동 인식 기술 보고서",
+      "url": "https://www.etri.re.kr",
+      "published_year": 2023,
+      "key_finding": "18개 주요 관절 좌표(Skeleton)만을 추출하는 엣지 AI 기술을 적용하여 사생활 침해 우려를 100% 차단하면서도 행동 인식 정확도 97.4% 달성"
+    },
+    {
+      "title": "한국소비자원 스마트홈 홈캠 및 돌봄로봇 개인정보 보안 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "어르신들이 카메라 렌즈 노출에 대해 느끼는 거부감이 기기 사용 포기 원인의 48%를 차지하여 물리적 셔터 및 마스킹 기능 제공이 필수적임"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "온디바이스 AI 비전 센서 기반 골격 추출(스켈레톤)과 침실 영역 자동 블러링 설정 가이드"
+  }
+}

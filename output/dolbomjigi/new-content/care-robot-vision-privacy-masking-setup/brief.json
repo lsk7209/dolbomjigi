@@ -1,0 +1,7 @@
+{
+  "title": "거실과 침실 카메라 프라이버시 침해 막는 돌봄로봇 실시간 모자이크 마스킹 기술",
+  "slug": "care-robot-vision-privacy-masking-setup",
+  "target_persona": "family_caregiver",
+  "main_keyword": "돌봄로봇 카메라 프라이버시",
+  "goal": "돌봄로봇의 카메라 감시로 사생활 침해를 우려하시는 부모님을 위해 원본 영상을 저장·전송하지 않고 인체 골격 선(스켈레톤)만 추출하거나 침실·욕실 구역을 실시간 블러 처리하는 프라이버시 보호 세팅법을 안내합니다."
+}

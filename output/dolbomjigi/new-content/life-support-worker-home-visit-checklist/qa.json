@@ -1,0 +1,72 @@
+{
+  "slug": "life-support-worker-home-visit-checklist",
+  "total_score": 97,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "생활지원사의 현장 동선에 맞춘 '10분 3점 점검 루틴'과 복지관 전산 시스템에 즉시 복사해 쓸 수 있는 '어르신 반응 5단계 표준 관찰 척도'를 실무적으로 완벽히 제시함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "보건복지부 노인맞춤돌봄서비스 사업안내 지침, 독거노인종합지원센터 교육 자료, 효돌 기기 관리 매뉴얼 등 1차 근거를 신뢰성 있게 반영함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존의 원론적 생활지원사 가이드와 차별화하여 물리적 하드웨어 고장 감별표와 전산망 사례 일지 입력 서식을 독창적으로 제공함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용 원칙 준수, 내부 링크 4개 정상 연결, 세탁 금지 및 방전 시 대처 FAQ 완비"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 7016,
+  "compared_existing_items": [
+    "life-support-staff-guide",
+    "social-worker-guide",
+    "mom-living-alone",
+    "care-robot-setup-guide-for-beginners"
+  ],
+  "similarity_signals": "기존 가이드가 생활지원사의 역할 개요에 그쳤던 반면, 본 글은 실제 30분 방문 시간 중 10분 하드웨어 점검과 전산 사례 일지 표준 서식에 특화되어 완전히 차별화됨",
+  "revisions_made": [
+    "어르신 반응 5단계 전산 일지 표준 서술 예시 보강",
+    "인형형 로봇 세탁 시 침수 및 배터리 파손 주의사항 FAQ 추가"
+  ],
+  "remaining_risks": [
+    "각 지자체별 노인맞춤돌봄서비스 전산 일지 필수 입력 서식의 차기 개편 여부"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.609Z",
+    "metrics": {
+      "character_count": 7016,
+      "answer_block_length": 245,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

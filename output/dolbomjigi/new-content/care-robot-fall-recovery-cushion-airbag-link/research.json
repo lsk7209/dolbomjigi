@@ -1,0 +1,27 @@
+{
+  "slug": "care-robot-fall-recovery-cushion-airbag-link",
+  "sources": [
+    {
+      "title": "한국소비자원 고령자 낙상 사고 통계 및 대퇴골 골절 위해 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 고령자의 대퇴부 골절 사고 중 74%가 실내 평지 보행 중 미끄러짐으로 발생하며, 1년 내 사망률이 20%에 달함"
+    },
+    {
+      "title": "국립재활원 착용형 스마트 에어백의 노인 낙상 충격 저감 안전성 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "자이로 센서 기반 착용형 에어백이 낙상 충돌 전 0.2초 내 전개되어 지면 충격력을 90% 이상 흡수함을 공학적으로 검증"
+    },
+    {
+      "title": "소방청 119 안심콜과 스마트 안심기기 연계 응급 구조 매뉴얼",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2023,
+      "key_finding": "낙상 발생 후 30분 이내 구조 실패 시 저체온증과 2차 쇼크 위험이 급증하므로 기기 간 자동 신고 체계 구축이 필수적임"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "대퇴골 골절 방지를 위한 웨어러블 에어백 벨트와 돌봄로봇 레이더의 0.2초 충격 흡수 기술"
+  }
+}

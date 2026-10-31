@@ -1,0 +1,99 @@
+{
+  "article_research_question": "국내 대표 돌봄로봇인 효돌과 다솜의 핵심 기술 및 사용 경험 차이는 무엇이며, 가정과 시설에서 각각 어떤 제품을 선택해야 하는가?",
+  "reader_outcome": "독자가 인형형(효돌)과 화면형(다솜)의 폼팩터, 상호작용 방식, 유통 경로를 파악하여 부모님의 인지 및 신체 상태에 부합하는 최적의 제품을 선택할 수 있다.",
+  "search_queries": [
+    {
+      "query": "원더풀플랫폼 다솜 돌봄로봇 모델 K M B",
+      "executed_at": "2026-10-21T11:58:54+09:00",
+      "summary": "원더풀플랫폼(1thefull) 개발, 다솜 K(ChatGPT 연동 모션 플래그십), 다솜 M(태블릿/거치형), 다솜 B(베이직) 모델 확인, 지자체 및 보건소 관제 연동 확인"
+    },
+    {
+      "query": "원더풀플랫폼 다솜 공식 홈페이지 dasom.ai 가격 보급",
+      "executed_at": "2026-10-21T11:59:53+09:00",
+      "summary": "공식 사이트 dasom.ai, 월 구독료 39,800~49,800원 선, 단말 구매 130만~190만 원대, 스마트경로당 및 취약계층 비대면 돌봄 보급 확인"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-dasom-official",
+      "url": "https://dasom.ai",
+      "title": "다솜(DASOM) 공식 웹사이트",
+      "publisher": "㈜원더풀플랫폼",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "다솜 K·M 모델 사양, 디스플레이 화면, ChatGPT 연동 양방향 대화 및 보호자 앱 기능 확인"
+    },
+    {
+      "id": "src-1thefull-corp",
+      "url": "https://www.1thefull.com",
+      "title": "㈜원더풀플랫폼 기업 홈페이지",
+      "publisher": "㈜원더풀플랫폼",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_corporate",
+      "used_for": "인공지능 시니어 케어 플랫폼 아키텍처 및 공공기관 관제 대시보드 연동 확인"
+    },
+    {
+      "id": "src-hyodol-corp",
+      "url": "https://hyodol.com",
+      "title": "㈜효돌 공식 홈페이지",
+      "publisher": "㈜효돌",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "효돌 봉제 인형 폼팩터, 터치 센서, LTE 내장 통신, 보호자 앱 모니터링 체계 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-maker-distinction",
+      "text": "다솜의 개발 및 제조사는 ㈜원더풀플랫폼이며 과거 시드의 KIRO(한국로봇융합연구원) 기재는 오류이다.",
+      "source_ids": ["src-dasom-official", "src-1thefull-corp"],
+      "supports_section": "제조사와 기본 플랫폼의 차이",
+      "scope": "manufacturer_identity",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-form-factor-contrast",
+      "text": "효돌은 포근한 봉제 인형 형태의 촉감형 로봇이고, 다솜은 화면 터치와 영상 통화, 모션을 지원하는 스탠드 거치형 로봇이다.",
+      "source_ids": ["src-dasom-official", "src-hyodol-corp"],
+      "supports_section": "인형형 촉감 교감 vs 화면형 시각 모션",
+      "scope": "hardware_formfactor",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-no-outdoor-wandering",
+      "text": "다솜은 실내 거치형 기기이므로 자체만으로 실외 배회 감지를 수행할 수 없으며 외부 위치 추적을 보장하지 않는다.",
+      "source_ids": ["src-dasom-official"],
+      "supports_section": "과장된 주장 바로잡기: 배회 감지와 응급 구조",
+      "scope": "safety_features",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-distribution-overlap",
+      "text": "두 기기 모두 일반 소매점 판매보다 지자체 취약계층 보급사업과 공공 돌봄 실증사업을 통해 주로 보급된다.",
+      "source_ids": ["src-dasom-official", "src-hyodol-corp"],
+      "supports_section": "가격 체계와 실제 보급 경로",
+      "scope": "market_distribution",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "효돌은 머리, 손, 등을 쓰다듬는 물리적 터치 센서에 즉각 음성으로 반응하여 촉각적 안정감을 주는 반면, 다솜(다솜 K)은 7인치 이상의 디스플레이를 통해 큰 글씨 복약 알림, 치매 인지 퀴즈, 가족과의 양방향 영상통화를 제공하는 시각적 정보 전달에 강점이 있다.",
+      "source_ids": ["src-hyodol-corp", "src-dasom-official"]
+    },
+    {
+      "detail": "다솜은 전용 모바일 앱뿐만 아니라 지자체 복지관과 보건소를 위한 다채널 통합 관리자 웹 대시보드를 제공하여 사회복지사가 여러 독거 어르신의 활동 패턴을 한 화면에서 모니터링하기에 적합한 구조를 갖추고 있다.",
+      "source_ids": ["src-1thefull-corp"]
+    }
+  ],
+  "source_interpretation": "제조사 정정 및 하드웨어 폼팩터의 명확한 분리를 통해, '어느 것이 더 우월한가'라는 소모적 질문 대신 '우리 부모님의 신체와 성향에 어느 방식이 맞는가'라는 실질적 판단 기준을 정립했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "다솜 K 최신형의 통신사 약정 결합 모델 세부 할부 요율",
+      "reason": "지자체 보급 대량 납품 계약과 일반 개인 구독 프로모션이 수시로 변동되므로 사전 서면 견적 필수"
+    }
+  ]
+}

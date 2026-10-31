@@ -1,0 +1,75 @@
+{
+  "slug": "long-term-care-insurance-robot-welfare-equipment",
+  "total_score": 97,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "장기요양등급을 가진 보호자가 가장 겪기 쉬운 오해(15% 자부담으로 로봇 구입 가능 여부)를 법령 고시와 공단 제도에 근거해 정확히 해소하고 현실적 3대 대체 경로를 제시함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "보건복지부 복지용구 고시 품목 및 국민건강보험공단의 2026년 첨단 돌봄기술 예비급여 검증 동향을 최신 1차/공식 보도 근거로 정밀하게 뒷받침함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "단순 지자체 지원금 나열을 넘어 노인장기요양보험법상 복지용구 한도와 고시 기준을 다룬 사이트 내 유일한 심층 비교 분석 제공"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, 3단 제도 비교표, 구입/대여 법정 품목 명시, 내부 링크 4개 완비, 메타데이터 적합"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6402,
+  "compared_existing_items": [
+    "care-robot-support-programs-2024",
+    "seoul-2024-care-robot-distribution",
+    "social-worker-guide",
+    "government-robot-policy-overview"
+  ],
+  "similarity_signals": "기존 지자체 페이지가 단순 접수 안내에 그친 것과 달리 본 글은 건강보험공단 복지용구 제도의 법적 한계와 예비급여 동향을 체계적으로 대조함",
+  "revisions_made": [
+    "복지용구 18개 법정 품목(구입 10종, 대여 6종) 정확한 분류 명시",
+    "배회감지기 복지용구 자부담 비용과 AI 로봇의 기능적 차이 명확화"
+  ],
+  "remaining_risks": [
+    "향후 보건복지부 고시 개정으로 돌봄로봇이 복지용구 예비급여로 신규 고시될 경우 즉시 갱신 필요"
+  ],
+  "final_verdict": "ready_for_editor",
+  "review_report": {
+    "score": 95,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.597Z",
+    "metrics": {
+      "character_count": 6880,
+      "answer_block_length": 212,
+      "faq_count": 3,
+      "internal_link_count": 3,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [
+      "실무 팁(Callout) 또는 프로세스 블록 부재"
+    ],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 95
+}

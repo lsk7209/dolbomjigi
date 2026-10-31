@@ -1,0 +1,73 @@
+{
+  "slug": "mild-cognitive-impairment-night-wandering-robot",
+  "total_score": 97,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "단순한 기기 추천에 머물지 않고 돌봄로봇의 감지 반경 및 장시간 미움직임 판정 지연이라는 치명적 사각지대를 폭로하고, 스마트 도어센서와 치매안심센터 GPS 배회감지기를 결합한 3중 안전망 대안을 체계적으로 수립함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "한국보건사회연구원 및 한국멀티미디어학회 학술 논문, 서울시 지자체 보도자료 및 보건소 치매안심센터 공공 지침을 엄밀히 인용함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "낮 시간대 인지 훈련/말벗 소개 위주인 기존 글과 달리, 밤 시간대 배회/낙상이라는 가족의 최대 위기 상황에 집중하여 기술적 한계와 공공 안전망 연계 실무를 완전히 차별화함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, 3기기 비교 매트릭스, 3단계 방어선 도식 및 체크리스트, 내부 링크 4개 완비, 메타데이터 적합"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6936,
+  "compared_existing_items": [
+    "cognitive-care-elderly",
+    "cognitive-health-support-tech",
+    "lonely-deaths-prevention",
+    "rehabilitation-robot-for-stroke-recovery"
+  ],
+  "similarity_signals": "기존 인지 건강 글이 체조와 대화 퀴즈 중심인 반면 본 글은 야간 배회/외출 시 센서 사각지대와 스마트 도어센서 및 치매안심센터 배회감지기 3중 결합을 다룸",
+  "revisions_made": [
+    "AdSense 정책 준수를 위해 금지 의료 어휘 정밀 정제 완료",
+    "돌봄로봇, 도어센서, GPS 배회감지기 3종 비교표 추가"
+  ],
+  "remaining_risks": [
+    "어르신 개별 가옥 구조(복층, 넓은 단독주택)에 따라 추가 무선 중계기나 도어센서 추가 필요 가능성"
+  ],
+  "final_verdict": "ready_for_editor",
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.602Z",
+    "metrics": {
+      "character_count": 7468,
+      "answer_block_length": 187,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

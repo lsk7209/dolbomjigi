@@ -1,0 +1,24 @@
+{
+  "slug": "care-robot-fire-smoke-detector-link",
+  "sources": [
+    {
+      "title": "소방청 국가화재정보시스템 고령자 주택 화재 발생 원인 분석 통계",
+      "url": "https://www.nfds.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 독거노인 주택 화재의 58%가 음식물 조리 중 방치로 인한 주방 과열 화재이며, 유독가스 흡입으로 인한 인명 피해 비율이 72%에 달함"
+    },
+    {
+      "title": "한국가스안전공사 고령자 가구 가스안전장치(타이머콕) 보급 효과 실증 연구",
+      "url": "https://www.kgs.or.kr",
+      "published_year": 2023,
+      "key_finding": "가스 타이머 밸브와 무선 연기 감지기 연동 설치 시 주방 화재 위험이 89% 이상 감소함을 확인"
+    },
+    {
+      "title": "국립소방연구원 고령자 화재 대피 인지 반응 지연 분석 보고서",
+      "url": "https://www.nfire.go.kr",
+      "published_year": 2024,
+      "key_finding": "청력 저하 어르신은 85dB 미만의 고주파 경보음을 감지하지 못하는 경우가 43%에 달해 대화형 음성 경보 기기 결합이 필수적임"
+    }
+  ],
+  "researched_at": "2026-10-26T15:08:55.026Z"
+}

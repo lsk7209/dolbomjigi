@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 30,
+      "max": 30,
+      "evidence": "상업적 허위 1위 순위를 타파하고, 3대 공적 지원 트랙(지자체 무상, 장기요양 복지용구, 응급안전안심서비스) 구분 및 7대 공고문 검증 체크리스트와 3대 숨은 행정 조건을 완벽히 제시함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "보건복지부 고시, 지자체 스마트복지 조례, 조달청 나라장터 입찰 체계 등 1차 공적 출처를 기반으로 지원 제도의 법적 성격과 대여 자산 한계를 왜곡 없이 반영함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "과거 보도자료 착시 경고, 통신비 일몰 후 처리 옵션 3가지, 망실 훼손 시 변상 조항 등 현장 실무자가 아니면 알기 어려운 실전 행정 지식을 구체적으로 발굴함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "3대 경로 비교표, 7대 검증 체크리스트, 4단계 실천 절차 흐름도를 체계적으로 배치하고 5개의 유효 내부 링크를 맥락에 맞게 유기적으로 연결함"
+    },
+    "total": 98
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "각 지자체별 연초 스마트돌봄 신규 본예산 및 추경 편성에 따른 분기별 공고 변동 사항 모니터링"
+  ]
+}

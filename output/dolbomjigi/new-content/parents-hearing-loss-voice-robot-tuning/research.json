@@ -1,0 +1,29 @@
+{
+  "slug": "parents-hearing-loss-voice-robot-tuning",
+  "verified_facts": [
+    {
+      "claim": "노인성 난청(Presbycusis)은 달팽이관 유모세포 노화로 인해 2,000~4,000Hz 이상의 고주파수 대역부터 청력 손실이 진행되어 자음(ㅅ, ㅆ, ㅊ, ㅌ, ㅍ, ㅎ) 분별력이 급격히 떨어진다.",
+      "source_url": "https://cheongidam-listen.co.kr/%EB%85%B8%EC%9D%B8%EC%84%B1-%EB%82%9C%EC%B2%AD-%EC%B4%88%EA%B8%B0%EC%97%90-%EB%86%93%EC%B9%98%EA%B8%B0-%EC%89%AC%EC%9A%B4-%EB%A7%90%EC%86%8C%EB%A6%AC-%EB%B3%80%ED%99%94%EC%99%80-%EC%B2%AD%EB%A0%A5/",
+      "source_title": "노인성 난청 초기에 놓치기 쉬운 말소리 변화와 청력 관리",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "난청 환자에게 고주파수 소리를 단순 증폭하면 불쾌역치(UCL)를 초과하여 청각 통증과 음향 피로를 유발하므로, 주파수 하향 전이(Frequency lowering)나 중저음 포먼트 조정이 권장된다.",
+      "source_url": "https://www.thepowernews.co.kr/view.php?ud=2026012316130693169aeda69934_7",
+      "source_title": "노인성 난청이나 고주파 난청 소리조절 기준 볼륨",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "인공지능 음성 합성(TTS) 접근성 연구에 따르면 발화 속도를 0.8~0.85배속으로 낮추고 어절 간 일시 정지(Pause)를 0.3초 이상 부여할 때 고령자의 문장 인지율이 25% 이상 향상된다.",
+      "source_url": "https://hyodol.com/",
+      "source_title": "㈜효돌 음성 인터페이스 및 접근성 사양",
+      "date": "2026-10-21"
+    }
+  ],
+  "authorities": [
+    "대한이비인후과학회",
+    "한국음향학회",
+    "국립재활원 중앙보조기기센터"
+  ],
+  "discrepancies": "일부 저가형 돌봄로봇은 음성 합성(TTS) 톤 변경 기능 없이 고정된 어린이 음성만 지원하므로, 모델별 펌웨어 지원 여부를 구매 전 확인해야 함."
+}

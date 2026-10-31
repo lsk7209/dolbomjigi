@@ -1,0 +1,11 @@
+{
+  "slug": "dementia-medication-reminder-care-robot-setup",
+  "title_ko": "약 먹는 시간 자꾸 깜빡하시는 부모님, 돌봄로봇 복약 알림 오차 줄이는 법",
+  "target_audience": "family_caregiver",
+  "primary_goal": "고혈압, 당뇨 등 만성질환 약을 제때 챙겨 드시지 못하거나 이미 먹은 약을 또 드시는 부모님을 위해, 돌봄로봇의 반복 음성 알림과 마그네틱 약통 센서를 결합하여 복약 순응도를 95% 이상으로 높이는 구축법을 정리했습니다.",
+  "core_questions_answered": [
+    "위급 상황 및 일상 돌봄 발생 시 구체적인 대처 프로토콜",
+    "보호자 및 현장 실무자가 알아야 할 기기 세팅 및 주의사항",
+    "예산 및 정부 지원 활용 연계 팁"
+  ]
+}

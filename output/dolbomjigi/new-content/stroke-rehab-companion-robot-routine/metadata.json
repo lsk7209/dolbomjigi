@@ -1,0 +1,29 @@
+{
+  "slug": "stroke-rehab-companion-robot-routine",
+  "suggested_content_type": "guide",
+  "title_ko": "뇌졸중·편마비 어르신의 가정 내 재활 루틴, 돌봄로봇 체조 프로그램 활용법",
+  "subtitle": "퇴원 후 운동 거부와 정체기를 극복하는 의자 착석 4단계 안전 체조와 음악 알림 루틴 설계",
+  "summary": "뇌졸중 퇴원 후 가정에서 운동 의욕을 잃은 편마비 어르신을 위한 돌봄로봇 활용 재활 가이드입니다. 신나는 음악과 칭찬 피드백으로 자발적 참여를 이끌어내는 의자 착석 4단계 관절 체조와 잔소리 없는 정기 알림 스케줄을 안내합니다.",
+  "meta_description": "뇌졸중·편마비 어르신 가정 재활 운동법! 돌봄로봇 체조 프로그램과 음악 알림으로 낙상 없이 안전하게 15분 관절 스트레칭 루틴 만드는 법.",
+  "main_keyword": "돌봄로봇 재활 체조",
+  "cover_image_url": "/images/blog-ai/posts/stroke-rehab-companion-robot-routine.jpg",
+  "internal_links": [
+    "/blog/rehabilitation-robot-for-stroke-recovery",
+    "/guide/parents-recent-hospitalization",
+    "/ranking/senior-friendly",
+    "/info/how-companion-robots-work"
+  ],
+  "image_suggestions": [
+    {
+      "description": "편마비 어르신이 거실 의자에 편안하게 앉아 돌봄로봇의 음악에 맞춰 건강한 손으로 팔을 올리며 미소 짓는 모습",
+      "alt": "돌봄로봇과 함께하는 편마비 어르신의 의자 착석 재활 체조",
+      "path": "/images/blog-ai/posts/stroke-rehab-companion-robot-routine.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-23T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

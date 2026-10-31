@@ -1,0 +1,75 @@
+{
+  "slug": "parents-home-no-wifi-care-robot",
+  "total_score": 96,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "인터넷 없는 부모님 댁 환경에서 발생할 수 있는 모든 통신 문제(신규 개통 비용, 약정 부담, 기기 내장 통신 구조, 유심 라우터 대안)를 실무 관점에서 명쾌하게 해결함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "LTE Cat.M1 표준 기술 스펙 및 상시전원 유심 라우터 하드웨어 사양, 제조사 공식 사이트 및 국립재활원 공공 연구 자료에 기반하여 정확히 서술함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "기존의 일반 설치 글과 겹치지 않고 '유선 인터넷 부재 가구의 3개 통신 옵션 3년 총비용 분석'이라는 독창적 정보를 제공함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록 완비, 3단 비교표 및 3단계 결정 분기 트리 포함, 내부 링크 4개 정확 연결, 메타데이터 완결"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6730,
+  "compared_existing_items": [
+    "dad-rural-residence",
+    "mom-living-alone",
+    "hyodol-monthly-fee-breakdown",
+    "care-robot-setup-guide-for-beginners"
+  ],
+  "similarity_signals": "기존 글이 돌봄 일과나 단순 설치 순서에 국한된 반면 본 글은 유선 인터넷 미설치 가구의 하드웨어 통신 아키텍처와 3년 총비용 및 전원 복구 안정성에 집중하여 완벽히 차별화됨",
+  "revisions_made": [
+    "통신 3사 결합 할인 및 알뜰폰 유심 라우터의 3년 총비용 계산표 보강",
+    "정전 시 자동 복구 및 배터리 스웰링 위험 안내 추가"
+  ],
+  "remaining_risks": [
+    "통신사별 향후 IoT 요금제 및 알뜰폰 프로모션 변동 시 비용 수치 갱신 필요"
+  ],
+  "final_verdict": "ready_for_editor",
+  "review_report": {
+    "score": 95,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.593Z",
+    "metrics": {
+      "character_count": 7502,
+      "answer_block_length": 191,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [
+      "실무 팁(Callout) 또는 프로세스 블록 부재"
+    ],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 95
+}

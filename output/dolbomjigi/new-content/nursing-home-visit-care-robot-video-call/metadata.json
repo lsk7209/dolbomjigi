@@ -1,0 +1,29 @@
+{
+  "slug": "nursing-home-visit-care-robot-video-call",
+  "suggested_content_type": "guide",
+  "title_ko": "요양원·요양병원 입소 부모님과 영상 통화, 돌봄로봇 자동 수신 세팅법",
+  "subtitle": "스마트폰 터치를 못 하시는 어르신을 위한 3초 원격 자동 연결과 다인실 반입 에티켓",
+  "summary": "요양원이나 요양병원에 계신 부모님과 터치 조작 없이 얼굴을 보며 영상 통화를 나눌 수 있는 돌봄로봇 자동 수신(Auto-Answer) 설정법입니다. 다인실 시설 반입 협의 포인트와 룸메이트 사생활 보호를 위한 카메라 앵글 수칙을 안내합니다.",
+  "meta_description": "요양원 부모님과 영상 통화하는 법! 스마트폰 터치 못 하시는 어르신을 위한 돌봄로봇 원격 자동 수신 설정과 요양시설 다인실 반입 에티켓 완벽 정리.",
+  "main_keyword": "요양원 돌봄로봇 영상통화",
+  "cover_image_url": "/images/blog-ai/posts/nursing-home-visit-care-robot-video-call.jpg",
+  "internal_links": [
+    "/blog/hyodol-vs-dasom-comparison",
+    "/blog/nursing-home-robot-5-checklist",
+    "/guide/parents-recent-hospitalization",
+    "/guide/welfare-center-coordinator"
+  ],
+  "image_suggestions": [
+    {
+      "description": "요양원 침상 협탁에 거치된 스크린 돌봄로봇을 통해 자녀와 손주의 밝은 얼굴을 보며 영상 통화를 나누는 어르신의 모습",
+      "alt": "요양원 부모님과 돌봄로봇 화면을 통한 비대면 영상 통화",
+      "path": "/images/blog-ai/posts/nursing-home-visit-care-robot-video-call.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-23T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

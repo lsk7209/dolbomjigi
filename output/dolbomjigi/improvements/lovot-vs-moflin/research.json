@@ -1,0 +1,101 @@
+{
+  "article_research_question": "LOVOT과 Moflin의 하드웨어 특성, 상호작용 방식, 그리고 장기 유지 비용의 차이는 무엇이며 가정 상황에 따라 어떤 선택이 합리적인가?",
+  "reader_outcome": "독자가 바퀴 주행형 로봇과 탁상 안아주기형 로봇의 공간 및 예산 제약을 파악하고 두 기기의 명확한 장단점을 대조하여 도입 여부를 결정할 수 있다.",
+  "search_queries": [
+    {
+      "query": "LOVOT official pricing 暮らしの費用 2026",
+      "executed_at": "2026-10-21T11:58:44+09:00",
+      "summary": "LOVOT 3.0 본체 577,500엔(10/26부 599,500엔), 월 9,900엔(미니멈)~19,800엔(풀커버) 필수 생활비 확인"
+    },
+    {
+      "query": "CASIO Moflin PE-M11 PE-M10 price differences",
+      "executed_at": "2026-10-21T12:54:00+09:00",
+      "summary": "카시오 공식 발매 PE-M11PK 가격 64,900엔(세금포함), 충전 하우스 USB-C 적용, PE-M10은 59,400엔 런칭가, 대화 불가능, 선택형 클럽 모플린 연 6,600엔 확인"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-lovot-pricing",
+      "url": "https://lovot.life/pricing",
+      "title": "LOVOT 공식 가격 안내",
+      "publisher": "GROOVE X, Inc.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "LOVOT 3.0 본체 가격, 월 생활비 플랜, 정기 오버홀 비용 확인"
+    },
+    {
+      "id": "src-casio-moflin-products",
+      "url": "https://www.casio.com/jp/moflin/products/",
+      "title": "CASIO Moflin 제품 라인업 및 기능 안내",
+      "publisher": "CASIO COMPUTER CO., LTD.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "PE-M11 및 PE-M10 사양, USB-C 충전 하우스, 접촉 감정 학습 엔진 확인"
+    },
+    {
+      "id": "src-casio-prtimes-moflin",
+      "url": "https://prtimes.jp/main/html/rd/p/000000516.000040622.html",
+      "title": "CASIO Moflin PE-M11PK 출시 보도자료",
+      "publisher": "PR TIMES (발행사 카시오계산기주식회사)",
+      "document_date": "2026-07-24",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_press_release",
+      "used_for": "PE-M11PK 일본 희망소매가 64,900엔 및 정식 유통 모델 확인"
+    },
+    {
+      "id": "src-casio-vanguard-faq",
+      "url": "https://www.casio.com/us/moflin/support.PE-M10SR/",
+      "title": "CASIO 판매판과 뱅가드 펀딩판 구분 안내",
+      "publisher": "CASIO COMPUTER CO., LTD.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_support",
+      "used_for": "뱅가드 펀딩판과 카시오 정식 판매판 간의 전용 앱 및 지원 단절 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-cost-gap-huge",
+      "text": "LOVOT 3년 총비용(본체+월생활비)은 약 1,000만 원 이상에 달하는 반면, Moflin은 기기값 약 65,000엔으로 고정 지출 부담이 훨씬 적다.",
+      "source_ids": ["src-lovot-pricing", "src-casio-prtimes-moflin"],
+      "supports_section": "3년 총비용 비교: 1,000만 원 vs 60만 원대",
+      "scope": "total_cost_of_ownership",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-moflin-no-speech",
+      "text": "Moflin은 주인의 목소리 톤과 안아주는 동작을 학습할 뿐 인간의 말뜻을 이해하여 대화하지 못한다.",
+      "source_ids": ["src-casio-moflin-products"],
+      "supports_section": "상호작용 방식의 차이: 자율주행 교감 vs 안아주는 털 동물",
+      "scope": "ai_capabilities",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-neither-has-safety-features",
+      "text": "두 기기 모두 일본 내수 정서 교감용 로봇으로 낙상 감지, 복약 알림, 비상 호출 등 시니어 안전 돌봄 기능이 없다.",
+      "source_ids": ["src-lovot-pricing", "src-casio-moflin-products"],
+      "supports_section": "어르신 돌봄 관점에서의 기능적 한계",
+      "scope": "safety_features",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "LOVOT 3.0은 15mm 이상의 문턱을 넘지 못해 방 사이 턱이 있는 한국 전통 가옥이나 구형 아파트에서는 스스로 이동할 수 없는 반면, Moflin은 둥지(충전 하우스)에 거치하거나 손에 쥐는 폼팩터라 실내 바닥 구조에 영향을 받지 않는다.",
+      "source_ids": ["src-lovot-pricing", "src-casio-moflin-products"]
+    },
+    {
+      "detail": "Moflin의 현재 판매 모델 PE-M11은 이전 PE-M10과 본체 기능은 동일하지만 충전 하우스가 USB Type-C로 개량되었으며, 선택형 유료 멤버십인 Club Moflin(연 6,600엔) 가입 시 수리비 50% 할인 및 털 클리닝 서비스를 제공한다.",
+      "source_ids": ["src-casio-prtimes-moflin", "src-casio-moflin-products"]
+    }
+  ],
+  "source_interpretation": "두 기기를 동일한 'AI 펫'으로 묶는 오류를 피하고, 예산(15배 차이), 공간(바퀴 주행 vs 탁상 거치), 조작 방식의 현실적 장벽을 대조하여 독자가 실패 없는 구매 판단을 내리도록 정리했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "Moflin의 국내 전파인증(KC) 및 향후 한국 정식 발매 여부",
+      "reason": "카시오 공식 발표상 일본 내수 판매만 명시되어 있으며 국내 정식 출시 일정은 미확인 상태임"
+    }
+  ]
+}

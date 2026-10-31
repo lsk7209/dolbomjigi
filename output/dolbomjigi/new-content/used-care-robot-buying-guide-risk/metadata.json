@@ -1,0 +1,29 @@
+{
+  "slug": "used-care-robot-buying-guide-risk",
+  "suggested_content_type": "guide",
+  "title_ko": "중고 마켓에서 돌봄로봇 살 때 주의할 점: 계정 귀속 해제와 통신 약정 확인",
+  "subtitle": "당근마켓 벽돌 기기 사기를 방지하는 시리얼 락 해제 증빙과 직거래 현장 5분 테스트 체크리스트",
+  "summary": "당근마켓이나 중고나라에서 중고 돌봄로봇을 살 때 이전 주인의 계정 귀속(락)과 통신사 약정 미납으로 벽돌 기기가 되는 피해를 막는 실무 가이드입니다. 판매자 사전 필수 서류, 현장 5분 테스트 요령, 지자체 공공 자산 불법 매물 구별법을 안내합니다.",
+  "meta_description": "중고 돌봄로봇 살 때 필수 주의사항! 계정 락 해제 확인부터 통신 약정 조회, 직거래 현장 5분 테스트 체크리스트까지 안전 거래 완벽 가이드.",
+  "main_keyword": "중고 돌봄로봇",
+  "cover_image_url": "/images/blog-ai/posts/used-care-robot-buying-guide-risk.jpg",
+  "internal_links": [
+    "/blog/care-robot-subscription-cancellation-data-wipe",
+    "/blog/hyodol-monthly-fee-breakdown",
+    "/ranking/senior-friendly",
+    "/guide/parents-80s-gift"
+  ],
+  "image_suggestions": [
+    {
+      "description": "중고 직거래 현장에서 구매자가 돌봄로봇의 시리얼 번호와 스마트폰 앱 연동 화면을 꼼꼼히 대조하는 모습",
+      "alt": "중고 돌봄로봇 거래 시 계정 해제 및 시리얼 번호 확인",
+      "path": "/images/blog-ai/posts/used-care-robot-buying-guide-risk.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-22T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "care-robot-emergency-power-cut-battery-backup",
+  "title_ko": "태풍·폭설 정전 시 돌봄로봇 비상 배터리 자동 전환 및 보호 가이드",
+  "subtitle": "자연재해 전력 차단 시 48시간 이상 안심 관제와 낙상 감지 센서를 지켜내는 무정전 전원 공급(UPS) 구축법",
+  "summary": "태풍이나 기록적인 폭설로 농어촌 산간 마을에 대규모 정전이 발생했을 때 부모님 댁 돌봄로봇이 꺼져 안부 확인과 비상 출동망이 마비되지 않도록, 내장 백업 배터리 초절전 모드 전환과 미니 무정전 전원 장치(UPS)를 결합한 48시간 비상 전원 유지 전략을 안내합니다.",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-emergency-power-cut-battery-backup.jpg",
+  "main_keyword": "돌봄로봇 정전 배터리 보호",
+  "reading_time_minutes": 7,
+  "category": "guide",
+  "target_persona": "family_caregiver",
+  "published_at": "2026-10-30T15:07:43.791Z"
+}

@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 28,
+      "max": 30,
+      "evidence": "서울시청 직접 접수 불가 현실을 규명하고 25개 자치구 동주민센터 복지팀 문의 3단계 절차와 5대 필수 질의 사항, 안심돌봄120 활용법을 실무적으로 완벽히 정리함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "2024년 사업 데이터의 무조건적 활성 표시 오류를 수정하고, 2026년 신청 상태를 '미확인'으로 투명하게 표기하며 과거 2023~2024년 실적(480대)과 분리함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "일반 포털 검색에서는 찾기 힘든 서울시-자치구-수행기관(복지관) 2단계 위탁 배분 행정 구조와 안심돌봄120(120+3번) 직통 경로를 독창적으로 도출함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "지원 확인 3단계 흐름도와 현황 표를 배치하고, 본문 3,763자로 상세성을 확보함과 동시에 기존 사이트 내 유효 링크를 자연스럽게 결합함"
+    },
+    "total": 96
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "needs_human_review",
+  "remaining_verifications": [
+    "2026년 4분기 기준 서울시 25개 개별 자치구별 반려로봇 추가경정예산 집행 여부 및 관내 잔여 물량 유선 확인 필요"
+  ]
+}

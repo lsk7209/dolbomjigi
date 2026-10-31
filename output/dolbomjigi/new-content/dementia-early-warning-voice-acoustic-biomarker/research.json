@@ -1,0 +1,27 @@
+{
+  "slug": "dementia-early-warning-voice-acoustic-biomarker",
+  "sources": [
+    {
+      "title": "미국알츠하이머협회(AAIC) 음성 음향 바이오마커를 활용한 경도인지장애 조기 감지 연구",
+      "url": "https://alz.org",
+      "published_year": 2024,
+      "key_finding": "발화 중 2초 이상의 비정상 휴지(Pause) 빈도 증가 및 어휘 다양성(TTR) 감소가 임상 지표 하락보다 18개월 앞서 언어적 변화로 포착됨"
+    },
+    {
+      "title": "한국지능정보사회진흥원(NIA) AI 스피커 대화 데이터를 활용한 노인 인지 건강 스크리닝 실증",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "자연스러운 일상 음성 데이터 수집을 통해 어르신의 인지 저하 의심 패턴을 89.2%의 민감도로 선별"
+    },
+    {
+      "title": "중앙치매센터 대한민국 치매현황 및 조기 발견 지원 체계 연보",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "초기 인지 저하 단계에서 조기에 발견하여 생활 습관 교정 및 두뇌 자극 훈련을 시작할 경우 중증 진행을 최대 5년 지연 가능"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "발화 속도, 휴지(Pause) 시간, 어휘 다양성 데이터로 살펴보는 일상 언어 변화 분석"
+  }
+}

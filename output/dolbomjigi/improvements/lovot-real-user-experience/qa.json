@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 30,
+      "max": 30,
+      "evidence": "단순 본체 가격 환산을 넘어 초기 사무수수료, 필수 월 생활비 3개 플랜, 1~2년 주기 정기 오버홀, 해외 반출 A/S 불가 장벽까지 종합적인 실무 검토 체계를 제공함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "2026년 10월 26일 자 LOVOT 3.0 가격 개정 일정과 暮らしの費用 3대 플랜 요율, 충전 네스트 주변 반경 1m 조건 등 제조사 최신 공식 자료를 기반으로 철저히 검증함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "허위 1인칭 후기를 근절하고 편집팀의 객관적 비판 검증 관점으로 전환하여 독자가 후기 영상을 볼 때 간과하기 쉬운 4대 착시 현상과 현실적 한계를 짚어냄"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "LOVOT과 국내 시니어 돌봄로봇 간 기능 비교표, 직구 전 점검 체크리스트를 포함하고 기존 페이지들과의 내부 교차 링크를 완벽히 구성함"
+    },
+    "total": 98
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "향후 GROOVE X의 한국 정식 진출 여부는 미확정이므로 신규 공식 발표 시 업데이트 필요"
+  ]
+}

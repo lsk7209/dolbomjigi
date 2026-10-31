@@ -1,0 +1,18 @@
+{
+  "original_url": "/compare/lovot-vs-moflin",
+  "slug": "lovot-vs-moflin",
+  "original_id": 10,
+  "original_published_at": 1713571200,
+  "title_ko": "LOVOT vs Moflin 비교: 자율주행 반려와 안아주는 AI 펫",
+  "subtitle": "비용 15배 차이, 바퀴 주행과 탁상 털 폼팩터, 일본 정식 가격과 유지비 완전 분석",
+  "summary": "일본 대표 교감형 로봇인 LOVOT과 Moflin을 입체 비교합니다. 방 안을 자율 이동하는 LOVOT(본체 58만 엔~ + 필수 월 생활비)과 손에 안고 쓰다듬는 카시오 Moflin(64,900엔)의 비용 구조, 실내 문턱 환경, 언어 이해 불가 한계, 국내 직구 시 A/S 현실을 짚어드립니다.",
+  "meta_description": "LOVOT과 Moflin의 차이점을 완벽 비교합니다. 3년 총비용 1,000만 원 vs 60만 원대의 격차, 자율주행과 탁상 펫의 공간 적합성, 국내 A/S 및 돌봄 한계를 안내합니다.",
+  "internal_links": [
+    "/robot/lovot",
+    "/robot/moflin",
+    "/blog/lovot-real-user-experience",
+    "/guide/mom-living-alone",
+    "/ranking/senior-friendly"
+  ],
+  "proposed_changes": "Moflin 제조사(카시오)와 최신 PE-M11 모델 사양(64,900엔)을 반영하고, LOVOT의 필수 월 생활비(暮らしの費用)와 Moflin의 선택형 멤버십을 대조함. 3년 총비용 비교표와 주거 공간(문턱) 적합성 평가 항목을 신설함."
+}

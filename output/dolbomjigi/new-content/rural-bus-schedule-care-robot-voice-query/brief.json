@@ -1,0 +1,7 @@
+{
+  "title": "시골 장날 군내버스 시간표 물어보시는 부모님: 돌봄로봇 실시간 대중교통 음성 안내",
+  "slug": "rural-bus-schedule-care-robot-voice-query",
+  "target_persona": "family_caregiver",
+  "main_keyword": "돌봄로봇 시골 버스 안내",
+  "goal": "시골에 계신 부모님이 장날이나 읍내 병원에 가실 때 버스 도착 시간을 몰라 정류장에서 1시간씩 떨며 기다리지 않도록, 지자체 버스정보시스템(BIS)을 돌봄로봇에 연동하여 말 한마디로 군내버스 실시간 도착 정보를 듣는 설정법을 안내합니다."
+}

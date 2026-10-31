@@ -1,0 +1,29 @@
+{
+  "slug": "long-term-care-insurance-robot-welfare-equipment",
+  "suggested_content_type": "guide",
+  "title_ko": "부모님 장기요양등급으로 돌봄로봇을 복지용구로 지원받을 수 있을까?",
+  "subtitle": "노인장기요양보험 복지용구 고시 품목 팩트체크와 공적 지원 대안 3가지",
+  "summary": "장기요양등급(1~5등급)을 받아도 대화형 AI 돌봄로봇은 현재 노인장기요양보험 복지용구 법정 고시 품목이 아니어서 15% 자부담 구입이 불가능합니다. 공단 예비급여 실증 동향과 지자체 맞춤돌봄 연계 등 실질적인 공적 지원 경로를 정리했습니다.",
+  "meta_description": "부모님 장기요양등급으로 돌봄로봇을 복지용구로 살 수 있을까요? 복지용구 법정 품목 현황, 공단 예비급여 실증 사업, 지자체 무상 보급 신청 경로를 안내합니다.",
+  "main_keyword": "돌봄로봇 복지용구",
+  "cover_image_url": "/images/blog-ai/posts/long-term-care-insurance-robot-welfare-equipment.jpg",
+  "internal_links": [
+    "/blog/care-robot-support-programs-2024",
+    "/support/region/seoul",
+    "/guide/social-worker-guide",
+    "/info/government-robot-policy-overview"
+  ],
+  "image_suggestions": [
+    {
+      "description": "국민건강보험공단 장기요양인정서와 복지용구 급여확인서 및 돌봄로봇 지원 절차를 안내하는 대표 이미지",
+      "alt": "장기요양등급과 복지용구 및 돌봄로봇 공적 지원 안내",
+      "path": "/images/blog-ai/posts/long-term-care-insurance-robot-welfare-equipment.jpg",
+      "type": "featured_header",
+      "license_status": "official_asset_ready"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-21T09:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

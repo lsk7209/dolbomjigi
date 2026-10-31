@@ -1,0 +1,33 @@
+{
+  "slug": "care-robot-vision-privacy-masking-setup",
+  "character_count": 4276,
+  "total_score": 98,
+  "checks": {
+    "has_answer_block": true,
+    "no_h1": true,
+    "linter_passed": true,
+    "word_count_sufficient": true,
+    "has_faq": true,
+    "has_table": true
+  },
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.637Z",
+    "metrics": {
+      "character_count": 4277,
+      "answer_block_length": 291,
+      "faq_count": 4,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

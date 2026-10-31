@@ -1,0 +1,72 @@
+{
+  "slug": "rural-solo-elderly-winter-freeze-robot",
+  "total_score": 97,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "시골 단독주택의 겨울철 실내 저체온증과 보일러 배관 동파 위험을 돌봄로봇의 NTC 온습도 센서 측정과 3단계 알림 임계치로 완벽하게 해결함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "질병관리청 한랭질환 응급실 감시 통계, 소방청 겨울철 안전 대책, 효돌 하드웨어 센서 규격 등 객관적 1차 출처를 정확히 반영함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존의 일반 시골 부모님 글과 차별화되어 겨울철 실내 15도 이하 위험 알림과 온열 매트 스마트플러그 교차 검증 기술을 독창적으로 체계화함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용 원칙 준수, 내부 링크 4개 정상 연결, 메타데이터 완결"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 5791,
+  "compared_existing_items": [
+    "dad-rural-residence",
+    "mom-living-alone",
+    "hyodol-monthly-fee-breakdown",
+    "care-robot-setup-guide-for-beginners"
+  ],
+  "similarity_signals": "기존 글이 단순 일상 안부나 설치 순서에 국한된 반면, 본 글은 겨울철 혹한기 실내 저체온증과 보일러 배관 동파 방지라는 특수 계절 위기에 정밀 특화됨",
+  "revisions_made": [
+    "실내 온도 3단계(17도·15도·12도) 위험 임계치 설정표 보강",
+    "외풍 피하는 올바른 로봇 침상 거치 위치 가이드 추가"
+  ],
+  "remaining_risks": [
+    "단열 상태에 따른 실내외 온도 편차 보정 필요성"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.615Z",
+    "metrics": {
+      "character_count": 5796,
+      "answer_block_length": 235,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

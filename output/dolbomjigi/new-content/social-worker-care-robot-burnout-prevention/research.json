@@ -1,0 +1,27 @@
+{
+  "slug": "social-worker-care-robot-burnout-prevention",
+  "sources": [
+    {
+      "title": "한국보건복지인재원 노인맞춤돌봄서비스 종사자 직무 스트레스 및 소진(Burnout) 실태조사",
+      "url": "https://www.kohi.or.kr",
+      "published_year": 2024,
+      "key_finding": "생활지원사의 일과 시간 중 45%가 기계적인 안부 확인 전화 및 통화 불발에 따른 재시도에 낭비되어 고위험군 심층 관리 시간 부족 초래"
+    },
+    {
+      "title": "보건복지부 취약계층 비대면 ICT 돌봄기기 보급 성과 분석 및 복지 인력 효율화 연구",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "돌봄로봇 자동 모니터링 도입 기관의 생활지원사 업무 피로도가 52% 경감되고, 실제 응급 위기 가구 발굴 및 현장 방문 시간이 2.3배 증가"
+    },
+    {
+      "title": "한국사회복지사협회 사회복지 종사자 안전 및 근로환경 개선 보고서",
+      "url": "https://www.welfare.net",
+      "published_year": 2023,
+      "key_finding": "단순 행정 전화 업무의 디지털 필터링 구축이 복지 현장 이직률을 낮추는 핵심 복지 테크 인프라로 확인됨"
+    }
+  ],
+  "target_analysis": {
+    "persona": "social_worker",
+    "pain_point": "매일 수십 건의 단순 안부 확인 전화를 자동화하고 고위험 위기 가구 현장 방문에 집중하는 업무 혁신"
+  }
+}

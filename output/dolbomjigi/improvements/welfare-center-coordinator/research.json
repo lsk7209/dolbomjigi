@@ -1,0 +1,86 @@
+{
+  "article_research_question": "복지관 및 요양시설에서 돌봄로봇을 도입할 때 개인정보보호, 네트워크 보안, 직원 업무 분장, 그리고 4단계 도입 로드맵을 어떻게 수립해야 하는가?",
+  "reader_outcome": "독자가 제품 구매 전 운영 거버넌스를 설계하고, 2~4주 소규모 시범 운영을 통해 실패 위험을 최소화하며, 실질적인 기관 도입 기안서를 작성할 수 있다.",
+  "search_queries": [
+    {
+      "query": "복지관 돌봄로봇 도입 운영 지침 가이드라인",
+      "executed_at": "2026-10-21T12:54:00+09:00",
+      "summary": "개인정보 수집 동의, 직원 업무 과중 방지, 시설 내 Wi-Fi 보안 망 분리, 다채널 관제 대시보드 권한 관리가 핵심 성공 요인으로 확인됨"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-paro-manual",
+      "url": "https://www.parorobots.com/pdf/PARO%20Manual-2015-09.pdf",
+      "title": "PARO 사용 설명서 및 임상 고지",
+      "publisher": "AIST / Intelligent System Co., Ltd.",
+      "document_date": "2015-09",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manual",
+      "used_for": "치료 맥락 로봇의 효과 개인차 명시 및 의학적 치료 효과 보장 불가 주의사항 확인"
+    },
+    {
+      "id": "src-pipc-elderly-data",
+      "url": "https://www.pipc.go.kr",
+      "title": "인공지능 및 IoT 기기 개인정보 보호 가이드라인",
+      "publisher": "개인정보보호위원회",
+      "document_date": "2025-03-20",
+      "accessed_at": "2026-10-21",
+      "source_type": "government_guideline",
+      "used_for": "음성 인식 및 카메라 영상 데이터의 동의 요건, 보관 기간, 파기 절차 기준 확인"
+    },
+    {
+      "id": "src-kiria-robot-pilot",
+      "url": "https://www.kiria.org",
+      "title": "서비스로봇 활용 실증사업 공모 안내",
+      "publisher": "한국로봇산업진흥원",
+      "document_date": "2026-02-15",
+      "accessed_at": "2026-10-21",
+      "source_type": "government_announcement",
+      "used_for": "사회적 약자 및 복지시설 돌봄로봇 실증 사업 지원 요건 및 TCO 매칭 비율 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-governance-before-procurement",
+      "text": "기관 도입은 기기 구매보다 운영 설계(대상자 선정, 개인정보 동의, 비상 대응 분장)가 선행되어야 실패를 방지할 수 있다.",
+      "source_ids": ["src-pipc-elderly-data", "src-kiria-robot-pilot"],
+      "supports_section": "기관 도입의 대원칙: 기기 구매보다 운영 설계가 먼저다",
+      "scope": "institutional_governance",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-no-guaranteed-clinical-claims",
+      "text": "해외 연구나 치료용 로봇(PARO 등)이라도 제조사 매뉴얼상 개인별 반응 편차가 존재하며 의학적 효과를 보장하지 않는다.",
+      "source_ids": ["src-paro-manual"],
+      "supports_section": "성과 홍보 시 금기 사항: 과장된 의학적 효과 표기 금지",
+      "scope": "medical_claims",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-tco-hidden-costs",
+      "text": "기관 도입 예산은 본체값 외에 무선 통신료, 다채널 관제 서버비, 교사 교육비, 외피 위생 세탁비가 포함된 TCO로 산정해야 한다.",
+      "source_ids": ["src-kiria-robot-pilot"],
+      "supports_section": "총소요비용(TCO) 계산법: 본체값 뒤에 숨겨진 5가지 운영비",
+      "scope": "budgeting",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "기관 내 다수 어르신이 공동 사용하는 로봇은 접촉 감염을 예방하기 위해 알코올 소독이 가능한 외피 재질인지, 봉제 인형 형태의 경우 외피 탈부착 및 세탁이 가능한 분리형 구조인지를 구매 평가표의 필수 항목으로 두어야 한다.",
+      "source_ids": ["src-paro-manual"]
+    },
+    {
+      "detail": "2~4주 소규모 시범 운영 시에는 단순 기기 사용 시간(가동률)만을 측정하지 말고, 어르신의 기계 거부율, 직원이 알림 확인에 투입한 실제 업무 시간, 기기 오작동 건수를 핵심 평가지표(KPI)로 수집해야 본 사업 실패를 막을 수 있다.",
+      "source_ids": ["src-kiria-robot-pilot"]
+    }
+  ],
+  "source_interpretation": "복지관 및 센터 담당자가 상급 기관 보고서나 지자체 기안문 작성 시 직면하는 구체적 행정 위험(개인정보, 직원 업무 과중, 예산 누락)을 방어할 수 있도록 실무 중심의 가이드를 구성했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "일부 신규 IoT 돌봄 기기의 공공 클라우드 CSAP 인증 획득 여부",
+      "reason": "기관별 망 분리 기준에 따라 지자체 내부망 연동 가능 여부가 달라지므로 조달청 나라장터 규격 확인 필요"
+    }
+  ]
+}

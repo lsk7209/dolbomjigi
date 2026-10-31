@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 30,
+      "max": 30,
+      "evidence": "바퀴 자율주행과 탁상 털 폼팩터의 공간 적합성, 15배에 달하는 3년 총비용 비교, 언어 미이해 한계, 국내 AS 불가 리스크를 망라하여 독자 상황별 명확한 선택 기준을 제공함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "2026년 10월 26일부 LOVOT 3.0 가격 개정 및 CASIO Moflin 최신 모델 PE-M11(64,900엔)과 PE-M10 사양, 暮らしの費用 플랜을 제조사 공식 출처를 통해 정확히 대조함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 19,
+      "max": 20,
+      "evidence": "문턱 15mm 통과 여부 및 충전 방식, 선택형 멤버십(Club Moflin)과 필수 구독료의 차이 등 실거주 현장에서 발생하는 구체적 변수를 독창적으로 분석함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "하드웨어 스펙 대조표와 3년 총유지비 계산 블록을 배치하고 실제 작동하는 사이트 내부 링크를 맥락에 맞게 자연스럽게 연결함"
+    },
+    "total": 98
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "카시오 및 GROOVE X의 향후 한국 정식 진출 여부 및 수리 정책 변경 시 업데이트 필요"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "smart-village-rural-elderly-care-project",
+  "sources": [
+    {
+      "title": "과학기술정보통신부 스마트빌리지 보급 및 확산 사업 시행계획 공고",
+      "url": "https://www.msit.go.kr",
+      "published_year": 2024,
+      "key_finding": "농어촌 인구소멸 고위험 지역을 대상으로 AI 반려로봇 및 스마트 안심 센서를 가구당 전액 국비·지방비 매칭으로 무상 보급"
+    },
+    {
+      "title": "행정안전부 주민주도형 지역균형 뉴딜 및 인구감소지역 대응 우수사례집",
+      "url": "https://www.mois.go.kr",
+      "published_year": 2024,
+      "key_finding": "지자체 스마트 안심마을 사업 참여 독거 어르신의 고립감 지수가 보급 전 대비 42% 감소하고 응급 상황 조기 대응 건수 3.5배 증가"
+    },
+    {
+      "title": "한국지능정보사회진흥원(NIA) ICT 기반 취약계층 비대면 돌봄 실증 연구",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "보급 기기의 기기값뿐만 아니라 통신비(LTE 회선료)와 24시간 관제 센터 운영비용까지 전액 공공 예산으로 지원하는 모델 확립"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "과기정통부·행안부 스마트빌리지 공모와 지자체 조례 기반 무료 보급 자격 및 신청 절차"
+  }
+}

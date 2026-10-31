@@ -1,0 +1,24 @@
+{
+  "slug": "senior-stroke-paralysis-adaptive-fork-robot",
+  "sources": [
+    {
+      "title": "국립재활원 뇌졸중 장애인의 일상생활 동작(ADL) 독립성 및 보조기기 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "자립 식사 성공률이 10% 증가할 때마다 뇌졸중 환자의 우울증 발생률이 28% 감소하며 신체 재활 동기 부여가 3.2배 향상됨"
+    },
+    {
+      "title": "한국재활공학회 능동형 손 떨림 상쇄 식기구의 운동학적 유효성 평가",
+      "url": "https://www.resko.or.kr",
+      "published_year": 2023,
+      "key_finding": "초소형 3축 자이로 모터가 장착된 스마트 스푼 사용 시 국물 음식 흘림 양이 85% 이상 감소함을 확인"
+    },
+    {
+      "title": "대한작업치료학회 고령 편마비 환자의 식사 보조 로봇 사용성 및 영양 개선 효과",
+      "url": "https://www.kaot.org",
+      "published_year": 2024,
+      "key_finding": "식사 보조 로봇 도입 4주 후 평균 식사 시간이 50분에서 25분으로 단축되고 일일 단백질 섭취량이 22% 증가함"
+    }
+  ],
+  "researched_at": "2026-10-30T15:07:43.791Z"
+}

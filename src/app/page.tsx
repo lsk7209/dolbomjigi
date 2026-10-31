@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { publicAtOrBefore } from '@/lib/publication'
 import { presentBlogRevision } from '@/lib/blog-revision'
 import Link from 'next/link'
@@ -202,12 +203,13 @@ export default async function HomePage() {
                   className="flex flex-col gap-2 border border-gray-200 rounded-xl bg-white hover:shadow-md hover:border-blue-200 transition-all overflow-hidden"
                 >
                   {robot.hero_image_url && (
-                    <div className="w-full h-36 bg-gray-100 overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                    <div className="relative w-full h-36 bg-gray-100 overflow-hidden">
+                      <Image
                         src={robot.hero_image_url}
                         alt={robot.name_ko}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                        className="object-cover"
                       />
                     </div>
                   )}

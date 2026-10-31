@@ -1,0 +1,94 @@
+{
+  "article_research_question": "Moflin은 어르신의 말을 알아듣는 돌봄 기기인가? 카시오 정식 판매 모델의 가격과 기능, 시니어 도입 시 주의사항은 무엇인가?",
+  "reader_outcome": "독자가 대화나 안전 알림이 없다는 기기 한계를 명확히 인지하고, 조용한 촉감 반려 기기로서의 가치를 평가하여 올바른 구매 결정을 내릴 수 있다.",
+  "search_queries": [
+    {
+      "query": "CASIO Moflin PE-M11 PE-M10 price differences",
+      "executed_at": "2026-10-21T12:54:00+09:00",
+      "summary": "카시오 공식 발매 PE-M11PK 64,900엔(세금포함), 충전 하우스 USB-C 적용, PE-M10 59,400엔, 대화 불가능, 클럽 모플린 연 6,600엔 확인"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-casio-moflin-products",
+      "url": "https://www.casio.com/jp/moflin/products/",
+      "title": "CASIO Moflin 제품 라인업 및 기능 안내",
+      "publisher": "CASIO COMPUTER CO., LTD.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "PE-M11 및 PE-M10 사양, 충전 하우스 USB-C 규격, 접촉 감정 학습 엔진 확인"
+    },
+    {
+      "id": "src-casio-prtimes-moflin",
+      "url": "https://prtimes.jp/main/html/rd/p/000000516.000040622.html",
+      "title": "CASIO Moflin PE-M11PK 출시 보도자료",
+      "publisher": "PR TIMES (발행사 카시오계산기주식회사)",
+      "document_date": "2026-07-24",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_press_release",
+      "used_for": "PE-M11PK 일본 희망소매가 64,900엔 확인"
+    },
+    {
+      "id": "src-casio-vanguard-faq",
+      "url": "https://www.casio.com/us/moflin/support.PE-M10SR/",
+      "title": "CASIO 판매판과 뱅가드 펀딩판 구분 안내",
+      "publisher": "CASIO COMPUTER CO., LTD.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_support",
+      "used_for": "과거 뱅가드 펀딩판과 카시오 정식 판매판 간의 전용 앱 및 고객 지원 분리 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-moflin-official-vendor",
+      "text": "현행 Moflin의 일반 소비자 판매 및 공식 서비스는 ㈜카시오계산기(CASIO)가 주관한다.",
+      "source_ids": ["src-casio-moflin-products", "src-casio-vanguard-faq"],
+      "supports_section": "Moflin의 진짜 개발사와 현행 판매 체계",
+      "scope": "manufacturer",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-pe-m11-price",
+      "text": "최신 판매 모델 PE-M11의 일본 희망소매가는 64,900엔(세금포함)이며 충전 하우스가 USB Type-C로 변경되었다.",
+      "source_ids": ["src-casio-prtimes-moflin", "src-casio-moflin-products"],
+      "supports_section": "PE-M11과 PE-M10의 차이점 및 공식 가격",
+      "scope": "hardware_pricing",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-no-word-understanding",
+      "text": "Moflin은 사람의 말뜻을 이해하여 대화하지 못하며 목소리 톤과 신체 접촉에 감정 알고리즘으로 반응한다.",
+      "source_ids": ["src-casio-moflin-products"],
+      "supports_section": "핵심 질문: Moflin은 말을 알아듣는 기기인가?",
+      "scope": "functionality",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-optional-club-moflin",
+      "text": "LOVOT과 달리 필수 월 구독료가 없으며 연 6,600엔의 Club Moflin은 선택형 지원 멤버십이다.",
+      "source_ids": ["src-casio-moflin-products"],
+      "supports_section": "비용 구조: 필수 월 구독료가 없는 이유",
+      "scope": "subscription",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "Moflin은 주인이 안아주고 쓰다듬는 빈도와 자극 방식에 따라 2차원 감정 맵(기쁨, 안정, 불안 등)이 변하며, 고유의 동물 소리와 몸짓을 100여 개 이상의 조합으로 표현한다.",
+      "source_ids": ["src-casio-moflin-products"]
+    },
+    {
+      "detail": "과거 2022년 뱅가드 인더스트리 크라우드펀딩판은 카시오 전용 앱(MofLife)과 연동되지 않고 카시오 공식 수리 서비스를 받을 수 없으므로 중고 구매 시 반드시 시리얼과 모델명(PE-M10/PE-M11)을 확인해야 한다.",
+      "source_ids": ["src-casio-vanguard-faq"]
+    }
+  ],
+  "source_interpretation": "카시오 공식 발표와 제품 지원 매뉴얼을 근거로, '말하는 돌봄로봇'이라는 잘못된 인식을 바로잡고 소형 교감 펫으로서의 실제 효용과 한계를 명확히 규정했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "카시오의 Moflin 한국 공식 총판 계약 및 한국어 앱 지원 여부",
+      "reason": "현재까지 한국 공식 지사를 통한 발매 계획은 발표되지 않았음"
+    }
+  ]
+}

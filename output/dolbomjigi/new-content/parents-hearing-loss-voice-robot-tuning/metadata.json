@@ -1,0 +1,29 @@
+{
+  "slug": "parents-hearing-loss-voice-robot-tuning",
+  "suggested_content_type": "guide",
+  "title_ko": "귀가 어두우신 난청 부모님을 위한 돌봄로봇 음량 조절과 주파수 설정 요령",
+  "subtitle": "볼륨만 키우면 귀가 아픈 노인성 난청의 원리와 중저음 톤·0.8배속 감속·LED 시각 알림 세팅법",
+  "summary": "귀가 어두우신 부모님이 돌봄로봇의 말소리를 또렷하게 알아듣게 만드는 음향 튜닝 실무 가이드입니다. 고음역대 손실 특성에 맞춘 중저음 음성 모델 선택, 0.8배속 발화 속도 감속, LED 시각 알림 연계 및 보청기 보조기기 활용법을 상세히 설명합니다.",
+  "meta_description": "귀가 어두우신 난청 부모님을 위한 돌봄로봇 소리 조절법! 단순 볼륨 증폭 대신 중저음 톤 변경과 0.8배속 감속, LED 시각 보조 설정 요령 완벽 가이드.",
+  "main_keyword": "난청 어르신 돌봄로봇",
+  "cover_image_url": "/images/blog-ai/posts/parents-hearing-loss-voice-robot-tuning.jpg",
+  "internal_links": [
+    "/guide/parents-80s-gift",
+    "/guide/dad-rural-residence",
+    "/info/how-companion-robots-work",
+    "/blog/care-robot-setup-guide-for-beginners"
+  ],
+  "image_suggestions": [
+    {
+      "description": "난청 어르신이 협탁 위에 놓인 돌봄로봇의 따뜻한 중저음 음성 안내를 편안하게 경청하며 미소 짓는 모습",
+      "alt": "난청 어르신을 위한 돌봄로봇 음성 주파수 및 볼륨 튜닝",
+      "path": "/images/blog-ai/posts/parents-hearing-loss-voice-robot-tuning.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-22T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

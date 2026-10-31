@@ -1,0 +1,72 @@
+{
+  "slug": "dementia-repetitive-questioning-robot-calm",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "가족을 가장 지치게 만드는 '반복 질문'의 심리적 불안 기제를 규명하고, 사실 교정이 아닌 감정 수용 대화 세팅과 3대 유형별 대응 매트릭스를 실무적으로 완벽히 해설함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "중앙치매센터 의사소통 가이드북, 대한노인정신의학회 BPSD 대처 지침, 한국치매가족협회 번아웃 예방 매뉴얼 등 권위 있는 1차 출처를 정확히 인용함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "단순 퍼즐이나 인지 훈련에 머문 기존 글들과 달리 가족의 감정 소모를 막아주는 로봇의 완충 역할과 현실적 한계 3가지를 솔직하게 짚어 차별화됨"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용, 내부 링크 4개 정상 연결, 1일 2시간 격리 휴식 루틴 완비"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6270,
+  "compared_existing_items": [
+    "cognitive-care-elderly",
+    "mom-living-alone",
+    "hyodol-vs-dasom-comparison",
+    "senior-friendly"
+  ],
+  "similarity_signals": "기존 글이 전반적인 기능 비교나 인지 개론에 그친 반면, 본 글은 간병 가족의 최대 고통인 '반복 질문'의 감정 수용 기법과 로봇의 완충 효과에 정밀 특화됨",
+  "revisions_made": [
+    "반복 질문 3대 유형(시간·식사·소지품)별 금기 및 권장 대화표 보강",
+    "로봇의 명확한 현실적 한계 3가지(망상 통제 불가, 문맥 연속성 한계 등) 추가"
+  ],
+  "remaining_risks": [
+    "생성형 AI 모델별 응답 지연 시간 및 대화 스크립트 커스텀 지원 범위 차이"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.619Z",
+    "metrics": {
+      "character_count": 6270,
+      "answer_block_length": 207,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

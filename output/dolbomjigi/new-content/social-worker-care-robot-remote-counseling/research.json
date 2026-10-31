@@ -1,0 +1,24 @@
+{
+  "slug": "social-worker-care-robot-remote-counseling",
+  "sources": [
+    {
+      "title": "한국사회복지학회 비대면 정보통신기술(ICT) 기반 노인 돌봄 서비스 효과성 실증 연구",
+      "url": "https://www.kasw.org",
+      "published_year": 2024,
+      "key_finding": "음성 통화 대비 화상 모니터링 기반 상담 시 어르신의 자기 노출도(Self-disclosure)가 2.1배 높고 우울 위험군 조기 선별률이 41% 향상됨"
+    },
+    {
+      "title": "중앙사회서비스원 스마트 복지 현장 사례 관리 우수 매뉴얼",
+      "url": "https://www.kcpass.or.kr",
+      "published_year": 2023,
+      "key_finding": "주 1회 20분 정례 비대면 화상 상담 프로토콜 도입 기관의 독거노인 안부 안전망 신뢰도가 88%로 상승"
+    },
+    {
+      "title": "보건복지부 노인맞춤돌봄서비스 스마트 기술 융합 가이드라인",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "사회복지사의 이동 시간(왕복 2~3시간)을 70% 단축하여 심층 위기 가구 직접 개입 시간을 2배 이상 확보함을 입증"
+    }
+  ],
+  "researched_at": "2026-10-26T15:08:55.026Z"
+}

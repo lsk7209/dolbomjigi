@@ -1,0 +1,24 @@
+{
+  "slug": "smart-mattress-bed-exit-sensor-care-robot",
+  "sources": [
+    {
+      "title": "대한노인병학회 재가 노인의 야간 침대 낙상 역학 조사 및 예방 중재 연구",
+      "url": "https://www.geriatrics.or.kr",
+      "published_year": 2024,
+      "key_finding": "고령자 실내 낙상 사고의 43%가 야간(22시~06시) 침실에서 발생하며, 침대 이탈 감지 센서 도입 시 골절 사고율이 76% 감소함"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 스페이스 무구속 생체 신호 모니터링 실증 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "매트리스 하부 압전 센서는 신체 결박이나 피부 부착 없이도 99%의 정확도로 침대 이탈과 자세 변환을 감별함을 확인"
+    },
+    {
+      "title": "중앙치매센터 치매 환자 야간 배회 실태 및 스마트 안전 장비 가이드",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "야간 배회 성향 어르신의 침대 이탈 시점부터 3분 이내 초기 대응 성공률이 실종 예방의 핵심 골든타임임"
+    }
+  ],
+  "researched_at": "2026-10-29T15:06:56.149Z"
+}

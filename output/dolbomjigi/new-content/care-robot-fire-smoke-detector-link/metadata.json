@@ -1,0 +1,12 @@
+{
+  "slug": "care-robot-fire-smoke-detector-link",
+  "title_ko": "주방 가스불 깜빡하시는 부모님: 돌봄로봇과 무선 화재·연기 감지 센서 연동법",
+  "subtitle": "냄비 과열과 일산화탄소 질식 위험을 차단하는 무선 광전식 연기 센서와 가스 자동 잠금 밸브 구축 가이드",
+  "summary": "사골을 끓이거나 국을 데우다 깜빡 잊고 외출하시는 고령 부모님의 주방 화재 사고를 방지하기 위해, 주방 천장의 무선 연기·열 센서, 스마트 가스 차단기, 거실 돌봄로봇을 연동하여 이상 과열 시 가스를 잠그고 119와 가족에게 알리는 3중 안전망 구축법을 소개합니다.",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-fire-smoke-detector-link.jpg",
+  "main_keyword": "돌봄로봇 화재 연기 감지",
+  "reading_time_minutes": 7,
+  "category": "guide",
+  "target_persona": "family_caregiver",
+  "published_at": "2026-10-26T15:08:55.026Z"
+}

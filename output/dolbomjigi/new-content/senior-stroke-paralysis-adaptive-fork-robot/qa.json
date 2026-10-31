@@ -1,0 +1,30 @@
+{
+  "slug": "senior-stroke-paralysis-adaptive-fork-robot",
+  "character_count": 3845,
+  "answer_block_present": true,
+  "h1_count": 0,
+  "forbidden_medical_count": 0,
+  "forbidden_promotional_count": 0,
+  "qa_score": 100,
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.674Z",
+    "metrics": {
+      "character_count": 3846,
+      "answer_block_length": 273,
+      "faq_count": 5,
+      "internal_link_count": 3,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "verified_at": "2026-10-30T15:07:43.791Z",
+  "status": "passed"
+}

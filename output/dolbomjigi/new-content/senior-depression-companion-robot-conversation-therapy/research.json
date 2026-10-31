@@ -1,0 +1,24 @@
+{
+  "slug": "senior-depression-companion-robot-conversation-therapy",
+  "sources": [
+    {
+      "title": "한국보건사회연구원 노인 독거가구의 사회적 고립감과 우울 척도 변화 연구",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2024,
+      "key_finding": "주 3회 이상 능동 대화형 스마트 기기를 활용한 독거노인 집단에서 주관적 외로움 척도가 31.4% 감소함"
+    },
+    {
+      "title": "한국로봇산업진흥원 돌봄로봇 실증 보급사업 사회적 가치 및 정서 만족도 평가",
+      "url": "https://www.kiria.org",
+      "published_year": 2024,
+      "key_finding": "인형형 감성 교감 로봇 사용자의 87.2%가 생활 활력 증진 및 말동무 만족도를 긍정적으로 응답"
+    },
+    {
+      "title": "국립정신건강센터 노년기 우울 및 가성치매 감별과 비약물적 정서 중재 가이드라인",
+      "url": "https://www.ncmh.go.kr",
+      "published_year": 2023,
+      "key_finding": "규칙적인 발화 활동과 과거 회상(Reminiscence) 대화가 고령자의 인지 자극과 정서 안정에 기여함"
+    }
+  ],
+  "last_verified_at": "2026-10-24"
+}

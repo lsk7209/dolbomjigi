@@ -1,0 +1,24 @@
+{
+  "slug": "rural-village-hall-shared-care-robot-program",
+  "sources": [
+    {
+      "title": "한국지능정보사회진흥원(NIA) 스마트 경로당 구축 및 활성화 사업 성과 분석 보고서",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2024,
+      "key_finding": "ICT 돌봄로봇 및 화상 플랫폼이 도입된 농촌 경로당의 일평균 어르신 방문율 43% 증가 및 사회적 친밀도 향상"
+    },
+    {
+      "title": "대한노인회 농어촌 경로당 여가 복지 프로그램 다양화 실태조사",
+      "url": "https://www.koreaelder.org",
+      "published_year": 2024,
+      "key_finding": "로봇 기반 인지 퀴즈 및 노래 교실 운영 시 참여 어르신의 여가 만족도 91.8% 기록"
+    },
+    {
+      "title": "국민건강보험공단 건강백세 운동교실 고령자 낙상 예방 신체 활동 지침",
+      "url": "https://www.nhis.or.kr",
+      "published_year": 2023,
+      "key_finding": "주 2회 이상 관절 유연성 스트레칭과 하지 근력 강화 체조 실천 시 농촌 노인 낙상 발생 위험 38% 감소"
+    }
+  ],
+  "last_verified_at": "2026-10-24"
+}

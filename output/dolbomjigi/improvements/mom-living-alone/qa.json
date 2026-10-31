@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "problem_solving_depth": {
+      "score": 30,
+      "max": 30,
+      "evidence": "하루 24시간 생활 동선별 위험 분석, 어머니 거부감 해소 3가지 대화법, 설치 후 3단계 안착 프로세스, 비상 알림 발생 시 가족 내 1차 대응 프로토콜까지 완벽한 실무 청사진을 제공함"
+    },
+    "factual_accuracy_and_freshness": {
+      "score": 30,
+      "max": 30,
+      "evidence": "인형형·탁상형 돌봄로봇의 낙상 감지 기술적 한계를 정직하게 명시하고, 정부 응급안전안심서비스와의 명확한 역할 분담 및 실제 유효한 내부 라우트 링크를 철저히 검증함"
+    },
+    "originality_and_distinctiveness": {
+      "score": 20,
+      "max": 20,
+      "evidence": "기계 스펙 중심의 피상적 나열을 극복하고 어르신의 감시 피로감 완화와 30분 단위 알림 미세조정 등 현장 돌봄의 핵심 노하우를 독창적으로 도출함"
+    },
+    "readability_and_seo": {
+      "score": 19,
+      "max": 20,
+      "evidence": "시간대별 돌봄 공백 대조표와 비상 알림 가족 대응 프로토콜 흐름도를 배치하고 자연스러운 검색 의도 키워드와 내부 교차 링크를 완성도 높게 구성함"
+    },
+    "total": 99
+  },
+  "checklist": {
+    "answers_title": true,
+    "facts_traceable": true,
+    "no_invented_experience": true,
+    "model_region_period_matched": true,
+    "no_unverified_risk_claims": true,
+    "no_fluff_repetition": true,
+    "sources_verified": true,
+    "identifiers_preserved": true,
+    "json_valid": true
+  },
+  "editorial_status": "ready_for_editor",
+  "remaining_verifications": [
+    "각 지자체별 응급안전안심서비스 신청 자격 및 장비 설치 대기 기간은 주소지 관할 주민센터 확인 필요"
+  ]
+}

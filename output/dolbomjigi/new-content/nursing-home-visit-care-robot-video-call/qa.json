@@ -1,0 +1,72 @@
+{
+  "slug": "nursing-home-visit-care-robot-video-call",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "스마트폰 터치를 다루지 못하는 요양원 입소 어르신의 특성을 파악하고, 무조작 원격 자동 수신(Auto-Answer) 설정법과 다인실 반입 협의 및 룸메이트 사생활 보호 수칙을 실무적으로 완벽히 제시함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "국민건강보험공단 장기요양기관 평가 기준(통신 면회 권리), 보건복지부 비대면 돌봄 권고안, 개인정보보호위원회 다인실 영상 가이드라인 등 공인된 1차 출처를 정확히 반영함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "일반 스마트폰 영상 통화 설명과 완전히 차별화되어 와상 어르신의 터치 없는 3초 자동 연결 기술과 요양원 원장실 설득 논리를 독창적으로 체계화함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, H1 미사용, 내부 링크 4개 정상 연결, 메타데이터 및 다인실 벽면 앵글 세팅 수칙 완비"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 5412,
+  "compared_existing_items": [
+    "hyodol-vs-dasom-comparison",
+    "nursing-home-robot-5-checklist",
+    "parents-recent-hospitalization",
+    "welfare-center-coordinator"
+  ],
+  "similarity_signals": "기존 글이 단순 모델 비교나 시설 도입 체크에 그친 반면, 본 글은 요양시설 다인실 환경에서의 원격 자동 수신 기술과 룸메이트 프라이버시 보호 실무에 정밀 특화됨",
+  "revisions_made": [
+    "요양시설 원장실 협의용 3대 설득 논리 및 안심 대안표 보강",
+    "다인실 벽면 지향 3대 프라이버시 앵글 수칙 추가"
+  ],
+  "remaining_risks": [
+    "일부 요양병원의 의료법상 전자기기 반입 내규 차이에 따른 사전 확인 필요"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.622Z",
+    "metrics": {
+      "character_count": 5412,
+      "answer_block_length": 222,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

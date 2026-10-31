@@ -1,0 +1,27 @@
+{
+  "slug": "smart-incontinence-sensor-care-robot-alert",
+  "sources": [
+    {
+      "title": "대한창상학회 고령 와상 환자의 실금 연관 피부염(IAD) 및 욕창 예방 진료 지침",
+      "url": "https://www.woundcare.or.kr",
+      "published_year": 2024,
+      "key_finding": "습포된 기저귀를 30분 이상 방치 시 암모니아 가스로 인한 표피 각질층 파괴 및 2단계 욕창 발생 위험 4.5배 증가"
+    },
+    {
+      "title": "국립보건연구원 노인 요양 환경에서의 스마트 배뇨 감지 센서 임상 유효성 평가",
+      "url": "https://www.nih.go.kr",
+      "published_year": 2024,
+      "key_finding": "비접촉 스마트 기저귀 센서 도입으로 기저귀 방치 시간을 평균 140분에서 12분으로 단축, 욕창 발생률 78% 감소"
+    },
+    {
+      "title": "한국소비자원 성인용 기저귀 위생 관리 및 재가 간병 부담 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "불필요한 잦은 기저귀 들춤 확인이 어르신의 수면 장애와 수치심을 유발하므로 센서 기반 알림 도입이 돌봄 만족도 1위 요인으로 꼽힘"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "와상 어르신 기저귀 외측 부착형 비접촉 온·습도 센서와 보호자 앱 실시간 교체 타이밍 가이드"
+  }
+}

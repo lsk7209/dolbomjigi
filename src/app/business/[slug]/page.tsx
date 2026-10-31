@@ -9,6 +9,8 @@ import JsonLdScript from '@/components/seo/JsonLdScript'
 import { buildBreadcrumbJsonLd } from '@/lib/jsonld'
 import { SITE_URL } from '@/lib/config'
 
+export const dynamic = 'force-dynamic'
+
 const BUSINESS_TYPES = {
   'nursing-home': {
     name: '요양원',

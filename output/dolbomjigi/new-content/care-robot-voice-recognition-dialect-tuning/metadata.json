@@ -1,0 +1,12 @@
+{
+  "slug": "care-robot-voice-recognition-dialect-tuning",
+  "title_ko": "전라도·경상도 사투리 쓰시는 부모님, 돌봄로봇 말귀 알아듣게 만드는 설정법",
+  "subtitle": "지역 억양과 고유 방언 음운 인식률을 높이는 마이크 감도 조절과 맞춤 명령어 등록 요령",
+  "summary": "억센 사투리와 지역 방언 때문에 돌봄로봇이 말을 잘 알아듣지 못할 때, 마이크 감도 설정, 맞춤 호출어 등록, 발화 거리와 음조 조절을 통해 인식률을 극대화하는 실전 노하우를 소개합니다.",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-voice-recognition-dialect-tuning.jpg",
+  "main_keyword": "돌봄로봇 사투리 인식",
+  "reading_time_minutes": 8,
+  "category": "guide",
+  "target_persona": "family_caregiver",
+  "published_at": "2026-10-24T00:00:00.000Z"
+}

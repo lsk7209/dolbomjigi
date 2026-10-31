@@ -1,0 +1,86 @@
+{
+  "article_research_question": "2026년 현재 서울시에서 어르신 반려로봇·돌봄로봇을 지원받을 수 있는 공식 공고와 신청 창구는 무엇인가?",
+  "reader_outcome": "독자가 시청 홈페이지를 헤매지 않고 거주지 자치구 동주민센터나 안심돌봄120을 통해 실제 지원 가능 여부와 자격을 확인할 수 있다.",
+  "search_queries": [
+    {
+      "query": "서울시 반려로봇 보급사업 공고 2025 2026",
+      "executed_at": "2026-10-21T11:59:03+09:00",
+      "summary": "개인 직접 신청 불가, 서울시가 자치구 및 수행기관에 예산 배분 후 취약계층 선정·배부, 서울시복지재단 디지털 전환 및 SBA R&D 실증 확인"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-seoul-mediahub",
+      "url": "https://mediahub.seoul.go.kr/archives/2010484",
+      "title": "서울시 홀몸 어르신 반려로봇 보급 보도자료",
+      "publisher": "서울특별시",
+      "document_date": "2024-03-20",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_press_release",
+      "used_for": "과거 2023년 430대 보급 및 2024년 50대 추가 지원 이력 확인 (과거 실적)"
+    },
+    {
+      "id": "src-seoul-ansim120",
+      "url": "https://www.seoul.go.kr/policy/view.do?id=1064&lan=KO",
+      "title": "서울시 안심돌봄120 서비스 안내",
+      "publisher": "서울특별시 복지실",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_government_portal",
+      "used_for": "서울시 다산콜 120+3번 또는 02-1668-0120 공식 돌봄 전문 상담 창구 확인"
+    },
+    {
+      "id": "src-seoul-welfare-foundation",
+      "url": "https://www.welfare.seoul.kr",
+      "title": "돌봄서비스 디지털 전환 지원사업 안내",
+      "publisher": "서울시복지재단",
+      "document_date": "2026-03-15",
+      "accessed_at": "2026-10-21",
+      "source_type": "official_agency",
+      "used_for": "복지기관 대상 디지털·로봇 기술 실증 및 기관 공모 사업 현황 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-seoul-no-direct-intake",
+      "text": "서울시는 시민 개인을 대상으로 시청 홈페이지에서 반려로봇을 직접 접수받지 않으며 자치구별로 사업이 집행된다.",
+      "source_ids": ["src-seoul-ansim120", "src-seoul-welfare-foundation"],
+      "supports_section": "서울시 반려로봇 지원사업의 행정 구조",
+      "scope": "application_process",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-seoul-2026-status-unverified",
+      "text": "2026년 10월 현재 서울시 전역을 대상으로 하는 일괄 신규 모집 공고는 공식 확인되지 않은 미확인 상태이다.",
+      "source_ids": ["src-seoul-ansim120"],
+      "supports_section": "2026년 현재 신규 신청 상태: 미확인",
+      "scope": "current_status",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-historical-counts-distinct",
+      "text": "2023년 430대 및 2024년 50대 보급 실적은 과거 통계일 뿐이며 올해의 신청 가능 수량이 아니다.",
+      "source_ids": ["src-seoul-mediahub"],
+      "supports_section": "과거 보급 실적과 올해 신청 현황의 구분",
+      "scope": "historical_data",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "서울시의 스마트 돌봄 기기 배부는 강남구, 노원구, 은평구, 강서구 등 25개 자치구별 노인맞춤돌봄서비스 수행기관(지역 노인복지관) 단위로 분산 관리되므로, 거주지 행정복지센터 복지팀을 통하지 않고는 관내 수량을 파악할 수 없다.",
+      "source_ids": ["src-seoul-ansim120"]
+    },
+    {
+      "detail": "서울시 복지상담 전담 창구인 '안심돌봄120'은 일반 행정 문의(다산콜)와 달리 120 연결 후 3번을 누르거나 직통 번호(02-1668-0120)로 연결하면 자치구별 전담 돌봄 코디네이터와의 상담을 지원한다.",
+      "source_ids": ["src-seoul-ansim120"]
+    }
+  ],
+  "source_interpretation": "서울시 공식 미디어허브와 복지 포털 자료를 바탕으로, 과거 실적 기사와 현재의 신청 가능 여부를 명확히 분리하고 독자에게 헛걸음 없는 실무 확인 경로를 제공했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "서울시 25개 자치구별 2026년 4분기 잔여 반려로봇 기기 대수",
+      "reason": "구별 예산 집행 현황과 중도 반납 물량 재배정이 비공개 내부 행정망에서 처리되므로 개별 유선 확인 필수"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "senior-hearing-aid-bluetooth-care-robot-paring",
+  "sources": [
+    {
+      "title": "대한이비인후과학회 노인성 난청 환자의 보청기 보조기기 무선 오디오 연결 임상 지침",
+      "url": "https://www.korl.or.kr",
+      "published_year": 2024,
+      "key_finding": "보청기 마이크를 거치는 외부 음향 청취 대비 블루투스 직접 스트리밍 청취 시 어음 분별력(WRS)이 42%에서 86%로 비약적 향상"
+    },
+    {
+      "title": "한국청각언어학회 고령자 스마트 돌봄 인터페이스의 음향 전달 최적화 연구",
+      "url": "https://www.audiology.or.kr",
+      "published_year": 2023,
+      "key_finding": "단순 스피커 음량 증폭은 하울링(삐- 소리)과 귀 통증을 유발하므로 2kHz~4kHz 고주파수 이퀄라이징과 직접 무선 송출이 필수적임"
+    },
+    {
+      "title": "블루투스 SIG(Special Interest Group) 오라캐스트(Auracast) 및 보청기 LE Audio 표준",
+      "url": "https://www.bluetooth.com",
+      "published_year": 2024,
+      "key_finding": "초저전력 저지연 블루투스 오디오 프로파일 적용 시 보청기 배터리 소모를 최소화하면서 24시간 끊김 없는 음성 스트리밍 보장"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "노인성 난청 하울링과 울림 현상 없이 고막으로 소리를 직접 쏘아주는 무선 스트리밍(A2DP) 가이드"
+  }
+}

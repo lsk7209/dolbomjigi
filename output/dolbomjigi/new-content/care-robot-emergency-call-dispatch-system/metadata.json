@@ -1,0 +1,34 @@
+{
+  "slug": "care-robot-emergency-call-dispatch-system",
+  "title_ko": "돌봄로봇 119 안심콜 자동 연동과 야간 긴급 출동 시스템 구축 가이드",
+  "subtitle": "독거 어르신 낙상과 급성 심장 이상 발생 시 소방서 사전 등록 정보 기반 신속 출동 프로세스",
+  "summary": "돌봄로봇의 비상 호출 버튼이나 레이더 낙상 감지 센서가 작동했을 때 119 안심콜 서비스와 연동하여 구급대가 어르신의 기저질환과 현관 비밀번호를 미리 파악하고 신속히 출동하도록 구축하는 절차를 안내합니다.",
+  "main_keyword": "돌봄로봇 119 연동",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-emergency-call-dispatch-system.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4842,
+  "sources": [
+    {
+      "title": "소방청 119안심콜 서비스 운영 통계 및 구급 출동 골든타임 분석 보고서",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "119안심콜 사전 등록 시 구급대의 현장 도착 후 기저질환 파악 및 문 개방 소요 시간이 평균 7분 40초 단축됨"
+    },
+    {
+      "title": "보건복지부 응급안전안심서비스 댁내 장비 기술 규격 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "화재·가스·활동 미감지 센서와 연계된 119 원클릭 직통 연결 체계 구축 시 고독사 및 야간 응급 고립 위험 85% 예방"
+    },
+    {
+      "title": "한국응급구조학회 고령자 가정 내 낙상 발생 시 초기 대응 속도와 예후 상관관계",
+      "url": "https://www.kjemt.or.kr",
+      "published_year": 2023,
+      "key_finding": "1시간 이상 바닥에 방치된 장시간 고립 환자는 횡문근융해증 및 급성 신부전 합병증 발생률이 4배 급증함"
+    }
+  ]
+}

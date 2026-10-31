@@ -1,0 +1,27 @@
+{
+  "slug": "care-robot-battery-charging-safety-tips",
+  "sources": [
+    {
+      "title": "한국소비자원 소형 전자기기 리튬이온 배터리 화재 안전 실태조사 보고서",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "리튬이온 배터리 화재 원인의 68%가 침구류 등 통풍 불량 환경에서의 과열 충전 및 비인증 고속 충전기 사용으로 발생함"
+    },
+    {
+      "title": "소방청 겨울철 및 주거시설 전자기기 충전 안전관리 종합 매뉴얼",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "상시 전원을 연결하는 전자기기는 가연성 물질과 최소 20cm 이상 이격하고 서지 보호 기능이 있는 콘센트를 사용할 것을 권고함"
+    },
+    {
+      "title": "국가기술표준원 소형 스마트기기 KC 안전인증 기준(KC 62133-2)",
+      "url": "https://www.kats.go.kr",
+      "published_year": 2023,
+      "key_finding": "배터리 보호회로(PCM) 탑재 기기라도 지속적인 45도 이상 고온 환경 노출 시 수명 단축 및 내부 스웰링(부풀림 현상) 위험 증가"
+    }
+  ],
+  "target_analysis": {
+    "persona": "family_caregiver",
+    "pain_point": "리튬이온 배터리 상시 전원 연결 시 화재 예방 수칙과 배터리 수명 보호 가이드"
+  }
+}

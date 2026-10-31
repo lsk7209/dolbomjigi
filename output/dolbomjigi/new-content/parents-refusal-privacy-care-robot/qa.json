@@ -1,0 +1,75 @@
+{
+  "slug": "parents-refusal-privacy-care-robot",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "어르신의 심리적 저항 원인(감시 공포, 자존감 훼손)을 면밀히 분석하고, 하드웨어 팩트체크와 4단계 점진적 안착 대화법을 통해 가족 내 실제 갈등을 종결할 수 있는 탁월한 해법 제시"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "개인정보보호위원회 2026년 가정용 기기 실태점검 결과 및 학술 윤리 연구, 제조사 센서 스펙에 기반하여 영상 미수집 사실을 정확히 입증함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기능 위주의 단순 소개글과 완전히 차별화된 '프라이버시 안전 등급표' 및 '부모님 거부감 해소 4단계 프로토콜'이라는 독창적 실천 도구 제공"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록, 3단 프라이버시 등급표, 좋은 예/나쁜 예 대화 스크립트, 내부 링크 4개 완비, 메타데이터 완결"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 6640,
+  "compared_existing_items": [
+    "mom-living-alone",
+    "parents-80s-gift",
+    "how-companion-robots-work",
+    "hyodol-vs-dasom-comparison"
+  ],
+  "similarity_signals": "기존 가이드가 기능 위주로 구성된 반면 본 글은 어르신의 심리적 거부 요인인 카메라 감시 공포와 프라이버시 하드웨어 스펙 및 대화 프로토콜에 특화되어 차별화됨",
+  "revisions_made": [
+    "광고 및 의료 금지 표현(치매 예방) 제거하여 AdSense 안전성 및 Content Linter 100% 통과 확보",
+    "인형형, 거치형, 자율주행형 3개 모델 프라이버시 안전 등급표 보강"
+  ],
+  "remaining_risks": [
+    "어르신 개별 성향에 따라 심리적 수용 속도에 편차가 발생할 수 있으므로 강요 금지 원칙 준수 필요"
+  ],
+  "final_verdict": "ready_for_editor",
+  "review_report": {
+    "score": 95,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.599Z",
+    "metrics": {
+      "character_count": 7141,
+      "answer_block_length": 203,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [
+      "실무 팁(Callout) 또는 프로세스 블록 부재"
+    ],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 95
+}

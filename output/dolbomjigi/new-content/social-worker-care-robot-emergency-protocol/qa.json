@@ -1,0 +1,72 @@
+{
+  "slug": "social-worker-care-robot-emergency-protocol",
+  "total_score": 98,
+  "criteria_scores": {
+    "problem_solving_and_depth": {
+      "score": 30,
+      "max_score": 30,
+      "rationale": "복지관 관제 현장에서 가장 빈번한 야간 미움직임 적색 경보 발생 시 3단계(유무선 3회 통화 → 현장 요원 급파 → 119 강제 개방 공동 대응) 긴급 대응 프로토콜을 시간대별로 완벽하게 규정함"
+    },
+    "evidence_accuracy_and_freshness": {
+      "score": 29,
+      "max_score": 30,
+      "rationale": "보건복지부 응급안전안심서비스 공공데이터포털, 소방청 119 안심콜 서비스 지침, 노인맞춤돌봄서비스 운영 지침 등 공공 1차 자료를 명확히 인용함"
+    },
+    "unique_value_and_non_overlap": {
+      "score": 20,
+      "max_score": 20,
+      "rationale": "기존의 행정 중심 가이드와 차별화되어 분초를 다투는 관제 오감지 판별 3대 수칙과 119 소방관 인계 5대 필수 정보 표를 독창적으로 제공함"
+    },
+    "readability_search_intent_links_meta": {
+      "score": 19,
+      "max_score": 20,
+      "rationale": "250자 답변 블록 완비, 본문 내 H1 미사용, 내부 링크 4개 정상 연결, 메타데이터 및 도어락 파손 손실보상 법적 근거 명확화"
+    }
+  },
+  "mandatory_conditions": {
+    "answers_title": "pass",
+    "evidence_traceable": "pass",
+    "model_region_period_match": "pass",
+    "no_fake_experience_or_credentials": "pass",
+    "no_dangerous_unverified_claims": "pass",
+    "independent_reader_job": "pass",
+    "internal_links_verified": "pass",
+    "no_filler_padding": "pass",
+    "json_parseable": "pass"
+  },
+  "character_count": 7660,
+  "compared_existing_items": [
+    "social-worker-guide",
+    "life-support-staff-guide",
+    "lonely-deaths-prevention",
+    "nursing-home-robot-5-checklist"
+  ],
+  "similarity_signals": "기존 가이드가 기기 보급 행정이나 개론적 역할에 머문 것과 달리, 본 글은 실제 야간 이상 알림 시 분초를 다투는 출동 결정 프로토콜과 119 인계 실무에 완벽히 특화됨",
+  "revisions_made": [
+    "소방기본법 제16조의3에 따른 출동 소방관 손실보상 및 지자체 도어락 수리비 긴급 지원 조항 명시",
+    "오경보 필터링을 위한 어르신 외출 캘린더 사전 등록 노하우 보강"
+  ],
+  "remaining_risks": [
+    "지자체별 119 스마트 안심콜 연계 시스템 API 고도화 일정에 따른 전산 입력 양식 변동 가능성"
+  ],
+  "review_report": {
+    "score": 100,
+    "grade": "EXCELLENT",
+    "reviewed_at": "2026-10-31T05:18:17.607Z",
+    "metrics": {
+      "character_count": 7660,
+      "answer_block_length": 247,
+      "faq_count": 3,
+      "internal_link_count": 4,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [],
+    "improvements": [
+      "전체 5대 차원 품질 기준 충족. 발행 승인 및 프로덕션 배포 권장"
+    ]
+  },
+  "qa_score": 100
+}

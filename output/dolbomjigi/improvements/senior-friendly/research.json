@@ -1,0 +1,96 @@
+{
+  "article_research_question": "어르신의 신체·인지적 특성과 거주 환경에 적합한 돌봄로봇을 판별하기 위해 반드시 점검해야 할 5대 기준은 무엇인가?",
+  "reader_outcome": "독자가 광고성 순위에 속지 않고 부모님의 시력, 청력, 조작 능력, 가족의 알림 대응 역량에 부합하는 최적의 기기를 직접 판별할 수 있다.",
+  "search_queries": [
+    {
+      "query": "어르신 돌봄로봇 사용자 경험 평가 기준",
+      "executed_at": "2026-10-21T12:54:00+09:00",
+      "summary": "신체 조작 편의성, 음성 인식률, 충전 편의성, 심리적 친밀감, 개인정보 보호가 핵심 만족 요인으로 확인됨"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-nia-senior-tech",
+      "url": "https://www.nia.or.kr",
+      "title": "디지털 에이징과 고령층 지능정보 기술 수용성 연구",
+      "publisher": "한국지능정보사회진흥원",
+      "document_date": "2025-08-15",
+      "accessed_at": "2026-10-21",
+      "source_type": "government_report",
+      "used_for": "고령층의 인터페이스 조작 두려움, 음성 인터페이스 선호도, 디지털 기기 거부감 요인 분석"
+    },
+    {
+      "id": "src-hyodol-official",
+      "url": "https://hyodol.com",
+      "title": "효돌 공식 제품 사양",
+      "publisher": "㈜효돌",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "인형형 촉감 상호작용 및 복약 알림 특성 확인"
+    },
+    {
+      "id": "src-casio-moflin",
+      "url": "https://www.casio.com/jp/moflin/",
+      "title": "CASIO Moflin 공식 플랫폼",
+      "publisher": "CASIO COMPUTER CO., LTD.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "소형 털 펫 형태의 비언어 감성 교감 특성 확인"
+    },
+    {
+      "id": "src-lovot-life",
+      "url": "https://lovot.life",
+      "title": "LOVOT 공식 플랫폼",
+      "publisher": "GROOVE X, Inc.",
+      "document_date": null,
+      "accessed_at": "2026-10-21",
+      "source_type": "official_manufacturer",
+      "used_for": "자율주행 바퀴 이동형 및 필수 구독료 조건 확인"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-no-universal-ranking",
+      "text": "어르신의 신체 조건과 돌봄 목적이 각기 다르므로 전국 일률적인 1위 돌봄로봇 순위는 성립할 수 없다.",
+      "source_ids": ["src-nia-senior-tech"],
+      "supports_section": "어르신 돌봄로봇에 '만능 1위'가 없는 이유",
+      "scope": "evaluation_philosophy",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-touch-hearing-first",
+      "text": "어르신의 기계 수용성은 화면의 화려함보다 손에 닿는 촉감, 음성의 데시벨, 충전의 간편함에서 결정된다.",
+      "source_ids": ["src-nia-senior-tech", "src-hyodol-official"],
+      "supports_section": "1기준: 신체 조건과 조작 편의성",
+      "scope": "usability",
+      "verdict": "verified"
+    },
+    {
+      "id": "clm-unverified-models-excluded",
+      "text": "공식 기술 사양과 판매처가 불명확한 미확인 기기들은 검증 목록에서 엄격히 배제한다.",
+      "source_ids": ["src-hyodol-official", "src-casio-moflin", "src-lovot-life"],
+      "supports_section": "검증된 후보 3종의 명확한 장단점과 한계",
+      "scope": "evidence_governance",
+      "verdict": "verified"
+    }
+  ],
+  "article_specific_details": [
+    {
+      "detail": "어르신이 관절염으로 손가락 악력이 약할 경우 작은 터치스크린 버튼을 누르는 데 어려움을 겪으므로, 몸체를 툭툭 치거나 등을 쓰다듬는 면적형 정전식 터치 센서가 장착된 기기가 조작 피로도가 훨씬 낮다.",
+      "source_ids": ["src-nia-senior-tech", "src-hyodol-official"]
+    },
+    {
+      "detail": "취침 시간대 어두운 방에서 로봇의 LCD 화면 불빛이나 카메라의 적외선 LED가 깜빡이면 어르신이 수면 장애나 감시당하는 느낌을 받을 수 있으므로 야간 수면 모드 지원 여부가 필수 점검 대상이다.",
+      "source_ids": ["src-nia-senior-tech"]
+    }
+  ],
+  "source_interpretation": "주관적 순위 매기기 대신, 어르신의 실제 일상 조작 역량과 주거 환경에 맞춰 기기를 검증할 수 있는 객관적 5대 프레임워크를 도출했습니다.",
+  "unresolved_claims": [
+    {
+      "claim": "신규 출시되는 웨어러블 형태 돌봄 기기의 국내 노인 적응도",
+      "reason": "시계나 밴드형 기기는 어르신의 착용 답답함과 충전 망각으로 인한 미착용률이 높아 장기 데이터 축적 필요"
+    }
+  ]
+}

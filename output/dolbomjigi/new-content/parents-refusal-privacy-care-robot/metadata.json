@@ -1,0 +1,29 @@
+{
+  "slug": "parents-refusal-privacy-care-robot",
+  "suggested_content_type": "guide",
+  "title_ko": "“나를 감시하느냐” 부모님의 돌봄로봇 거부감과 카메라 걱정 푸는 법",
+  "subtitle": "어르신의 사생활 침해 불안을 해소하는 센서 팩트체크와 4단계 가족 안착 대화법",
+  "summary": "부모님이 돌봄로봇 전원을 뽑거나 완강히 거부하는 주된 이유는 '감시당한다'는 사생활 침해 불안과 '환자 취급받는다'는 자존감 상처 때문입니다. 실제 로봇의 비카메라 센서 구조를 부모님께 투명하게 설명하고, 자존감을 지켜드리는 4단계 안착 프로토콜을 제시합니다.",
+  "meta_description": "돌봄로봇을 거부하고 전원을 뽑으시는 부모님! 카메라 사생활 침해 걱정을 풀어드리는 센서 팩트체크와 자존감을 지켜드리는 4단계 대화법을 안내합니다.",
+  "main_keyword": "돌봄로봇 거부감",
+  "cover_image_url": "/images/blog-ai/posts/parents-refusal-privacy-care-robot.jpg",
+  "internal_links": [
+    "/guide/mom-living-alone",
+    "/guide/parents-80s-gift",
+    "/info/how-companion-robots-work",
+    "/blog/hyodol-vs-dasom-comparison"
+  ],
+  "image_suggestions": [
+    {
+      "description": "어르신의 자존감과 사생활을 보호하는 비침해형 돌봄과 가족 동의 안내 이미지",
+      "alt": "어르신 사생활 보호와 돌봄로봇 거부감 해소",
+      "path": "/images/blog-ai/posts/parents-refusal-privacy-care-robot.jpg",
+      "type": "featured_header",
+      "license_status": "official_asset_ready"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-21T09:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}

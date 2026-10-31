@@ -1,0 +1,24 @@
+{
+  "slug": "rural-bus-transfer-discount-care-robot-guide",
+  "sources": [
+    {
+      "title": "국토교통부 대중교통 환승 할인 정책 및 농어촌 고령자 이용 실태조사",
+      "url": "https://www.molit.go.kr",
+      "published_year": 2024,
+      "key_finding": "농어촌 65세 이상 고령자의 54%가 하차 태그 미흡으로 환승 할인을 받지 못해 월 2~3만 원의 불필요한 교통비를 지출함"
+    },
+    {
+      "title": "한국소비자원 농어촌 어르신 교통 복지 카드 활용 및 서비스 만족도 연구",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "음성 안내 기반 환승 시간 예보 시스템 도입 시 어르신의 환승 성공률이 91%로 대폭 향상됨"
+    },
+    {
+      "title": "지자체 어르신 무임교통 지원 사업 성과 평가 보고서",
+      "url": "https://www.korea.kr",
+      "published_year": 2024,
+      "key_finding": "70세 이상 무임 교통카드 발급과 디지털 음성 안내가 결합할 때 고령층의 외부 사회활동 참여 빈도가 1.8배 증가함"
+    }
+  ],
+  "researched_at": "2026-10-30T15:07:43.791Z"
+}

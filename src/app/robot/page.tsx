@@ -38,7 +38,14 @@ const CATEGORY_COLOR: Record<string, string> = {
 
 const CATEGORIES = ['companion', 'senior_care', 'rehabilitation', 'monitoring'] as const
 
-export default async function RobotListPage() {
+interface RobotListPageProps {
+  searchParams?: Promise<{ category?: string }>
+}
+
+export default async function RobotListPage({ searchParams }: RobotListPageProps) {
+  const resolvedSearchParams = searchParams ? await searchParams : undefined
+  const selectedCategory = resolvedSearchParams?.category
+
   const allRobots = await db
     .select({
       id: robots.id,
@@ -54,7 +61,11 @@ export default async function RobotListPage() {
     })
     .from(robots)
     .orderBy(desc(robots.korea_market), robots.name_ko)
-    .then(rows => rows.map(row => presentRobot(row)))
+    .then((rows) => rows.map((row) => presentRobot(row)))
+
+  const filteredRobots = selectedCategory
+    ? allRobots.filter((r) => r.category === selectedCategory)
+    : allRobots
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -78,31 +89,46 @@ export default async function RobotListPage() {
         <nav aria-label="카테고리 필터" className="flex flex-wrap gap-2">
           <Link
             href="/robot"
-            className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-gray-900 text-white"
+            className={`inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+              !selectedCategory
+                ? 'bg-gray-900 text-white'
+                : 'border border-gray-300 bg-white text-gray-700 hover:bg-gray-50'
+            }`}
           >
-            전체
+            전체 ({allRobots.length})
           </Link>
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat}
-              href={`/robot?category=${cat}`}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
-            >
-              {CATEGORY_LABEL[cat]}
-            </Link>
-          ))}
+          {CATEGORIES.map((cat) => {
+            const isActive = selectedCategory === cat
+            const count = allRobots.filter((r) => r.category === cat).length
+            return (
+              <Link
+                key={cat}
+                href={`/robot?category=${cat}`}
+                className={`inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+                  isActive
+                    ? 'bg-gray-900 text-white'
+                    : 'border border-gray-300 bg-white text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                {CATEGORY_LABEL[cat]} ({count})
+              </Link>
+            )
+          })}
         </nav>
 
         {/* ── 제품 그리드 ── */}
-        {allRobots.length === 0 ? (
+        {filteredRobots.length === 0 ? (
           <p className="text-sm text-gray-500 py-16 text-center border border-gray-200 rounded-xl bg-white">
-            등록된 제품이 없습니다.
+            해당 카테고리에 등록된 제품이 없습니다.
           </p>
         ) : (
           <section aria-label="로봇 제품 목록">
-            <p className="text-xs text-gray-500 mb-4">총 {allRobots.length}개 제품</p>
+            <p className="text-xs text-gray-500 mb-4">
+              총 {filteredRobots.length}개 제품
+              {selectedCategory && ` (${CATEGORY_LABEL[selectedCategory] ?? selectedCategory})`}
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {allRobots.map((robot) => (
+              {filteredRobots.map((robot) => (
                 <Link
                   key={robot.id}
                   href={`/robot/${robot.slug}`}

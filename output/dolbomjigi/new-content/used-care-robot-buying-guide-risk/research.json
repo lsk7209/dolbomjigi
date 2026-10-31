@@ -1,0 +1,29 @@
+{
+  "slug": "used-care-robot-buying-guide-risk",
+  "verified_facts": [
+    {
+      "claim": "㈜효돌 및 주요 돌봄로봇 제조사는 기기 시리얼 번호(IMEI/MAC)를 최초 구매자 보호자 계정에 1:1 영구 매핑하여 관리하며, 이전 소유자의 고객센터 공식 '기기 등록 해제' 없이는 타인 신규 등록이 차단된다.",
+      "source_url": "https://hyodolshop.imweb.me/CustomerService",
+      "source_title": "효돌 고객센터 FAQ 및 기기 양도 규정",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "지자체 보급사업(노인맞춤돌봄 및 독거노인 안심서비스)으로 무상 대여된 돌봄로봇은 공공 자산으로 귀속되어 민간 중고 판매 시 공유재산 및 물품관리법 위반에 해당하며 적발 시 기기 회수 및 형사 고발 조치될 수 있다.",
+      "source_url": "https://www.welfarehello.com/community/hometownNews/dfd80964-9513-40bb-b21b-674dcf8acdd2",
+      "source_title": "충남 당진시 돌봄로봇 개인 구매 및 보급 관리 공고",
+      "date": "2026-10-21"
+    },
+    {
+      "claim": "공정거래위원회 스마트기기 중고 분쟁 지침 및 이동통신 3사 약관에 따르면 셀룰러 내장 단말기는 통신 약정 해지 및 선택약정 25% 할인 가능 여부를 단말자급제 확인 포털(imei.kr)을 통해 조회할 수 있다.",
+      "source_url": "https://www.consumer.go.kr/",
+      "source_title": "한국소비자원 중고 ICT 거래 피해예방 가이드",
+      "date": "2026-10-21"
+    }
+  ],
+  "authorities": [
+    "한국소비자원 분쟁조정국",
+    "공정거래위원회 소비자정책국",
+    "돌봄로봇 주요 제조사 고객지원팀"
+  ],
+  "discrepancies": "단말기 내장 리튬이온 배터리의 교체 비용(통상 4만~8만 원) 및 유상 A/S 정책이 제조사별로 상이하므로 중고 구매 전 배터리 충전 사이클 확인이 필수적임."
+}

@@ -1,0 +1,138 @@
+{
+  "run_id": "run-20261021-batch02",
+  "started_at": "2026-10-21T11:53:13+09:00",
+  "updated_at": "2026-10-21T13:10:00+09:00",
+  "input_fingerprint": "4e5c397ff143a2f610ed9bc00bd68f54abe9e8f6b2ab2f5328fd7999b71ad311",
+  "priority": "factual_risk_then_reader_value",
+  "batch_limit": 5,
+  "processed_count": 12,
+  "status_summary": {
+    "ready_for_editor": 11,
+    "needs_human_review": 1,
+    "merge_recommended": 0,
+    "blocked": 0
+  },
+  "items": [
+    {
+      "slug": "hyodol-monthly-fee-breakdown",
+      "original_url": "/blog/hyodol-monthly-fee-breakdown",
+      "original_id": 24,
+      "table": "blog_posts",
+      "input_version": "f9afb18c49dbd81e65f4a8ecaaab3fa7cab89785abeb364464f75ee99796219d",
+      "output_path": "output/dolbomjigi/improvements/hyodol-monthly-fee-breakdown",
+      "status": "ready_for_editor",
+      "reason": "시드의 검증되지 않은 '198만 원/49,800원' 단일 정가를 바로잡고 지자체 무상, 장기요양 복지용구(6~15%), 개인 패키지 3대 경로별 실제 비용 및 견적 점검표를 구축함 (순수 본문 6,656자)"
+    },
+    {
+      "slug": "lovot-real-user-experience",
+      "original_url": "/blog/lovot-real-user-experience",
+      "original_id": 29,
+      "table": "blog_posts",
+      "input_version": "5d455722e0edba635648c314dff064caa8ad4699d6a9f4b218d58b6e9c60a3f2",
+      "output_path": "output/dolbomjigi/improvements/lovot-real-user-experience",
+      "status": "ready_for_editor",
+      "reason": "허위 1인칭 가상 체험기를 전면 폐기하고, 2026년 최신 공식 가격(577,500엔~599,500엔)과 필수 월 생활비 3개 플랜, 정기 오버홀 및 국내 사설 A/S 불가 위험을 객관적으로 분석함 (순수 본문 5,852자)"
+    },
+    {
+      "slug": "hyodol-vs-dasom-comparison",
+      "original_url": "/blog/hyodol-vs-dasom-comparison",
+      "original_id": 1,
+      "table": "blog_posts",
+      "input_version": "2823c13f4a3c383cd425af45e1f38956ae36cdccd37e4d4a7c16a3a99947e2b2",
+      "output_path": "output/dolbomjigi/improvements/hyodol-vs-dasom-comparison",
+      "status": "ready_for_editor",
+      "reason": "다솜 개발사(원더풀플랫폼) 오류를 바로잡고, 미검증 배회 감지 주장을 배제하며 봉제 인형 촉감형(효돌)과 화면 거치형(다솜)의 폼팩터 차이 및 어르신 성향별 5대 선택 기준을 수립함 (순수 본문 5,734자)"
+    },
+    {
+      "slug": "seoul",
+      "original_url": "/support/region/seoul",
+      "original_id": 1,
+      "table": "regions",
+      "input_version": null,
+      "output_path": "output/dolbomjigi/improvements/seoul",
+      "status": "needs_human_review",
+      "reason": "과거 2023~2024년 보급 실적(480대)의 현재성 오인을 방지하고 2026년 신청 상태를 '미확인(자치구 분산 공모)'으로 명시함. 안심돌봄120(120+3번) 및 자치구 동주민센터 확인 절차를 수립함 (순수 본문 3,763자, 데이터/신청 상태 페이지 분량 예외 규정 적용)"
+    },
+    {
+      "slug": "mom-living-alone",
+      "original_url": "/guide/mom-living-alone",
+      "original_id": 2,
+      "table": "guides",
+      "input_version": "8949fab2ee81e2a19f4ca24bf2a011d0f0bfc0e3f05bd080e7960e6242de238a",
+      "output_path": "output/dolbomjigi/improvements/mom-living-alone",
+      "status": "ready_for_editor",
+      "reason": "1,400자 수준의 빈약한 초안과 깨진 링크를 전면 쇄신하여, 하루 24시간 생활 동선별 위험 분석, 어머니 거부감 해소 3가지 대화법, 설치 후 3단계 안착 프로세스, 비상 알림 가족 대응 프로토콜을 체계화함 (순수 본문 6,109자)"
+    },
+    {
+      "slug": "lovot-vs-moflin",
+      "original_url": "/compare/lovot-vs-moflin",
+      "original_id": 10,
+      "table": "comparisons",
+      "input_version": "bd7e4856ea45d7acb267d3a5a6c1ca3d9f8fb5988beefbf67ebff344ca8322e6",
+      "output_path": "output/dolbomjigi/improvements/lovot-vs-moflin",
+      "status": "ready_for_editor",
+      "reason": "자율주행 바퀴 이동형(LOVOT)과 탁상 거치형 털 동물(Moflin)의 하드웨어 차이, 15배에 달하는 3년 총비용 비교, 언어 미이해 한계, 국내 AS 부재 리스크를 입체 대조함 (순수 본문 5,449자)"
+    },
+    {
+      "slug": "welfare-center-coordinator",
+      "original_url": "/guide/welfare-center-coordinator",
+      "original_id": 13,
+      "table": "guides",
+      "input_version": "34eebb30ec52a62ea3c4277f914a97d13ea747b839e4352f7dec6d5be10c0817",
+      "output_path": "output/dolbomjigi/improvements/welfare-center-coordinator",
+      "status": "ready_for_editor",
+      "reason": "1,000자 수준의 단순 메모 초안을 기관 도입 4단계 로드맵, 개인정보·음성 수집 동의, 직원 업무 분장, 2~4주 파일럿 운영 KPI, TCO 계산법을 포함한 전문 지침서로 전면 개편함 (순수 본문 5,937자)"
+    },
+    {
+      "slug": "lovot",
+      "original_url": "/robot/lovot",
+      "original_id": 10,
+      "table": "robots",
+      "input_version": "e438097c5ca85df08fa8357707c0b4f2bdf73f9996add439c6a4f59bb3454ef5",
+      "output_path": "output/dolbomjigi/improvements/lovot",
+      "status": "ready_for_editor",
+      "reason": "임의의 원화 추정 가격을 삭제하고 2026년 10월 26일부 본체 가격 개정(577,500엔->599,500엔) 및 暮らしの費用 3대 플랜 요율, 15mm 문턱 제약, 1~2년 주기 오버홀 리스크를 명시함 (순수 본문 4,080자)"
+    },
+    {
+      "slug": "moflin",
+      "original_url": "/robot/moflin",
+      "original_id": 11,
+      "table": "robots",
+      "input_version": "418ff734effae64f768d93a029d36e11eaded995b3510eb14dd12b3d85873602",
+      "output_path": "output/dolbomjigi/improvements/moflin",
+      "status": "ready_for_editor",
+      "reason": "카시오(CASIO) 정식 판매 모델 PE-M11(USB-C 하우스, 64,900엔) 최신 정보를 반영하고, 말뜻 미이해 한계, 필수 월 구독료 부재, 선택형 Club Moflin 멤버십을 객관적으로 분석함 (순수 본문 4,887자)"
+    },
+    {
+      "slug": "hyodol",
+      "original_url": "/robot/hyodol",
+      "original_id": 1,
+      "table": "robots",
+      "input_version": "15e34e797bdf32a8b1a91e9fdddae929043617eb518faf401a297d1ab29d9662",
+      "output_path": "output/dolbomjigi/improvements/hyodol",
+      "status": "ready_for_editor",
+      "reason": "198만 원 단일 정가 오해를 해소하고 LTE 모듈 내장 통신 사양, 복약 알림 상호작용, 지자체 무상·복지용구(6~15%)·개인 패키지 3대 도입 경로를 체계적으로 안내함 (순수 본문 4,776자)"
+    },
+    {
+      "slug": "senior-friendly",
+      "original_url": "/ranking/senior-friendly",
+      "original_id": "senior-friendly",
+      "table": "ranking",
+      "input_version": null,
+      "output_path": "output/dolbomjigi/improvements/senior-friendly",
+      "status": "ready_for_editor",
+      "reason": "상업적 일렬 순위를 폐기하고 신체 조작 편의, 핵심 돌봄 목적, 비상 알림 전달, 3년 누적 TCO, 개인정보 보호의 5대 실질 검증 프레임워크와 3대 대표 후보 장단점을 체계화함 (순수 본문 4,342자)"
+    },
+    {
+      "slug": "government-supported",
+      "original_url": "/ranking/government-supported",
+      "original_id": "government-supported",
+      "table": "ranking",
+      "input_version": null,
+      "output_path": "output/dolbomjigi/improvements/government-supported",
+      "status": "ready_for_editor",
+      "reason": "전국 1위 허위 마케팅을 타파하고 지자체 무상, 장기요양 복지용구(6~15%), 응급안전안심서비스 3대 공적 경로 구분 및 7대 공고문 검증 체크리스트와 3대 숨은 행정 조건을 정립함 (순수 본문 7,816자)"
+    }
+  ],
+  "next_queue": []
+}

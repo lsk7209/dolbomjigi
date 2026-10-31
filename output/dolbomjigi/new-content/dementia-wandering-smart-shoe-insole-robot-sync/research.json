@@ -1,0 +1,24 @@
+{
+  "slug": "dementia-wandering-smart-shoe-insole-robot-sync",
+  "sources": [
+    {
+      "title": "경찰청 치매 환자 실종 발생 현황 및 조기 발견 골든타임 통계",
+      "url": "https://www.police.go.kr",
+      "published_year": 2024,
+      "key_finding": "치매 실종 환자의 68%가 배회감지기(목걸이·시계)를 집에 두고 외출하며, 실종 발생 24시간 초과 시 사망률이 19배 급증함"
+    },
+    {
+      "title": "보건복지부 취약 독거노인 스마트 배회감지기 보급 사업 성과 분석",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "신발 밑창(인솔) 내장형 위치 추적기의 착용 지속률이 98.6%로 시계형(34.2%) 대비 압도적인 착용 신뢰도를 입증"
+    },
+    {
+      "title": "국립과학수사연구원 스마트 신발 인솔의 위치 추적 오차 및 방수 내구성 연구",
+      "url": "https://www.nfs.go.kr",
+      "published_year": 2024,
+      "key_finding": "LTE-Cat.M1 통신과 위성 GPS, Wi-Fi 삼각측량을 결합하여 건물 내부 및 지하에서도 오차 3m 이내 정밀 위치 포착"
+    }
+  ],
+  "researched_at": "2026-10-30T15:07:43.791Z"
+}

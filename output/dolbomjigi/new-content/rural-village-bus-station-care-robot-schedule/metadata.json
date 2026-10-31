@@ -1,0 +1,12 @@
+{
+  "slug": "rural-village-bus-station-care-robot-schedule",
+  "title_ko": "도서산간 어르신 맞춤형 마을버스 도착 알림과 보행 보조 연계",
+  "subtitle": "하루 3회 군내버스 놓치지 않는 지자체 BIS API 연동과 어르신 보행 속도 맞춤형 10분 전 출발 예보",
+  "summary": "도서산간 벽지 마을에 거주하시는 고령 부모님이 혹한기나 폭염에 정류장에서 하염없이 버스를 기다리다 저체온증이나 열사병에 노출되지 않도록, 국토부 및 지자체 버스정보시스템(BIS)을 돌봄로봇과 연동하여 출발 타이밍을 음성으로 안내하는 교통 복지 기술을 소개합니다.",
+  "cover_image_url": "/images/blog-ai/posts/rural-village-bus-station-care-robot-schedule.jpg",
+  "main_keyword": "돌봄로봇 마을버스 도착 알림",
+  "reading_time_minutes": 6,
+  "category": "guide",
+  "target_persona": "family_caregiver",
+  "published_at": "2026-10-27T15:49:23.092Z"
+}

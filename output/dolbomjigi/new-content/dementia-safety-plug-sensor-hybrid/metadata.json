@@ -1,0 +1,29 @@
+{
+  "slug": "dementia-safety-plug-sensor-hybrid",
+  "suggested_content_type": "guide",
+  "title_ko": "돌봄로봇과 스마트 안심플러그 함께 쓸 때의 시너지와 오작동 방지법",
+  "subtitle": "침실 로봇과 거실 전력 감지 플러그의 교차 검증으로 사각지대와 거짓 경보를 없애는 법",
+  "summary": "돌봄로봇과 스마트 안심플러그를 함께 구축하여 부모님 댁 모니터링의 사각지대를 없애는 실무 가이드입니다. TV, 전기밥솥, 전자레인지별 전력 감지 적합도 비교와 24시간 생활 루틴 크로스 체크 설정, 지자체 지원사업 신청 팁을 제공합니다.",
+  "meta_description": "돌봄로봇과 스마트 안심플러그 결합 활용법! TV·밥솥 전력 감지로 사각지대 해소하고 오경보 80% 줄이는 24시간 안심 모니터링 세팅 가이드.",
+  "main_keyword": "돌봄로봇 스마트플러그",
+  "cover_image_url": "/images/blog-ai/posts/dementia-safety-plug-sensor-hybrid.jpg",
+  "internal_links": [
+    "/guide/mom-living-alone",
+    "/info/cognitive-health-support-tech",
+    "/guide/lonely-deaths-prevention",
+    "/blog/hyodol-monthly-fee-breakdown"
+  ],
+  "image_suggestions": [
+    {
+      "description": "거실 TV 콘센트에 연결된 스마트 안심플러그와 침실 협탁의 돌봄로봇이 스마트폰 앱으로 함께 연동된 구성도",
+      "alt": "돌봄로봇과 스마트 안심플러그의 결합 모니터링 구성",
+      "path": "/images/blog-ai/posts/dementia-safety-plug-sensor-hybrid.jpg",
+      "type": "featured_header",
+      "license_status": "curated_asset"
+    }
+  ],
+  "publication_status": "published",
+  "published_at": "2026-10-22T00:00:00.000Z",
+  "human_reviewer": null,
+  "human_reviewed_at": null
+}
