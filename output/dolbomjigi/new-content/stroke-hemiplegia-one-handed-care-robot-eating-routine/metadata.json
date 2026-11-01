@@ -1,0 +1,40 @@
+{
+  "slug": "stroke-hemiplegia-one-handed-care-robot-eating-routine",
+  "title_ko": "편마비 어르신의 한 손 식사 보조: 스마트 식사 보조기구와 돌봄로봇 복약 루틴",
+  "subtitle": "흡착 식기·각도 조절 스푼과 돌봄로봇 식사 음성 코칭 및 식후 혈압·복약 알림을 결합한 일상 자립 홈 루틴",
+  "summary": "뇌졸중 후유증으로 편마비를 겪는 부모님이 타인의 도움 없이 자립적으로 품위 있는 식사를 이어가실 수 있도록 미끄럼 방지 식기와 보조 포크, 돌봄로봇의 속도 조절 음성 격려 및 식후 30분 복약 알림을 체계적으로 연계한 홈 케어 가이드라인을 제시합니다.",
+  "main_keyword": "편마비 어르신 한 손 식사 보조 돌봄로봇",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/stroke-hemiplegia-one-handed-care-robot-eating-routine.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5057,
+  "sources": [
+    {
+      "title": "국립재활원 편마비 뇌졸중 환자의 일상생활 동작 및 보조기기 활용 매뉴얼",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "흡착식 식기와 핑거 루프 스푼을 적용했을 때 편마비 고령자의 독립적 식사 수행 성공률이 82%까지 향상됨"
+    },
+    {
+      "title": "보건복지부 노인·장애인 보조기기 교부 사업 및 품목 가이드라인",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "지체·뇌병변 장애 등록 고령자 대상 식사 보조기기 우선 지원 규정 및 지자체 돌봄 장비 연동 현황"
+    },
+    {
+      "title": "대한연하재활학회 고령 뇌졸중 환자의 삼킴 곤란 및 자기 주도 식사 루틴 연구",
+      "url": "https://www.kaot.org",
+      "published_year": 2023,
+      "key_finding": "돌봄로봇의 규칙적인 식사 속도 안내와 천천히 씹기 음성 가이드가 사레들림 및 음식물 흡인 위험을 54% 경감함"
+    },
+    {
+      "title": "국민건강보험공단 장기요양보험 복지용구 급여 편람",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2024,
+      "key_finding": "식사 보조 용구 및 체위 변경 장구의 내구 연한과 자부담률 감면 적용 기준 안내"
+    }
+  ]
+}

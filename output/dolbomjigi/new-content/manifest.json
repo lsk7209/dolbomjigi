@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-01T01:40:52.727Z",
+  "updated_at": "2026-11-01T06:54:56.441Z",
   "requested_count": 5,
-  "completed_count": 67,
+  "completed_count": 68,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -736,15 +736,20 @@
       "character_count": 5316,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "f4393ac36cc6e242eedfbff3f4cfa0e500c3e100b612836cc20e7dfe8a8c9ce4"
+    },
+    {
+      "title": "편마비 어르신의 한 손 식사 보조: 스마트 식사 보조기구와 돌봄로봇 복약 루틴",
+      "slug": "stroke-hemiplegia-one-handed-care-robot-eating-routine",
+      "input_id": "topic-68",
+      "output_path": "output/dolbomjigi/new-content/stroke-hemiplegia-one-handed-care-robot-eating-routine",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5057,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "df192c039af680326d0a6ac9e02b676c3626a43befa31bed6d7e7301baa4f0c3"
     }
   ],
   "next_queue": [
-    {
-      "slug": "stroke-hemiplegia-one-handed-care-robot-eating-routine",
-      "title": "편마비 어르신의 한 손 식사 보조: 스마트 식사 보조기구와 돌봄로봇 복약 루틴",
-      "main_keyword": "편마비 어르신 한 손 식사 보조 돌봄로봇",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "alone-elderly-winter-boiler-pipe-freeze-robot-alert",
       "title": "한파 영하 10도 보일러 동파 방지: 돌봄로봇과 외출 온수 순환 알림",

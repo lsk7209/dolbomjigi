@@ -1,0 +1,11 @@
+{
+  "slug": "stroke-hemiplegia-one-handed-care-robot-eating-routine",
+  "title_ko": "편마비 어르신의 한 손 식사 보조: 스마트 식사 보조기구와 돌봄로봇 복약 루틴",
+  "target_audience": "family_caregiver",
+  "primary_goal": "뇌졸중 후유증으로 편마비를 겪는 부모님이 타인의 도움 없이 자립적으로 품위 있는 식사를 이어가실 수 있도록 미끄럼 방지 식기와 보조 포크, 돌봄로봇의 속도 조절 음성 격려 및 식후 30분 복약 알림을 체계적으로 연계한 홈 케어 가이드라인을 제시합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}
