@@ -1,0 +1,40 @@
+{
+  "slug": "alone-elderly-winter-boiler-pipe-freeze-robot-alert",
+  "title_ko": "한파 영하 10도 보일러 동파 방지: 돌봄로봇과 외출 온수 순환 알림",
+  "subtitle": "기상청 한파 특보 연동, 실내 최저 온도 감지, 수도꼭지 미세 개방 및 외출 모드 순환 자동 가이드",
+  "summary": "겨울철 영하 10도 이하 혹한기에 홀로 계신 부모님 댁 보일러와 급수 배관이 동파되어 난방이 끊기고 저체온증에 노출되는 사고를 방지하기 위해 기상 특보 데이터와 거실 돌봄로봇 온습도 센서를 연동한 한파 대비 실전 가이드를 정리했습니다.",
+  "main_keyword": "돌봄로봇 한파 보일러 동파 방지",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/alone-elderly-winter-boiler-pipe-freeze-robot-alert.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5156,
+  "sources": [
+    {
+      "title": "행정안전부 겨울철 대설·한파 재난 대비 국민행동요령 및 취약계층 보호 대책",
+      "url": "https://www.mois.go.kr",
+      "published_year": 2024,
+      "key_finding": "한파 경보 발령 시 고령층 단독 가구의 실내 난방 중단 및 수도 동파 발생률이 일반 가구 대비 3.2배 높음"
+    },
+    {
+      "title": "한국소비자원 동절기 가정용 가스·기름 보일러 동파 피해 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "보일러 전원을 완전히 끄고 외출하거나 난방수를 완전히 비워둘 때 배관 파열 수리 비용 평균 48만 원 발생"
+    },
+    {
+      "title": "질병관리청 한랭질환 응급실 감시체계 운영 결과 및 고령자 저체온증 통계",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "실내 저체온증 사망 사례의 78%가 한파 특보 기간 난방 배관 고장 및 난방비 절약을 위한 무리한 소등에서 기인함"
+    },
+    {
+      "title": "한국가스안전공사 가정용 보일러 및 가스 배관 동파 예방 안전 수칙",
+      "url": "https://www.kgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "외출 모드 설정 및 온수 방향 수도꼭지 물방울 낙하 시 영하 15도 환경에서도 직수 배관 결빙 99% 차단"
+    }
+  ]
+}

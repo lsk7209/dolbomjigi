@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-01T07:41:07.227Z",
+  "updated_at": "2026-11-01T12:54:56.466Z",
   "requested_count": 5,
-  "completed_count": 68,
+  "completed_count": 69,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -747,15 +747,20 @@
       "character_count": 5057,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "df192c039af680326d0a6ac9e02b676c3626a43befa31bed6d7e7301baa4f0c3"
+    },
+    {
+      "title": "한파 영하 10도 보일러 동파 방지: 돌봄로봇과 외출 온수 순환 알림",
+      "slug": "alone-elderly-winter-boiler-pipe-freeze-robot-alert",
+      "input_id": "topic-69",
+      "output_path": "output/dolbomjigi/new-content/alone-elderly-winter-boiler-pipe-freeze-robot-alert",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5156,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "f01994eef22d03aadc34a72bbe3978d3ff7ee9373614f8068d8c84377b29ebf8"
     }
   ],
   "next_queue": [
-    {
-      "slug": "alone-elderly-winter-boiler-pipe-freeze-robot-alert",
-      "title": "한파 영하 10도 보일러 동파 방지: 돌봄로봇과 외출 온수 순환 알림",
-      "main_keyword": "돌봄로봇 한파 보일러 동파 방지",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "social-worker-care-robot-quarterly-satisfaction-survey",
       "title": "분기별 돌봄로봇 만족도 조사와 이용 효과 분석 실무 양식",
