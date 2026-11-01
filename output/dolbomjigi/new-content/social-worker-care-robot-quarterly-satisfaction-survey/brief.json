@@ -1,0 +1,11 @@
+{
+  "slug": "social-worker-care-robot-quarterly-satisfaction-survey",
+  "title_ko": "분기별 돌봄로봇 만족도 조사와 이용 효과 분석 실무 양식",
+  "target_audience": "social_worker",
+  "primary_goal": "지역사회 복지관 및 지자체 돌봄로봇 보급 사업의 성과를 객관적으로 입증하고 다음 분기 기기 재배치 및 맞춤 서비스 개선 근거로 활용할 수 있는 분기별 만족도 평가 설문지와 지표 분석 실무 양식을 제공합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

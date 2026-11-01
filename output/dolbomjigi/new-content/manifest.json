@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-01T13:41:22.495Z",
+  "updated_at": "2026-11-01T18:54:57.186Z",
   "requested_count": 5,
-  "completed_count": 69,
+  "completed_count": 70,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -758,14 +758,18 @@
       "character_count": 5156,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "f01994eef22d03aadc34a72bbe3978d3ff7ee9373614f8068d8c84377b29ebf8"
+    },
+    {
+      "title": "분기별 돌봄로봇 만족도 조사와 이용 효과 분석 실무 양식",
+      "slug": "social-worker-care-robot-quarterly-satisfaction-survey",
+      "input_id": "topic-70",
+      "output_path": "output/dolbomjigi/new-content/social-worker-care-robot-quarterly-satisfaction-survey",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5258,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "f1088466e85b32e5b7bbe243cca8ed233d103192f1baea9c3fd220d752b46450"
     }
   ],
-  "next_queue": [
-    {
-      "slug": "social-worker-care-robot-quarterly-satisfaction-survey",
-      "title": "분기별 돌봄로봇 만족도 조사와 이용 효과 분석 실무 양식",
-      "main_keyword": "사회복지사 돌봄로봇 분기별 만족도 조사 서식",
-      "target_persona": "social_worker"
-    }
-  ]
+  "next_queue": []
 }
