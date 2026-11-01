@@ -1,0 +1,24 @@
+{
+  "slug": "dementia-reminiscence-old-song-care-robot-playlist",
+  "sources": [
+    {
+      "title": "국립중앙의료원 중앙치매센터 회상 요법 및 비약물적 인지 자극 가이드북",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "청년기(18~25세) 애창 음악 감상과 옛 기억 회상 대화를 병행했을 때 어르신의 공격성 및 불안 행동이 65% 감소"
+    },
+    {
+      "title": "보건복지부 노인 맞춤 돌봄서비스 감성 케어 및 정서 지원 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "맞춤형 음악 재생 돌봄로봇을 이용한 독거 어르신의 일일 발화량 및 자발적 대화 시도가 2.4배 증가"
+    },
+    {
+      "title": "한국음악치유학회 고령자 정서 안정 및 회상 음악 큐레이션 연구",
+      "url": "https://www.musictherapy.or.kr",
+      "published_year": 2023,
+      "key_finding": "기계적 연속 재생보다 대화형 인터벌 음악 재생이 어르신의 소음 피로도를 낮추고 인지 몰입도를 극대화함"
+    }
+  ],
+  "last_verified_at": "2026-11-01"
+}

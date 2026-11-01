@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-10-31T19:40:38.563Z",
+  "updated_at": "2026-11-01T00:58:12.624Z",
   "requested_count": 5,
-  "completed_count": 66,
+  "completed_count": 67,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -725,15 +725,20 @@
       "character_count": 5847,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "c22746a23d28ad45e819bf7cc8abe07efe061b2d54a2bb32af5996a69eccdd1e"
+    },
+    {
+      "title": "어르신 옛날 노래와 청춘 회상: 돌봄로봇의 맞춤 트로트·민요 플레이리스트",
+      "slug": "dementia-reminiscence-old-song-care-robot-playlist",
+      "input_id": "topic-67",
+      "output_path": "output/dolbomjigi/new-content/dementia-reminiscence-old-song-care-robot-playlist",
+      "status": "published",
+      "qa_score": 95,
+      "character_count": 5316,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "f4393ac36cc6e242eedfbff3f4cfa0e500c3e100b612836cc20e7dfe8a8c9ce4"
     }
   ],
   "next_queue": [
-    {
-      "slug": "dementia-reminiscence-old-song-care-robot-playlist",
-      "title": "어르신 옛날 노래와 청춘 회상: 돌봄로봇의 맞춤 트로트·민요 플레이리스트",
-      "main_keyword": "돌봄로봇 어르신 회상 옛 노래 음악",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "stroke-hemiplegia-one-handed-care-robot-eating-routine",
       "title": "편마비 어르신의 한 손 식사 보조: 스마트 식사 보조기구와 돌봄로봇 복약 루틴",
