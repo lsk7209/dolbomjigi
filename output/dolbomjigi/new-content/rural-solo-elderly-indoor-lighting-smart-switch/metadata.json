@@ -1,0 +1,40 @@
+{
+  "slug": "rural-solo-elderly-indoor-lighting-smart-switch",
+  "title_ko": "어두운 밤 화장실 가실 때 낙상 방지: 돌봄로봇 연동 무선 스마트 모션 센서 조명등",
+  "subtitle": "야간 기상 시 침대 발밑부터 화장실까지 이어지는 자동 조도 제어와 비상 안심 모니터링 환경 구축 가이드",
+  "summary": "어두운 야간에 화장실을 이용하다 발생하는 어르신 낙상 사고를 방지하기 위해, 침실과 복도, 욕실에 무선 모션 감지 스마트 센서 조명을 설치하고 거실 돌봄로봇과 무선 연동하여 안전 동선을 확보하는 실무 수칙을 안내합니다.",
+  "main_keyword": "독거 어르신 야간 낙상 방지 스마트 조명",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/rural-solo-elderly-indoor-lighting-smart-switch.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4521,
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 낙상사고 심층 분석 통계",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "고령자 가정 내 낙상 사고의 63%가 야간(22시~06시) 화장실 이동 중 발생하며 조도 불량이 주원인임"
+    },
+    {
+      "title": "한국소비자원 고령자 안전사고 동향 및 스마트 안전 보조기기 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "모션 감지 간접 조명 설치 가구에서 야간 보행 충돌 및 발걸림 사고 빈도 74% 감소"
+    },
+    {
+      "title": "국립재활원 돌봄스마트홈 실증 연구 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "조도 30~50룩스의 은은한 하부 유도등이 야간 눈부심과 수면 방해 없이 보행 안전성을 극대화함"
+    },
+    {
+      "title": "보건복지부 취약계층 독거노인 응급안전안심서비스 표준 운영 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "야간 조명 센서 점등 후 15분 이상 복귀 신호 미감지 시 돌봄로봇 자동 상태 확인 프로토콜 권장"
+    }
+  ]
+}

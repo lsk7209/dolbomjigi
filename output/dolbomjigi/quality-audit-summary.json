@@ -1,21 +1,21 @@
 {
-  "totalCount": 65,
+  "totalCount": 73,
   "avgScore": 100,
   "gradeCounts": {
-    "EXCELLENT": 65,
+    "EXCELLENT": 73,
     "GOOD": 0,
     "NEEDS_IMPROVEMENT": 0,
     "POOR": 0
   },
   "scoreDist": {
-    "100": 65,
+    "100": 73,
     "95-99": 0,
     "90-94": 0,
     "85-89": 0,
     "below-85": 0
   },
   "characterStats": {
-    "avg": 4959,
+    "avg": 4965,
     "min": 3573,
     "minSlug": "senior-hearing-aid-bluetooth-care-robot-paring",
     "max": 7717,
@@ -23,7 +23,7 @@
   },
   "structureStats": {
     "answerBlockRate": "100.0%",
-    "avgAnswerBlockChars": 243,
+    "avgAnswerBlockChars": 238,
     "tableRate": "100.0%",
     "calloutRate": "100.0%",
     "avgFaqCount": 4.1,

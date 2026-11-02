@@ -1,0 +1,30 @@
+{
+  "slug": "rural-solo-elderly-indoor-lighting-smart-switch",
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 낙상사고 심층 분석 통계",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "고령자 가정 내 낙상 사고의 63%가 야간(22시~06시) 화장실 이동 중 발생하며 조도 불량이 주원인임"
+    },
+    {
+      "title": "한국소비자원 고령자 안전사고 동향 및 스마트 안전 보조기기 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "모션 감지 간접 조명 설치 가구에서 야간 보행 충돌 및 발걸림 사고 빈도 74% 감소"
+    },
+    {
+      "title": "국립재활원 돌봄스마트홈 실증 연구 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "조도 30~50룩스의 은은한 하부 유도등이 야간 눈부심과 수면 방해 없이 보행 안전성을 극대화함"
+    },
+    {
+      "title": "보건복지부 취약계층 독거노인 응급안전안심서비스 표준 운영 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "야간 조명 센서 점등 후 15분 이상 복귀 신호 미감지 시 돌봄로봇 자동 상태 확인 프로토콜 권장"
+    }
+  ],
+  "last_verified_at": "2026-11-02"
+}

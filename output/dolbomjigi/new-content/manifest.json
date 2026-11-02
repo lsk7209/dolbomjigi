@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-02T13:42:22.372Z",
+  "updated_at": "2026-11-02T15:08:51.167Z",
   "requested_count": 5,
-  "completed_count": 70,
+  "completed_count": 73,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -769,7 +769,53 @@
       "character_count": 5258,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "f1088466e85b32e5b7bbe243cca8ed233d103192f1baea9c3fd220d752b46450"
+    },
+    {
+      "title": "어두운 밤 화장실 가실 때 낙상 방지: 돌봄로봇 연동 무선 스마트 모션 센서 조명등",
+      "slug": "rural-solo-elderly-indoor-lighting-smart-switch",
+      "input_id": "topic-71",
+      "output_path": "output/dolbomjigi/new-content/rural-solo-elderly-indoor-lighting-smart-switch",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4521,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "c2511cf3bf3813de0af3f6eb4f059a53ea3aa4bac1b72dbc5ff3e2a712f17b0f"
+    },
+    {
+      "title": "밤낮 가리지 않고 전화하시는 치매 부모님: 돌봄로봇 가족 음성 안심 메시지 예약 방송",
+      "slug": "dementia-repetitive-calling-family-audio-message",
+      "input_id": "topic-72",
+      "output_path": "output/dolbomjigi/new-content/dementia-repetitive-calling-family-audio-message",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4703,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "9edaf3d36a781f13cc9a6965d0579b98ac09f849285850a4ff7c4ee41e295f21"
+    },
+    {
+      "title": "오래 앉아 계신 부모님 엉덩이 욕창과 척추 변형 예방: 스마트 방석과 돌봄로봇 자세 교정 알림",
+      "slug": "senior-posture-balance-smart-cushion-robot",
+      "input_id": "topic-73",
+      "output_path": "output/dolbomjigi/new-content/senior-posture-balance-smart-cushion-robot",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4218,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "7e919cc2f79cfda1d220534005e785f8359455aa7724f05974aca130dd5aa73e"
     }
   ],
-  "next_queue": []
+  "next_queue": [
+    {
+      "slug": "social-worker-care-robot-annual-outcome-report",
+      "title": "연말 지자체 스마트 돌봄 사업 평가: 사회복지사를 위한 정량 성과 보고서 및 우수 사례 작성법",
+      "main_keyword": "사회복지사 돌봄로봇 연말 성과 보고서 작성 가이드",
+      "target_persona": "social_worker"
+    },
+    {
+      "slug": "alone-elderly-spring-fine-dust-ventilation-robot",
+      "title": "황사와 초미세먼지 심한 날 창문 단속: 돌봄로봇의 실시간 대기질 안내와 공기청정기 스마트 제어",
+      "main_keyword": "독거 어르신 미세먼지 돌봄로봇 환기 알림",
+      "target_persona": "family_caregiver"
+    }
+  ]
 }

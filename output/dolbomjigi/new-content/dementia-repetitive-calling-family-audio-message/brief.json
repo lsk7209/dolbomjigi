@@ -1,0 +1,11 @@
+{
+  "slug": "dementia-repetitive-calling-family-audio-message",
+  "title_ko": "밤낮 가리지 않고 전화하시는 치매 부모님: 돌봄로봇 가족 음성 안심 메시지 예약 방송",
+  "target_audience": "family_caregiver",
+  "primary_goal": "인지 기능 저하로 인해 하루에도 수십 번 전화를 걸어 안부를 묻거나 불안해하시는 부모님을 위해, 자녀의 실제 음성을 시간대별로 녹음하여 돌봄로봇으로 예약 방송하는 기술적 해결책과 심리적 안정 루틴을 소개합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

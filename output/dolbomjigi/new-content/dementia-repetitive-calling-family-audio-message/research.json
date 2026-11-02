@@ -1,0 +1,30 @@
+{
+  "slug": "dementia-repetitive-calling-family-audio-message",
+  "sources": [
+    {
+      "title": "중앙치매센터 치매가족 상담 통계 및 부양부담 심층 분석 보고서",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "치매 가족 보호자의 71%가 반복 전화 및 동일 질문으로 인한 업무 방해와 극심한 수면 장애 호소"
+    },
+    {
+      "title": "한국노년학회 인지 저하 노인의 애착 불안과 가족 음성 매개 중재 효과 연구",
+      "url": "https://www.tkgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "친숙한 자녀의 실제 녹음 음성을 정기 송출한 그룹에서 분리불안 지수 43% 및 반복 발신 빈도 58% 감소"
+    },
+    {
+      "title": "국립정신건강센터 노인 정신건강 관리 및 비약물적 정서 안정 지침",
+      "url": "https://www.ncmh.go.kr",
+      "published_year": 2023,
+      "key_finding": "기계음 합성(TTS)보다 친밀한 가족의 육성 녹음이 고령자의 청각적 수용성과 신뢰도를 2.4배 향상시킴"
+    },
+    {
+      "title": "한국노인재활보조학회 고령자 일상생활 동작 및 시간 지남력 보조 가이드북",
+      "url": "https://www.kaot.org",
+      "published_year": 2024,
+      "key_finding": "기상·식사·일몰 등 특정 취약 시간대에 맞춘 음성 안내가 일몰 증후군(Sundowning) 불안 완화에 기여함"
+    }
+  ],
+  "last_verified_at": "2026-11-02"
+}

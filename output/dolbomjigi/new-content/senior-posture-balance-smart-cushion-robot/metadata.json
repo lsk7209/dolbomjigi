@@ -1,0 +1,40 @@
+{
+  "slug": "senior-posture-balance-smart-cushion-robot",
+  "title_ko": "오래 앉아 계신 부모님 엉덩이 욕창과 척추 변형 예방: 스마트 방석과 돌봄로봇 자세 교정 알림",
+  "subtitle": "소파와 휠체어 착좌 압력 불균형을 실시간 감지하여 자세 변경과 하지 스트레칭을 유도하는 디지털 케어 가이드",
+  "summary": "하루 8시간 이상 소파나 의자에 앉아 계시는 고령 부모님의 편측 쏠림과 엉덩이 압박을 방지하기 위해, 다채널 압력 센서가 내장된 스마트 방석과 거실 돌봄로봇을 연동하여 바른 자세와 일상 스트레칭을 돕는 방법을 안내합니다.",
+  "main_keyword": "시니어 스마트 방석 자세 모니터링 돌봄로봇",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/senior-posture-balance-smart-cushion-robot.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4218,
+  "sources": [
+    {
+      "title": "대한노인재활의학회 고령자 좌식 생활 습관과 근골격계 압력 손상 실태조사",
+      "url": "https://www.karm.or.kr",
+      "published_year": 2024,
+      "key_finding": "하루 6시간 이상 연속 좌식 생활을 하는 고령자의 54%가 비대칭 압력으로 인한 척추 측만 및 피부 압박 경험"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 압력 감지 시트 기반 고령자 일상 케어 실증 연구",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "60분 간격의 자세 변경 알림을 적용한 그룹에서 둔부 압력 집중도가 68% 분산됨"
+    },
+    {
+      "title": "국립재활원 보조기기 열린플랫폼 착좌 보조용품 안전 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "체압 분산 에어셀 구조와 무선 센서가 결합된 방석이 노인 장기 좌식 케어의 피로도를 70% 이상 경감"
+    },
+    {
+      "title": "중앙치매센터 및 치매안심센터 인지 저하 노인 신체 활동 증진 매뉴얼",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "돌봄로봇의 밝은 체조 음악과 함께하는 의자 앉아 다리 들기 루틴이 관절 유연성 유지에 긍정적 기여"
+    }
+  ]
+}
