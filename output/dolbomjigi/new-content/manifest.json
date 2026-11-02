@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-02T15:08:51.167Z",
+  "updated_at": "2026-11-02T18:54:57.408Z",
   "requested_count": 5,
-  "completed_count": 73,
+  "completed_count": 74,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -802,15 +802,20 @@
       "character_count": 4218,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "7e919cc2f79cfda1d220534005e785f8359455aa7724f05974aca130dd5aa73e"
+    },
+    {
+      "title": "연말 지자체 스마트 돌봄 사업 평가: 사회복지사를 위한 정량 성과 보고서 및 우수 사례 작성법",
+      "slug": "social-worker-care-robot-annual-outcome-report",
+      "input_id": "topic-74",
+      "output_path": "output/dolbomjigi/new-content/social-worker-care-robot-annual-outcome-report",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5056,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "e0d54fbb1713f1451b420e934471b1b2f7d824ecf9574227e10309d6264cdd4d"
     }
   ],
   "next_queue": [
-    {
-      "slug": "social-worker-care-robot-annual-outcome-report",
-      "title": "연말 지자체 스마트 돌봄 사업 평가: 사회복지사를 위한 정량 성과 보고서 및 우수 사례 작성법",
-      "main_keyword": "사회복지사 돌봄로봇 연말 성과 보고서 작성 가이드",
-      "target_persona": "social_worker"
-    },
     {
       "slug": "alone-elderly-spring-fine-dust-ventilation-robot",
       "title": "황사와 초미세먼지 심한 날 창문 단속: 돌봄로봇의 실시간 대기질 안내와 공기청정기 스마트 제어",

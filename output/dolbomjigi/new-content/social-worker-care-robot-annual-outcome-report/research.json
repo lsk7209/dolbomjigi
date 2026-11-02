@@ -1,0 +1,30 @@
+{
+  "slug": "social-worker-care-robot-annual-outcome-report",
+  "sources": [
+    {
+      "title": "보건복지부 지역사회 통합돌봄(커뮤니티 케어) 선도사업 성과 평가 가이드북",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "IoT·AI 돌봄 장비 관제 데이터 기반의 전후 비교(Before-After) 통계가 차년도 계속 사업 예산 심의 통과의 결정적 지표"
+    },
+    {
+      "title": "한국사회복지행정학회 스마트 복지사업 성과 관리 및 지표 표준화 연구",
+      "url": "https://www.kaswa.org",
+      "published_year": 2024,
+      "key_finding": "정량 지표 70%와 정성 우수 사례 수기 30%를 결합한 복합 평가 보고서의 정책 수용성이 가장 높음"
+    },
+    {
+      "title": "한국보건사회연구원 취약계층 비대면 돌봄 서비스 효용성 분석 보고서",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "돌봄로봇 도입 후 고위험 독거노인 가정의 고립감 36% 경감 및 사회복지사 현장 위급 대응 시간 45분 단축"
+    },
+    {
+      "title": "행정안전부 주민생활 혁신사례 확산 지원사업 평가 매뉴얼",
+      "url": "https://www.mois.go.kr",
+      "published_year": 2024,
+      "key_finding": "민관 협력 및 가족 피드백 지표를 포함한 지자체가 스마트 돌봄 우수 기관 표창 대상자로 우선 선정됨"
+    }
+  ],
+  "last_verified_at": "2026-11-02"
+}
