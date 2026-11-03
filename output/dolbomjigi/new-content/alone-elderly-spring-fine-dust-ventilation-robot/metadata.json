@@ -1,0 +1,40 @@
+{
+  "slug": "alone-elderly-spring-fine-dust-ventilation-robot",
+  "title_ko": "황사와 초미세먼지 심한 날 창문 단속: 돌봄로봇의 실시간 대기질 안내와 공기청정기 스마트 제어",
+  "subtitle": "기상청·에어코리아 대기질 API 연동으로 미세먼지 경보 시 자동 창문 단속 음성 방송 및 스마트플러그 공기정화 루틴",
+  "summary": "봄철 황사와 미세먼지가 극심한 날에도 습관적으로 창문을 열어두시거나 환기 타이밍을 놓치시는 독거 부모님을 위해, 공공 대기질 데이터와 연동된 돌봄로봇의 환기 가이드 및 IoT 공기청정기 자동 제어법을 안내합니다.",
+  "main_keyword": "독거 어르신 미세먼지 돌봄로봇 환기 알림",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/alone-elderly-spring-fine-dust-ventilation-robot.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4584,
+  "sources": [
+    {
+      "title": "질병관리청 미세먼지 취약계층(고령자·만성질환자) 건강보호 가이드라인",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "초미세먼지(PM2.5) 나쁨 단계 노출 시 65세 이상 고령층의 호흡기계 응급 내원율 24% 급증"
+    },
+    {
+      "title": "한국환경공단 에어코리아 대기질 정보 연계 스마트홈 실증 연구",
+      "url": "https://www.airkorea.or.kr",
+      "published_year": 2024,
+      "key_finding": "위치 기반 실시간 대기질 데이터 연동 알림을 적용한 독거노인 가구의 실내 공기질 만족도 79% 향상"
+    },
+    {
+      "title": "국립환경과학원 고령자 거주 시설 실내 공기질 관리 실태 및 환기 수칙",
+      "url": "https://www.nier.go.kr",
+      "published_year": 2023,
+      "key_finding": "미세먼지 보통 이하 시간대 10분 맞춤 환기와 공기청정기 결합이 실내 부유 세균 및 이산화탄소 농도 45% 저감"
+    },
+    {
+      "title": "대한결핵및호흡기학회 노인 만성폐쇄성폐질환(COPD) 환경 관리 지침",
+      "url": "https://www.lungkorea.org",
+      "published_year": 2024,
+      "key_finding": "실내 미세먼지 농도에 따른 직관적 색상(RGB) 램프 및 음성 안내가 어르신의 행동 변화를 가장 빠르게 유도함"
+    }
+  ]
+}

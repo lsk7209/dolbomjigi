@@ -1,0 +1,11 @@
+{
+  "slug": "alone-elderly-spring-fine-dust-ventilation-robot",
+  "title_ko": "황사와 초미세먼지 심한 날 창문 단속: 돌봄로봇의 실시간 대기질 안내와 공기청정기 스마트 제어",
+  "target_audience": "family_caregiver",
+  "primary_goal": "봄철 황사와 미세먼지가 극심한 날에도 습관적으로 창문을 열어두시거나 환기 타이밍을 놓치시는 독거 부모님을 위해, 공공 대기질 데이터와 연동된 돌봄로봇의 환기 가이드 및 IoT 공기청정기 자동 제어법을 안내합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

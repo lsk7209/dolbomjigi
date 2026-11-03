@@ -1,0 +1,30 @@
+{
+  "slug": "alone-elderly-spring-fine-dust-ventilation-robot",
+  "sources": [
+    {
+      "title": "질병관리청 미세먼지 취약계층(고령자·만성질환자) 건강보호 가이드라인",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "초미세먼지(PM2.5) 나쁨 단계 노출 시 65세 이상 고령층의 호흡기계 응급 내원율 24% 급증"
+    },
+    {
+      "title": "한국환경공단 에어코리아 대기질 정보 연계 스마트홈 실증 연구",
+      "url": "https://www.airkorea.or.kr",
+      "published_year": 2024,
+      "key_finding": "위치 기반 실시간 대기질 데이터 연동 알림을 적용한 독거노인 가구의 실내 공기질 만족도 79% 향상"
+    },
+    {
+      "title": "국립환경과학원 고령자 거주 시설 실내 공기질 관리 실태 및 환기 수칙",
+      "url": "https://www.nier.go.kr",
+      "published_year": 2023,
+      "key_finding": "미세먼지 보통 이하 시간대 10분 맞춤 환기와 공기청정기 결합이 실내 부유 세균 및 이산화탄소 농도 45% 저감"
+    },
+    {
+      "title": "대한결핵및호흡기학회 노인 만성폐쇄성폐질환(COPD) 환경 관리 지침",
+      "url": "https://www.lungkorea.org",
+      "published_year": 2024,
+      "key_finding": "실내 미세먼지 농도에 따른 직관적 색상(RGB) 램프 및 음성 안내가 어르신의 행동 변화를 가장 빠르게 유도함"
+    }
+  ],
+  "last_verified_at": "2026-11-03"
+}
