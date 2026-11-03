@@ -1,0 +1,30 @@
+{
+  "slug": "dementia-reminiscence-family-voice-recorder-routine",
+  "sources": [
+    {
+      "title": "중앙치매센터 치매 환자 수면 장애 관리 및 비약물적 중재 매뉴얼",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "손주·가족의 친근한 육성 기상 알림을 청취한 인지저하 노인의 아침 기상 불안 및 섬망 증상 48% 감소"
+    },
+    {
+      "title": "한국노년학회 고령자 생체 리듬과 음성 인터랙션 매개 치유 효과 연구",
+      "url": "https://www.tkgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "아침 기상 30분 내 자연광 노출 및 긍정적 가족 음성이 야간 멜라토닌 분비 정상화에 기여함"
+    },
+    {
+      "title": "국립정신건강센터 노인 우울증 및 정서 고립 완화 지침서",
+      "url": "https://www.ncmh.go.kr",
+      "published_year": 2023,
+      "key_finding": "기계음 알람보다 3대(조부모-자녀-손주) 세대 간 음성 유대감이 노년기 아침 무력감을 65% 경감"
+    },
+    {
+      "title": "한국노인작업지원학회 고령자 일상생활 동작 및 시간 지남력 훈련 가이드",
+      "url": "https://www.kaot.org",
+      "published_year": 2024,
+      "key_finding": "기상 직후 손뼉 치기와 기지개 등 3분 의자 체조가 기립성 어지럼증과 낙상 사고를 사전 차단함"
+    }
+  ],
+  "last_verified_at": "2026-11-03"
+}

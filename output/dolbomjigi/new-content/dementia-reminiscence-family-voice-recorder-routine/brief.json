@@ -1,0 +1,11 @@
+{
+  "slug": "dementia-reminiscence-family-voice-recorder-routine",
+  "title_ko": "손주 목소리로 깨어나는 아침: 돌봄로봇의 가족 다이어리 음성 알림과 기상 루틴",
+  "target_audience": "family_caregiver",
+  "primary_goal": "낮밤이 바뀌거나 아침 기상을 거부하시는 치매 부모님의 생체 리듬을 부드럽게 되살리기 위해, 손주와 자녀의 다정한 실제 목소리를 담은 가족 음성 다이어리를 돌봄로봇으로 재생하고 아침 식사와 스트레칭을 돕는 방법을 안내합니다.",
+  "core_questions_answered": [
+    "화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지",
+    "스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법",
+    "낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙"
+  ]
+}

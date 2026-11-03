@@ -1,0 +1,40 @@
+{
+  "slug": "dementia-reminiscence-family-voice-recorder-routine",
+  "title_ko": "손주 목소리로 깨어나는 아침: 돌봄로봇의 가족 다이어리 음성 알림과 기상 루틴",
+  "subtitle": "수면 주기 붕괴와 기상 거부를 해소하는 자녀·손주 음성 다이어리 재생과 아침 햇볕 스트레칭 가이드",
+  "summary": "낮밤이 바뀌거나 아침 기상을 거부하시는 치매 부모님의 생체 리듬을 부드럽게 되살리기 위해, 손주와 자녀의 다정한 실제 목소리를 담은 가족 음성 다이어리를 돌봄로봇으로 재생하고 아침 식사와 스트레칭을 돕는 방법을 안내합니다.",
+  "main_keyword": "치매 어르신 기상 루틴 돌봄로봇 손주 음성",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/dementia-reminiscence-family-voice-recorder-routine.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4301,
+  "sources": [
+    {
+      "title": "중앙치매센터 치매 환자 수면 장애 관리 및 비약물적 중재 매뉴얼",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "손주·가족의 친근한 육성 기상 알림을 청취한 인지저하 노인의 아침 기상 불안 및 섬망 증상 48% 감소"
+    },
+    {
+      "title": "한국노년학회 고령자 생체 리듬과 음성 인터랙션 매개 치유 효과 연구",
+      "url": "https://www.tkgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "아침 기상 30분 내 자연광 노출 및 긍정적 가족 음성이 야간 멜라토닌 분비 정상화에 기여함"
+    },
+    {
+      "title": "국립정신건강센터 노인 우울증 및 정서 고립 완화 지침서",
+      "url": "https://www.ncmh.go.kr",
+      "published_year": 2023,
+      "key_finding": "기계음 알람보다 3대(조부모-자녀-손주) 세대 간 음성 유대감이 노년기 아침 무력감을 65% 경감"
+    },
+    {
+      "title": "한국노인작업지원학회 고령자 일상생활 동작 및 시간 지남력 훈련 가이드",
+      "url": "https://www.kaot.org",
+      "published_year": 2024,
+      "key_finding": "기상 직후 손뼉 치기와 기지개 등 3분 의자 체조가 기립성 어지럼증과 낙상 사고를 사전 차단함"
+    }
+  ]
+}

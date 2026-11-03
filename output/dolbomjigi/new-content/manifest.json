@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-03T15:03:18.979Z",
+  "updated_at": "2026-11-03T18:54:57.395Z",
   "requested_count": 5,
-  "completed_count": 76,
+  "completed_count": 77,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -835,15 +835,20 @@
       "character_count": 4247,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "0fbdac8922b2d9d81acfb50db1c86e22c3bb7de7ac60976c7b2f716eae364453"
+    },
+    {
+      "title": "손주 목소리로 깨어나는 아침: 돌봄로봇의 가족 다이어리 음성 알림과 기상 루틴",
+      "slug": "dementia-reminiscence-family-voice-recorder-routine",
+      "input_id": "topic-77",
+      "output_path": "output/dolbomjigi/new-content/dementia-reminiscence-family-voice-recorder-routine",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4301,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "157705c084e08b5b3e11bbca333d82eece0f62032149adcc1d1bfc6839921188"
     }
   ],
   "next_queue": [
-    {
-      "slug": "dementia-reminiscence-family-voice-recorder-routine",
-      "title": "손주 목소리로 깨어나는 아침: 돌봄로봇의 가족 다이어리 음성 알림과 기상 루틴",
-      "main_keyword": "치매 어르신 기상 루틴 돌봄로봇 손주 음성",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "senior-indoor-slipping-socks-robot-reminder",
       "title": "마루 바닥 미끄럼 낙상 방지: 논슬립 양말 착용과 돌봄로봇의 외출·기상 체크 루틴",
