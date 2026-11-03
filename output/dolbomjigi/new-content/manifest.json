@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-03T13:43:23.658Z",
+  "updated_at": "2026-11-03T15:03:18.979Z",
   "requested_count": 5,
-  "completed_count": 75,
+  "completed_count": 76,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -824,7 +824,43 @@
       "character_count": 4584,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "1cde9508228fa59d691cbef3357eb437cd2a7f0c2a6ca92ab2c214bcaaa376ad"
+    },
+    {
+      "title": "뜨거운 온수 화상 사고 방지: 부모님 욕실 스마트 온도 감지기와 돌봄로봇 알림",
+      "slug": "rural-solo-elderly-hot-water-scalding-robot-alert",
+      "input_id": "topic-76",
+      "output_path": "output/dolbomjigi/new-content/rural-solo-elderly-hot-water-scalding-robot-alert",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4247,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "0fbdac8922b2d9d81acfb50db1c86e22c3bb7de7ac60976c7b2f716eae364453"
     }
   ],
-  "next_queue": []
+  "next_queue": [
+    {
+      "slug": "dementia-reminiscence-family-voice-recorder-routine",
+      "title": "손주 목소리로 깨어나는 아침: 돌봄로봇의 가족 다이어리 음성 알림과 기상 루틴",
+      "main_keyword": "치매 어르신 기상 루틴 돌봄로봇 손주 음성",
+      "target_persona": "family_caregiver"
+    },
+    {
+      "slug": "senior-indoor-slipping-socks-robot-reminder",
+      "title": "마루 바닥 미끄럼 낙상 방지: 논슬립 양말 착용과 돌봄로봇의 외출·기상 체크 루틴",
+      "main_keyword": "노인 실내 미끄럼 방지 양말 돌봄로봇 알림",
+      "target_persona": "family_caregiver"
+    },
+    {
+      "slug": "social-worker-care-robot-digital-divide-training-guide",
+      "title": "기계 공포증 어르신을 위한 스마트 돌봄: 사회복지사의 3주 적응 트레이닝 매뉴얼",
+      "main_keyword": "사회복지사 돌봄로봇 기계 거부감 완화 교육",
+      "target_persona": "social_worker"
+    },
+    {
+      "slug": "alone-elderly-cold-wave-water-meter-freeze-robot",
+      "title": "수도 계량기 동파와 온수 단수 방지: 돌봄로봇의 한파 기상 예보 및 헌 옷 보온 체크",
+      "main_keyword": "독거 어르신 한파 수도 동파 돌봄로봇 알림",
+      "target_persona": "family_caregiver"
+    }
+  ]
 }

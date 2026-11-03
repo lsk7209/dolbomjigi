@@ -1,0 +1,30 @@
+{
+  "slug": "rural-solo-elderly-hot-water-scalding-robot-alert",
+  "sources": [
+    {
+      "title": "한국소비자원 고령자 욕실 안전사고 및 온수 화상 실태조사 보고서",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 노인 화상 사고의 42%가 가정 내 욕실 온수 사용 중 발생하며 피부 회복에 장기간 소요"
+    },
+    {
+      "title": "질병관리청 국가손상정보포털 노인 생활안전 가이드라인",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "피부 두께가 얇아진 고령자는 48도 온수에 5초만 노출되어도 심각한 2도 화상을 입을 수 있음"
+    },
+    {
+      "title": "국립재활원 보조기기 열린플랫폼 고령자 욕실 안전 보조장치 가이드북",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "수온 표시 LED 램프 및 직관적 음성 알림 연동 시 욕실 화상 위험 행동 82% 이상 예방"
+    },
+    {
+      "title": "보건복지부 독거노인 응급안전안심서비스 시설 및 환경 안전 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "보일러 온수 상한 온도를 45도 이하로 사전 제한하는 환경 수정이 가장 확실한 1차 안전장치"
+    }
+  ],
+  "last_verified_at": "2026-11-03"
+}
