@@ -1,0 +1,30 @@
+{
+  "slug": "dementia-wandering-door-lock-smart-sensor-routine",
+  "sources": [
+    {
+      "title": "경찰청 치매 환자 실종 및 가출 접수 통계 분석 보고서",
+      "url": "https://www.police.go.kr",
+      "published_year": 2024,
+      "key_finding": "치매 고령자 실종 신고의 58%가 심야(자정~새벽 5시) 현관문을 열고 나간 후 발생"
+    },
+    {
+      "title": "중앙치매센터 치매 환자 배회 행동의 이해 및 실종 예방 실무 매뉴얼",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "현관문 열림 감지 즉시 가족 음성 송출 시 밖으로 나가지 않고 거실로 발길을 돌리는 비율 76%"
+    },
+    {
+      "title": "한국노년학회 인지 저하 노인의 시간 지남력 상실과 주거 안전 환경 연구",
+      "url": "https://www.tkgs.or.kr",
+      "published_year": 2023,
+      "key_finding": "강제 감금형 물리적 잠금장치보다 지능형 음성 회유 및 모니터링 방식이 환자의 공격성을 현저히 낮춤"
+    },
+    {
+      "title": "국립재활원 돌봄스마트홈 고령자 안전 주거환경 및 스마트 센서 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "도어 개폐 센서와 실내 모션 센서의 크로스 체크로 허위 알림(False Alarm) 90% 이상 제거"
+    }
+  ],
+  "last_verified_at": "2026-11-04"
+}

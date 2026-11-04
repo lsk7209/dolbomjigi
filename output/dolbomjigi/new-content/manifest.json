@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-04T15:02:54.464Z",
+  "updated_at": "2026-11-04T18:54:59.169Z",
   "requested_count": 5,
-  "completed_count": 81,
+  "completed_count": 82,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -890,15 +890,20 @@
       "character_count": 4500,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "faae93a08f0bfc3ce6cc10c72e9512fa5137cc4391625eab521a94455428d085"
+    },
+    {
+      "title": "새벽잠 없는 치매 부모님의 현관문 야간 배회: 돌봄로봇 스마트 도어락 이중 잠금 알림",
+      "slug": "dementia-wandering-door-lock-smart-sensor-routine",
+      "input_id": "topic-82",
+      "output_path": "output/dolbomjigi/new-content/dementia-wandering-door-lock-smart-sensor-routine",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4451,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "0f6d712c2a7d69c58180079fab30bef6a112fe4777099cc3e4211ade58dc8038"
     }
   ],
   "next_queue": [
-    {
-      "slug": "dementia-wandering-door-lock-smart-sensor-routine",
-      "title": "새벽잠 없는 치매 부모님의 현관문 야간 배회: 돌봄로봇 스마트 도어락 이중 잠금 알림",
-      "main_keyword": "치매 부모님 새벽 배회 현관문 스마트 도어락",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "senior-blood-pressure-smart-cuff-robot-guide",
       "title": "혈압 수치 안 적어두셔도 안심: 돌봄로봇 블루투스 자동 기록 전자혈압계 연동법",
