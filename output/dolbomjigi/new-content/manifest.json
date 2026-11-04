@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-03T19:43:37.910Z",
+  "updated_at": "2026-11-04T00:54:57.815Z",
   "requested_count": 5,
-  "completed_count": 77,
+  "completed_count": 78,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -846,15 +846,20 @@
       "character_count": 4301,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "157705c084e08b5b3e11bbca333d82eece0f62032149adcc1d1bfc6839921188"
+    },
+    {
+      "title": "마루 바닥 미끄럼 낙상 방지: 논슬립 양말 착용과 돌봄로봇의 외출·기상 체크 루틴",
+      "slug": "senior-indoor-slipping-socks-robot-reminder",
+      "input_id": "topic-78",
+      "output_path": "output/dolbomjigi/new-content/senior-indoor-slipping-socks-robot-reminder",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4256,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "e0db454d80217dceda4d642b754d037b768f3159de341ba68c7876f285e163fc"
     }
   ],
   "next_queue": [
-    {
-      "slug": "senior-indoor-slipping-socks-robot-reminder",
-      "title": "마루 바닥 미끄럼 낙상 방지: 논슬립 양말 착용과 돌봄로봇의 외출·기상 체크 루틴",
-      "main_keyword": "노인 실내 미끄럼 방지 양말 돌봄로봇 알림",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "social-worker-care-robot-digital-divide-training-guide",
       "title": "기계 공포증 어르신을 위한 스마트 돌봄: 사회복지사의 3주 적응 트레이닝 매뉴얼",

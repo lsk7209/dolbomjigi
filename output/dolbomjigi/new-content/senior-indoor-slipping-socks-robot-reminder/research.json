@@ -1,0 +1,30 @@
+{
+  "slug": "senior-indoor-slipping-socks-robot-reminder",
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 실내 낙상 실태조사 및 손상 예방 가이드",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "가정 내 고령자 낙상 사고의 38%가 미끄러운 방바닥 및 마루에서 일반 양말 착용 중 미끄러져 발생"
+    },
+    {
+      "title": "한국소비자원 고령자 안전용품(미끄럼 방지 양말 및 매트) 품질 및 안전성 시험 평가",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "바닥 전면 실리콘 도트 처리된 논슬립 양말 착용 시 일반 양말 대비 마찰 계수 3.2배 향상"
+    },
+    {
+      "title": "국립재활원 돌봄스마트홈 고령자 안전 보행 환경 실증 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "기상 직후 및 외출 전 안전 복장 음성 체크 알림이 고령자의 안전 불감증 행동을 72% 개선"
+    },
+    {
+      "title": "보건복지부 취약계층 독거노인 낙상사고 예방 및 주거환경 개선 사업 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "장기요양 복지용구 미끄럼 방지 매트·양말 지원을 활용한 가정의 낙상 골절 입원율 55% 감소"
+    }
+  ],
+  "last_verified_at": "2026-11-04"
+}
