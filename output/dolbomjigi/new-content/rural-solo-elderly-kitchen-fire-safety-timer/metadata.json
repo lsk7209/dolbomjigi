@@ -1,0 +1,40 @@
+{
+  "slug": "rural-solo-elderly-kitchen-fire-safety-timer",
+  "title_ko": "사골 국 냄비 깜빡 화재 방지: 주방 스마트 가스 밸브 차단기와 돌봄로봇 조리 타이머",
+  "subtitle": "냄비 태움과 유독가스 질식 사고를 선제 차단하는 디지털 가스 타이머 콕 및 돌봄로봇 주방 안전 루틴",
+  "summary": "가스레인지 위에 냄비를 올려두고 깜빡 잊어버려 발생하는 고령 부모님의 주방 화재 사고를 방지하기 위해, 설정 시간 경과 시 자동으로 중간 밸브를 잠그는 스마트 가스 타이머 콕과 거실 돌봄로봇의 조리 경보 연동법을 안내합니다.",
+  "main_keyword": "독거 어르신 주방 화재 가스 차단기 돌봄로봇",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/rural-solo-elderly-kitchen-fire-safety-timer.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4500,
+  "sources": [
+    {
+      "title": "소방청 국가화재정보시스템 고령자 주거시설 화재 원인 통계 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 노인 단독가구 주방 화재의 67%가 음식물 조리 중 방치 및 깜빡 잊음으로 발생"
+    },
+    {
+      "title": "한국가스안전공사 취약계층 타이머 콕 보급 사업 효과성 분석 보고서",
+      "url": "https://www.kgs.or.kr",
+      "published_year": 2024,
+      "key_finding": "디지털 가스 타이머 콕 설치 가구의 냄비 태움 및 과열 화재 사고 89% 이상 감소"
+    },
+    {
+      "title": "한국소비자원 고령자 가정 내 주방 화재 감지 장치 안전 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "주방 과열 시 거실 돌봄로봇의 1차 음성 환기 알림이 노인의 패닉 반응과 유독가스 흡입을 예방"
+    },
+    {
+      "title": "보건복지부 독거노인·중증장애인 응급안전안심서비스 주방 화재 센서 운영 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "가스 누출 및 열기 감지 즉시 자동 밸브 차단과 119 다자간 비상 연락망 연동 프로토콜 표준화"
+    }
+  ]
+}

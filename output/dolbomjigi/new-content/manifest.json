@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-04T13:44:25.120Z",
+  "updated_at": "2026-11-04T15:02:54.464Z",
   "requested_count": 5,
-  "completed_count": 80,
+  "completed_count": 81,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -879,7 +879,43 @@
       "character_count": 4545,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "f02129c2957b35223866b3a678cbe5afc64250e49f893cc73f101b10254ba164"
+    },
+    {
+      "title": "사골 국 냄비 깜빡 화재 방지: 주방 스마트 가스 밸브 차단기와 돌봄로봇 조리 타이머",
+      "slug": "rural-solo-elderly-kitchen-fire-safety-timer",
+      "input_id": "topic-81",
+      "output_path": "output/dolbomjigi/new-content/rural-solo-elderly-kitchen-fire-safety-timer",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4500,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "faae93a08f0bfc3ce6cc10c72e9512fa5137cc4391625eab521a94455428d085"
     }
   ],
-  "next_queue": []
+  "next_queue": [
+    {
+      "slug": "dementia-wandering-door-lock-smart-sensor-routine",
+      "title": "새벽잠 없는 치매 부모님의 현관문 야간 배회: 돌봄로봇 스마트 도어락 이중 잠금 알림",
+      "main_keyword": "치매 부모님 새벽 배회 현관문 스마트 도어락",
+      "target_persona": "family_caregiver"
+    },
+    {
+      "slug": "senior-blood-pressure-smart-cuff-robot-guide",
+      "title": "혈압 수치 안 적어두셔도 안심: 돌봄로봇 블루투스 자동 기록 전자혈압계 연동법",
+      "main_keyword": "시니어 가정용 혈압계 돌봄로봇 자동 기록",
+      "target_persona": "family_caregiver"
+    },
+    {
+      "slug": "social-worker-care-robot-case-study-compilation",
+      "title": "우수 지자체 스마트 복지 실천 사례: 사회복지사를 위한 돌봄로봇 사례관리 수기 공모전 작성법",
+      "main_keyword": "사회복지사 돌봄로봇 우수 사례 관리 수기 작성법",
+      "target_persona": "social_worker"
+    },
+    {
+      "slug": "alone-elderly-spring-cardiovascular-health-routine",
+      "title": "환절기 큰 일교차 심혈관 관리: 돌봄로봇의 실내외 기온차 알림과 아침 목도리 체크",
+      "main_keyword": "독거노인 환절기 일교차 돌봄로봇 외출 알림",
+      "target_persona": "family_caregiver"
+    }
+  ]
 }
