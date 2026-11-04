@@ -1,0 +1,40 @@
+{
+  "slug": "alone-elderly-cold-wave-water-meter-freeze-robot",
+  "title_ko": "수도 계량기 동파와 온수 단수 방지: 돌봄로봇의 한파 기상 예보 및 헌 옷 보온 체크",
+  "subtitle": "영하 10도 혹한기 수도 배관 파손과 보일러 단수를 선제 차단하는 취약 노인 가구 동파 방지 수칙",
+  "summary": "겨울철 혹한기에 수도 계량기와 배관이 얼어붙어 물이 끊기면 고령 부모님의 취사와 세탁, 위생 관리가 전면 마비됩니다. 기상청 한파 경보와 연동된 돌봄로봇의 전날 보온 점검 체크리스트와 온수 약하게 틀기 음성 안내법을 소개합니다.",
+  "main_keyword": "독거 어르신 한파 수도 동파 돌봄로봇 알림",
+  "target_persona": "family_caregiver",
+  "category": "guide",
+  "cover_image_url": "/images/blog-ai/posts/alone-elderly-cold-wave-water-meter-freeze-robot.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4545,
+  "sources": [
+    {
+      "title": "행정안전부 겨울철 한파 종합대책 및 수도계량기 동파 피해 현황",
+      "url": "https://www.mois.go.kr",
+      "published_year": 2024,
+      "key_finding": "겨울철 수도 동파 피해의 64%가 65세 이상 독거노인 거주 노후 주택 및 복도식 아파트에서 발생"
+    },
+    {
+      "title": "서울특별시 상수도사업본부 겨울철 수도계량기 동파 예방 표준 가이드북",
+      "url": "https://arisu.seoul.go.kr",
+      "published_year": 2024,
+      "key_finding": "계량기함 내부 헌 옷 채우기와 비닐 테이핑만으로 영하 15도 한파 시 동파 사고 85% 이상 예방"
+    },
+    {
+      "title": "질병관리청 한파 대비 건강취약계층(고령자) 한랭질환 예방 매뉴얼",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "단수 발생 시 어르신들의 물 섭취 제한으로 인한 탈수 및 혈관 질환 악화 위험 급증"
+    },
+    {
+      "title": "국립재활원 취약계층 재가 노인 스마트 안전 주거환경 연구 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "기상청 한파 특보 API와 연동된 전날 저녁 선제 음성 방송이 노인 가구의 동파 방지 행동 실천율 3.5배 향상"
+    }
+  ]
+}

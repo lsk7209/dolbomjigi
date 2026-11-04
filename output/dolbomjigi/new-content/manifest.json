@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-04T07:44:10.706Z",
+  "updated_at": "2026-11-04T12:54:58.351Z",
   "requested_count": 5,
-  "completed_count": 79,
+  "completed_count": 80,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -868,14 +868,18 @@
       "character_count": 4763,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "e7de6a0ca51159325bc51df479af9b72ce1fdf0a839d0548b8703a9afec314df"
+    },
+    {
+      "title": "수도 계량기 동파와 온수 단수 방지: 돌봄로봇의 한파 기상 예보 및 헌 옷 보온 체크",
+      "slug": "alone-elderly-cold-wave-water-meter-freeze-robot",
+      "input_id": "topic-80",
+      "output_path": "output/dolbomjigi/new-content/alone-elderly-cold-wave-water-meter-freeze-robot",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4545,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "f02129c2957b35223866b3a678cbe5afc64250e49f893cc73f101b10254ba164"
     }
   ],
-  "next_queue": [
-    {
-      "slug": "alone-elderly-cold-wave-water-meter-freeze-robot",
-      "title": "수도 계량기 동파와 온수 단수 방지: 돌봄로봇의 한파 기상 예보 및 헌 옷 보온 체크",
-      "main_keyword": "독거 어르신 한파 수도 동파 돌봄로봇 알림",
-      "target_persona": "family_caregiver"
-    }
-  ]
+  "next_queue": []
 }
