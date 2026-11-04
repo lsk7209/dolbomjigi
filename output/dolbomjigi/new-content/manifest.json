@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-04T01:43:52.643Z",
+  "updated_at": "2026-11-04T06:55:00.653Z",
   "requested_count": 5,
-  "completed_count": 78,
+  "completed_count": 79,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -857,15 +857,20 @@
       "character_count": 4256,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "e0db454d80217dceda4d642b754d037b768f3159de341ba68c7876f285e163fc"
+    },
+    {
+      "title": "기계 공포증 어르신을 위한 스마트 돌봄: 사회복지사의 3주 적응 트레이닝 매뉴얼",
+      "slug": "social-worker-care-robot-digital-divide-training-guide",
+      "input_id": "topic-79",
+      "output_path": "output/dolbomjigi/new-content/social-worker-care-robot-digital-divide-training-guide",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4763,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "e7de6a0ca51159325bc51df479af9b72ce1fdf0a839d0548b8703a9afec314df"
     }
   ],
   "next_queue": [
-    {
-      "slug": "social-worker-care-robot-digital-divide-training-guide",
-      "title": "기계 공포증 어르신을 위한 스마트 돌봄: 사회복지사의 3주 적응 트레이닝 매뉴얼",
-      "main_keyword": "사회복지사 돌봄로봇 기계 거부감 완화 교육",
-      "target_persona": "social_worker"
-    },
     {
       "slug": "alone-elderly-cold-wave-water-meter-freeze-robot",
       "title": "수도 계량기 동파와 온수 단수 방지: 돌봄로봇의 한파 기상 예보 및 헌 옷 보온 체크",
