@@ -1,0 +1,30 @@
+{
+  "slug": "senior-blood-pressure-smart-cuff-robot-guide",
+  "sources": [
+    {
+      "title": "대한고혈압학회 고령자 가정혈압 측정 및 관리 가이드라인",
+      "url": "https://www.koreanhypertension.org",
+      "published_year": 2024,
+      "key_finding": "가정혈압을 주 5회 이상 꾸준히 기록한 고령 환자의 뇌심혈관 질환 발생 위험 34% 감소"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 헬스케어 기기 기반 만성질환 자가관리 실증 연구",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "블루투스 자동 기록 혈압계를 도입한 독거노인의 측정 지속률이 수기 기록군 대비 2.8배 향상"
+    },
+    {
+      "title": "국립재활원 보조기기 열린플랫폼 시니어 스마트 건강측정 안전 지침",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "측정 즉시 돌봄로봇의 대형 화면 디스플레이 및 음성 브리핑이 노인의 수치 인지 정확도를 극대화"
+    },
+    {
+      "title": "보건복지부 취약계층 만성질환 예방관리 및 비대면 건강모니터링 사업 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "수축기 혈압 160mmHg 이상 급상승 시 전담 사회복지사 및 보호자 자동 알림 체계 구축 권장"
+    }
+  ],
+  "last_verified_at": "2026-11-05"
+}

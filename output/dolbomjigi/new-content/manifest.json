@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-04T19:44:39.041Z",
+  "updated_at": "2026-11-05T00:54:59.101Z",
   "requested_count": 5,
-  "completed_count": 82,
+  "completed_count": 83,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -901,15 +901,20 @@
       "character_count": 4451,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "0f6d712c2a7d69c58180079fab30bef6a112fe4777099cc3e4211ade58dc8038"
+    },
+    {
+      "title": "혈압 수치 안 적어두셔도 안심: 돌봄로봇 블루투스 자동 기록 전자혈압계 연동법",
+      "slug": "senior-blood-pressure-smart-cuff-robot-guide",
+      "input_id": "topic-83",
+      "output_path": "output/dolbomjigi/new-content/senior-blood-pressure-smart-cuff-robot-guide",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4287,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "09b5d9c3cc44605d077903b9db3560c73cba99f0998adf873a875ba82cfd9d0f"
     }
   ],
   "next_queue": [
-    {
-      "slug": "senior-blood-pressure-smart-cuff-robot-guide",
-      "title": "혈압 수치 안 적어두셔도 안심: 돌봄로봇 블루투스 자동 기록 전자혈압계 연동법",
-      "main_keyword": "시니어 가정용 혈압계 돌봄로봇 자동 기록",
-      "target_persona": "family_caregiver"
-    },
     {
       "slug": "social-worker-care-robot-case-study-compilation",
       "title": "우수 지자체 스마트 복지 실천 사례: 사회복지사를 위한 돌봄로봇 사례관리 수기 공모전 작성법",
