@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:26:07.045Z",
+  "updated_at": "2026-11-14T11:27:57.435Z",
   "requested_count": 5,
-  "completed_count": 88,
+  "completed_count": 89,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -967,6 +967,17 @@
       "character_count": 5193,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "fdc3f596143f5772562aa97b9620d5d235067b1896502d78467e470a791a415c"
+    },
+    {
+      "title": "넘어지면 바로 알려준다는 낙상 감지, 어떻게 작동하나",
+      "slug": "fall-detection-sensor-explained",
+      "input_id": "topic-89",
+      "output_path": "output/dolbomjigi/new-content/fall-detection-sensor-explained",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5090,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "fb324e663768aa98d97cc5182d6aa2d551fa5229f24ed13572d7359378f5809e"
     }
   ],
   "next_queue": []

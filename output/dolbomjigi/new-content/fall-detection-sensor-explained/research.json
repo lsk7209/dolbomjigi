@@ -1,0 +1,30 @@
+{
+  "slug": "fall-detection-sensor-explained",
+  "sources": [
+    {
+      "title": "질병관리청 국가손상정보포털 노인 낙상 발생 현황 및 손상 예방 관리 지침",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 노인 손상 입원의 52%가 낙상으로 발생하며, 1시간 이내 구조 시 장기 후유 장애 발생률 70% 감소"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 돌봄 기술 기반 고령자 낙상 감지 시스템 실증 보고서",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "초광대역 레이더 및 3D ToF 센서의 수직 낙하 감지 정확도가 96.8%로 웨어러블 밴드 착용률 저하 한계 극복"
+    },
+    {
+      "title": "소방청 119구급상황관리센터 독거노인 안심콜 및 응급 구급 이송 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "가정 내 자동 낙상 호출 연동 시 구급대 현장 도착 골든타임이 평균 14분 단축"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 스페이스 고령자 실내 안전 보조기기 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "카메라 없는 비접촉 레이더 센서 도입 가구에서 어르신 프라이버시 거부 반응 92% 감소"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
