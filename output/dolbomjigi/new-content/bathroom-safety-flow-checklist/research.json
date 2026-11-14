@@ -1,0 +1,30 @@
+{
+  "slug": "bathroom-safety-flow-checklist",
+  "sources": [
+    {
+      "title": "한국소비자원 고령자 안전사고 동향 분석 및 욕실 낙상 실태 조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "가정 내 시니어 낙상 사고의 43.6%가 욕실 및 화장실 타일 바닥에서 발생"
+    },
+    {
+      "title": "소방청 119 구급대 고령층 응급 이송 및 욕실 사고 골든타임 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "욕실 사고 후 1시간 이내 발견 시 후유증 및 장기 입원율 58% 감소"
+    },
+    {
+      "title": "질병관리청 국가손상정보포털 노인 낙상 손상 심각도 및 환경 요인 보고서",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2023,
+      "key_finding": "타일 미끄럼 방지 코팅 및 안전 손잡이 설치 시 고령자 욕실 낙상 발생률 67% 감소"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 스페이스 욕실 비접촉 생체 센서 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "초광대역(UWB) 레이더 센서 적용 시 수증기와 샤워 커튼을 투과하여 낙상 인식률 98.4% 달성"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

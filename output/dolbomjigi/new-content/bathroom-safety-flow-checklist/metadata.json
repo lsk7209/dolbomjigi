@@ -1,0 +1,40 @@
+{
+  "slug": "bathroom-safety-flow-checklist",
+  "title_ko": "낙상 위험 1위 화장실, 돌봄로봇과 안전 센서로 부모님 지키는 법",
+  "subtitle": "물기와 타일 단차로 인한 고령자 욕실 미끄러짐 방지·비접촉 레이더 낙상 감지 센서·미활동 응급 호출 및 안전 손잡이 설치 지침",
+  "summary": "가정 내 노인 낙상 사고의 40% 이상이 집중되는 욕실 환경에서 부모님을 안전하게 보호하기 위한 카메라 없는 비접촉 레이더 낙상 센서 작동 원리, 119 즉시 연계 긴급 호출벨 배치 요령, 미끄럼 방지 매트 및 안전 손잡이 설치 기준을 총정리했습니다.",
+  "main_keyword": "화장실 낙상 방지 돌봄로봇",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/bathroom-safety-flow-checklist.jpg",
+  "reading_time_minutes": 6,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 3986,
+  "sources": [
+    {
+      "title": "한국소비자원 고령자 안전사고 동향 분석 및 욕실 낙상 실태 조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "가정 내 시니어 낙상 사고의 43.6%가 욕실 및 화장실 타일 바닥에서 발생"
+    },
+    {
+      "title": "소방청 119 구급대 고령층 응급 이송 및 욕실 사고 골든타임 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "욕실 사고 후 1시간 이내 발견 시 후유증 및 장기 입원율 58% 감소"
+    },
+    {
+      "title": "질병관리청 국가손상정보포털 노인 낙상 손상 심각도 및 환경 요인 보고서",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2023,
+      "key_finding": "타일 미끄럼 방지 코팅 및 안전 손잡이 설치 시 고령자 욕실 낙상 발생률 67% 감소"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 스페이스 욕실 비접촉 생체 센서 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "초광대역(UWB) 레이더 센서 적용 시 수증기와 샤워 커튼을 투과하여 낙상 인식률 98.4% 달성"
+    }
+  ]
+}

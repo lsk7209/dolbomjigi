@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T15:08:57.529Z",
+  "updated_at": "2026-11-14T15:13:31.207Z",
   "requested_count": 5,
-  "completed_count": 104,
+  "completed_count": 105,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1143,6 +1143,17 @@
       "character_count": 4404,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "754c4691e013def77ee373ab0b7251b6cfe03d859855c485274c1fdbf5e49476"
+    },
+    {
+      "title": "낙상 위험 1위 화장실, 돌봄로봇과 안전 센서로 부모님 지키는 법",
+      "slug": "bathroom-safety-flow-checklist",
+      "input_id": "topic-105",
+      "output_path": "output/dolbomjigi/new-content/bathroom-safety-flow-checklist",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3986,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "e42739796d2d5efa15675896f963458e8917c1c03c0d0e715d7a6014bc0310e9"
     }
   ],
   "next_queue": []
