@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T21:09:54.140Z",
+  "updated_at": "2026-11-14T21:13:49.381Z",
   "requested_count": 5,
-  "completed_count": 112,
+  "completed_count": 113,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1231,6 +1231,17 @@
       "character_count": 3758,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "0729690a65664cfeae613a8de24900378b0ad23a0b9e8a11fc56833c874bdd4b"
+    },
+    {
+      "title": "장례 후 돌봄로봇 반납·기증 및 기기 초기화 체크리스트",
+      "slug": "after-funeral-reuse-checklist",
+      "input_id": "topic-113",
+      "output_path": "output/dolbomjigi/new-content/after-funeral-reuse-checklist",
+      "status": "published",
+      "qa_score": 90,
+      "character_count": 6209,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "c28365fb924fec398171c50df2a6864fbf48bea249fda96826daa5abf21dc277"
     }
   ],
   "next_queue": []

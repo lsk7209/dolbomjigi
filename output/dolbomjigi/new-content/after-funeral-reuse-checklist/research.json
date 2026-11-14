@@ -1,0 +1,30 @@
+{
+  "slug": "after-funeral-reuse-checklist",
+  "sources": [
+    {
+      "title": "보건복지부 독거노인·장애인 응급안전안심서비스 장비 관리 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "이용자 신상 변동(사망·전출·시설 입소) 발생 시 14일 이내 지자체 자산 장비 회수 및 소독·초기화 의무화"
+    },
+    {
+      "title": "한국소비자원 가전·돌봄 렌털 계약 소비자분쟁해결기준",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "계약자 사망 시 사망증명 서류 또는 가족관계증명서 제출을 통해 잔여 약정 기간 위약금 전액 면제 규정 확인"
+    },
+    {
+      "title": "개인정보보호위원회 스마트홈 IoT 기기 양도·폐기 시 데이터 영구 삭제 가이드라인",
+      "url": "https://www.pipc.go.kr",
+      "published_year": 2023,
+      "key_finding": "생체·음성·가족 연락처 등 식별 데이터의 공장 초기화 및 클라우드 연동 해제 점검 절차 필수 명시"
+    },
+    {
+      "title": "서울시복지재단 스마트 돌봄 기기 재자산화 및 나눔 사업 운영 매뉴얼",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2024,
+      "key_finding": "회수 및 기증된 스마트 반려인형·센서 기기의 82.5%가 부품 정비 후 차순위 취약계층 어르신 가정에 재배정"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
