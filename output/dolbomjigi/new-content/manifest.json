@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:31:39.274Z",
+  "updated_at": "2026-11-14T11:33:28.078Z",
   "requested_count": 5,
-  "completed_count": 91,
+  "completed_count": 92,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1000,6 +1000,17 @@
       "character_count": 5113,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "73987d7a9c211a21a94410ca3e3112206e31508a8a75c4bf930f28a17b1370c7"
+    },
+    {
+      "title": "여름 폭염·겨울 한파, 돌봄로봇이 실내 온도를 지켜본다",
+      "slug": "indoor-temperature-safety-monitoring",
+      "input_id": "topic-92",
+      "output_path": "output/dolbomjigi/new-content/indoor-temperature-safety-monitoring",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4684,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "a33637c8687921094d052aed0d292122766b55a69c50bace77d9c7fdab88a02f"
     }
   ],
   "next_queue": []
