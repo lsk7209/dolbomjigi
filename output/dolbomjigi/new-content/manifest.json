@@ -1,7 +1,7 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T14:56:05.254Z",
+  "updated_at": "2026-11-14T15:00:41.495Z",
   "requested_count": 5,
   "completed_count": 101,
   "items": [
@@ -1112,5 +1112,7 @@
       "content_hash": "70292d78f88c57add63350c7347a6b064dbfd17efce475497cc05efff78a3262"
     }
   ],
-  "next_queue": []
+  "next_queue": [
+    "battery-charging-maintenance-tips"
+  ]
 }
