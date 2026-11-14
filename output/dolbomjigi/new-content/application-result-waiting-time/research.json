@@ -1,0 +1,30 @@
+{
+  "slug": "application-result-waiting-time",
+  "sources": [
+    {
+      "title": "보건복지부 노인맞춤돌봄 및 응급안전안심서비스 실무 처리 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "전국 평균 신청 접수부터 기기 최종 가정 설치까지 평균 소요 일수 19.4일 기록"
+    },
+    {
+      "title": "서울시복지재단 스마트 돌봄 기기 보급 프로세스 효율화 연구",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2024,
+      "key_finding": "사전 온라인 서류 완비 가구의 경우 현장 심사 기간 7일 단축, 통과율 91.2% 달성"
+    },
+    {
+      "title": "국민건강보험공단 장기요양보험 복지용구 급여 이용 절차 안내",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2023,
+      "key_finding": "장기요양 등급 판정자의 경우 복지용구 사업소 계약 즉시 당일 또는 익일 배송 설치 완료"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 스페이스 이용자 대기 시간 및 서비스 만족도 조사",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "설치 지연 사유의 64%가 가정 내 유선 인터넷 부재 또는 통신 개통 인증 지연에서 기인"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
