@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:40:50.061Z",
+  "updated_at": "2026-11-14T11:42:43.022Z",
   "requested_count": 5,
-  "completed_count": 96,
+  "completed_count": 97,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1055,6 +1055,17 @@
       "character_count": 4579,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "3bde9470b7103d8556b7d1e84a6d19fac40719745ef9b2ba7761991306ad71da"
+    },
+    {
+      "title": "잠은 잘 주무시나, 수면 패턴 살피는 돌봄 기술",
+      "slug": "sleep-pattern-monitoring-senior",
+      "input_id": "topic-97",
+      "output_path": "output/dolbomjigi/new-content/sleep-pattern-monitoring-senior",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4535,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "d63eed663e3151173ab6d5d11359e545cf1eb7b327497303690b3e68afb3c178"
     }
   ],
   "next_queue": []

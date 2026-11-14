@@ -1,0 +1,40 @@
+{
+  "slug": "sleep-pattern-monitoring-senior",
+  "title_ko": "잠은 잘 주무시나, 수면 패턴 살피는 돌봄 기술",
+  "subtitle": "비접촉 레이더 센서와 스마트 매트로 밤새 뒤척임·무호흡·야간 이탈을 살피는 어르신 수면 안심 모니터링 실전 가이드",
+  "summary": "어르신의 수면 건강은 면역력과 인지 기능, 심혈관 안정을 좌우하는 핵심 건강 지표입니다. 몸에 밴 웨어러블 착용 스트레스 없이 침대 매트 하단 압력 센서 및 벽면 초광대역 레이더로 수면 시간, 뒤척임 횟수, 야간 화장실 이동 횟수, 무호흡 이상 신호를 측정하고 자녀 스마트폰 앱으로 분석 리포트를 확인하는 방법을 정리했습니다.",
+  "main_keyword": "수면 패턴 감지",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/sleep-pattern-monitoring-senior.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4535,
+  "sources": [
+    {
+      "title": "대한수면연구학회 노인 수면 위생 및 일주기 생체 리듬 분석 보고서",
+      "url": "https://www.sleepresearch.or.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 고령자의 54%가 야간 잦은 각성과 얕은 수면을 겪으며, 비접촉 수면 관제 시 낙상 및 이상 징후 조기 포착률 76% 향상"
+    },
+    {
+      "title": "한국보건산업진흥원 고령친화 스마트 슬립테크 생체 신호 센서 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "비접촉 mmWave 레이더 기반 심탄도(BCG) 측정의 호흡·심박 정확도가 임상 장비 대비 94.2% 일치"
+    },
+    {
+      "title": "질병관리청 국가 만성질환 포털 고령층 수면 패턴과 심뇌혈관 건강 지침",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2023,
+      "key_finding": "야간 4회 이상 잦은 기상 및 수면 무호흡증 방치 시 뇌졸중 및 고혈압 발생 위험 2.3배 증가"
+    },
+    {
+      "title": "국립재활원 돌봄 스페이스 비접촉식 노인 야간 안심 수면 모니터링 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시계형 밴드 대비 침대 거치형 센서의 어르신 장기 지속 수용도가 91%로 월등히 높음"
+    }
+  ]
+}

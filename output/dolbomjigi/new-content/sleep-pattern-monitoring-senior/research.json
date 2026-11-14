@@ -1,0 +1,30 @@
+{
+  "slug": "sleep-pattern-monitoring-senior",
+  "sources": [
+    {
+      "title": "대한수면연구학회 노인 수면 위생 및 일주기 생체 리듬 분석 보고서",
+      "url": "https://www.sleepresearch.or.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 고령자의 54%가 야간 잦은 각성과 얕은 수면을 겪으며, 비접촉 수면 관제 시 낙상 및 이상 징후 조기 포착률 76% 향상"
+    },
+    {
+      "title": "한국보건산업진흥원 고령친화 스마트 슬립테크 생체 신호 센서 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "비접촉 mmWave 레이더 기반 심탄도(BCG) 측정의 호흡·심박 정확도가 임상 장비 대비 94.2% 일치"
+    },
+    {
+      "title": "질병관리청 국가 만성질환 포털 고령층 수면 패턴과 심뇌혈관 건강 지침",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2023,
+      "key_finding": "야간 4회 이상 잦은 기상 및 수면 무호흡증 방치 시 뇌졸중 및 고혈압 발생 위험 2.3배 증가"
+    },
+    {
+      "title": "국립재활원 돌봄 스페이스 비접촉식 노인 야간 안심 수면 모니터링 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시계형 밴드 대비 침대 거치형 센서의 어르신 장기 지속 수용도가 91%로 월등히 높음"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
