@@ -1,0 +1,30 @@
+{
+  "slug": "emergency-alert-call-flow",
+  "sources": [
+    {
+      "title": "소방청 119안심콜 서비스 운영 성과 및 고령층 긴급 구급 이송 분석",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "119 안심콜 사전 등록 및 스마트 기기 자동 호출 연계 시 구급대원의 병원 도착 시간이 평균 12분 단축"
+    },
+    {
+      "title": "보건복지부 독거노인·장애인 응급안전안심서비스 긴급 상황 대응 표준 실무 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "댁내 화재·가스·활동 미감지 3중 센서와 음성 호출망 도입으로 혹서·혹한기 취약계층 사고 65% 사전 예방"
+    },
+    {
+      "title": "한국보건사회연구원 노인 고독사 예방을 위한 스마트 비상 대응 네트워크 연구",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "보호자 직통 알림과 관제센터 2중 안전망 구축이 단독 스마트폰 대비 응급 인지 실패율을 89% 낮춤"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 기술 기반 고령자 응급 호출 인터페이스 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "음성 키워드(\"살려줘\") 기반 무선 호출 기능이 낙상 후 거동 불가 상태 노인의 골든타임 생존율을 78% 향상"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:38:58.057Z",
+  "updated_at": "2026-11-14T11:40:50.061Z",
   "requested_count": 5,
-  "completed_count": 95,
+  "completed_count": 96,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1044,6 +1044,17 @@
       "character_count": 4850,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "a404bb76d2468f27a8c9b5ccf4a85a79822ebe2c34907c14e8e38638a2900f5c"
+    },
+    {
+      "title": "위급한 순간, 돌봄로봇은 누구에게 어떻게 연락할까",
+      "slug": "emergency-alert-call-flow",
+      "input_id": "topic-96",
+      "output_path": "output/dolbomjigi/new-content/emergency-alert-call-flow",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4579,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "3bde9470b7103d8556b7d1e84a6d19fac40719745ef9b2ba7761991306ad71da"
     }
   ],
   "next_queue": []
