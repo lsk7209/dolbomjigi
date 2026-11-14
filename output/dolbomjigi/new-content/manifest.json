@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:46:33.902Z",
+  "updated_at": "2026-11-14T11:48:33.863Z",
   "requested_count": 5,
-  "completed_count": 99,
+  "completed_count": 100,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1088,6 +1088,17 @@
       "character_count": 4329,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "fd421cde0678586e68ff14f1047f0d8deae361d747632b6a9483599390f5eec8"
+    },
+    {
+      "title": "버튼 하나로 자녀와 영상통화, 어르신도 쉬울까",
+      "slug": "video-call-feature-for-family",
+      "input_id": "topic-100",
+      "output_path": "output/dolbomjigi/new-content/video-call-feature-for-family",
+      "status": "published",
+      "qa_score": 95,
+      "character_count": 4727,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "b38cc552e517063336cc095f389a104f6c286c2502da048f3cbcce02bd806528"
     }
   ],
   "next_queue": []
