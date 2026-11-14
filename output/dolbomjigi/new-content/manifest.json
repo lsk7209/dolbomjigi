@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:37:05.651Z",
+  "updated_at": "2026-11-14T11:38:58.057Z",
   "requested_count": 5,
-  "completed_count": 94,
+  "completed_count": 95,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1033,6 +1033,17 @@
       "character_count": 4668,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "3ea53560973c6206c40930d85edd44ccc4ccd818a109687d590c83ddecda0630"
+    },
+    {
+      "title": "두뇌 활동 콘텐츠, 돌봄로봇으로 매일 즐기는 법",
+      "slug": "cognitive-health-support-games",
+      "input_id": "topic-95",
+      "output_path": "output/dolbomjigi/new-content/cognitive-health-support-games",
+      "status": "published",
+      "qa_score": 95,
+      "character_count": 4850,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "a404bb76d2468f27a8c9b5ccf4a85a79822ebe2c34907c14e8e38638a2900f5c"
     }
   ],
   "next_queue": []

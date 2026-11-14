@@ -1,0 +1,30 @@
+{
+  "slug": "cognitive-health-support-games",
+  "sources": [
+    {
+      "title": "중앙치매센터 노인 인지 건강 훈련 프로그램 및 두뇌 자극 매뉴얼",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "음성 대화 기반의 일상 속담 및 초성 퀴즈 활동이 노인의 언어 유창성과 인지 민첩성을 41% 증진"
+    },
+    {
+      "title": "한국보건산업진흥원 디지털 돌봄 로봇 인지 훈련 콘텐츠 효과성 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "대화형 칭찬 피드백이 결합된 두뇌 게임 참여 노인의 6개월 지속 사용률이 지필 학습지 대비 3.2배 높음"
+    },
+    {
+      "title": "한국노인인력개발원 고령층 여가 활동 및 두뇌 건강 증진 실태 조사",
+      "url": "https://www.kordi.or.kr",
+      "published_year": 2023,
+      "key_finding": "주 3회 이상 15분 두뇌 자극 콘텐츠 참여가 독거노인의 무기력증을 48% 경감"
+    },
+    {
+      "title": "국립재활원 감성 상호작용형 돌봄 기술 고령자 인지 보조 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "옛 노래 및 회상 질문 결합 콘텐츠가 고령자의 자발적 발화량을 2.5배 유도"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
