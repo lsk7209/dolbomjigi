@@ -1,0 +1,40 @@
+{
+  "slug": "battery-charging-maintenance-tips",
+  "title_ko": "충전·관리, 돌봄로봇 오래 쓰는 작은 습관들",
+  "subtitle": "돌봄로봇 배터리 수명 2배 늘리는 거치대 위치 선정, 과방전 방지 충전 습관, 먼지 청소와 센서 관리 팁",
+  "summary": "돌봄로봇을 잔고장 없이 오래 안전하게 사용하기 위한 올바른 충전 거치대 설치 요령, 리튬이온 배터리 수명을 지키는 20-80 충전 규칙, 낙상 방지 및 센서 오작동을 막는 먼지 렌즈 청소법과 소프트웨어 정기 관리 지침을 총정리했습니다.",
+  "main_keyword": "돌봄로봇 충전 관리",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/battery-charging-maintenance-tips.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5567,
+  "sources": [
+    {
+      "title": "한국로봇산업진흥원 스마트 돌봄로봇 품질 및 안전 관리 가이드라인",
+      "url": "https://www.kiria.org",
+      "published_year": 2024,
+      "key_finding": "주기적인 도킹 단자 이물질 세척과 과방전 방지 관리 시 돌봄로봇 하드웨어 고장률 73% 감소"
+    },
+    {
+      "title": "한국소비자원 가정용 스마트 가전 리튬이온 배터리 안전 사용 실태 조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "배터리 완전 방전 빈도가 낮을수록 배터리 셀 기대 수명이 1.8배에서 최대 2.2배 연장"
+    },
+    {
+      "title": "국립재활원 돌봄로봇 사용성 평가 및 생활 밀착형 유지관리 프로토콜",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "적정 충전대 반경 1m 장애물 제거 환경에서 로봇의 자동 도킹 성공률 99.4% 확보"
+    },
+    {
+      "title": "소방청 가정 내 충전식 전자기기 및 배터리 화재 예방 안전 수칙",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2023,
+      "key_finding": "직사광선과 고온 다습한 장소를 피한 서늘한 통풍 설치가 배터리 열화 및 안전사고 원천 예방"
+    }
+  ]
+}

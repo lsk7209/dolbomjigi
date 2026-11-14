@@ -1,0 +1,40 @@
+{
+  "slug": "battery-charging-maintenance-tips",
+  "passed": false,
+  "score": 80,
+  "review_report": {
+    "score": 80,
+    "grade": "NEEDS_IMPROVEMENT",
+    "reviewed_at": "2026-11-14T15:02:37.147Z",
+    "metrics": {
+      "character_count": 5568,
+      "answer_block_length": 192,
+      "faq_count": 0,
+      "internal_link_count": 0,
+      "has_table": true,
+      "medical_violation_count": 0,
+      "promotional_violation_count": 0,
+      "ai_cliche_count": 0
+    },
+    "issues": [
+      "FAQ 문항 수 부족 (0개 / 최소 3개 권장)",
+      "내부 링크 연계 부족 (0개 / 최소 3개 권장)"
+    ],
+    "improvements": [
+      "품질 게이트 95점 미달 항목에 대한 자체 리팩토링 및 텍스트 정밀화 필요"
+    ]
+  },
+  "linter": {
+    "forbidden_medical_terms": 0,
+    "forbidden_promotional_terms": 0,
+    "unverified_claims": 0
+  },
+  "structure": {
+    "has_answer_block": true,
+    "has_table": true,
+    "has_checklist": true,
+    "has_faq": true,
+    "has_internal_links": true
+  },
+  "qa_score": 80
+}

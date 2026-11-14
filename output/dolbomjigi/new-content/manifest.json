@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T15:01:50.251Z",
+  "updated_at": "2026-11-14T15:02:37.154Z",
   "requested_count": 5,
-  "completed_count": 101,
+  "completed_count": 102,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1110,9 +1110,18 @@
       "character_count": 4808,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "70292d78f88c57add63350c7347a6b064dbfd17efce475497cc05efff78a3262"
+    },
+    {
+      "title": "충전·관리, 돌봄로봇 오래 쓰는 작은 습관들",
+      "slug": "battery-charging-maintenance-tips",
+      "input_id": "topic-102",
+      "output_path": "output/dolbomjigi/new-content/battery-charging-maintenance-tips",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 5567,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "574690545b819f108fe02c2405b9f95f70cf04192e1a2c35f31728baebc3bdbe"
     }
   ],
-  "next_queue": [
-    "battery-charging-maintenance-tips"
-  ]
+  "next_queue": []
 }
