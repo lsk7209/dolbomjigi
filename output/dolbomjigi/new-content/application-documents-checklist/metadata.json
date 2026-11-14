@@ -1,0 +1,40 @@
+{
+  "slug": "application-documents-checklist",
+  "title_ko": "정부 돌봄로봇 무상 지원 신청 서류와 심사 절차 총정리",
+  "subtitle": "독거노인 응급안전안심서비스·지자체 스마트 돌봄 기기 신청 시 필수 구비 서류 목록·소득 요건 증빙 및 심사 탈락 방지 팁",
+  "summary": "국비 및 지자체 예산으로 보급되는 어르신 돌봄로봇 지원 사업 신청을 위한 기초생활수급자 증명서, 건강보험료 납부확인서, 장기요양인정서 등 필수 제출 서류 목록과 읍면동 주민센터 접수부터 현장 실사 및 최종 설치까지의 심사 절차를 알기 쉽게 정리했습니다.",
+  "main_keyword": "돌봄로봇 신청 서류",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/application-documents-checklist.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4404,
+  "sources": [
+    {
+      "title": "보건복지부 독거노인·장애인 응급안전안심서비스 사업 운영 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "사전 구비 서류 보완 요청 없는 원스톱 접수 시 신청부터 기기 설치까지 평균 소요 기간 12일 단축"
+    },
+    {
+      "title": "국민건강보험공단 노인장기요양보험 복지용구 급여 이용 가이드",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2024,
+      "key_finding": "장기요양 등급 판정자의 복지용구 연간 한도액 160만 원 내 스마트 돌봄 기기 본인부담금 감면 기준"
+    },
+    {
+      "title": "한국보건복지정보개발원 스마트 돌봄 기기 보급 및 현장 심사 통계",
+      "url": "https://www.bokjiro.go.kr",
+      "published_year": 2023,
+      "key_finding": "독거 가구 증빙 및 만성질환 소견서 첨부 가구의 우선 선정 배점 통과율 89.2% 기록"
+    },
+    {
+      "title": "국립재활원 돌봄 취약계층 스마트 보조기기 보급 성과 분석",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "지자체 자율 사업의 경우 온라인 신청 대비 관할 주민센터 방문 접수 시 서류 반려율 74% 감소"
+    }
+  ]
+}

@@ -71,6 +71,20 @@ export function structuralIssues(body) {
   return issues;
 }
 
+function safeWriteFileSync(filePath, data, options = 'utf8', retries = 5, delay = 200) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      fs.writeFileSync(filePath, data, options);
+      return;
+    } catch (err) {
+      if (i === retries - 1) throw err;
+      const wait = delay * Math.pow(2, i);
+      const start = Date.now();
+      while (Date.now() - start < wait) {}
+    }
+  }
+}
+
 export async function runAutoPipeline() {
   console.log('🚀 [돌봄지기] 일일 콘텐츠 자동 생성 및 발행 파이프라인 가동');
   const now = new Date();
@@ -176,14 +190,14 @@ export async function runAutoPipeline() {
   console.log(`🔍 [품질 리뷰 완료] 총 ${reviewCount}편의 콘텐츠에 대해 자율 리뷰 및 개선 검증 완료.`);
 
   if (newlyApplied > 0) {
-    fs.writeFileSync(APPROVALS_PATH, JSON.stringify(approvals, null, 2) + '\n');
+    safeWriteFileSync(APPROVALS_PATH, JSON.stringify(approvals, null, 2) + '\n');
     console.log(`✅ ${newlyApplied}건의 신규 승인 레코드가 publication-approvals.json에 반영되었습니다.`);
   } else {
     console.log('✅ 모든 기존 콘텐츠가 이미 최신 승인 상태입니다.');
   }
 
   manifest.updated_at = new Date().toISOString();
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n');
+  safeWriteFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n');
   console.log('🎉 일일 파이프라인 정상 종료.');
 }
 

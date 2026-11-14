@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T15:05:08.118Z",
+  "updated_at": "2026-11-14T15:08:57.529Z",
   "requested_count": 5,
-  "completed_count": 103,
+  "completed_count": 104,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1132,6 +1132,17 @@
       "character_count": 4845,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "7d3357f4f1f4e7ef00406f7b0ea37a2182e815d10805b003ea29f8d01ae7f119"
+    },
+    {
+      "title": "정부 돌봄로봇 무상 지원 신청 서류와 심사 절차 총정리",
+      "slug": "application-documents-checklist",
+      "input_id": "topic-104",
+      "output_path": "output/dolbomjigi/new-content/application-documents-checklist",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 4404,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "754c4691e013def77ee373ab0b7251b6cfe03d859855c485274c1fdbf5e49476"
     }
   ],
   "next_queue": []
