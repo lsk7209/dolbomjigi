@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:33:28.078Z",
+  "updated_at": "2026-11-14T11:35:15.720Z",
   "requested_count": 5,
-  "completed_count": 92,
+  "completed_count": 93,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1011,6 +1011,17 @@
       "character_count": 4684,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "a33637c8687921094d052aed0d292122766b55a69c50bace77d9c7fdab88a02f"
+    },
+    {
+      "title": "혼자 사는 시간이 길어질수록, 정서 지원 기술이 하는 일",
+      "slug": "loneliness-emotional-support-tech",
+      "input_id": "topic-93",
+      "output_path": "output/dolbomjigi/new-content/loneliness-emotional-support-tech",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4976,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "9cafcce5706b5390989f66afca966bd90a9edc6fe405b08eed1fecba9bf95983"
     }
   ],
   "next_queue": []

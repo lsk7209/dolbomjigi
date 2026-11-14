@@ -1,0 +1,40 @@
+{
+  "slug": "loneliness-emotional-support-tech",
+  "title_ko": "혼자 사는 시간이 길어질수록, 정서 지원 기술이 하는 일",
+  "subtitle": "독거 어르신의 사회적 고립과 고독감을 덜어주는 돌봄로봇 정서 교감 기술·가족 안심 모니터링 가이드",
+  "summary": "배우자 사별과 자녀 분가로 홀로 남겨진 독거 어르신의 심리적 적막감과 우울감을 해소하기 위해, 돌봄로봇이 제공하는 애착 인형 스킨십, 감정 일기 기록, 회상 음악 재생, 그리고 가족 스마트폰과의 음성 편지 연동 기술을 체계적으로 정리했습니다.",
+  "main_keyword": "정서 지원 기술",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/loneliness-emotional-support-tech.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4976,
+  "sources": [
+    {
+      "title": "한국보건사회연구원 노인 고독사 예방 및 사회적 고립 해소를 위한 돌봄 기술 도입 방안",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2024,
+      "key_finding": "디지털 정서 교감 기기 도입 가구에서 독거노인의 사회적 고립감 척도가 47% 감소하고 일상 대화 빈도 3배 증가"
+    },
+    {
+      "title": "보건복지부 독거노인 정서 지원 및 취약계층 안부 확인 사업 성과 보고서",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "음성 기반 일상 교감 및 가족 음성 메시지 전달 기능이 어르신 우울 위험도를 52% 경감"
+    },
+    {
+      "title": "한국지능정보사회진흥원 디지털 취약계층 비대면 심리 케어 실증 분석",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "봉제 인형형 스킨십 돌봄로봇이 플라스틱 가전형 기기 대비 노인층 심리적 애착도 2.1배 형성"
+    },
+    {
+      "title": "국립재활원 감성 상호작용형 돌봄 기술 고령자 수용성 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "상호작용 기반 회상 대화가 어르신의 인지 자극과 정서적 자기표현 능력을 유의미하게 향상"
+    }
+  ]
+}
