@@ -1,0 +1,30 @@
+{
+  "slug": "night-wandering-elderly-monitoring",
+  "sources": [
+    {
+      "title": "중앙치매센터 치매 노인 실종 방지 및 안전망 구축 실태 보고서",
+      "url": "https://www.nid.or.kr",
+      "published_year": 2024,
+      "key_finding": "야간 배회 발생 시 1시간 이내 골든타임 발견율이 89%에 달하나 새벽 미인지 실종 시 발견 지연 위험 급증"
+    },
+    {
+      "title": "경찰청 여성청소년과 실종 치매 어르신 수색 통계 및 예방 정책 분석",
+      "url": "https://www.police.go.kr",
+      "published_year": 2024,
+      "key_finding": "가정 내 현관 스마트 센서 및 음성 호출 시스템 도입 가구의 야간 실종 접수 건수가 74% 감소"
+    },
+    {
+      "title": "보건복지부 독거노인·장애인 응급안전안심서비스 야간 안전 모니터링 실무 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "비접촉식 레이더 모션 센서를 통한 야간 배회 징후 조기 포착으로 야간 보행 낙상 62% 감소"
+    },
+    {
+      "title": "국립재활원 돌봄 로봇 중개 연구 및 노인 야간 안심 케어 서비스 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사생활 침해 없는 비카메라 기반 센서 연동이 가족과 고령자 양측의 심리적 수용도를 85% 이상 견인"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

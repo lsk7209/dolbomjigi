@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:19:56.981Z",
+  "updated_at": "2026-11-14T11:23:58.248Z",
   "requested_count": 5,
-  "completed_count": 86,
+  "completed_count": 87,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -945,6 +945,17 @@
       "character_count": 4965,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "880d3f10839abc26e6efd0610e9fa5dc0f1697df9582d73559289dd0c217c012"
+    },
+    {
+      "title": "밤마다 집을 나서는 어르신, 돌봄로봇이 알아챌 수 있을까",
+      "slug": "night-wandering-elderly-monitoring",
+      "input_id": "topic-87",
+      "output_path": "output/dolbomjigi/new-content/night-wandering-elderly-monitoring",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5852,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "188cf6c0ef9b50a4cac07d88ae913e9688ace80f07533582ad92c97776437c47"
     }
   ],
   "next_queue": []
