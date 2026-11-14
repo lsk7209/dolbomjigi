@@ -1,0 +1,30 @@
+{
+  "slug": "best-care-robot-for-solo-living",
+  "sources": [
+    {
+      "title": "통계청 2024 고령자 통계 및 독거노인 가구 주거 실태 분석",
+      "url": "https://kostat.go.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 1인 가구 비중 37.8% 돌파, 단독 거주 시 사회적 고립감 및 안전 불안감 2.4배 증가"
+    },
+    {
+      "title": "보건복지부 제1차 고독사 예방 기본계획 및 스마트 돌봄 추진 성과",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "능동형 AI 돌봄 기기 보급 독거 가구의 위급 상황 조기 발견율 94.2% 달성"
+    },
+    {
+      "title": "한국지능정보사회진흥원 취약계층 비대면 AI 돌봄 서비스 실증 효과",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "인형형 감성 로봇 활용 시 독거 어르신의 일상 대화 발화량 3.1배 증가 및 우울 척도 대폭 개선"
+    },
+    {
+      "title": "국립재활원 단독 거주 고령자 생활 편의 스마트 기기 적응성 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "조작이 단순한 비접촉 센서 결합형 돌봄로봇의 6개월 이상 장기 이용 지속률 88.7% 기록"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

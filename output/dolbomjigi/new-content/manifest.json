@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T15:16:38.878Z",
+  "updated_at": "2026-11-14T20:57:47.295Z",
   "requested_count": 5,
-  "completed_count": 106,
+  "completed_count": 107,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1165,6 +1165,17 @@
       "character_count": 3906,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "bf27b0a5b4edc4b72009198c962ca951eceff43c034efd67520b0238fbb30f93"
+    },
+    {
+      "title": "혼자 사시는 어르신을 위한 1인 가구 맞춤 돌봄로봇 선택 기준",
+      "slug": "best-care-robot-for-solo-living",
+      "input_id": "topic-107",
+      "output_path": "output/dolbomjigi/new-content/best-care-robot-for-solo-living",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3917,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "63f95576eef600d90cb1a6d5da842a534d081a9938680907cfa2e9b703729b20"
     }
   ],
   "next_queue": []
