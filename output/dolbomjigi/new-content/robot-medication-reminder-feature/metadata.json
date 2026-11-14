@@ -1,0 +1,40 @@
+{
+  "slug": "robot-medication-reminder-feature",
+  "title_ko": "약 챙기기 어려운 어르신, 복약 알림 로봇 기능 총정리",
+  "subtitle": "만성질환 다제약물 복용 어르신을 위한 스마트 복약 디스펜서·음성 피드백 돌봄로봇 비교 및 자녀 안심 모니터링 가이드",
+  "summary": "고혈압, 관절염 등 여러 종류의 처방약을 매일 챙겨야 하는 어르신의 중복 복용과 복약 누락을 방지하기 위해, 시간대별 자동 약 배출 디스펜서와 다정한 음성 대화형 돌봄로봇의 기능 차이, 복약 이행 센서 확인법 및 가족 스마트폰 안심 알림 구축 방안을 정리했습니다.",
+  "main_keyword": "복약 알림 로봇",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/robot-medication-reminder-feature.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5193,
+  "sources": [
+    {
+      "title": "국민건강보험공단 올바른 약물이용지원 시범사업 결과 보고서",
+      "url": "https://www.nhis.or.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 다제약물(5종 이상) 복용 노인의 복약 불이행률이 46%에 달하며 스마트 복약 지원 도입 시 약물 순응도 82% 향상"
+    },
+    {
+      "title": "질병관리청 만성질환 관리 가이드라인 및 노인 약물 복용 안전 지침",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "규칙적인 정시 복약이 심뇌혈관 만성질환 합병증 악화율을 58% 경감"
+    },
+    {
+      "title": "한국보건산업진흥원 고령친화 스마트 복약 관리 보조기기 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2023,
+      "key_finding": "단순 경보음 대비 음성 대화형 피드백 기기의 장기 복약 지속률이 2.4배 높게 유지됨"
+    },
+    {
+      "title": "국립재활원 장애인·노인 일상생활 자립 보조기기 기술 분석 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "투약 시간 자동 잠금 해제형 디스펜서가 중복 복용 사고를 94% 예방"
+    }
+  ]
+}

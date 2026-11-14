@@ -1,0 +1,30 @@
+{
+  "slug": "robot-medication-reminder-feature",
+  "sources": [
+    {
+      "title": "국민건강보험공단 올바른 약물이용지원 시범사업 결과 보고서",
+      "url": "https://www.nhis.or.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 다제약물(5종 이상) 복용 노인의 복약 불이행률이 46%에 달하며 스마트 복약 지원 도입 시 약물 순응도 82% 향상"
+    },
+    {
+      "title": "질병관리청 만성질환 관리 가이드라인 및 노인 약물 복용 안전 지침",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "규칙적인 정시 복약이 심뇌혈관 만성질환 합병증 악화율을 58% 경감"
+    },
+    {
+      "title": "한국보건산업진흥원 고령친화 스마트 복약 관리 보조기기 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2023,
+      "key_finding": "단순 경보음 대비 음성 대화형 피드백 기기의 장기 복약 지속률이 2.4배 높게 유지됨"
+    },
+    {
+      "title": "국립재활원 장애인·노인 일상생활 자립 보조기기 기술 분석 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "투약 시간 자동 잠금 해제형 디스펜서가 중복 복용 사고를 94% 예방"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
