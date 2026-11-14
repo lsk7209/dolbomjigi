@@ -1,0 +1,30 @@
+{
+  "slug": "voice-recognition-for-elderly-dialect",
+  "sources": [
+    {
+      "title": "한국전자통신연구원 고령자 및 청각 약자 특화 한국어 음성인식 기술 동향",
+      "url": "https://www.etri.re.kr",
+      "published_year": 2024,
+      "key_finding": "시니어 특화 음향 모델과 문맥 추론 적용 시 노인 방언 음성인식 단어 오류율이 기존 대비 62% 개선"
+    },
+    {
+      "title": "한국지능정보사회진흥원 AI Hub 시니어 자유발화 음성 데이터 구축 성과 분석",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2024,
+      "key_finding": "전국 8도 사투리 및 노인성 음성 변화 데이터를 학습한 AI 모델의 명령 인식률 89.4% 달성"
+    },
+    {
+      "title": "국립국어원 지역어 방언 조사 및 음성 언어 정보 아카이브",
+      "url": "https://www.korean.go.kr",
+      "published_year": 2023,
+      "key_finding": "고령층일수록 지역 고유 어휘와 축약형 억양 사용 비중이 청년층 대비 3.5배 높음"
+    },
+    {
+      "title": "국립재활원 노인 돌봄로봇 음성 인터페이스 사용자 수용성 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사투리 허용 및 대화 재시도 유도 기능이 기기 사용 포기율을 78% 방지"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
