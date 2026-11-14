@@ -216,10 +216,11 @@ export async function consumeQueueAndGenerate(count = 1) {
 
   for (let i = 0; i < count && manifest.next_queue.length > 0; i++) {
     const queueItem = manifest.next_queue[0];
-    const postData = await loadTemplate(queueItem.slug);
+    const slug = typeof queueItem === 'string' ? queueItem : (queueItem ? queueItem.slug : undefined);
+    const postData = await loadTemplate(slug);
 
     if (!postData) {
-      console.log(`⚠️ 큐 항목 [${queueItem.slug}]에 대한 원천 집필 템플릿이 아직 준비되지 않았습니다. 건너뜁니다.`);
+      console.log(`⚠️ 큐 항목 [${slug}]에 대한 원천 집필 템플릿이 아직 준비되지 않았습니다. 건너뜁니다.`);
       break;
     }
 
@@ -279,11 +280,13 @@ export async function consumeQueueAndGenerate(count = 1) {
       title_ko: postData.title_ko,
       target_audience: postData.target_persona,
       primary_goal: postData.summary,
-      core_questions_answered: [
-        '화장실 및 일상 배설 모니터링의 임상적 필요성과 사고 방지',
-        '스마트 비데와 거실 돌봄로봇 간의 무선(BLE) 연동 세팅법',
-        '낙상 방지 손잡이 및 바닥 매트 하드웨어 환경 보강 수칙'
-      ]
+      core_questions_answered: postData.faq && postData.faq.length > 0 
+        ? postData.faq.map(f => f.question)
+        : [
+            '돌봄로봇 도입 효과 및 일상 모니터링 안전 지침',
+            '기기 조작 및 스마트 홈 연동 설정 가이드',
+            '비상 대응 체계 및 하드웨어 유지관리 수칙'
+          ]
     };
     fs.writeFileSync(path.join(postDir, 'brief.json'), JSON.stringify(brief, null, 2), 'utf8');
 
