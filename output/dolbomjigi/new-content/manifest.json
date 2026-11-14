@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T21:00:17.232Z",
+  "updated_at": "2026-11-14T21:02:15.620Z",
   "requested_count": 5,
-  "completed_count": 108,
+  "completed_count": 109,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1187,6 +1187,17 @@
       "character_count": 3862,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "5ba73e59a5524d276f176f0da85131b42ffa1d3cc1f9738dfbf128d63f590638"
+    },
+    {
+      "title": "부산시 어르신 돌봄로봇 지원 사업, 신청 자격과 혜택 가이드",
+      "slug": "busan-care-robot-support",
+      "input_id": "topic-109",
+      "output_path": "output/dolbomjigi/new-content/busan-care-robot-support",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3680,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "6fad72a19ae0ac8f9b0fc94993c51f4a1521920c0f59b4140e83bee68ffa927f"
     }
   ],
   "next_queue": []

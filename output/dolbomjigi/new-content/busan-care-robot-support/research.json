@@ -1,0 +1,30 @@
+{
+  "slug": "busan-care-robot-support",
+  "sources": [
+    {
+      "title": "부산광역시 스마트 시니어 복지 케어 및 고독사 예방 추진 계획",
+      "url": "https://www.busan.go.kr",
+      "published_year": 2024,
+      "key_finding": "부산시 16개 구·군 독거노인 대상 AI 돌봄로봇 및 응급안전망 보급률 62% 달성"
+    },
+    {
+      "title": "부산여성가족개발원 취약계층 비대면 복지 서비스 이용 실태 및 만족도",
+      "url": "https://www.bwf.re.kr",
+      "published_year": 2024,
+      "key_finding": "AI 돌봄 인형 활용 부산 독거 어르신의 일상 고독감 68% 감소 및 관제센터 응답 신속성 만족도 96점 기록"
+    },
+    {
+      "title": "보건복지부 독거노인·장애인 응급안전안심서비스 지역별 운영 현황",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "부산 지역 응급안전안심서비스 연계 119 구급 출동 골든타임 확보율 98.2% 달성"
+    },
+    {
+      "title": "부산소방재난본부 119 안심콜 서비스 고령자 등록 및 구조 사례 분석",
+      "url": "https://119.busan.go.kr",
+      "published_year": 2023,
+      "key_finding": "사전 병력 및 거주지 정보를 등록한 안심콜 연계로 현장 구급 이송 소요 시간 8.5분 단축"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
