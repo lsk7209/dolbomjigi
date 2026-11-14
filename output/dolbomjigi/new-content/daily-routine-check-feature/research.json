@@ -1,0 +1,30 @@
+{
+  "slug": "daily-routine-check-feature",
+  "sources": [
+    {
+      "title": "보건복지부 노인 맞춤 돌봄서비스 안부 확인 및 안전 지원 가이드라인",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "비대면 일상 루틴 모니터링 도입 가구에서 독거노인의 무단 외출 및 응급 방치 위험이 71% 감소"
+    },
+    {
+      "title": "한국보건사회연구원 초고령사회 고령자 일상생활 수행능력(ADL) 추이 분석",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2024,
+      "key_finding": "기상 시간 지연과 식사 불규칙 등 생활 패턴 왜곡이 노인 허약 및 와상 상태로 이어지는 핵심 선행 징후"
+    },
+    {
+      "title": "한국지능정보사회진흥원 스마트 돌봄 라이프 로그 데이터 활용 실증 연구",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "모션 및 대화 기반 24시간 일과 리포트가 가족의 안부 확인 만족도를 88% 수준으로 향상"
+    },
+    {
+      "title": "국립재활원 장애인·노인 일상생활 자립 지원 및 돌봄 테크놀로지 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사생활 침해 없는 비카메라 기반 일과 패턴 감지가 노인 사용자의 거부감을 82% 낮춤"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

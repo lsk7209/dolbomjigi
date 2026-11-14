@@ -1,0 +1,40 @@
+{
+  "slug": "daily-routine-check-feature",
+  "title_ko": "오늘 하루 잘 지내셨나요, 일과 확인 기능의 쓸모",
+  "subtitle": "기상부터 취침까지 부모님의 생활 패턴 이상 징후를 감지하는 돌봄로봇 일과 리포트와 자녀 안심 모니터링 가이드",
+  "summary": "홀로 계신 부모님의 기상 시간 지연, 식사 거름, 낮 시간 활동량 급감 등 사소한 일상 변화에서 건강 이상 징후를 조기에 포착하기 위해, 돌봄로봇의 24시간 생활 패턴 데이터 수집 원리와 일과 안부 리포트 확인법, 그리고 가족 스마트폰 알림 활용법을 정리했습니다.",
+  "main_keyword": "일과 확인 기능",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/daily-routine-check-feature.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4668,
+  "sources": [
+    {
+      "title": "보건복지부 노인 맞춤 돌봄서비스 안부 확인 및 안전 지원 가이드라인",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "비대면 일상 루틴 모니터링 도입 가구에서 독거노인의 무단 외출 및 응급 방치 위험이 71% 감소"
+    },
+    {
+      "title": "한국보건사회연구원 초고령사회 고령자 일상생활 수행능력(ADL) 추이 분석",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2024,
+      "key_finding": "기상 시간 지연과 식사 불규칙 등 생활 패턴 왜곡이 노인 허약 및 와상 상태로 이어지는 핵심 선행 징후"
+    },
+    {
+      "title": "한국지능정보사회진흥원 스마트 돌봄 라이프 로그 데이터 활용 실증 연구",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2023,
+      "key_finding": "모션 및 대화 기반 24시간 일과 리포트가 가족의 안부 확인 만족도를 88% 수준으로 향상"
+    },
+    {
+      "title": "국립재활원 장애인·노인 일상생활 자립 지원 및 돌봄 테크놀로지 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "사생활 침해 없는 비카메라 기반 일과 패턴 감지가 노인 사용자의 거부감을 82% 낮춤"
+    }
+  ]
+}

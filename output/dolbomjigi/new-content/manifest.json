@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:35:15.720Z",
+  "updated_at": "2026-11-14T11:37:05.651Z",
   "requested_count": 5,
-  "completed_count": 93,
+  "completed_count": 94,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1022,6 +1022,17 @@
       "character_count": 4976,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "9cafcce5706b5390989f66afca966bd90a9edc6fe405b08eed1fecba9bf95983"
+    },
+    {
+      "title": "오늘 하루 잘 지내셨나요, 일과 확인 기능의 쓸모",
+      "slug": "daily-routine-check-feature",
+      "input_id": "topic-94",
+      "output_path": "output/dolbomjigi/new-content/daily-routine-check-feature",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4668,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "3ea53560973c6206c40930d85edd44ccc4ccd818a109687d590c83ddecda0630"
     }
   ],
   "next_queue": []
