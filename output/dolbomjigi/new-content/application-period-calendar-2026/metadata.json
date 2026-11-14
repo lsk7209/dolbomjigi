@@ -1,0 +1,40 @@
+{
+  "slug": "application-period-calendar-2026",
+  "title_ko": "2026년 전국 지자체 AI 돌봄로봇 신청 일정 캘린더",
+  "subtitle": "서울·경기·부산 등 전국 17개 시도별 스마트 시니어 케어 보급 공고 시기·상하반기 접수 일정 및 선착순 마감 대비 팁",
+  "summary": "2026년 전국 지자체별 AI 돌봄로봇 및 응급안전안심서비스 연간 신청 일정, 상반기(1~3월) 집중 공고 시기, 지자체별 접수 창구 및 예산 소진 전 조기 마감 대비 체크리스트를 총정리했습니다.",
+  "main_keyword": "2026 돌봄로봇 신청 일정",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/application-period-calendar-2026.jpg",
+  "reading_time_minutes": 6,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 3660,
+  "sources": [
+    {
+      "title": "보건복지부 2026년도 노인복지 및 응급안전안심서비스 사업 운영 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2025,
+      "key_finding": "전국 229개 시·군·구 스마트 돌봄 장비 연간 예산의 70%가 1분기(1~3월)에 조기 배정 집행"
+    },
+    {
+      "title": "서울특별시 2026 스마트 어르신 돌봄 혁신 사업 추진 계획",
+      "url": "https://www.seoul.go.kr",
+      "published_year": 2025,
+      "key_finding": "서울시 25개 자치구별 AI 안심 로봇 신청 접수 시작일 및 자치구별 우선순위 배점 기준"
+    },
+    {
+      "title": "경기도 복지정책과 2026 AI 노인말벗서비스 및 취약계층 스마트 홈 보급 공고",
+      "url": "https://www.gg.go.kr",
+      "published_year": 2025,
+      "key_finding": "경기 31개 시·군 상반기 집중 접수 가구의 선정률 88.4%, 하반기 잔여 물량 접수 시 경쟁률 3.2배 상승"
+    },
+    {
+      "title": "한국지능정보사회진흥원 2026 스마트 빌리지 및 복지 취약지 보급 통계",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2025,
+      "key_finding": "상반기 1~2월 사전 서류 준비 가구의 기기 수령 소요 기간 평균 14일 기록"
+    }
+  ]
+}

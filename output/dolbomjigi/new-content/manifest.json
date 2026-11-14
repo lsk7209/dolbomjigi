@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T21:04:42.661Z",
+  "updated_at": "2026-11-14T21:07:04.523Z",
   "requested_count": 5,
-  "completed_count": 110,
+  "completed_count": 111,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1209,6 +1209,17 @@
       "character_count": 3733,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "fe84839c749fa051af68f177c32a334635d89623518b2c2c8bfe1b71fdb970a6"
+    },
+    {
+      "title": "2026년 전국 지자체 AI 돌봄로봇 신청 일정 캘린더",
+      "slug": "application-period-calendar-2026",
+      "input_id": "topic-111",
+      "output_path": "output/dolbomjigi/new-content/application-period-calendar-2026",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3660,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "09309d62390220dc960e35b92ebe014b1238c82eb1b6b112f42297d3d91d6acf"
     }
   ],
   "next_queue": []
