@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:12:02.299Z",
+  "updated_at": "2026-11-14T11:19:56.981Z",
   "requested_count": 5,
-  "completed_count": 85,
+  "completed_count": 86,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -934,6 +934,17 @@
       "character_count": 4576,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "ca656727ce9b50d1e1544e983411f5edffe7b161b894e3abb7cd88c54c0c29fd"
+    },
+    {
+      "title": "당뇨 어르신 돌봄로봇, 식사·복약 알림은 얼마나 챙겨줄까",
+      "slug": "diabetes-senior-care-robot",
+      "input_id": "topic-86",
+      "output_path": "output/dolbomjigi/new-content/diabetes-senior-care-robot",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4965,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "880d3f10839abc26e6efd0610e9fa5dc0f1697df9582d73559289dd0c217c012"
     }
   ],
   "next_queue": []

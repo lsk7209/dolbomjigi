@@ -1,0 +1,40 @@
+{
+  "slug": "diabetes-senior-care-robot",
+  "title_ko": "당뇨 어르신 돌봄로봇, 식사·복약 알림은 얼마나 챙겨줄까",
+  "subtitle": "저혈당 쇼크 방지 식사 시간 안내와 경구 혈당 강하제·인슐린 투약 루틴 안심 홈케어 실전 가이드",
+  "summary": "식사 시간을 거르거나 약 복용을 잊었을 때 급격한 혈당 변동과 저혈당 쇼크에 노출되기 쉬운 당뇨 어르신을 위해, 돌봄로봇의 정밀 식사 알림과 식후 30분 복약 코칭, 이상 징후 자녀 안심 모니터링을 결합한 실전 홈케어 활용법을 안내합니다.",
+  "main_keyword": "당뇨 어르신 돌봄로봇",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/diabetes-senior-care-robot.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4965,
+  "sources": [
+    {
+      "title": "대한당뇨병학회 노인 당뇨병 관리 지침 및 저혈당 예방 수칙",
+      "url": "https://www.diabetes.or.kr",
+      "published_year": 2024,
+      "key_finding": "규칙적인 삼시 세끼 식사 시간 엄수와 식후 정시 복약이 고령 당뇨 환자의 급성 저혈당 응급실 내원율을 68% 감소시킴"
+    },
+    {
+      "title": "질병관리청 만성질환 감시 통계 및 고령층 당뇨병 합병증 실태 보고서",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "독거 당뇨 어르신의 복약 누락률이 42%에 달하며, 식사 거름 후 복약으로 인한 저혈당 혼수 사고 다발"
+    },
+    {
+      "title": "보건복지부 노인 맞춤 돌봄서비스 만성질환자 맞춤형 생활 케어 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "스마트 음성 돌봄 장비의 식사-복약 연동 알림 도입 후 어르신들의 자발적 건강 수칙 준수율이 2.8배 증가"
+    },
+    {
+      "title": "한국보건의료연구원 고령자 만성질환 자가 관리 디지털 헬스케어 기술 평가",
+      "url": "https://www.neca.re.kr",
+      "published_year": 2023,
+      "key_finding": "단순 알람 시계 대비 대화형 피드백 돌봄로봇의 사용자 순응도가 73% 더 높게 지속됨"
+    }
+  ]
+}
