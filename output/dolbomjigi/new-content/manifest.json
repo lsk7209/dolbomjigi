@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-05T01:44:55.816Z",
+  "updated_at": "2026-11-14T11:12:02.299Z",
   "requested_count": 5,
-  "completed_count": 84,
+  "completed_count": 85,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -923,14 +923,18 @@
       "character_count": 4622,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "743a1ffa5b3df9f3b700c6b3f7f342a98aedb98a2bd7d7ce6a71c35277b9dfd6"
+    },
+    {
+      "title": "환절기 큰 일교차 심혈관 관리: 돌봄로봇의 실내외 기온차 알림과 아침 목도리 체크",
+      "slug": "alone-elderly-spring-cardiovascular-health-routine",
+      "input_id": "topic-85",
+      "output_path": "output/dolbomjigi/new-content/alone-elderly-spring-cardiovascular-health-routine",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4576,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "ca656727ce9b50d1e1544e983411f5edffe7b161b894e3abb7cd88c54c0c29fd"
     }
   ],
-  "next_queue": [
-    {
-      "slug": "alone-elderly-spring-cardiovascular-health-routine",
-      "title": "환절기 큰 일교차 심혈관 관리: 돌봄로봇의 실내외 기온차 알림과 아침 목도리 체크",
-      "main_keyword": "독거노인 환절기 일교차 돌봄로봇 외출 알림",
-      "target_persona": "family_caregiver"
-    }
-  ]
+  "next_queue": []
 }

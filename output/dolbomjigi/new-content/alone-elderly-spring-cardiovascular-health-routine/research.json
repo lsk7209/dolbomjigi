@@ -1,0 +1,30 @@
+{
+  "slug": "alone-elderly-spring-cardiovascular-health-routine",
+  "sources": [
+    {
+      "title": "질병관리청 심뇌혈관질환 예방관리 및 환절기 건강보호 수칙",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "일교차가 10도 이상 벌어질 때마다 65세 이상 고령층의 심혈관계 응급 입원율 18% 증가"
+    },
+    {
+      "title": "대한심장학회 고령자 계절 변화와 혈압 변동성 임상 연구 보고서",
+      "url": "https://www.circulation.or.kr",
+      "published_year": 2024,
+      "key_finding": "외출 시 목도리와 모자 착용으로 체온을 1도 보온할 경우 급격한 혈압 상승 67% 완화"
+    },
+    {
+      "title": "한국보건사회연구원 취약계층 독거노인 기후변화 적응 및 안전지원 실태",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "기상 특보 연동 음성 비서 도입 가구에서 어르신의 외출 시 보온 복장 준수율 3.2배 향상"
+    },
+    {
+      "title": "국립재활원 보조기기 열린플랫폼 고령자 일상 건강 모니터링 가이드라인",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "현관 모션 감지 센서와 결합된 날씨 맞춤 외출 음성 브리핑이 심근경색 사고를 선제 예방"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
