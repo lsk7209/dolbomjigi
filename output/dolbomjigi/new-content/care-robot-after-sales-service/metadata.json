@@ -1,0 +1,40 @@
+{
+  "slug": "care-robot-after-sales-service",
+  "title_ko": "돌봄로봇 무상 A/S 보증 기간과 배터리·소모품 교체 수리 가이드",
+  "subtitle": "제조사별 무상 보증 기준, 배터리 노후화 출장 교체 비용, 침수·파손 유상 수리 기준과 긴급 대체 기기 지원법",
+  "summary": "스마트 돌봄로봇의 무상 품질 보증 기간(1~2년), 사용 2~3년 차 리튬이온 배터리 성능 저하 시 출장 교체 비용, 어르신 실수로 인한 침수·낙상 유상 수리 감면 기준과 지자체 긴급 대체 기기 지원 제도를 정리했습니다.",
+  "main_keyword": "돌봄로봇 AS",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-after-sales-service.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5582,
+  "sources": [
+    {
+      "title": "한국소비자원 스마트 가전 및 복지기기 품질보증 기준 연구",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "스마트 돌봄로봇 권장 품질보증기간 1년, 핵심 부품(메인보드) 2년, 유상 수리용 부품 보유 연한 5년 규정"
+    },
+    {
+      "title": "보건복지부 취약계층 스마트 돌봄기기 사후관리 운영 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "기기 고장 접수 후 영업일 기준 48시간 이내 방문 수리 또는 대체 임시 기기 지원율 94.6% 달성"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄스페이스 하드웨어 내구성 및 배터리 열화 분석",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "어르신 가정 내 상시 충전 환경에서 24개월 경과 시 리튬이온 배터리 용량 초기 대비 68% 수준으로 감소"
+    },
+    {
+      "title": "서울시복지재단 스마트 돌봄기기 사후관리 체계 만족도 조사",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2023,
+      "key_finding": "어르신 실수에 의한 생활 마모·단자 접촉 불량의 78%가 출장 전담 기사의 현장 클리닝으로 당일 해소"
+    }
+  ]
+}

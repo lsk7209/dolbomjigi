@@ -1,0 +1,30 @@
+{
+  "slug": "care-robot-after-sales-service",
+  "sources": [
+    {
+      "title": "한국소비자원 스마트 가전 및 복지기기 품질보증 기준 연구",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "스마트 돌봄로봇 권장 품질보증기간 1년, 핵심 부품(메인보드) 2년, 유상 수리용 부품 보유 연한 5년 규정"
+    },
+    {
+      "title": "보건복지부 취약계층 스마트 돌봄기기 사후관리 운영 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "기기 고장 접수 후 영업일 기준 48시간 이내 방문 수리 또는 대체 임시 기기 지원율 94.6% 달성"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄스페이스 하드웨어 내구성 및 배터리 열화 분석",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "어르신 가정 내 상시 충전 환경에서 24개월 경과 시 리튬이온 배터리 용량 초기 대비 68% 수준으로 감소"
+    },
+    {
+      "title": "서울시복지재단 스마트 돌봄기기 사후관리 체계 만족도 조사",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2023,
+      "key_finding": "어르신 실수에 의한 생활 마모·단자 접촉 불량의 78%가 출장 전담 기사의 현장 클리닝으로 당일 해소"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
