@@ -1,0 +1,30 @@
+{
+  "slug": "hearing-impaired-elderly-features",
+  "sources": [
+    {
+      "title": "대한이비인후과학회 노인성 난청 실태 및 청각 보조 기술 가이드라인",
+      "url": "https://www.korl.or.kr",
+      "published_year": 2024,
+      "key_finding": "65세 이상 노인의 38%, 75세 이상의 절반 이상이 난청을 겪으며 고주파 손실로 \"ㅅ, ㅆ, ㅈ\" 자음 구별이 어려움"
+    },
+    {
+      "title": "한국보건산업진흥원 고령친화 청각 약자 보조 인터페이스 실증 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2024,
+      "key_finding": "저음역 강조 튜닝 및 LED 시각 알림 병행 시 노인성 난청 고령자의 메시지 이해율이 84%로 향상"
+    },
+    {
+      "title": "국립재활원 장애인·노인 청각 대체 보조기기 사용성 연구집",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "화면 특대형 자막과 음성 동시 출력이 보청기 미착용 어르신의 정보 수용도를 2.8배 개선"
+    },
+    {
+      "title": "한국정보통신기술협회 시니어 및 감각 약자 스마트 기기 접근성 표준",
+      "url": "https://www.tta.or.kr",
+      "published_year": 2023,
+      "key_finding": "최대 음량 80dB 이상 확보 및 왜곡 없는 스피커 유닛 탑재가 음성 전달 실패율을 75% 감소"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:42:43.022Z",
+  "updated_at": "2026-11-14T11:44:47.323Z",
   "requested_count": 5,
-  "completed_count": 97,
+  "completed_count": 98,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1066,6 +1066,17 @@
       "character_count": 4535,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "d63eed663e3151173ab6d5d11359e545cf1eb7b327497303690b3e68afb3c178"
+    },
+    {
+      "title": "귀가 어두운 어르신을 위한 돌봄로봇 기능은",
+      "slug": "hearing-impaired-elderly-features",
+      "input_id": "topic-98",
+      "output_path": "output/dolbomjigi/new-content/hearing-impaired-elderly-features",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4506,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "d45dbaf7c86e017f518deeef28f54bedbe8b5dc23758d950f1e3fa9130168808"
     }
   ],
   "next_queue": []
