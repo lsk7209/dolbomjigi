@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T20:57:47.295Z",
+  "updated_at": "2026-11-14T21:00:17.232Z",
   "requested_count": 5,
-  "completed_count": 107,
+  "completed_count": 108,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1176,6 +1176,17 @@
       "character_count": 3917,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "63f95576eef600d90cb1a6d5da842a534d081a9938680907cfa2e9b703729b20"
+    },
+    {
+      "title": "월 1만 원대 실속형 돌봄로봇 추천과 정부 보조금 결합 가이드",
+      "slug": "budget-care-robot-recommendation",
+      "input_id": "topic-108",
+      "output_path": "output/dolbomjigi/new-content/budget-care-robot-recommendation",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3862,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "5ba73e59a5524d276f176f0da85131b42ffa1d3cc1f9738dfbf128d63f590638"
     }
   ],
   "next_queue": []

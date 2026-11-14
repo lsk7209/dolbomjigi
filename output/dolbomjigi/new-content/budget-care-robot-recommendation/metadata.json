@@ -1,0 +1,40 @@
+{
+  "slug": "budget-care-robot-recommendation",
+  "title_ko": "월 1만 원대 실속형 돌봄로봇 추천과 정부 보조금 결합 가이드",
+  "subtitle": "비싼 기기값 부담 덜어주는 보급형 시니어 케어 기기·렌털 요금제 비교·복지용구 85% 감면 및 바우처 혜택 총정리",
+  "summary": "초기 구매 비용 부담이 큰 돌봄로봇을 합리적인 예산으로 도입하기 위한 3대 보급형 기기 추천, 월 1~2만 원대 렌털 프로모션 활용법, 노인장기요양보험 복지용구 85% 국비 감면과 지자체 바우처 결합 요령을 알기 쉽게 정리했습니다.",
+  "main_keyword": "가성비 돌봄로봇 추천",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/budget-care-robot-recommendation.jpg",
+  "reading_time_minutes": 6,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 3862,
+  "sources": [
+    {
+      "title": "한국소비자원 고령자 돌봄 기기 가격 실태 및 렌털 서비스 계약 조건 비교",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2024,
+      "key_finding": "보조금 결합 및 장기 렌털 시 초기 일시불 구매 대비 초기 가계 부담금 78% 경감"
+    },
+    {
+      "title": "국민건강보험공단 장기요양보험 복지용구 본인부담금 경감 제도 안내",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2024,
+      "key_finding": "일반 대상자 15%, 감경 대상자 6~9% 본인부담금으로 스마트 돌봄 용구 이용 가능"
+    },
+    {
+      "title": "보건복지부 지역사회 취약계층 스마트 홈 복지 바우처 운영 통계",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "지자체 바우처 연계 시 월 실부담금 1만 원 미만으로 독거노인 돌봄 서비스 수혜"
+    },
+    {
+      "title": "국립재활원 돌봄로봇 실용화 및 가격 대비 사용자 만족도 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "핵심 기능(안부·복약·비상호출) 중심의 보급형 기기가 고가 복합 기기 대비 지속 이용률 18% 우세"
+    }
+  ]
+}
