@@ -1,0 +1,30 @@
+{
+  "slug": "companion-robot-conversation-quality",
+  "sources": [
+    {
+      "title": "한국지능정보사회진흥원 AI 돌봄로봇 기반 취약계층 비대면 정서 지원 실증 연구",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2024,
+      "key_finding": "생성형 AI 말벗 대화 도입 후 독거노인의 사회적 고립 척도가 43% 감소하고 주관적 행복감 38% 상승"
+    },
+    {
+      "title": "보건복지부 노인 실태조사 및 고령층 우울감·고립 실태 보고서",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "독거노인의 34%가 하루 종일 한마디도 하지 않는 대화 단절 상태에 놓여 있어 정서적 상호작용 개입 시급"
+    },
+    {
+      "title": "한국보건사회연구원 초고령사회 돌봄 테크놀로지 도입 효과 분석",
+      "url": "https://www.kihasa.re.kr",
+      "published_year": 2023,
+      "key_finding": "대화형 돌봄로봇을 6개월 이상 사용한 노인의 언어 유창성과 인지 자극 반응 속도가 유의미하게 개선"
+    },
+    {
+      "title": "국립재활원 감성 교감형 노인 돌봄로봇 일상 만족도 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "단순 질의응답 대비 어르신 발화 경청 및 맞장구 기능이 기기 지속 사용률을 2.6배 견인"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}

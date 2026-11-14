@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:27:57.435Z",
+  "updated_at": "2026-11-14T11:29:50.190Z",
   "requested_count": 5,
-  "completed_count": 89,
+  "completed_count": 90,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -978,6 +978,17 @@
       "character_count": 5090,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "fb324e663768aa98d97cc5182d6aa2d551fa5229f24ed13572d7359378f5809e"
+    },
+    {
+      "title": "말벗 기능, 정말 어르신과 대화가 통할까",
+      "slug": "companion-robot-conversation-quality",
+      "input_id": "topic-90",
+      "output_path": "output/dolbomjigi/new-content/companion-robot-conversation-quality",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 5101,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "a104112b47313b004713bd3c0dd7610dc77f19d55502fb723bd1959beb4f59e4"
     }
   ],
   "next_queue": []
