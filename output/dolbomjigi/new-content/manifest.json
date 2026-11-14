@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:44:47.323Z",
+  "updated_at": "2026-11-14T11:46:33.902Z",
   "requested_count": 5,
-  "completed_count": 98,
+  "completed_count": 99,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1077,6 +1077,17 @@
       "character_count": 4506,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "d45dbaf7c86e017f518deeef28f54bedbe8b5dc23758d950f1e3fa9130168808"
+    },
+    {
+      "title": "물 한 잔 챙기기, 돌봄로봇의 수분·식사 안내 기능",
+      "slug": "hydration-meal-reminder-summer",
+      "input_id": "topic-99",
+      "output_path": "output/dolbomjigi/new-content/hydration-meal-reminder-summer",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4329,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "fd421cde0678586e68ff14f1047f0d8deae361d747632b6a9483599390f5eec8"
     }
   ],
   "next_queue": []

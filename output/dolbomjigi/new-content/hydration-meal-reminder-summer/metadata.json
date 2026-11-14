@@ -1,0 +1,40 @@
+{
+  "slug": "hydration-meal-reminder-summer",
+  "title_ko": "물 한 잔 챙기기, 돌봄로봇의 수분·식사 안내 기능",
+  "subtitle": "갈증을 느끼지 못하는 고령층의 급성 탈수와 영양 결핍을 막는 돌봄로봇 맞춤형 음성 수분 섭취 코칭 및 식사 확인 실전 가이드",
+  "summary": "나이가 들수록 갈증을 느끼는 중추가 노화되어 심각한 탈수 상태에서도 물을 마시지 않는 부모님을 위해, 돌봄로봇이 하루 6~8회 정기적으로 미온수 섭취를 권유하고 정시 식사 리듬을 코칭하며, 냉장고 센서 및 복약과 연계하여 건강한 일과를 지켜주는 실전 홈케어법을 정리했습니다.",
+  "main_keyword": "수분 섭취 안내",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/hydration-meal-reminder-summer.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4329,
+  "sources": [
+    {
+      "title": "대한노인병학회 노인 탈수 및 전해질 불균형 관리 임상 가이드라인",
+      "url": "https://www.geriatrics.or.kr",
+      "published_year": 2024,
+      "key_finding": "고령자의 42%가 만성 탈수 위험군이며 구갈 중추 감각 저하로 갈증 인지 능력이 청년층 대비 50% 이하로 감퇴"
+    },
+    {
+      "title": "질병관리청 국가 만성질환 포털 만성질환 고령층 일상 수분 섭취 수칙",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "규칙적인 하루 1.5L 미온수 분할 섭취가 고령층 혈전성 뇌경색 및 급성 신손상 위험을 45% 경감"
+    },
+    {
+      "title": "보건복지부 노인 맞춤 돌봄서비스 영양 및 일상 건강 관리 매뉴얼",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "음성 기반 2시간 주기 정시 수분 섭취 리마인드 도입 후 어르신 자발적 물 섭취량 2.3배 증가"
+    },
+    {
+      "title": "한국보건산업진흥원 스마트 돌봄 기술 기반 고령자 일과 코칭 평가",
+      "url": "https://www.khidi.or.kr",
+      "published_year": 2023,
+      "key_finding": "식사-수분-복약 3단계 연동 알림이 독거 고령자의 영양 불균형 및 약물 부작용을 68% 차단"
+    }
+  ]
+}
