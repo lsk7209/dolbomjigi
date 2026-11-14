@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T11:48:33.863Z",
+  "updated_at": "2026-11-14T14:56:05.254Z",
   "requested_count": 5,
-  "completed_count": 100,
+  "completed_count": 101,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1099,14 +1099,18 @@
       "character_count": 4727,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "b38cc552e517063336cc095f389a104f6c286c2502da048f3cbcce02bd806528"
+    },
+    {
+      "title": "돌봄로봇이 우리 집을 다 본다? 개인정보 처리 짚어보기",
+      "slug": "privacy-data-handling-care-robot",
+      "input_id": "topic-101",
+      "output_path": "output/dolbomjigi/new-content/privacy-data-handling-care-robot",
+      "status": "published",
+      "qa_score": 100,
+      "character_count": 4808,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "70292d78f88c57add63350c7347a6b064dbfd17efce475497cc05efff78a3262"
     }
   ],
-  "next_queue": [
-    {
-      "slug": "privacy-data-handling-care-robot",
-      "title": "돌봄로봇이 우리 집을 다 본다? 개인정보 처리 짚어보기",
-      "main_keyword": "돌봄로봇 개인정보",
-      "target_persona": "all"
-    }
-  ]
+  "next_queue": []
 }

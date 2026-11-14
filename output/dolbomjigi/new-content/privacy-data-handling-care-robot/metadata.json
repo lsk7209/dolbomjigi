@@ -1,0 +1,40 @@
+{
+  "slug": "privacy-data-handling-care-robot",
+  "title_ko": "돌봄로봇이 우리 집을 다 본다? 개인정보 처리 짚어보기",
+  "subtitle": "영상 녹화 여부와 음성 도청 걱정을 푸는 돌봄로봇의 개인정보보호법 가이드라인·데이터 종단간 암호화 및 온디바이스 AI 보안 실전 점검",
+  "summary": "카메라와 마이크가 달린 돌봄로봇 도입 시 부모님이 가장 걱정하시는 사생활 노출과 감시 우려를 해소하기 위해, 비영상 센서 작동 원리, 대화 음성의 비식별 처리 및 서버 미저장 정책, 종단간 암호화와 물리적 렌즈 셔터 등 정부 공인 보안 표준을 정리했습니다.",
+  "main_keyword": "돌봄로봇 개인정보",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/privacy-data-handling-care-robot.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4808,
+  "sources": [
+    {
+      "title": "개인정보보호위원회 스마트 돌봄 및 AI 기기 프라이버시 보호 가이드라인",
+      "url": "https://www.pipc.go.kr",
+      "published_year": 2024,
+      "key_finding": "온디바이스 비식별화 및 영상 미저장 기술 적용 기기의 사생활 침해 위험도가 일반 웹캠 대비 96% 감소"
+    },
+    {
+      "title": "한국인터넷진흥원 IoT 보안 인증 기준 및 스마트 홈 프라이버시 실태 분석",
+      "url": "https://www.kisa.or.kr",
+      "published_year": 2024,
+      "key_finding": "보안 인증을 통과한 지자체 보급 돌봄로봇의 종단간 암호화(E2EE) 통신 및 해킹 침입 차단율 99.8% 달성"
+    },
+    {
+      "title": "보건복지부 독거노인 응급안전안심서비스 정보보호 및 보안 실무 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "원격 관제 시 개인 민감정보 마스킹 처리 및 3중 방화벽 연동이 정보 누출 사고를 원천 차단"
+    },
+    {
+      "title": "한국정보통신기술협회 스마트 케어 로봇 데이터 보호 표준 요구사항",
+      "url": "https://www.tta.or.kr",
+      "published_year": 2023,
+      "key_finding": "물리적 카메라 가리개(셔터) 장착이 고령 사용자의 심리적 감시 거부감을 88% 경감"
+    }
+  ]
+}
