@@ -224,6 +224,11 @@ export async function consumeQueueAndGenerate(count = 1) {
       break;
     }
 
+    const VALID_PERSONAS = ['family_caregiver', 'social_worker', 'public_servant', 'institution', 'all'];
+    if (!VALID_PERSONAS.includes(postData.target_persona)) {
+      postData.target_persona = 'family_caregiver';
+    }
+
     console.log(`\n======================================================`);
     console.log(`📝 [자율 집필 시작] (${manifest.items.length + 1}번째): ${postData.title_ko}`);
 
