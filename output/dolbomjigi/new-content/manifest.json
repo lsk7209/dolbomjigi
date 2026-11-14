@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T21:02:15.620Z",
+  "updated_at": "2026-11-14T21:04:42.661Z",
   "requested_count": 5,
-  "completed_count": 109,
+  "completed_count": 110,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1198,6 +1198,17 @@
       "character_count": 3680,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "6fad72a19ae0ac8f9b0fc94993c51f4a1521920c0f59b4140e83bee68ffa927f"
+    },
+    {
+      "title": "2030년 초고령사회 진입, 미래 돌봄로봇이 바꿀 시니어 일상",
+      "slug": "aging-population-2030-forecast",
+      "input_id": "topic-110",
+      "output_path": "output/dolbomjigi/new-content/aging-population-2030-forecast",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3733,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "fe84839c749fa051af68f177c32a334635d89623518b2c2c8bfe1b71fdb970a6"
     }
   ],
   "next_queue": []

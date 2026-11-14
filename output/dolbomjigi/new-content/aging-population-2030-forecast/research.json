@@ -1,0 +1,30 @@
+{
+  "slug": "aging-population-2030-forecast",
+  "sources": [
+    {
+      "title": "통계청 장래인구추계 및 2030-2050 고령인구 구조 전망",
+      "url": "https://kostat.go.kr",
+      "published_year": 2024,
+      "key_finding": "2030년 65세 이상 고령인구 1,306만 명 돌파, 전체 인구의 25.5%가 초고령층 진입"
+    },
+    {
+      "title": "과학기술정보통신부 미래 유망 기술 로드맵 (AI 스마트 헬스케어)",
+      "url": "https://www.msit.go.kr",
+      "published_year": 2024,
+      "key_finding": "온디바이스 생성형 AI 및 비접촉 바이탈 감지 센서 탑재 돌봄 기기 시장 연평균 28.4% 성장 전망"
+    },
+    {
+      "title": "한국로봇산업진흥원 스마트 돌봄로봇 기술 발전 및 공공 실증 보고서",
+      "url": "https://www.kiria.org",
+      "published_year": 2023,
+      "key_finding": "자율주행 및 배뇨보조 로봇의 현장 간병 인력 업무 부담 경감 효과 47.3% 기록"
+    },
+    {
+      "title": "보건복지부 노인복지기본계획 및 AI 기반 스마트 홈케어 추진 전략",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2023,
+      "key_finding": "지역사회 계속 거주(AIP, Aging in Place) 실현을 위한 스마트 돌봄 인프라 구축 필수성 강조"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
