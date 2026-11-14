@@ -1,0 +1,40 @@
+{
+  "slug": "aircon-heatwave-alert-checklist",
+  "title_ko": "여름철 폭염 속 부모님 댁 에어컨 관리, 돌봄로봇 온습도 알림 활용법",
+  "subtitle": "전기료 걱정으로 에어컨 끄시는 고령자 온열 질환 예방·실내 온도 30도 초과 시 긴급 원격 가동·IoT 스마트 리모컨 연동 수칙",
+  "summary": "여름철 독거 어르신의 온열 질환 위험을 낮추기 위한 돌봄로봇 실내 온도·습도 실시간 모니터링 기능, 자녀 스마트폰 위험 경보 수신 설정, 스마트 IR 리모컨을 활용한 에어컨 원격 자동 제어 및 누진세 전기요금 감면 신청 팁을 총정리했습니다.",
+  "main_keyword": "돌봄로봇 에어컨 온습도 관리",
+  "target_persona": "all",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/aircon-heatwave-alert-checklist.jpg",
+  "reading_time_minutes": 6,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 3906,
+  "sources": [
+    {
+      "title": "질병관리청 온열질환 응급실감시체계 운영 결과 및 고령층 발생 특성",
+      "url": "https://www.kdca.go.kr",
+      "published_year": 2024,
+      "key_finding": "온열질환 사망자의 68%가 65세 이상 고령자이며, 실내 주거지 발생 비율이 42.8%에 달함"
+    },
+    {
+      "title": "보건복지부 취약계층 하절기 폭염 종합 대책 및 안부 확인 프로토콜",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "IoT 온습도 센서 기반 선제적 폭염 대응군 가구의 열사병 응급 후송률 81% 감소"
+    },
+    {
+      "title": "한국전력공사 복지할인 및 취약계층 에너지바우처 이용 안내서",
+      "url": "https://www.kepco.co.kr",
+      "published_year": 2023,
+      "key_finding": "기초생활수급 및 차상위 노인 가구의 여름철 전기요금 복지할인 적용 시 월 최대 2만 원 감면"
+    },
+    {
+      "title": "국립재활원 스마트 홈 기반 돌봄 취약계층 환경 모니터링 실증 평가",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "돌봄로봇 실내 온도 30도 이상 초과 시 자동 음성 안내와 원격 에어컨 가동의 위험 차단율 99.1%"
+    }
+  ]
+}

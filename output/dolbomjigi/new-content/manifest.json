@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T15:13:31.207Z",
+  "updated_at": "2026-11-14T15:16:38.878Z",
   "requested_count": 5,
-  "completed_count": 105,
+  "completed_count": 106,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1154,6 +1154,17 @@
       "character_count": 3986,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "e42739796d2d5efa15675896f963458e8917c1c03c0d0e715d7a6014bc0310e9"
+    },
+    {
+      "title": "여름철 폭염 속 부모님 댁 에어컨 관리, 돌봄로봇 온습도 알림 활용법",
+      "slug": "aircon-heatwave-alert-checklist",
+      "input_id": "topic-106",
+      "output_path": "output/dolbomjigi/new-content/aircon-heatwave-alert-checklist",
+      "status": "published",
+      "qa_score": 80,
+      "character_count": 3906,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "bf27b0a5b4edc4b72009198c962ca951eceff43c034efd67520b0238fbb30f93"
     }
   ],
   "next_queue": []
