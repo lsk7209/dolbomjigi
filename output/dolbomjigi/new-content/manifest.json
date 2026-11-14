@@ -1101,5 +1101,12 @@
       "content_hash": "b38cc552e517063336cc095f389a104f6c286c2502da048f3cbcce02bd806528"
     }
   ],
-  "next_queue": []
+  "next_queue": [
+    {
+      "slug": "privacy-data-handling-care-robot",
+      "title": "돌봄로봇이 우리 집을 다 본다? 개인정보 처리 짚어보기",
+      "main_keyword": "돌봄로봇 개인정보",
+      "target_persona": "all"
+    }
+  ]
 }
