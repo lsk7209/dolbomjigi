@@ -1,0 +1,30 @@
+{
+  "slug": "ai-speaker-vs-care-robot",
+  "sources": [
+    {
+      "title": "한국지능정보사회진흥원 AI 기반 취약계층 비대면 돌봄 서비스 효과 분석 보고서",
+      "url": "https://www.nia.or.kr",
+      "published_year": 2024,
+      "key_finding": "능동형 말걸기 돌봄로봇 도입 가구의 독거노인 우울감 지수 63% 감소 및 일상 활력 71% 향상"
+    },
+    {
+      "title": "보건복지부 응급안전안심서비스 ICT 기기별 구조 신속성 및 오작동 실태",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "낙상 발생 시 호출어가 필요 없는 센서 연동 돌봄로봇의 골든타임 구조 성공률 97.8% 달성"
+    },
+    {
+      "title": "국립재활원 스마트 돌봄 기술 사용자 적응성 및 고령자 음성 인터페이스 연구",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "시니어 음역대 특화 마이크가 일반 상용 AI 스피커 대비 방언 및 저음 발음 인식률 38% 우세"
+    },
+    {
+      "title": "한국소비자원 인공지능 스마트 가전 및 홈 IoT 서비스 소비자 이용 행태 조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "일반 AI 스피커 구매 가구 중 65세 이상 고령자의 82%가 1개월 후 음악 재생 외 기능 미활용"
+    }
+  ],
+  "last_verified_at": "2026-11-14"
+}
