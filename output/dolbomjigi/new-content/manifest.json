@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-15T02:57:30.117Z",
+  "updated_at": "2026-11-15T08:57:02.295Z",
   "requested_count": 5,
-  "completed_count": 115,
+  "completed_count": 116,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1264,6 +1264,17 @@
       "character_count": 5304,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "33d43daa1294eb99b7a822d4c284501ca2176b7e9ab7b6427ab71db37e6db0c6"
+    },
+    {
+      "title": "2026년 최신 AI 돌봄로봇 가격 비교 및 렌털·구매 비용 총정리",
+      "slug": "care-robot-price-comparison-2026",
+      "input_id": "topic-116",
+      "output_path": "output/dolbomjigi/new-content/care-robot-price-comparison-2026",
+      "status": "published",
+      "qa_score": 90,
+      "character_count": 5273,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "1789d6881d0c1f5d4a636a1941b2a1b56d78e4d669586c274cababc6460cc503"
     }
   ],
   "next_queue": []

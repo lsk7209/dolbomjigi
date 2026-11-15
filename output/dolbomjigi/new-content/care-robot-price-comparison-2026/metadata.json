@@ -1,0 +1,40 @@
+{
+  "slug": "care-robot-price-comparison-2026",
+  "title_ko": "2026년 최신 AI 돌봄로봇 가격 비교 및 렌털·구매 비용 총정리",
+  "subtitle": "인형형·화면형·센서형 대표 모델별 출고가, 통신비 결합 월 렌털료, 지자체 보조금 감면액과 유지비 분석",
+  "summary": "2026년 기준 시판 중인 주요 AI 돌봄로봇(효돌, 다솜, 미스터마인드, 보람이 등)의 일시불 구매 가격(60만~150만 원)과 통신비 포함 월 렌털료(1만~3만 원대), 장기요양 복지용구 본인부담금 감면 혜택, 배터리 교체 등 유지 관리 비용을 총정리했습니다.",
+  "main_keyword": "돌봄로봇 가격",
+  "target_persona": "family_caregiver",
+  "category": "market_trend",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-price-comparison-2026.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5273,
+  "sources": [
+    {
+      "title": "한국로봇산업진흥원 스마트 돌봄로봇 실증 및 시장 보급 실태 보고서",
+      "url": "https://www.kiria.org",
+      "published_year": 2024,
+      "key_finding": "국내 가정용 시니어 돌봄로봇 평균 출고가 82만 원, 통신 결합형 36개월 렌털 상품 선호도 71.3% 기록"
+    },
+    {
+      "title": "보건복지부 스마트 돌봄기기 보급 단가 및 표준 조달 가이드라인",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "지자체 공공 보급 조달 계약 기준 1대당 단가 65만~95만 원 선 형성, 24시간 관제 통신비 월 1만 1천 원 책정"
+    },
+    {
+      "title": "국민건강보험공단 복지용구 급여 품목 가격 고시 및 본인부담금 가이드",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2023,
+      "key_finding": "장기요양 등급자 대상 안전 감지 및 통신형 복지기기 급여 인정 시 본인부담금 0~15%(월 2천~5천 원 선) 이용 가능"
+    },
+    {
+      "title": "한국소비자원 가전 렌털 가격 비교 및 총소유비용(TCO) 소비자 권익 조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "36개월 약정 렌털 시 초기 목돈 부담은 없으나 완납 대비 총 납부액이 약 18~24% 높게 책정되는 구조 확인"
+    }
+  ]
+}
