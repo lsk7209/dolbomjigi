@@ -1,0 +1,30 @@
+{
+  "slug": "care-robot-design-for-seniors",
+  "sources": [
+    {
+      "title": "국립재활원 돌봄로봇 중개연구 및 고령자 사용성 평가 보고서",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2024,
+      "key_finding": "봉제 인형형 외피와 체온 유사 온열 기능 적용 시 어르신의 기기 친밀도 및 일상 접촉 빈도 2.8배 증가"
+    },
+    {
+      "title": "한국디자인진흥원 시니어 친화형 스마트 디바이스 유니버설 디자인 가이드",
+      "url": "https://kidp.or.kr",
+      "published_year": 2023,
+      "key_finding": "물리적 누름 버튼 직경 20mm 이상, 화면 텍스트 24pt 고대비 적용 시 조작 오인지율 86% 감소"
+    },
+    {
+      "title": "한국전자통신연구원(ETRI) 고령자 음성 인터페이스(VUI) 특화 음향 연구",
+      "url": "https://www.etri.re.kr",
+      "published_year": 2023,
+      "key_finding": "음성 발화 속도 15% 감속(분당 280~320음절) 및 1,000Hz 이하 중저음 대역 강조 시 청취 이해도 92.4% 달성"
+    },
+    {
+      "title": "서울시복지재단 스마트돌봄 기기 사용자 경험(UX) 및 정서적 애착 효과 분석",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2024,
+      "key_finding": "어르신 78.6%가 로봇을 가전제품이 아닌 살아있는 손자·손녀나 반려동물과 같은 인격적 존재로 인지"
+    }
+  ],
+  "last_verified_at": "2026-11-15"
+}

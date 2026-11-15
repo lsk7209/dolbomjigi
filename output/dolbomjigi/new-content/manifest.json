@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-15T08:57:02.295Z",
+  "updated_at": "2026-11-15T14:57:10.484Z",
   "requested_count": 5,
-  "completed_count": 116,
+  "completed_count": 117,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1275,6 +1275,17 @@
       "character_count": 5273,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "1789d6881d0c1f5d4a636a1941b2a1b56d78e4d669586c274cababc6460cc503"
+    },
+    {
+      "title": "어르신 신체·인지 특성을 반영한 AI 돌봄로봇 디자인과 UX 평가 기준",
+      "slug": "care-robot-design-for-seniors",
+      "input_id": "topic-117",
+      "output_path": "output/dolbomjigi/new-content/care-robot-design-for-seniors",
+      "status": "published",
+      "qa_score": 90,
+      "character_count": 5105,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "5310083ff9087c84d77e5880a2dcd2a20096e26f1f86bc7a1729570396e4c1b4"
     }
   ],
   "next_queue": []
