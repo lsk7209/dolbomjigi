@@ -1,0 +1,11 @@
+{
+  "slug": "care-robot-safety-standards",
+  "title_ko": "가정용 AI 돌봄로봇 안전 기준과 KC 국가 인증 마크 확인 가이드",
+  "target_audience": "family_caregiver",
+  "primary_goal": "어르신 침상과 거실에 상시 가동되는 AI 돌봄로봇의 필수 안전 기준(KC 방송통신기자재 적합성, 전기용품 안전 인증), 리튬이온 배터리 과열 방지 보호회로, 유해 중금속 미검출 RoHS 인증과 안전사고 방지를 위한 5대 점검 수칙을 정리했습니다.",
+  "core_questions_answered": [
+    "돌봄로봇 도입 효과 및 일상 모니터링 안전 지침",
+    "기기 조작 및 스마트 홈 연동 설정 가이드",
+    "비상 대응 체계 및 하드웨어 유지관리 수칙"
+  ]
+}

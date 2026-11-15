@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-15T14:57:10.484Z",
+  "updated_at": "2026-11-15T20:57:24.400Z",
   "requested_count": 5,
-  "completed_count": 117,
+  "completed_count": 118,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1286,6 +1286,17 @@
       "character_count": 5105,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "5310083ff9087c84d77e5880a2dcd2a20096e26f1f86bc7a1729570396e4c1b4"
+    },
+    {
+      "title": "가정용 AI 돌봄로봇 안전 기준과 KC 국가 인증 마크 확인 가이드",
+      "slug": "care-robot-safety-standards",
+      "input_id": "topic-118",
+      "output_path": "output/dolbomjigi/new-content/care-robot-safety-standards",
+      "status": "published",
+      "qa_score": 90,
+      "character_count": 4786,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "833c724b68a98e95c304234aa9c8983c9ab5a5a87849fdd0d41e0c0fbef31ecf"
     }
   ],
   "next_queue": []

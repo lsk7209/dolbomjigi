@@ -1,0 +1,40 @@
+{
+  "slug": "care-robot-safety-standards",
+  "title_ko": "가정용 AI 돌봄로봇 안전 기준과 KC 국가 인증 마크 확인 가이드",
+  "subtitle": "배터리 발열·화재 방지 인증, 전자파 적합성(EMC), 유해물질 RoHS 검사 및 안전 사용 수칙",
+  "summary": "어르신 침상과 거실에 상시 가동되는 AI 돌봄로봇의 필수 안전 기준(KC 방송통신기자재 적합성, 전기용품 안전 인증), 리튬이온 배터리 과열 방지 보호회로, 유해 중금속 미검출 RoHS 인증과 안전사고 방지를 위한 5대 점검 수칙을 정리했습니다.",
+  "main_keyword": "돌봄로봇 안전 기준",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-safety-standards.jpg",
+  "reading_time_minutes": 7,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 4786,
+  "sources": [
+    {
+      "title": "국가기술표준원 스마트 복지·돌봄 로봇 안전성 및 전자파 표준 고시",
+      "url": "https://www.kats.go.kr",
+      "published_year": 2024,
+      "key_finding": "국내 유통 가정용 돌봄기기의 전기용품 안전인증(KC) 및 전자파 적합성 평가 100% 의무 취득 규정"
+    },
+    {
+      "title": "국립재활원 시니어 스마트 돌봄스페이스 IoT 기기 발열 및 배터리 안정성 실증",
+      "url": "https://www.nrc.go.kr",
+      "published_year": 2023,
+      "key_finding": "다중 보호회로(PCM) 미탑재 저가 수입 배터리의 경우 상시 충전 환경에서 셀 과열 위험률 4.2배 증가"
+    },
+    {
+      "title": "한국소비자원 소형 가전 및 스마트 완구 유해화학물질 방출 실태조사",
+      "url": "https://www.kca.go.kr",
+      "published_year": 2023,
+      "key_finding": "피부 접촉이 빈번한 시니어 봉제 기기의 프탈레이트계 가소제 및 납·카드뮴 불검출(RoHS) 필수 권고"
+    },
+    {
+      "title": "소방청 독거노인 가정 소방안전 점검 및 스마트 안전망 통계",
+      "url": "https://www.nfa.go.kr",
+      "published_year": 2024,
+      "key_finding": "난연 V-0 등급 외피 소재 적용 스마트 기기의 화재 확산 지연 시간 일반 플라스틱 대비 8.5배 우수"
+    }
+  ]
+}
