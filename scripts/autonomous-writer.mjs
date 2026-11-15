@@ -229,6 +229,11 @@ export async function consumeQueueAndGenerate(count = 1) {
       postData.target_persona = 'family_caregiver';
     }
 
+    const VALID_CATEGORIES = ['care_info', 'product_review', 'support_program', 'guide', 'news'];
+    if (!VALID_CATEGORIES.includes(postData.category)) {
+      postData.category = 'care_info';
+    }
+
     console.log(`\n======================================================`);
     console.log(`📝 [자율 집필 시작] (${manifest.items.length + 1}번째): ${postData.title_ko}`);
 

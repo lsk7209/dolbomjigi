@@ -6,7 +6,7 @@ const template = {
   main_keyword: '돌봄로봇 가격',
   source_cover: 'care-robot-price-comparison-2026.jpg',
   target_persona: 'family_caregiver',
-  category: 'market_trend',
+  category: 'product_review',
   sources: [
     {
       title: '한국로봇산업진흥원 스마트 돌봄로봇 실증 및 시장 보급 실태 보고서',
