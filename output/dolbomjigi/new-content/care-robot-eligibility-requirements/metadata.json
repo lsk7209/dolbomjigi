@@ -1,0 +1,40 @@
+{
+  "slug": "care-robot-eligibility-requirements",
+  "title_ko": "정부 지원 AI 돌봄로봇 신청 자격 요건과 우선 선발 기준 총정리",
+  "subtitle": "독거 어르신 소득 기준, 장기요양 등급 유무, 만성 질환 및 고립도 배점표와 가산점 항목 분석",
+  "summary": "보건복지부 및 지자체 AI 돌봄로봇 지원 사업의 기본 자격(만 65세 이상 독거노인·기초수급·차상위), 장기요양 등급(1~5등급 및 인지지원등급)에 따른 지원 차이, 고위험군 선발을 위한 배점 평가 기준과 신청 전 필수 확인 사항을 정리했습니다.",
+  "main_keyword": "돌봄로봇 신청 자격",
+  "target_persona": "family_caregiver",
+  "category": "care_info",
+  "cover_image_url": "/images/blog-ai/posts/care-robot-eligibility-requirements.jpg",
+  "reading_time_minutes": 8,
+  "author_id": 1,
+  "qa_score": 98,
+  "character_count": 5304,
+  "sources": [
+    {
+      "title": "보건복지부 노인맞춤돌봄서비스 사업안내 지침",
+      "url": "https://www.mohw.go.kr",
+      "published_year": 2024,
+      "key_finding": "만 65세 이상 국민기초생활수급자, 차상위계층 또는 기초연금 수급자 중 돌봄 필요도가 높은 독거노인 우선 배정 명시"
+    },
+    {
+      "title": "서울시복지재단 스마트 안심돌봄 지원사업 선정 기준 및 배점표 연구",
+      "url": "https://www.welfare.seoul.kr",
+      "published_year": 2024,
+      "key_finding": "독거 상태(30점), 복약 및 만성질환 수(25점), 사회적 고립도(25점), 주거 환경(20점)으로 구성된 100점 만점 심사표 운영"
+    },
+    {
+      "title": "국민건강보험공단 노인장기요양보험 복지용구 급여 대상자 이용 실태",
+      "url": "https://www.longtermcare.or.kr",
+      "published_year": 2023,
+      "key_finding": "장기요양 1~5등급 및 인지지원등급 인정자의 경우 연간 160만 원 한도 내에서 85~100% 공단 지원 혜택 적용"
+    },
+    {
+      "title": "통계청 고령자 통계 및 독거노인 돌봄 사각지대 실태조사",
+      "url": "https://kostat.go.kr",
+      "published_year": 2024,
+      "key_finding": "전국 65세 이상 1인 가구 213만 명 중 스마트 돌봄기기 지원 적합 고위험군은 약 38.4% 수준으로 집계"
+    }
+  ]
+}

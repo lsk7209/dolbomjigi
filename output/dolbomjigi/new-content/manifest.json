@@ -1,9 +1,9 @@
 {
   "run_id": "run-20261021-01",
   "started_at": "2026-10-21T11:58:00+09:00",
-  "updated_at": "2026-11-14T21:17:50.251Z",
+  "updated_at": "2026-11-15T02:57:30.117Z",
   "requested_count": 5,
-  "completed_count": 114,
+  "completed_count": 115,
   "items": [
     {
       "title": "와이파이 없는 부모님 댁, 돌봄로봇 연결 방식과 통신 요금 선택 가이드",
@@ -1253,6 +1253,17 @@
       "character_count": 5582,
       "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
       "content_hash": "11246b9307170f8995fd7ab2b27cd3b812818cd03b76cb9f71660c5e90fa396e"
+    },
+    {
+      "title": "정부 지원 AI 돌봄로봇 신청 자격 요건과 우선 선발 기준 총정리",
+      "slug": "care-robot-eligibility-requirements",
+      "input_id": "topic-115",
+      "output_path": "output/dolbomjigi/new-content/care-robot-eligibility-requirements",
+      "status": "published",
+      "qa_score": 90,
+      "character_count": 5304,
+      "reason": "자율 기사 생성 엔진을 통한 발행 승인 및 시드 적재 완료",
+      "content_hash": "33d43daa1294eb99b7a822d4c284501ca2176b7e9ab7b6427ab71db37e6db0c6"
     }
   ],
   "next_queue": []
